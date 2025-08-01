@@ -1,0 +1,2 @@
+Der er ikke noget cap på hvor mange feriedage man kan have i træk. En medarbejder kunne i princippet holde ferie i hele sommerferie perioden (næsten 3 måneder), hvis andre har ønsket mindre ferie.
+Der er for den sags skyld heller ikke et minumum. altså en medarbejder kan risikere at holde 1 dags sommerferie, hvis de ikke ønsker andet.

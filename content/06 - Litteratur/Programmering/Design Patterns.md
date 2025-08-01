@@ -1,0 +1,1 @@
+[Observer Pattern](https://rise.articulate.com/share/HcMl6o2pR2o1C6hcgmQbHi9BPXV3_F20#/)

@@ -1,0 +1,1 @@
+The MSTest framework supports unit testing in Visual Studio. Use the classes and members in the [Microsoft.VisualStudio.TestTools.UnitTesting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting) namespace when you're coding unit tests.

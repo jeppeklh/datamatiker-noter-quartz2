@@ -1,0 +1,11 @@
+### - [[Nøglepartnere]]
+### - [[Nøgleaktiviteter]]
+### - [[Nøgleressourcer]]
+### - [[Værditilbud]]
+### - [[Kunderelationer]]
+### - [[Kanaler]]
+### - [[Kundesegmenter]]
+### - [[Omkostningsstruktur]]
+### - [[Indtægtsstrømme]]
+
+![[BMC.png]]
