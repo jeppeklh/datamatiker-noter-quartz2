@@ -11,7 +11,7 @@ Noterne omhandler programmering (hovedsagligt C#), SQL, og Systemudvikling.
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Struktureret Organisering**: Noterne er organiseret i intuitive, og let navigérlige sektioner.
 - **Tagging System**: Brug tags til hurtigt at finde bestemte emner. 
