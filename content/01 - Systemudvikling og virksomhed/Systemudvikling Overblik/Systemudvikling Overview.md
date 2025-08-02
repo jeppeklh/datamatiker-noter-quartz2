@@ -24,13 +24,13 @@ De har hver deres egne kvalitetskriterier.
 ## Fokusområder
 Opdeling af processen
 
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Projektstyring]]
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/KravIndsamling]]
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/High Level Design]]
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Low Level Design]]
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Programmering]]
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Test]]
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Udrulning]] 
-- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Vedligehold]]
+- [[Projektstyring]]
+- [[KravIndsamling]]
+- [[High Level Design]]
+- [[Low Level Design]]
+- [[Programmering]]
+- [[Test]]
+- [[Udrulning]] 
+- [[Vedligehold]]
 
 ![[Iterativ Proces.png]]
