@@ -6,13 +6,14 @@ aliases:
 ---
 tags: #Programmering #SQL
 
-## Definition 
----
-**Redundans** betyder at have flere kopier af de samme data i databasen. Dette problem opstår, når en database ikke er normaliseret.   
+> [!tldr] Definition
+> **Redundans** betyder at have flere kopier af de samme data i databasen. Dette problem opstår, når en database ikke er normaliseret.   
 
 **Redundans** kan forårsage forskellige problemer såsom datainkonsistens, højere lagerkrav og langsommere datahentning.
-## Example
+
 ---
+
+## Example
 Antag, at en tabel med attributter for studerendeoplysninger er: student ID, student name, college name, college rank, teacher and course.
 
 |                |          |             |             |             |             |          |
@@ -30,17 +31,14 @@ Problemer, der kan opstå på grund af redundans er:
 - [[Anormali#Opdateringsanormalier|Opdateringsanormalier]]
 - [[Anormali#Sletningsanormalier|Sletningsanormalier]]
 
-## Header2
 ---
-
-
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

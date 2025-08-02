@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #SQLBasics
 
-## Definition 
----
-SQL data types define the type of data that can be stored in a [[Table]] column. 
+> [!tldr] Definition
+> SQL data types define the type of data that can be stored in a [[Table]] column. 
 
 Each column in a [[Table]] is assigned a data type, which determines the kind of data it can hold.
-## Common Data Types
+
 ---
+
+## Common Data Types
 - [[string]]
 - [[int]]
 - [[double]] 
@@ -35,13 +36,15 @@ Dette kan gøres på en af to måder: enten med NChar(1) eller med NVarChar(1).
 NVarChar understøtter Unicode(andre end standard tegn. eks. Arabisk, Kyrrylisk, emojis osv.)
 VarChar gør ikke. 
 
-## Related Topics
 ---
+
+## Related Topics
 - [[SQL Syntax|SQL Syntax]]
 - [[Constraints]]
 - [[SQL Standards]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

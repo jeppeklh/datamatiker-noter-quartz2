@@ -1,21 +1,24 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-`FULL JOIN` returnerer alle rækker hvor der er et match i enten den venstre (``Customers``) eller højre (``Orders``) tabel. 
+> [!tldr] Definition
+> `FULL JOIN` returnerer alle rækker hvor der er et match i enten den venstre (``Customers``) eller højre (``Orders``) tabel. 
 
 Hvis der ikke er noget match, bliver ``NULL`` returneret i de kolonner hvor der intet match er. 
 Dette kan være i både den venstre og den højre tabel.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 SELECT columns
 FROM table1
 FULL JOIN table2
 ON table1.common_column = table2.common_column;
 ```
-### Example
+
 ---
+
+### Example
 Retrieve all employees and their corresponding departments, including unmatched records from both [[Table|tables]]:
 ```sql
 SELECT employees.first_name, employees.last_name, departments.department_name
@@ -24,9 +27,9 @@ FULL JOIN departments
 ON employees.department_id = departments.department_id;
 ```
 
+---
 
 ### Example - with output
----
 - **Customers**:
 
 |CustomerID|Name|
@@ -59,12 +62,14 @@ ON Customers.CustomerID = Orders.CustomerID;
 | NULL  | Tablet     |
 Du får alle ``Customers`` og alle ``Orders``, uanset om de har et match.
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Data Querying Overview]]
 - [[Joins]]
 
-## Resources
 ---
+
+## Resources
 - [JOINS Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_17/scormcontent/index.html#/lessons/Xh1h5Fdn8KpTJAPPs09i5HcJfDfpkvGT)
 - [SQL Full Join](https://www.w3schools.com/sql/sql_join_full.asp)

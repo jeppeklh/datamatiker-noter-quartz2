@@ -2,8 +2,9 @@
 > Tags der ændrer tekstens udseende eller betydning _uden_ [[CSS]]. Fokuserer på semantik (betydning) eller visuelle ændringer via inline-elementer.
 
 ---
+
 ## Tags og deres funktioner
----
+
 - **`<strong>`**
     - **Funktion:** Marker tekst som **vigtig** (typisk fed tekst).
     - **Attributter:** `id`, `class`, `style`, `lang`.
@@ -41,10 +42,9 @@
     - **Funktion:** Generisk inline-container til CSS/JS-styling _uden_ semantik.
     - **Attributter:** `class`, `id`, `style`.
 
-
+---
 
 ## Eksempel
----
 ```HTML
 <p>  
   <strong>Advarsel:</strong> Brug <em>altid</em> sikkerhedsudstyr.<br>  
@@ -54,9 +54,9 @@
 </p>  
 ```
 
+---
 
 ## Vigtige regler
----
 1. **Semantik før styling:** Brug `<strong>`/`<em>` i stedet for `<b>`/`<i>` medmindre det _kun_ er visuel fremhævning.
 2. **Undgå forældede tags:** F.eks. `<font>` eller `<center>` – brug [[CSS]].
 3. **Kombiner med CSS:** F.eks. `<span class="highlight">` til brugerdefineret styling.

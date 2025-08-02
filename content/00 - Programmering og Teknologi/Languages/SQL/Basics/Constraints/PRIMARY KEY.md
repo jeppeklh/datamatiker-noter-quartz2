@@ -1,21 +1,23 @@
 tags: #Programmering #SQL #SQLBasics #Constraint
 
-## Definition 
----
-The `PRIMARY KEY` constraint uniquely identifies each row in a [[Table]]. 
-Usually an ID.
+> [!tldr] Definition
+> The `PRIMARY KEY` constraint uniquely identifies each row in a [[Table]]. 
+> Usually an ID.
 
 A [[Table]] can have only one primary key, which can be a single column or a combination of multiple columns.
 
 The primary key ensures that no two rows can have the same value for the primary key columns, and it also ensures that the primary key values are not `NULL`.
 
-### Key Points
 ---
+
+### Key Points
 - A [[Table]] can have only one primary key.
 - A primary key can be made up of a single column or multiple columns ([[Composite key]]).
 - Primary keys enforce uniqueness and non-nullability.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 CREATE TABLE table_name (
     column1 datatype PRIMARY KEY,
@@ -23,8 +25,10 @@ CREATE TABLE table_name (
     ...
 );
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
@@ -36,8 +40,10 @@ CREATE TABLE Students (
 
 In this example, `StudentID` is the primary key. 
 Each student must have a unique `StudentID` value, and it cannot be `NULL`.
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Constraints]]
 - [[NOT NULL]]
 - [[UNIQUE]]
@@ -45,7 +51,8 @@ Each student must have a unique `StudentID` value, and it cannot be `NULL`.
 - [[CHECK]]
 - [[DEFAULT]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

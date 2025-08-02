@@ -1,10 +1,11 @@
 tags: #Programmering #SQL
 
-## Definition 
+> [!tldr] Definition
+> **Høj tilgængelighed og disaster recovery** (_HA/DR_) refererer til metoder og teknologier, der anvendes til at sikre, at en database er tilgængelig, selv under hardwarefejl, softwarefejl eller katastrofer.
+
 ---
-**Høj tilgængelighed og disaster recovery** (_HA/DR_) refererer til metoder og teknologier, der anvendes til at sikre, at en database er tilgængelig, selv under hardwarefejl, softwarefejl eller katastrofer.
+
 ## Always On Availability Groups
----
 Availability Groups muliggør failover af flere databaser som en enhed og tillader samtidig adgang til read-only kopier af [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databasen]] (_sekundære replikaer_) for at forbedre ydeevnen og tilgængeligheden.
 
 #### Nøglefunktioner:
@@ -14,8 +15,10 @@ Availability Groups muliggør failover af flere databaser som en enhed og tillad
 - **Read-only sekundære replikaer**: Læs-forespørgsler kan dirigeres til sekundære replikaer, hvilket aflaster primæren og forbedrer ydelsen.
     
 - **Disaster Recovery**: Data synkroniseres mellem primær og sekundær replika i realtid, hvilket sikrer minimal datatab i tilfælde af et nedbrud.
-#### Eksempel på SQL kommando
+
 ---
+
+#### Eksempel på SQL kommando
 ```SQL
 CREATE AVAILABILITY GROUP [AG1]
 FOR DATABASE [Databasenavn]
@@ -33,9 +36,9 @@ REPLICA ON 'PrimaryServer' WITH
 );
 ```
 
+---
 
 ## Failover Clustering
----
 **Failover Clustering** er en metode, der gør det muligt for SQL Server at køre på en cluster af servere (_noder_), hvor en instans af SQL Server kan flyttes fra én node til en anden i tilfælde af fejl, hvilket sikrer høj tilgængelighed.
 
 #### Nøglefunktioner:
@@ -46,8 +49,9 @@ REPLICA ON 'PrimaryServer' WITH
     
 - **Geografisk failover**: Med stretch clustering kan failover finde sted på tværs af geografiske lokationer for disaster recovery-scenarier.
 
-## Replikation og Log Shipping
 ---
+
+## Replikation og Log Shipping
 ### Replikation
 ---
 **Replikation** er en metode til at distribuere og synkronisere data fra én database til andre ved hjælp af publish-subscribe modellen. Replikation kan anvendes til høj tilgængelighed, lastfordeling, eller for at give adgang til data fra forskellige geografiske placeringer.
@@ -74,8 +78,10 @@ EXEC sp_addarticle
     @article = N'Tabelnavn', 
     @source_table = N'Tabelnavn';
 ```
-### Log Shipping
+
 ---
+
+### Log Shipping
 **Log Shipping** er en enkel, men effektiv metode til disaster recovery, hvor transaktionslogfiler fra en primær database kontinuerligt sendes til en eller flere sekundære servere. Disse logfiler bruges til at holde sekundære servere opdaterede med ændringer fra den primære database. Log Shipping muliggør manuel failover, hvis den primære server fejler.
 
 #### Nøglefunktioner:
@@ -86,8 +92,9 @@ EXEC sp_addarticle
     
 - **Disaster recovery**: I tilfælde af nedbrud på den primære server kan en administrator manuelt gøre en sekundær server til den nye primære server.
 
-#### Eksempel på SQL-kommandoer:
 ---
+
+#### Eksempel på SQL-kommandoer:
 ```SQL
 -- Backup loggen på primær server
 BACKUP LOG [Databasenavn]
@@ -98,12 +105,15 @@ RESTORE LOG [Databasenavn]
 FROM DISK = 'C:\Backup\Databasenavn_Log.bak'
 WITH NORECOVERY;
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

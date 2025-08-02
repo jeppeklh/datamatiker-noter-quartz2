@@ -1,11 +1,12 @@
 tags: #C-sharp #Programmering #Database #SQL
 
-## Definition 
+> [!tldr] Definition
+> **Information** defineres som strukturerede, organiserede og behandlede data, præsenteret i en kontekst, der gør den relevant og nyttig for den person, der har brug for den.
+
+
 ---
-**Information** defineres som strukturerede, organiserede og behandlede data, præsenteret i en kontekst, der gør den relevant og nyttig for den person, der har brug for den.
 
 ## Data vs Information
----
 
 |                        |                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                             |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,10 +21,13 @@ tags: #C-sharp #Programmering #Database #SQL
 | **Betydning**          | Data er en samling af fakta, som i sig selv ikke har nogen betydning.                                                                                                                                                                                                                                                                     | Information sætter disse fakta i sammenhæng.                                                                                                                                                                                                                                                |
 | **Eksempler**          | **Karakterer**: En liste over numeriske karakterer opnået af studerende på en test, såsom 7, 12, 02. <br><br><br>**Temperaturaflæsninger**: Tal, der repræsenterer temperaturen i løbet af dagen, såsom "72°F", "68°F", "75°F".<br><br>**Aktiekurser**: Daglige lukkekurser for en virksomheds aktie, såsom "$50,25", "$48,90", "$52,10". | **Karaktergennemsnit**: Baseret på elevernes karakterer kan gennemsnitskarakteren for klassen udledes.<br><br>**Vejrrapport**: Baseret på temperaturaflæsningen kan en vejrrapport genereres.<br><br>**Markedsanalyse**: Aktiemarkedet viste en lille stigning i dag afledt af aktiekurser. |
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Repo/06 - Litteratur/Programmering/Database|Database]]
 - [[Data]]
-## Recourses
+
 ---
+
+## Recourses
 [Data og Information Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_6/scormcontent/index.html#/lessons/VRtAd1WrPjf5HhAbA_fzW0KWjbCPTF5X)

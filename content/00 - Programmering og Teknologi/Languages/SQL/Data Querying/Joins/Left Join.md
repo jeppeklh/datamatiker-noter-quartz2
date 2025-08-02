@@ -1,19 +1,22 @@
 tags: #Programmering #SQL #DataQuerying #Joins
 
-## Definition 
+> [!tldr] Definition
+> **Left Join** retrieves all records from the left [[Table|table]] and the matched records from the right [[Table|table]]. 
+> If there is no match, the result is NULL from the right [[Table|table]].
+
 ---
-**Left Join** retrieves all records from the left [[Table|table]] and the matched records from the right [[Table|table]]. 
-If there is no match, the result is NULL from the right [[Table|table]].
+
 ## Syntax
----
 ```sql
 SELECT columns
 FROM table1
 LEFT JOIN table2
 ON table1.common_column = table2.common_column;
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 SELECT Customers.Name, Orders.Product 
 FROM Customers 
@@ -30,9 +33,9 @@ ON Orders.CustomerID = Customers.CustomerID;
 ```
 This returns **all orders**, including those that don't have a corresponding customer (with `NULL` in `Customers.Name` if no customer exists).
 
+---
 
 ### Example 2 - with output
----
 - **Customers**:
 
 |CustomerID|Name|
@@ -63,12 +66,15 @@ ON Customers.CustomerID = Orders.CustomerID;
 | Sarah    | Smartphone  |
 | Mike     | NULL        |
 Mike dukker selvom han ikke har placeret en ordre, med `NULL`i product kollonnen.
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Data Querying Overview]]
 - [[Joins]]
 
-## Resources
 ---
+
+## Resources
 - [JOINS Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_17/scormcontent/index.html#/lessons/Xh1h5Fdn8KpTJAPPs09i5HcJfDfpkvGT)
 - [SQL Left Join](https://www.w3schools.com/sql/sql_join_left.asp)

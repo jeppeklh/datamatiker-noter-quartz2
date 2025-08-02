@@ -1,11 +1,12 @@
 tags: #Programmering #SQL #AdvancedTopicsSQL 
 
-## Definition 
+> [!tldr] Definition
+> **Functions** are similar to [[Stored Procedures|stored procedures]] but can return a single value and can be used in SQL statements. 
+>They are used for computations and returning a single value.
+
 ---
-**Functions** are similar to [[Stored Procedures|stored procedures]] but can return a single value and can be used in SQL statements. 
-They are used for computations and returning a single value.
+
 ## Syntax
----
 ```sql
 CREATE FUNCTION function_name (parameters)
 RETURNS return_datatype
@@ -15,8 +16,10 @@ BEGIN
     RETURN value;
 END;
 ```
-### Example
+
 ---
+
+### Example
 Create a function to calculate the annual salary:
 ```sql
 CREATE FUNCTION CalculateAnnualSalary (monthly_salary DECIMAL)
@@ -27,13 +30,14 @@ BEGIN
 END;
 ```
 
+---
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

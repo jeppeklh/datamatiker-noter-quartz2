@@ -1,10 +1,11 @@
 tags: #Programmering #SQL
 
-## Definition 
+> [!tldr] Definition
+> `COUNT()`-funktionen returnerer antallet af rækker der matcher et givent kriterie.
+
 ---
-`COUNT()`-funktionen returnerer antallet af rækker der matcher et givent kriterie.
+
 ## Syntax
----
 ```SQL
 SELECT COUNT(column_name)  
 FROM table_name  
@@ -18,20 +19,22 @@ SELECT COUNT(*)
 FROM Products;
 ```
 
+---
 
 ## Ignorér duplikater
----
 Retúrner mængden af forskellige priser i `Products`-[[Table|tabellen]]:
 ```SQL
 SELECT COUNT(DISTINCT Price)  
 FROM Products;
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[WHERE Clause|WHERE]]
 - [[SELECT]]
 
-## Resources
 ---
+
+## Resources
 - [SQL Count](https://www.w3schools.com/sql/sql_count.asp)

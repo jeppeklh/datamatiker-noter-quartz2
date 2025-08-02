@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #DDL #Statement 
 
-## Definition 
----
-The `CREATE TABLE` statement is used to create a new table in a [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]]. 
+> [!tldr] Definition
+> The `CREATE TABLE` statement is used to create a new table in a [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]]. 
 
 You can specify the columns and their data types, as well as any constraints on the columns.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 CREATE TABLE table_name (
     column1 datatype constraint,
@@ -14,8 +15,10 @@ CREATE TABLE table_name (
     ...
 );
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -25,15 +28,17 @@ CREATE TABLE employees (
 );
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[DDL Overview]]
 - [[ALTER TABLE]]
 - [[DROP TABLE]]
 - [[CREATE INDEX]]
 - [[SQL Syntax|SQL Syntax]]
 
-## Resources
 ---
+
+## Resources
 - 
 - [Creating tables LinkedIn Video](https://www.linkedin.com/learning/programming-foundations-databases-2/creating-tables?u=57075649)

@@ -1,8 +1,7 @@
 tags: #Programmering #SQL #DataQuerying
 
-## Definition 
----
-**Aggregate Functions** laver udregninger på et set af værdier og returnerer en enkelt værdi.
+> [!tldr] Definition
+> **Aggregate Functions** laver udregninger på et set af værdier og returnerer en enkelt værdi.
 
 
 Ofte brugte funktioner:  
@@ -10,20 +9,24 @@ Ofte brugte funktioner:
 - [[SUM()]]
 - [[AVG()]]
 - [[MIN() and MAX()]]
-## Example
+
 ---
+
+## Example
 Returnér den gennemsnitlige løn af `employees`.
 ```sql
 SELECT AVG(salary) AS average_salary
 FROM employees;
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Data Querying Overview]]
 - 
 
-## Resources
 ---
+
+## Resources
 - [Aggregate functions](https://www.w3schools.com/sql/sql_aggregate_functions.asp)
 - 

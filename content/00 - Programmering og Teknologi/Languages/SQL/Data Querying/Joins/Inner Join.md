@@ -1,18 +1,21 @@
 tags: #Programmering #SQL #DataQuerying #Joins
 
-## Definition 
+> [!tldr] Definition
+> ``INNER JOIN`` returnerer kun rækkerne hvor der er et match i begge [[Table|tabeller]].
+
 ---
-``INNER JOIN`` returnerer kun rækkerne hvor der er et match i begge [[Table|tabeller]].
+
 ## Syntax
----
 ```sql
 SELECT columns
 FROM table1
 INNER JOIN table2
 ON table1.common_column = table2.common_column;
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 SELECT Customers.Name, Orders.Product
 FROM Customers
@@ -35,9 +38,9 @@ ON Customers.CustomerID = Orders.CustomerID;
 
 Tabellerne der bliver skrevet efter ``FROM`` og ``INNER JOIN`` (altså hvilken tabel der bliver joinet på hvilken tabel) kan byttes om. Det betyder ikke noget i ``INNER JOIN``. Det betyder dog noget i [[Left Join]] og [[Right Join]].
 
+---
 
 ### Example - with output
----
 - **Customers**:
 
 |CustomerID|Name|
@@ -69,12 +72,15 @@ ON Customers.CustomerID = Orders.CustomerID;
 Kun ``Customers`` med matchene ``Orders`` bliver returneret. 
 Mike og ordren med ``CustomerID = 4`` bliver ikke vist, fordi de begge intet match har.
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Data Querying Overview]]
 - [[Joins]]
 
-## Resources
+
 ---
+
+## Resources
 - [JOINS Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_17/scormcontent/index.html#/lessons/Xh1h5Fdn8KpTJAPPs09i5HcJfDfpkvGT)
 - [SQL Inner Join](https://www.w3schools.com/sql/sql_join_inner.asp)

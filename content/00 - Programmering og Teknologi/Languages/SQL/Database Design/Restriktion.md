@@ -8,13 +8,14 @@ aliases:
 ---
 tags: #Programmering #SQL
 
-## Definition 
----
-[[PRIMARY KEY|Primærnøgler]] og [[FOREIGN KEY|fremmednøgler]] er begge to eksempler på en restriktion, som i database-terminologi og i SQL betegnes ’constraint’ på engelsk. 
+> [!tldr] Definition
+> [[PRIMARY KEY|Primærnøgler]] og [[FOREIGN KEY|fremmednøgler]] er begge to eksempler på en restriktion, som i database-terminologi og i SQL betegnes ’constraint’ på engelsk. 
 
 Vi har lige nu kun fokus på disse to typer af restriktioner, men der er også andre former for restriktioner (f.eks. index, trigger, unique, check), som vi ser på senere.
-## Syntax
+
 ---
+
+## Syntax
  «PK»-stereotypen først, at der er tale om en primærnøgle-restriktion og dernæst følger navnet på restriktionen.
 
 Navngivningskonvention for primærnøgle-restriktionen er her valgt til at starte med ’PK_’ efterfulgt af navnet på tabellen ’Semester’ (UpperCamelCase).
@@ -26,13 +27,14 @@ Navngivningskonvention for primærnøgle-restriktionen er her valgt til at start
 ![[Constraint example 2.png]]
 
 
+---
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

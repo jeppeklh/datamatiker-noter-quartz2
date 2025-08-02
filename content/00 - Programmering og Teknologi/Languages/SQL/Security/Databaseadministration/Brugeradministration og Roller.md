@@ -1,18 +1,20 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-En essentiel del af [[Databaseadminstration]], der sikrer, at kun autoriserede personer har adgang til systemets data og funktioner.
+> [!tldr] Definition
+> En essentiel del af [[Databaseadminstration]], der sikrer, at kun autoriserede personer har adgang til systemets data og funktioner.
 
 SQL Server tilbyder en robust mekanisme til at oprette og administrere brugere, definere roller og tildeling af tilladelser for at beskytte data mod uautoriseret adgang og manipulation.
-## Roller og tilladelser i SQL Server
+
 ---
+
+## Roller og tilladelser i SQL Server
 SQL Server burgre roller til at gruppere brugerr med lignende adgangsbehov.
 
 Der findes 2 typer af roller:
 
-#### Serverroller
 ---
+
+#### Serverroller
 Disse roller kan hjælpe dig med at organisere og begrænse adgang til SQL Server, så kun autoriserede brugere kan udføre bestemte administrative opgaver.
 ###### sysadmin 
 Har fuld kontrol over SQL Server-instansen. Kan udføre enhver opgave og har adgang til alle serverressourcer.
@@ -30,8 +32,10 @@ Administrerer diskfilerne i SQL Server. Bruges primært til opgaver relateret ti
 Kan oprette, ændre og slette databaser på SQL Server. Har ikke rettigheder til at administrere serverindstillinger eller sikkerhed.
 ###### bulkadmin
 Kan udføre bulk data-indlæsninger ved hjælp af BULK INSERT-kommandoen.
-#### Database-specifikke roller
+
 ---
+
+#### Database-specifikke roller
 Disse roller gør det nemt at styre og tildele rettigheder til brugere på databaseniveau, afhængig af deres funktioner og ansvarsområder.
 
 ###### db_owner
@@ -53,13 +57,15 @@ Blokerer for, at brugeren kan indsætte, opdatere eller slette data i databasen.
 ###### db_denydatareader
 Blokerer for, at brugeren kan læse data fra tabeller i databasen.
 
+---
 
 ## Oprettelse af en bruger
----
 Med queries:
 [[Uge44 - Databaseadministration og sikkerhed#Opret brugere og tilknyt dem til roller|Opret login, brugere og roller opgaver]]
-#### Trin 1: Opret et login
+
 ---
+
+#### Trin 1: Opret et login
 Login er den server-niveau-adgang, som giver brugeren adgang til SQL Server-instansen.
 
 1. Åbn **SQL Server Management Studio (SSMS)**, og forbind til din SQL Server-instans.
@@ -82,8 +88,9 @@ Login er den server-niveau-adgang, som giver brugeren adgang til SQL Server-inst
     
 5. Klik på **OK** for at oprette login.
 
-#### Trin 2: Opret en databasebruger
 ---
+
+#### Trin 2: Opret en databasebruger
 En databasebruger er nødvendig for at give adgang til en bestemt database.
 
 1. I Object Explorer, udvid den **ønskede** database, udvid **Security**, højreklik på **Users**, og vælg **New User**.
@@ -99,8 +106,10 @@ En databasebruger er nødvendig for at give adgang til en bestemt database.
 3. Under **Role Membership**, vælg de roller, som denne bruger skal være medlem af (_f.eks. db_datareader, db_datawriter_).
     
 4. Klik på **OK** for at oprette brugeren.
-#### Trin 3: Tildel tilladelser (hvis nødvendigt)
+
 ---
+
+#### Trin 3: Tildel tilladelser (hvis nødvendigt)
 Med queries:
 [[Uge44 - Databaseadministration og sikkerhed#Trin 2 Tildel rettigheder til Views og Stored Procedures|Tildel rettigheder opgaver]]
 
@@ -113,19 +122,20 @@ Hvis du ønsker at give specifikke tilladelser, kan du gøre det enten ved hjæl
 3. Vælg den bruger, du lige har oprettet, og tildel de ønskede tilladelser (f.eks. **SELECT**, **INSERT**, **UPDATE**, **DELETE**).
     
 4. Klik på **OK**.
-#### Trin 4: Test adgang
+
 ---
+
+#### Trin 4: Test adgang
 For at sikre, at brugeren har de korrekte rettigheder, kan du logge ud af SQL Server og logge ind igen med de nyoprettede brugeroplysninger. 
 Test, at brugeren kan tilgå de nødvendige databaser og udføre de nødvendige operationer.
 
-
-
+---
 
 ## Related Topics
----
 - [[Databaseadminstration]]
 - [[Backup og Gendannelse af Data]]
 
-## Resources
 ---
+
+## Resources
 - [Databaseadministration og sikkerhed Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_22/scormcontent/index.html#/lessons/j0JwBgonhudyZjizr36yeaxYlUIs0GBQ)

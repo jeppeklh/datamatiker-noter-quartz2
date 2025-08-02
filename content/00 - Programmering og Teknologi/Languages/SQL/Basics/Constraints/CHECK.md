@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #SQLBasics #Constraint
 
-## Definition 
----
-The `CHECK` constraint ensures that all values in a column satisfy a specific condition. 
+> [!tldr] Definition
+> The `CHECK` constraint ensures that all values in a column satisfy a specific condition. 
 
 This can be used to enforce domain integrity by limiting the values that can be stored in a column.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 CREATE TABLE table_name (
     column1 datatype CHECK (condition),
@@ -14,8 +15,10 @@ CREATE TABLE table_name (
     ...
 );
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -26,9 +29,9 @@ CREATE TABLE employees (
 );
 ```
 
+---
 
 ## Related Topics
----
 - [[Constraints]]
 - [[NOT NULL]]
 - [[UNIQUE]]
@@ -36,7 +39,8 @@ CREATE TABLE employees (
 - [[FOREIGN KEY]]
 - [[NOT NULL]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

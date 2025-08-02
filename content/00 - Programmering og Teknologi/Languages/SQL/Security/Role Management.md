@@ -1,11 +1,12 @@
 tags: #Programmering #SQL #SQLSecurity
 
-## Definition 
+> [!tldr] Definition
+> Role Management involves creating and managing roles, which are collections of privileges. 
+> Roles make it easier to manage permissions for groups of users.
+
 ---
-Role Management involves creating and managing roles, which are collections of privileges. 
-Roles make it easier to manage permissions for groups of users.
+
 ## Example
----
 ```sql
 -- Creating a new role
 CREATE ROLE 'role_name';
@@ -23,13 +24,14 @@ REVOKE 'role_name' FROM 'username'@'hostname';
 DROP ROLE 'role_name';
 ```
 
+---
 
 ## Related Topics
----
 - [[GRANT]]
 - [[REVOKE]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

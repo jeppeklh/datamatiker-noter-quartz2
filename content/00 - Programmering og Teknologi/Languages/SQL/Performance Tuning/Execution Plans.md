@@ -1,10 +1,11 @@
 tags: #Programmering #SQL #PerformanceTuning
 
-## Definition 
+> [!tldr] Definition
+> **Execution Plans** are visual or textual representations of how a database engine executes a query. They help in understanding the performance characteristics of a query and identifying bottlenecks.
+
 ---
-**Execution Plans** are visual or textual representations of how a database engine executes a query. They help in understanding the performance characteristics of a query and identifying bottlenecks.
+
 ## Viewing Execution Plans
----
 In SQL Server, you can view the execution plan by running:
 ```sql
 SET SHOWPLAN_TEXT ON;
@@ -20,13 +21,14 @@ In MySQL, you can use the `EXPLAIN` statement:
 EXPLAIN SELECT * FROM employees;
 ```
 
+---
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

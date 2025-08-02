@@ -18,8 +18,9 @@
 </html>
 ```
 
-## Forklaring af de vigtigste tags
 ---
+
+## Forklaring af de vigtigste tags
 `<!DOCTYPE html>`
 - Angiver, at dokumentet er HTML5.
 
@@ -38,8 +39,9 @@
 `<body>`
 - Indeholder alt synligt indhold på siden.
 
-##  Ekstra tips
 ---
+
+##  Ekstra tips
 - HTML er **ikke casesensitive**, men tags skrives normalt med små bogstaver.
 - **Indrykning** gør koden lettere at læse.
 - **Kommentarer** kan skrives med `<!-- Kommentar her -->`.

@@ -1,11 +1,12 @@
 tags: #Programmering #SQL #SQLSecurity
 
-## Definition 
+> [!tldr] Definition
+> User Management in SQL involves creating, managing, and deleting user accounts that can access the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]].
+> It includes assigning permissions to users to control what actions they can perform on the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]].
+
 ---
-User Management in SQL involves creating, managing, and deleting user accounts that can access the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]].
-It includes assigning permissions to users to control what actions they can perform on the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]].
+
 ## Example
----
 ```sql
 -- Creating a new user
 CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';
@@ -23,12 +24,14 @@ REVOKE INSERT ON database_name.* FROM 'username'@'hostname';
 DROP USER 'username'@'hostname';
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[GRANT]]
 - [[REVOKE]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

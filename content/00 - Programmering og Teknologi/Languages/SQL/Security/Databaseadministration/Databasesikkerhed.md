@@ -1,12 +1,13 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-Sikkerhed er en afgørende del af enhver databaseadministration, da den beskytter data mod uautoriseret adgang, manipulation og tab. 
+> [!tldr] Definition
+> Sikkerhed er en afgørende del af enhver databaseadministration, da den beskytter data mod uautoriseret adgang, manipulation og tab. 
 
 SQL Server tilbyder en række indbyggede mekanismer til at sikre både adgangsstyring og datakryptering, så følsomme data kan beskyttes både i transit og ved lagring.
-## Brugergodkendelse og Autorisation
+
 ---
+
+## Brugergodkendelse og Autorisation
 #### 1. Windows-godkendelse
 
 - Integreres med Windows Active Directory, hvilket gør det muligt at bruge eksisterende Windows-login for brugergodkendelse.
@@ -19,8 +20,10 @@ SQL Server tilbyder en række indbyggede mekanismer til at sikre både adgangsst
 - SQL Server Authentication kræver et separat login og adgangskode, som kun bruges i SQL Server.
     
 - Det er nyttigt i miljøer uden Active Directory-integration eller ved adgang fra eksterne applikationer.
-### Eksempel på oprettelse af SQL Server login og tildeling af rolle
+
 ---
+
+### Eksempel på oprettelse af SQL Server login og tildeling af rolle
 ```SQL
 -- Opret SQL Server-login
 CREATE LOGIN BrugerLogin WITH PASSWORD = 'SikkerAdgang123';
@@ -31,10 +34,9 @@ CREATE USER BrugerLogin FOR LOGIN BrugerLogin;
 EXEC sp_addrolemember 'db_datareader', 'BrugerLogin';
 ```
 
-
+---
 
 ## Datakryptering (TDE, Always Encrypted)
----
 Datakryptering beskytter data mod uautoriseret adgang ved at gøre dem ulæselige for uautoriserede brugere. SQL Server tilbyder flere metoder til at sikre kryptering af data.
 
 #### 1. Transparent Data Encryption (TDE)
@@ -82,12 +84,15 @@ CREATE TABLE FølsomData
     ENCRYPTED WITH (COLUMN_ENCRYPTION_KEY = MyCEK, ENCRYPTION_TYPE = Randomized)
 );
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Uge44 - Databaseadministration og sikkerhed|Databaseadministation og sikkerhed Opgaver]]
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

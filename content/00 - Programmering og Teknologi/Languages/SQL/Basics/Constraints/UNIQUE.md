@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #SQLBasics #Constraint
 
-## Definition 
+> [!tldr] Definition
+> The `UNIQUE` constraint ensures that all values in a column are unique. 
+> No two rows can have the same value in the specified column(s).
+> A [[Table]] can have multiple `UNIQUE` constraints.
+
 ---
-The `UNIQUE` constraint ensures that all values in a column are unique. 
-No two rows can have the same value in the specified column(s).
-A [[Table]] can have multiple `UNIQUE` constraints.
+
 ## Syntax
----
 ```sql
 CREATE TABLE table_name (
     column1 datatype UNIQUE,
@@ -14,8 +15,10 @@ CREATE TABLE table_name (
     ...
 );
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 CREATE TABLE employees (
     employee_id INT UNIQUE,
@@ -25,9 +28,9 @@ CREATE TABLE employees (
 );
 ```
 
+---
 
 ## Related Topics
----
 - [[Constraints]]
 - [[NOT NULL]]
 - [[PRIMARY KEY]]
@@ -35,7 +38,8 @@ CREATE TABLE employees (
 - [[CHECK]]
 - [[DEFAULT]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

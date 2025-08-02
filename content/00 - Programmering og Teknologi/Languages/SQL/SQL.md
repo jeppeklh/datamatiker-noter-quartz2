@@ -1,6 +1,5 @@
 tags: #Programmering #SQL 
 ## Basics
----
 - [[SQL Overview]]
 	- [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|Databases]]
 		- [[Data]]
@@ -16,14 +15,16 @@ tags: #Programmering #SQL
 	- [[Connection String]]
 	- [[SQL Standards]]
 
-## Database - Fra start til slut
 ---
+
+## Database - Fra start til slut
 [[Database Design|Fase A - Database Design]]
 [[Database Implementering|Fase B - Database Implementering]]
 [[Databasetilgang via Csharp og .NET|Fase C - Databasetilgang via Csharp og .NET]]
 
-## Database Design
 ---
+
+## Database Design
 - [[Database Design]]
 	- [[Relationsskema]]
 		- [[Databaseskema]]
@@ -32,8 +33,10 @@ tags: #Programmering #SQL
 		- [[Anormali]]
 		- [[Funktionel afhængigheder]]
 		- [[Normalformer]]
-## Data Definition Language (DDL)
+
 ---
+
+## Data Definition Language (DDL)
 
 - [[DDL Overview]]
 	- [[CREATE TABLE|Creating Tables]]
@@ -43,8 +46,9 @@ tags: #Programmering #SQL
 	- [[TRUNCATE| Truncate Tables]]
 	- [[Sikring af Dataintegritet ved Dataændringer]]
 
-## Data Manipulation Language (DML)
 ---
+
+## Data Manipulation Language (DML)
 - [[DML Overview]]
 	- [[INSERT|Inserting Data]]
 	- [[UPDATE|Updating Data]]
@@ -52,8 +56,9 @@ tags: #Programmering #SQL
 	- [[SELECT|Selecting Data]]
 		- - [[SELECT DISTINCT Statement]]
 
-## Data Querying (DQL)
 ---
+
+## Data Querying (DQL)
 - [[Data Querying Overview]]
 	- [[Basic Queries]]
 		- [[WHERE Clause|WHERE]] 
@@ -88,14 +93,16 @@ tags: #Programmering #SQL
 			- [[CASE Expression]] 
     - [[ER-Diagram]]
 
-## Data Control Language (DCL)
 ---
+
+## Data Control Language (DCL)
 - [[DCL Overview]]
 	- [[GRANT|Granting Privileges]]
 	- [[REVOKE|Revoking Privileges]]
 
-## Transaction Control Language (TCL)
 ---
+
+## Transaction Control Language (TCL)
 - [[TCL Overview]]
 	- [[TRANSACTION|Transactions]]
 	- [[COMMIT]]
@@ -103,8 +110,9 @@ tags: #Programmering #SQL
 	- [[SAVEPOINT]]
 	- [[ACID]]
 
-## Advanced Topics
 ---
+
+## Advanced Topics
 - [[Views]]
 - [[Stored Procedures]]
 - [[Triggers]]
@@ -113,14 +121,16 @@ tags: #Programmering #SQL
 - [[CTE (Common Table Expressions)]]
 - [[Window Functions]]
 
-## Performance Tuning
 ---
+
+## Performance Tuning
 - [[Indexes]]
 - [[Query Optimization]]
 - [[Execution Plans]]
 
-## Security
 ---
+
+## Security
 
 - [[Databaseadminstration]]
 	- [[Brugeradministration og Roller]]
@@ -132,21 +142,24 @@ tags: #Programmering #SQL
 - [[Data Encryption]]
 - [[SQL Injection]]
 
-## Tools and Utilities
 ---
+
+## Tools and Utilities
 - [[SQL Server Management Studio (SSMS)]]
 - [[MySQL Workbench]]
 - [[pgAdmin]]
 - [[Database Migration Tools]]
 
-## Best Practices
 ---
+
+## Best Practices
 - [[SQL Coding Standards]]
 - [[SQL Error Handling]]
 - [[Backup and Recovery]]
 
-## Resources
 ---
+
+## Resources
 [Database læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_6/scormcontent/index.html#/lessons/R-uiHxV6wOoSodZUwqhx474w15v28DWY)
 
 ![[SQL Commads overview.png]]

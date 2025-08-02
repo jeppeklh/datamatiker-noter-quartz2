@@ -1,14 +1,15 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-`CASE`-expressionen går gennem conditions og returnerer en værdi når den første condition er opfyldt. (Lige som en [[If-variants#if-else|if-else]]).
+> [!tldr] Definition
+> `CASE`-expressionen går gennem conditions og returnerer en værdi når den første condition er opfyldt. (Lige som en [[If-variants#if-else|if-else]]).
 
 Så når en condition er `TRUE`, stopper den med at læse og returnerer resulatet. 
 Hvis ingen condition er sand, returnerer den værdien i `ELSE`-klausulen.
 Hvis der ingen `ELSE`-klausul er, og ingen condition er `TRUE`, bliver der returneret `NULL`.
-## Syntax
+
 ---
+
+## Syntax
 ```SQL
 CASE  
     WHEN condition1 THEN _result1 
@@ -17,8 +18,10 @@ CASE
     ELSE result 
 END;
 ```
-### Example
+
 ---
+
+### Example
 Sortér  customers efter `City`. Hvis `City` er `NULL`, så sortér efter `Country`:
 ```SQL
 SELECT CustomerName, City, Country  
@@ -30,13 +33,14 @@ ORDER BY
 END);
 ```
 
+---
 
 ## Related Topics
----
 - [[SELECT]]
 - [[ORDER BY Clause|ORDER BY]]
 
-## Resources
 ---
+
+## Resources
 - [SQL Case](https://www.w3schools.com/sql/sql_case.asp)
 - 

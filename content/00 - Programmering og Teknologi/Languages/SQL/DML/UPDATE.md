@@ -1,17 +1,20 @@
 tags: #Programmering #SQL #SQLBasics #Statement
 
-## Definition 
+> [!tldr] Definition
+> ``UPDATE``-sætningen giver dig mulighed for at ændre værdierne i bestemte kolonner i en tabel baseret på en betingelse.
+
 ---
-``UPDATE``-sætningen giver dig mulighed for at ændre værdierne i bestemte kolonner i en tabel baseret på en betingelse.
+
 ## Syntax
----
 ```sql
 UPDATE table_name
 SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 UPDATE PARTICIPANT
 SET FirstName = 'Johan'
@@ -19,8 +22,9 @@ WHERE Email = 'jens@example.com';
 ```
 Denne sætning opdaterer FirstName til "Johan" for den deltager, hvis e-mail er`` jens@example.com``.
 
-## Opdatering af flere rækker
 ---
+
+## Opdatering af flere rækker
 Hvis du vil ændre SemesterId for alle deltagere til 2:
 ```SQL
 UPDATE PARTICIPANT
@@ -35,16 +39,19 @@ SET SemesterId = 2
 WHERE SemesterId = 1;
 ```
 
-## Opdatering af flere kolonner i en enkelt række
 ---
+
+## Opdatering af flere kolonner i en enkelt række
 Hvis du skal opdatere både fornavn og efternavn for en deltager:
 ```SQL
 UPDATE PARTICIPANT
 SET FirstName = 'Peter', LastName = 'Jensen'
 WHERE Email = 'jens@example.com';
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[SQL Syntax|SQL Syntax]]
 - [[SELECT]]
 - [[INSERT]]
@@ -53,7 +60,8 @@ WHERE Email = 'jens@example.com';
 - [[ALTER TABLE]]
 - [[DROP TABLE]]
 
-## Resources
 ---
+
+## Resources
 - [DDL Læringsobjekt (UPDATE)](https://scorm.itslearning.com/data/3289/C20150/ims_import_14/scormcontent/index.html#/lessons/k027wp9IyBDD0tJCNtpU6qedY5XVhJNK)
 - 

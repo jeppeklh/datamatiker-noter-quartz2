@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #SQLBasics #Statement
 
-## Definition 
----
-The `INSERT` statement is used to add new rows of data to a [[Table]]. 
+> [!tldr] Definition
+> The `INSERT` statement is used to add new rows of data to a [[Table]]. 
 
 It allows you to specify the columns for which you want to insert values and the values to be inserted.
-## Syntax
+
 ---
+
+## Syntax
 ```SQL
 INSERT INTO tabel_navn (kolonne1, kolonne2, kolonne3, ...)
 VALUES (værdi1, værdi2, værdi3, ...);
@@ -14,15 +15,18 @@ VALUES (værdi1, værdi2, værdi3, ...);
 
 Hvis du giver værdier til kun en del af kolonnerne i en INSERT INTO-sætning, skal du eksplicit angive de kolonner, du ønsker at indsætte værdier i. 
 De øvrige kolonner, som du ikke giver værdier til, skal enten have en standardværdi defineret eller tillade NULL værdier.
-### Example
+
 ---
+
+### Example
 ```SQL
 INSERT INTO Participant (Email, FirstName, LastName, ImagePath, SemesterId)
 VALUES ('john.doe@example.com', 'John', 'Doe', '/images/johndoe.png', 2);
 ```
 
-## Eksempel: Standardværdier
 ---
+
+## Eksempel: Standardværdier
 
 Vi bruger eksemplet fra [[Database Design]].
 ![[Databasemodel eksempel 4.png]]
@@ -44,8 +48,9 @@ I dette eksempel vil værdi for og SemesterId være lige med 1 og ImagePath væ
 
 Hvis den ikke tillader NULL værdi, vil indsættelsen fejle.
 
-## IDENTITY-begrænsning
 ---
+
+## IDENTITY-begrænsning
 Når en kolonne i en tabel har en IDENTITY-begrænsning, betyder det, at denne kolonne automatisk genererer en unik værdi for hver ny række, der indsættes i [[Table|tabellen]]. 
 Typisk bruges en IDENTITY-kolonne til at generere [[PRIMARY KEY|primærnøgler]].
 
@@ -64,26 +69,30 @@ INSERT INTO Semester (Number)
 VALUES (3);
 ```
 
+---
+
 ## Indsættelse af værdier for alle kolonner uden at specificere dem
----
 På denne måde udelader du kolonnenavnene og angiver blot værdierne i samme rækkefølge som kolonnerne er defineret i tabellen. Denne metode er enkel, når du vil indsætte data i alle kolonner.
-### Syntax
+
 ---
+
+### Syntax
 ```SQL
 INSERT INTO tabel_navn
 VALUES (værdi1, værdi2, værdi3, ...);
 ```
 
-### Eksempel
 ---
+
+### Eksempel
 ```SQL
 INSERT INTO Participant
 VALUES ('jane.doe@example.com', 'Jane', 'Doe', '/images/janedoe.png', 3);
 ```
 
+---
 
 ## Indsættelse af flere rækker
----
 For at tilføje flere rækker i en enkelt INSERT INTO-sætning kan du angive flere værdigrupper, adskilt af kommaer.
 ### Syntax
 ---
@@ -94,8 +103,10 @@ VALUES
     (value1, value2, value3, ...),
     (value1, value2, value3, ...);
 ```
-### Eksempel
+
 ---
+
+### Eksempel
 ```SQL
 INSERT INTO PARTICIPANT (Email, FirstName, LastName, ImagePath, SemesterId)
 VALUES 
@@ -103,8 +114,10 @@ VALUES
     ('pia@example.com', 'Pia', 'Larsen', 'path/to/image2.jpg', 1),
     ('patrick@example.com', 'Patrick', 'Andersen', 'path/to/image3.jpg', 1);
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[SQL Syntax|SQL Syntax]]
 - [[SELECT]]
 - [[UPDATE]]
@@ -113,7 +126,8 @@ VALUES
 - [[ALTER TABLE]]
 - [[DROP TABLE]]
 
-## Resources
 ---
+
+## Resources
 - [DML Læringsobjekt (INSERT INTO)](https://scorm.itslearning.com/data/3289/C20150/ims_import_14/scormcontent/index.html#/lessons/GZ4kNe6JGOR8GYkRrkf0C3SUldV5N4c9)
 - 

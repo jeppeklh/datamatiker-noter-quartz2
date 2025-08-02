@@ -1,17 +1,17 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-En databaseadminstrator (DBA) sikrer at en organisations databaser fungerer optimalt.
-Ansvarlig for installation, konfiguration, opdatering, vedligeholdelse og overvågning af databasesystemet.
+> [!tldr] Definition
+> En databaseadminstrator (DBA) sikrer at en organisations databaser fungerer optimalt.
+> Ansvarlig for installation, konfiguration, opdatering, vedligeholdelse og overvågning af databasesystemet.
 
 Arbejder tæt sammen med udviklere og systemadminstratorer.
 Beskytter data mod tab, uautoriseret adgang og data korruption gennem backup, gendannelse og sikkerhedsforanstaltninger.
 
 Har også en vigtig rolle i cloud-administation såsom Microsoft Azure.
 
-## SQL Server Arkitektur
 ---
+
+## SQL Server Arkitektur
 SQL Server arkitekturen er bygget op af flere lag. 
 De vigtigste elementer i arkitekturen er:
 
@@ -29,8 +29,9 @@ Dette subsystem optimerer ydelsen ved at cache data i hukommelsen, så forespør
 
 ![[SQL Server Arkitektur.png]]
 
-### SQL Server-komponenter
 ---
+
+### SQL Server-komponenter
 SQL Server består af flere nøglekomponenter, som tilsammen understøtter databasens drift og funktioner
 
 ##### Database Engine
@@ -48,16 +49,16 @@ Til rapportgenerering og distribution, hvilket gør det muligt at oprette og del
 ##### SQL Server Analysis Services (SSAS)
 Bruges til datamining og analyse af store mængder data, ofte i OLAP-kuber til hurtige forespørgsler.
 
-
-
+---
 
 ## Related Topics
----
 - [[Brugeradministration og Roller]]
 - [[Backup og Gendannelse af Data]]
 - [[Høj Tilgængelighed og Disaster Recovery]]
 - [[Uge44 - Databaseadministration og sikkerhed|Databaseadministation og sikkerhed Opgaver]]
-## Resources
+
 ---
+
+## Resources
 - Link
 - 

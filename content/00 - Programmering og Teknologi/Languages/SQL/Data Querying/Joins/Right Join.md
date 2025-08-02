@@ -1,20 +1,23 @@
 tags: #Programmering #SQL #DataQuerying #Joins 
 
-## Definition 
----
-``RIGHT JOIN`` returnerer alle rækker fra den tabel fra højresiden, og de matchene rækker fra den venstre tabel.
+> [!tldr] Definition
+> ``RIGHT JOIN`` returnerer alle rækker fra den tabel fra højresiden, og de matchene rækker fra den venstre tabel.
 
 Hvis der ikke er noget match, bliver resultatet ``NULL`` på venstresiden.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 SELECT columns
 FROM table1
 RIGHT JOIN table2
 ON table1.common_column = table2.common_column;
 ```
-### Example
+
 ---
+
+### Example
 Retrieve all departments and their corresponding employees, including those without employees:
 ```sql
 SELECT employees.first_name, employees.last_name, departments.department_name
@@ -23,8 +26,9 @@ RIGHT JOIN departments
 ON employees.department_id = departments.department_id;
 ```
 
-### Example 2 - with output
 ---
+
+### Example 2 - with output
 - **Customers**:
 
 |CustomerID|Name|
@@ -60,12 +64,14 @@ ON Customers.CustomerID = Orders.CustomerID;
 Ordren fra ``CustomerID = 4`` bliver altså returneret, selvom der ingen matchene ``Customer`` er. 
 Dette bliver skrevet som ``NULL`` i ``Name`` kolonnen
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Data Querying Overview]]
 - [[Joins]]
 
-## Resources
 ---
+
+## Resources
 - [JOINS Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_17/scormcontent/index.html#/lessons/Xh1h5Fdn8KpTJAPPs09i5HcJfDfpkvGT)
 - [SQL Right Join](https://www.w3schools.com/sql/sql_join_right.asp)

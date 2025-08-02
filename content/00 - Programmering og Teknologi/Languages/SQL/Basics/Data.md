@@ -1,22 +1,24 @@
 
 tags: #C-sharp #Programmering #Database #SQL
 
-## Definition 
+> [!tldr] Definition
+> Rå og uorganiseret fakta, der skal behandles for at gøre det meningsfuldt. 
+> Data kan være tal, tegn, billeder eller andre output fra enheder, der registrerer begivenheder eller transaktioner. 
+> Det kan betragtes som fakta og statistikker samlet til reference eller analyse.
+
 ---
-Rå og uorganiseret fakta, der skal behandles for at gøre det meningsfuldt. 
-Data kan være tal, tegn, billeder eller andre output fra enheder, der registrerer begivenheder eller transaktioner. 
-Det kan betragtes som fakta og statistikker samlet til reference eller analyse.
+
 ## Kvantitativ Data
----
 Kvantitative data refererer til numerisk information som vægt, højde osv.
 
-## Kvalitativ Data
 ---
+
+## Kvalitativ Data
 Kvalitative data refererer til ikke-numerisk information som meninger, opfattelser osv.
 
+---
 
 ## Data vs Information
----
 
 |                        |                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                             |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,11 +33,13 @@ Kvalitative data refererer til ikke-numerisk information som meninger, opfattels
 | **Betydning**          | Data er en samling af fakta, som i sig selv ikke har nogen betydning.                                                                                                                                                                                                                                                                     | Information sætter disse fakta i sammenhæng.                                                                                                                                                                                                                                                |
 | **Eksempler**          | **Karakterer**: En liste over numeriske karakterer opnået af studerende på en test, såsom 7, 12, 02. <br><br><br>**Temperaturaflæsninger**: Tal, der repræsenterer temperaturen i løbet af dagen, såsom "72°F", "68°F", "75°F".<br><br>**Aktiekurser**: Daglige lukkekurser for en virksomheds aktie, såsom "$50,25", "$48,90", "$52,10". | **Karaktergennemsnit**: Baseret på elevernes karakterer kan gennemsnitskarakteren for klassen udledes.<br><br>**Vejrrapport**: Baseret på temperaturaflæsningen kan en vejrrapport genereres.<br><br>**Markedsanalyse**: Aktiemarkedet viste en lille stigning i dag afledt af aktiekurser. |
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Repo/06 - Litteratur/Programmering/Database|Database]]
 - [[Information]]
 
-## Recourses
 ---
+
+## Recourses
 [Data og Information Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_6/scormcontent/index.html#/lessons/VRtAd1WrPjf5HhAbA_fzW0KWjbCPTF5X)

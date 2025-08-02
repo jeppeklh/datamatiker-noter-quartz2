@@ -1,11 +1,12 @@
 tags: #Programmering #SQL #SQLSecurity 
 
-## Definition 
+> [!tldr] Definition
+> Data Encryption in SQL ensures that the data stored in the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] is secure and protected from unauthorized access. 
+> It involves encrypting data at rest (stored data) and in transit (data being transferred).
+
 ---
-Data Encryption in SQL ensures that the data stored in the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] is secure and protected from unauthorized access. 
-It involves encrypting data at rest (stored data) and in transit (data being transferred).
+
 ## Example
----
 ```sql
 -- Encrypting a column in MySQL using AES_ENCRYPT
 INSERT INTO table_name (column1, encrypted_column)
@@ -29,12 +30,14 @@ sudo service mysql restart
 mysql -u username -p --ssl-ca=/path/to/ca-cert.pem --ssl-cert=/path/to/client-cert.pem --ssl-key=/path/to/client-key.pem
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

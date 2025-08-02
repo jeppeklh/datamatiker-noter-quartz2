@@ -1,13 +1,14 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-Structured Query Language (SQL) is a standard programming language specifically designed for managing and manipulating relational [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databases]]. 
+> [!tldr] Definition
+> Structured Query Language (SQL) is a standard programming language specifically designed for managing and manipulating relational [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databases]]. 
 
 SQL allows you to create, retrieve, update, and delete data in a database. 
 It also provides the ability to define and manage the structure of the data and control access to it.
-## Subtopics:
+
 ---
+
+## Subtopics:
 - [[SQL Syntax]]
 - [[SQL Data Types]]
 - [[Constraints]]
@@ -22,7 +23,8 @@ It also provides the ability to define and manage the structure of the data and 
 - [[Tools and Utilities Overview]]
 - [[Best Practices Overview]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

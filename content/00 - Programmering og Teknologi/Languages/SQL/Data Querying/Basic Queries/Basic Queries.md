@@ -1,19 +1,22 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-**Basic Queries** in SQL involve using the [[SELECT]] statement to retrieve data from one or more [[Table|tables]]. 
+> [!tldr] Definition
+> **Basic Queries** in SQL involve using the [[SELECT]] statement to retrieve data from one or more [[Table|tables]]. 
 
 The [[SELECT]] statement is fundamental to SQL and allows you to specify the columns you want to retrieve, filter rows using the `WHERE` clause, sort results using `ORDER BY`, and more.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
 ```
-### Example
+
 ---
+
+### Example
 Retrieve all columns from the "employees" [[Table|table]]:
 ```sql
 SELECT * FROM employees;
@@ -26,12 +29,14 @@ FROM employees
 WHERE department = 'Sales';
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Data Querying Overview]]
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

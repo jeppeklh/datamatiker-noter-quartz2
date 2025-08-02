@@ -2,15 +2,19 @@ tags: #Programmering #SQL
 
 Se først
 [[Forudsætninger for at arbejde med Fase C]]
-## Definition 
+
 ---
+
+## Overview 
 Ved at bruge  [[Repository Pattern]] kan man behandle [[Data|data]] fra [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databasen]] som en samling af objekter i stedet for at interagere direkte med SQL-forespørgsler. 
 Det gør applikationen lettere at vedligeholde, teste og udvide, fordi databaseforespørgsler centraliseres ét sted.
 
 Vi bruger forsætter på samme eksempel fra [[Database Design|fase A]] og [[Database Implementering|fase B]].
 ![[Databasemodel eksempel 4.png]]
-## Trin 1: Opret et generisk interface
+
 ---
+
+## Trin 1: Opret et generisk interface
 Først definerer du et [[IRepo|generisk repository]] [[Abstraktion#Interface|interface]], der kan bruges som en kontrakt for [[CRUD Operations|CRUD]]-operationer.
 
 ```csharp
@@ -23,8 +27,10 @@ public interface IRepository<T> where T : class
     void Delete(int id);
 }
 ```
-## Trin 2: Opret et specifikt repository for en entitet
+
 ---
+
+## Trin 2: Opret et specifikt repository for en entitet
 Derefter implementerer vi et konkret repository for entiteten Semester, som overholder `IRepository<Semester>` kontrakten.
 
 ```csharp
@@ -132,9 +138,9 @@ public class SemesterRepository : IRepository<Semester>
 }
 ```
 
+---
 
 ## Trin 3: Brug repository i din applikation
----
 For at bruge SemesterRepository i din applikation kan du gøre det således: (dette eksempel er skrevet i en konsolapplikation):
 
 ```csharp
@@ -163,20 +169,22 @@ For at bruge SemesterRepository i din applikation kan du gøre det således: (de
         semesterRepository.Delete(1);
 ```
 
+---
 
 ## Trin 4: Gentag trin 2 og trin 3 for af de andre entiteter i din applikation
----
 Når du arbejder med en ny entitet, f.eks. en Student-entitet, vil du oprette et nyt repository, StudentRepository, og bruge dette repository i din applikation for at håndtere Student-relaterede data.  
 
 Ved at følge dette trin sikrer du, at hver entitet i din applikation har sit eget repository, som gør det nemt at håndtere data på en struktureret måde og opretholde en klar separation af ansvar.
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - [Databasetilgang via Csharp og .NET Læringobjekt](https://rise.articulate.com/share/65tiUowEA12ttXX3SsFPiF1jJxG8gdCJ#/lessons/BLQVQXe_qoLGYI0e0ecTR_ryD_SnX-s0)
 - [Ado.NET tutorial](https://www.javatpoint.com/ado-net-tutorial)
 - [Auto increment fields](https://www.w3schools.com/sql/sql_autoincrement.asp)

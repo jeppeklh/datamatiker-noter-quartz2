@@ -4,9 +4,7 @@
 ---
 
 ## Tags og deres funktioner
----
 ### **Uordnede lister**
----
 - **`<ul>`**
     - **Funktion:** Opretter en liste med punkter (typisk prikker eller andre ikoner).
     - **Attributter:** `class`, `id`, `aria-label` (tilgængelighed).
@@ -16,9 +14,9 @@
     - **Funktion:** Marker et enkelt listepunkt i både `<ul>` og `<ol>`.
     - **Attributter:** `value` (kun i `<ol>` for at tilsidesætte nummerering).
 
+---
 
 ### **Ordnede lister**
----
 - **`<ol>`**
     - **Funktion:** Opretter en nummereret liste (tal, bogstaver, romertal).
     - **Attributter:**
@@ -26,9 +24,9 @@
         - `start`: Starter nummereringen fra en specifik værdi (f.eks. `start="3"`).
         - `reversed`: Nummerer baglæns (f.eks. `reversed`).
 
+---
 
 ### **Definitionslister**
----
 - **`<dl>`**
     - **Funktion:** Opretter en liste af termer og deres beskrivelser (f.eks. ordbogsartikler).
 
@@ -39,9 +37,9 @@
     - **Funktion:** Beskriver termen fra `<dt>`.
 
 
+---
 
 ## Eksempler
----
 ### Uordnet liste:
 ```HTML
 <ul>  
@@ -78,9 +76,9 @@
 </ul>  
 ```
 
+---
 
 ## Vigtige regler
----
 1. **Semantisk brug:**
     - Brug `<ul>` til menuer eller punkter uden rækkefølge.
     - Brug `<ol>` til trin-for-trin-guides eller ranglister.

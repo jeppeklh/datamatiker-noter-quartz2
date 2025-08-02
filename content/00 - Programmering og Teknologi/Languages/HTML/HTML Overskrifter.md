@@ -5,7 +5,6 @@
 ---
 
 ## Tags og deres funktioner
----
 **`<h1>` til `<h6>`**
 - **Funktion:** Definerer overskriftens niveau (h1 = højeste prioritet, h6 = laveste).
 - **Attributter:** `id`, `class`, `style`, `lang`, `aria-*` (til accessibility).
@@ -16,16 +15,18 @@
 - `<h2>`: Underafsnit.
 - `<h3>`: Underpunkt til h2-sektioner.
 
-## Eksempel
 ---
+
+## Eksempel
 ```HTML
 <h1>Velkommen til min blog</h1>
 <h2>Seneste indlæg</h2>
 <h3>Mit første rejseoplevelse</h3>
 ```
 
-## Vigtige regler
 ---
+
+## Vigtige regler
 1. Brug kun én `<h1>` per side.
 2. Spring ikke niveauer over (f.eks. `<h2>` → `<h4>`).
 3. Brug [[CSS]] til styling i stedet for at vælge overskrifter baseret på udseende.

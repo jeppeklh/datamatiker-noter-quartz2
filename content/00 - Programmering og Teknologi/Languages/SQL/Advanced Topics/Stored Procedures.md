@@ -1,10 +1,11 @@
 tags: #Programmering #SQL #AdvancedTopicsSQL 
 
-## Definition 
+> [!tldr] Definition
+> **Stored Procedures** er genanvendelige SQL-kodeblokke, der inkapsler forretningslogik, forbedrer ydeevne og øger sikkerheden.
+
 ---
-**Stored Procedures** er genanvendelige SQL-kodeblokke, der inkapsler forretningslogik, forbedrer ydeevne og øger sikkerheden.
+
 ## Syntax
----
 ```sql
 CREATE PROCEDURE procedure_name
 AS
@@ -12,8 +13,10 @@ BEGIN
     SQL statements;
 END;
 ```
-### Example
+
 ---
+
+### Example
 Create a stored procedure to update employee salaries:
 ```sql
 CREATE PROCEDURE UpdateSalary
@@ -25,9 +28,9 @@ BEGIN
 END;
 ```
 
+---
 
 ## Execution
----
 ```SQL
 CREATE PROCEDURE uspCreateCustomer
     @FirstName NVARCHAR(50),
@@ -55,13 +58,15 @@ EXEC uspCreateCustomer
     @Points = 100;
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Uge43 - Views & Stored Procedures|Views & Stored Procedures Opgaver]]
 - [[Views]]
 
-## Resources
 ---
+
+## Resources
 - [Stored Procedures in SQL Server](https://dotnettutorials.net/lesson/sql-server-stored-procedure/)
 - [Naming Conventions for Stored Procedures](https://www.mssqltips.com/sqlservertutorial/169/naming-conventions-for-sql-server-stored-procedures/)
 - [Stored Procedure Video 1](https://www.youtube.com/watch?v=phy-UqRTsis&ab_channel=DatabaseStar)

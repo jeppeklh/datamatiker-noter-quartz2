@@ -4,22 +4,22 @@ aliases:
 ---
 tags: #Programmering #SQL
 
-## Definition 
+> [!tldr] Definition
+> For at en tabel skal være i den trejde normale form, skal den følge følgende 2 regler:
+>
+> 1. Tabellen skal være i [[Den anden normalform (2NF)|2NF]]. 
+>    
+> 2. Denne bør ikke have transitiv afhængighed. (ingen ikke-nøgleattribut er transitiv afhængig af primærnøglen
+
 ---
-For at en tabel skal være i den trejde normale form, skal den følge følgende 2 regler:
-
-1. Tabellen skal være i [[Den anden normalform (2NF)|2NF]]. 
-    
-2. Denne bør ikke have transitiv afhængighed. (ingen ikke-nøgleattribut er transitiv afhængig af primærnøglen
-
 
 ## Example
----
 Vi bygger videre på [[Den anden normalform (2NF)#Example|eksemplet]] i [[Den anden normalform (2NF)|2NF]].
 ![[Den tredje normalform eksempel 1.png]]
 
-### Fjernelse af transitive afhængigheder
 ---
+
+### Fjernelse af transitive afhængigheder
 I Student tabel Student_ID er nu [[PRIMARY KEY|primærnøglen]].
 
 [[Funktionel afhængigheder|Funktionelle afhængigheder]] i [[Table|tabellen]] er:  
@@ -37,12 +37,14 @@ Alle ikke-nøgleattributter, der kan bestemmes af Student_ID er sat sammen i Stu
 
 Det samme er gjort ved College. Der blev også skabt en [[Relationsskema#1 M|en-til-mange (1:M)]] relation mellem Student og College tabeller.
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

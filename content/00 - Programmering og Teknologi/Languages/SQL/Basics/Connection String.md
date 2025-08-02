@@ -1,12 +1,13 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-En [[string|streng]], der indeholder de nødvendige oplysninger for at kunne oprette forbindelse til en [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] (serveradresse, databasenavn, brugernavn og kodeord).
+> [!tldr] Definition
+> En [[string|streng]], der indeholder de nødvendige oplysninger for at kunne oprette forbindelse til en [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] (serveradresse, databasenavn, brugernavn og kodeord).
 
 Det tilsvarende til filepath til csv-fil. Dette er bare til databasen.
-## Syntax
+
 ---
+
+## Syntax
 ##### Windows Authentication
 Denne metode bruger de aktuelle Windows-brugeroplysninger til at få adgang til databasen.
 ```json
@@ -23,19 +24,14 @@ Denne metode kræver et SQL Server-brugernavn og adgangskode for at få adgang t
   }
 ```
 
-### Example
 ---
-
-
-
-
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

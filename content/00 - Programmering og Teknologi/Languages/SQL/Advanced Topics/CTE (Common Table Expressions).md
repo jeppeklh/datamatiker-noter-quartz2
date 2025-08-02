@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #AdvancedTopicsSQL 
 
-## Definition 
----
-**Common Table Expressions (CTEs)** provide a way to create a temporary result set that can be referenced within a [[SELECT]], [[INSERT]], [[UPDATE]], or [[DELETE]] statement. 
+> [!tldr] Definition
+> **Common Table Expressions (CTEs)** provide a way to create a temporary result set that can be referenced within a [[SELECT]], [[INSERT]], [[UPDATE]], or [[DELETE]] statement. 
 
 They improve readability and manageability of complex queries.
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 WITH cte_name AS
 (
@@ -17,8 +18,10 @@ WITH cte_name AS
 SELECT column1, column2, ...
 FROM cte_name;
 ```
-### Example
+
 ---
+
+### Example
 Using a CTE to find employees with salaries above average:
 ```sql
 WITH AverageSalary AS
@@ -31,12 +34,14 @@ FROM employees, AverageSalary
 WHERE employees.salary > AverageSalary.avg_salary;
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

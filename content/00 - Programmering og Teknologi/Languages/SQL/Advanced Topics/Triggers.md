@@ -1,11 +1,12 @@
 tags: #Programmering #SQL #AdvancedTopicsSQL 
 
-## Definition 
+> [!tldr] Definition
+> **Triggers** are special types of [[Stored Procedures|stored procedures]] that automatically execute in response to certain events on a particular [[Table|table]] or [[Views|view]]. 
+> They are used for maintaining data integrity, enforcing business rules, and auditing changes.
+
 ---
-**Triggers** are special types of [[Stored Procedures|stored procedures]] that automatically execute in response to certain events on a particular [[Table|table]] or [[Views|view]]. 
-They are used for maintaining data integrity, enforcing business rules, and auditing changes.
+
 ## Syntax
----
 ```sql
 CREATE TRIGGER trigger_name
 AFTER INSERT | AFTER UPDATE | AFTER DELETE
@@ -15,8 +16,10 @@ BEGIN
     SQL statements;
 END;
 ```
-### Example
+
 ---
+
+### Example
 Create a trigger to log changes to the employee [[Table|table]]:
 ```sql
 CREATE TRIGGER LogEmployeeChanges
@@ -28,13 +31,14 @@ BEGIN
 END;
 ```
 
+---
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - [SQL Triggers Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_24/scormcontent/index.html#/lessons/noo5pSf2wL0y6Phcuz4-w4iH2ZwuVMRN)
 - 

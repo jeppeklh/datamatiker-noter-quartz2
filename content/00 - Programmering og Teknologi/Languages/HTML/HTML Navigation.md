@@ -4,7 +4,6 @@
 ---
 
 ## Tags og deres funktioner
----
 - **`<nav>`**
     - **Funktion:** Marker en sektion med navigationslinks (f.eks. hovedmenu, breadcrumbs).
     - **Attributter:** `id`, `class`, `aria-label` (tilgængelighedsbeskrivelse).
@@ -17,9 +16,9 @@
 - **`<a>` (i kombination)**
     - **Funktion:** Links i menuen peger på sider/sektioner (se [[HTML Links]])
 
+---
 
 ## Eksempler
----
 ### Simpel navbar:
 ```HTML
 <nav aria-label="Hovedmenu">  
@@ -44,8 +43,9 @@
 </nav>  
 ```
 
-## Vigtige regler
 ---
+
+## Vigtige regler
 1. **Semantisk korrekt:** Brug altid `<nav>` + lister – ikke `<div>`-spaghetti.
 2. **Tilgængelighed:**
     - Tilføj `aria-label` til `<nav>` hvis der er flere navigationssektioner.
@@ -54,8 +54,9 @@
 4. **Undgå for mange niveauer:** Dropdowns med mere end 2 lag kan være uoverskuelige.
 5. **SEO:** Links i `<nav>` bør pege på vigtige sider (undgå overoptimering).
 
-## Avanceret brug
 ---
+
+## Avanceret brug
 - **Sprogskift:** Brug `<nav>` med `hreflang`-links for international navigation.
 - **Paginering:** Navigation mellem sider i en artikel:
 ```HTML
@@ -66,9 +67,10 @@
 ```
 
 
-## Fejl at undgå
 ---
-❌ **Dårligt:**
+
+## Fejl at undgå
+**Dårligt:**
 ```HTML
 <div>  
   <div><a href="/">Hjem</a></div>  
@@ -76,7 +78,7 @@
 </div>  
 ```
 
-✅ **Korrekt:**
+**Korrekt:**
 ```HTML
 <nav>  
   <ul>  

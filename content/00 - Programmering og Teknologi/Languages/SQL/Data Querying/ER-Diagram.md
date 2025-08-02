@@ -1,22 +1,10 @@
 tags: #Programmering #SQL
 
-## Definition 
+> [!tldr] Definition
+
 ---
-
-## Syntax
----
-
-### Example
----
-
-
-
-## Header2
----
-
 
 ## Related Topics
----
 - Link
 - 
 

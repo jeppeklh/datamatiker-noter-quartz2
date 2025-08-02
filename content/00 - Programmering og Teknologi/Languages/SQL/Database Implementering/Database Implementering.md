@@ -1,9 +1,8 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-Den anden fase omfatter følgende fem implementeringstrin illustreret i figur forneden:
-![[Database Implementeringstrin.png]]
+> [!tldr] Definition
+> Den anden fase omfatter følgende fem implementeringstrin illustreret i figur forneden:
+> ![[Database Implementeringstrin.png]]
 
 Disse trin tager udgangspunkt i en UML-databasemodel for domænet designet i fase A og resulterer i en kørende database-instans i et R-DBMS, som realiserer databasemodellen:
 
@@ -19,11 +18,15 @@ Disse trin tager udgangspunkt i en UML-databasemodel for domænet designet i fas
 
 
 _Ved afslutningen af Fase B vil du have en fuldt funktionel database, der er designet og implementeret i overensstemmelse med de bedste praksis inden for databaseudvikling. Dette danner grundlaget for videre arbejde med datahåndtering, forespørgsler og optimering i efterfølgende faser._
+
+---
+
 ## Trin 1 - Brug af SQL DDL som specifikation
----
 I denne fase er der udelukkende fokus på den del af SQL, nærmere betegnet SQL DDL, som berører oprettelse mm. af en database samt oprettelse mm. af tabeller.
-## Trin 2 -Definition af SQL-databasen via SQL DDL
+
 ---
+
+## Trin 2 -Definition af SQL-databasen via SQL DDL
 For at oprette en database, benytter man SQL DDL kommandoen:
 ```SQL
 CREATE DATABASE database-name;
@@ -34,8 +37,10 @@ USE database-name;
 ```
 
 Man kan omslutte databasenavnet (og stort set alle navne) med kantede parenteser. Det kan være en fordel, hvis man anvender mellemrum i navnet (hvilket ikke anbefales).
-## Trin 3 - Definition af tabeller (relationer) via SQL DDL
+
 ---
+
+## Trin 3 - Definition af tabeller (relationer) via SQL DDL
 Nu er det tid til at tage fat i UML-[[Databasemodel|databasemodellen]] og definere de [[Table|tabeller]], som [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databasen]] skal indeholde. Til dette arbejde indeholder databasemodellen alle nødvendige informationer med navngivning af tabeller, kolonner og deres datatyper, nøgler samt restriktioner.
 
 Vi kigger på modellen fra eksemplet i [[Database Design]]
@@ -103,13 +108,15 @@ CREATE TABLE PARTICIPANT_LESSON (
 
 Hvis ovenstående blev eksekveret i et R-DBMS, så ville disse tabeller blive tilsvarende oprettet i nævnte rækkefølge. Bemærk at tabeller for oven i princippet kan defineres i en vilkårlig rækkefølge.
 
-## Definition af primær- og fremmednøgler via SQL DDL
 ---
+
+## Definition af primær- og fremmednøgler via SQL DDL
 Når sammenhængen mellem tabellerne defineres via nøgler, så er rækkefølgen, som [[Table|tabeller]] defineres i, særdeles vigtigt. Hvis en tabel refererer til en anden tabel via en [[FOREIGN KEY|fremmednøgle]], så skal den refererede tabel være defineret før den refererende tabel. 
 Dvs. man starter først med at definere de tabeller, der er uafhængige af andre tabeller.
 
-#### Primærmøgler
 ---
+
+#### Primærmøgler
 En [[PRIMARY KEY|primærnøgle]] defineres via en tilsvarende [[Restriktion|restriktion]] i SQL. En restriktion kan angives enten unavngiven eller med navn.
 
 ```SQL
@@ -177,8 +184,10 @@ CREATE TABLE PARTICIPANT_LESSON (
   CONSTRAINT PK_ParticipantLesson PRIMARY KEY (Email, LessonId)
 );
 ```
-#### Fremmenøgler
+
 ---
+
+#### Fremmenøgler
 Man skal i definitionen af [[FOREIGN KEY|fremmednøglen]] skal referere til den refererede [[Table|tabel]] med navn,så rækkefølgen tabel-definationer bliver vigtig.
 
 Den første tabel med en fremmednøgle, som kun er afhængig af SEMESTER-tabellen, er PARTICIPANT-tabellen.
@@ -262,8 +271,9 @@ CREATE TABLE PARTICIPANT_LESSON (
 );
 ```
 
-## Trin 5 - Kørsel af alle SQL DDL definitioner til oprettelse af kørende SQL-database
 ---
+
+## Trin 5 - Kørsel af alle SQL DDL definitioner til oprettelse af kørende SQL-database
 Ovennævnte fælles definition af database, tabeller og nøgle kan kopieres over i et nyt ’Query’-vindue i værktøjet ’Microsoft SQL Server Management Studio’ og derfra afvikles via Execute-kommando (markeret øverst med rødt) og resultatet af kørslen er oprettelsen af de 7 tabeller, som også er indikeret med rødt i ’Object Explorer’ til venstre.
 ![[Pasted image 20240903221203.png]]
 **Husk at tage backup:**   
@@ -274,12 +284,14 @@ Når I arbejder med database implementering, er det afgørende at sikre, at jere
 2. Navngiv og organisér filerne: Giv filerne meningsfulde navne (f.eks. database_definition.txt, table_creation_commands.sql) og opret en struktur, der gør det nemt at finde de nødvendige filer senere.
 3. Gem filerne et sikkert sted: Gem jeres backup-filer et sikkert sted, så I har adgang til dem, selvom noget går galt med jeres primære lagringsenhed.
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - [Fase B Læringsobjekt (DDL)](https://scorm.itslearning.com/data/3289/C20150/ims_import_9/scormcontent/index.html#/lessons/DhdYeDLCjTxYebTC4TyKq2ozXtycvdcd)
 - 

@@ -1,23 +1,28 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-I SQL Server er backup og gendannelse af data centrale elementer i databaseadministration, der sikrer dataintegritet og tilgængelighed. 
+> [!tldr] Definition
+> I SQL Server er backup og gendannelse af data centrale elementer i databaseadministration, der sikrer dataintegritet og tilgængelighed. 
+
 SQL Server understøtter forskellige typer backup, og der er flere strategier, som kan implementeres for at opnå maksimal beskyttelse af data.
-## Forskellige typer backup
+
 ---
+
+## Forskellige typer backup
 SQL Server understøtter tre primære typer af backup, hver med sin egen funktion og anvendelse
 
-#### Full Backup
 ---
+
+#### Full Backup
 Indeholder en komplet kopi af alle data i databsen på tidspunktet for backuppen.
 Den mest grundlæggende tupe af backup og udgør grundlaget for de andre backuptyper.
 ```SQL
 BACKUP DATABASE [Databasenavn] 
 TO DISK = 'C:\Backup\Databasenavn_Full.bak';
 ```
-#### Differential Backup
+
 ---
+
+#### Differential Backup
 Gemmer kin de data, der er ændret siden den seneste [[#Full Backup]].
 Dette reducerer størrelsen og tiden for backuppen.
 For at gendanne fra en differential backup kræves både den sidste Full Backup og den seneste differential backup,
@@ -26,8 +31,10 @@ BACKUP DATABASE [Databasenavn]
 TO DISK = 'C:\Backup\Databasenavn_Diff.bak'
 WITH DIFFERENTIAL;
 ```
-#### Transaction Log Backup
+
 ---
+
+#### Transaction Log Backup
 En Transaction Log Backup gemmer alle transaktioner, der er sket siden den sidste Trnasaction Log Backup.
 Dette gør det muligt at gendanne databasen til ethvert tidspunkt ved hjælp af transaction loggen.
 Bruges ofte i scenarier, hvor kontinuerlig databeskyttelse er kritisk.
@@ -36,34 +43,39 @@ Bruges ofte i scenarier, hvor kontinuerlig databeskyttelse er kritisk.
 BACKUP LOG [Databasenavn]
 TO DISK = 'C:\Backup\Databasenavn_Log.bak';
 ```
-### Gengannelsesmodeller og strategier
+
 ---
+
+### Gengannelsesmodeller og strategier
 SQL Server tilbyder tre gendannelsesmodeller, der styrer, hvordan transaktionslogge håndteres, og dermed hvordan data kan gendannes:
 
-#### Simple Recovery Model
 ---
+
+#### Simple Recovery Model
 I denne model slettes transaktionslogge automatisk efter hver checkpoint, hvilket minimerer behovet for log management. Dette er velegnet til mindre kritiske databaser, hvor der ikke er behov for avanceret gendannelse.
 
 ###### Eksempel
 Bruges typisk til databaser, hvor man kun tager full og differential backups, og hvor man ikke behøver at gendanne til et specifikt tidspunkt.
 
-#### Full Recovery Model
 ---
+
+#### Full Recovery Model
 Denne model giver mulighed for at gendanne data til et hvilket som helst tidspunkt, da alle transaktioner gemmes i transaktionsloggen, indtil de er sikkerhedskopieret. Dette er den mest sikre model og anbefales til mission-kritiske databaser.
 
 ###### Eksempel
 Bruges, når både full backups, differential backups og transaction log backups anvendes. Det muliggør fuld genoprettelse af data, inklusive point-in-time gendannelse.
 
-#### Bulk-Logged Recovery Model
 ---
+
+#### Bulk-Logged Recovery Model
 Denne model minder om Full Recovery, men minimerer logningen af bulk-operationer som store INSERT eller SELECT INTO operationer. Det er nyttigt, når der skal håndteres store datamængder med minimal logforbrug, men det begrænser mulighederne for point-in-time gendannelse.
 
 ###### Eksempel
 Bruges, når store mængder data skal flyttes hurtigt, og point-in-time gendannelse ikke er kritisk på det tidspunkt.
 
+---
 
 ## Backup Strategier
----
 Når du udarbejder en backup-strategi, bør du tage følgende overvejelser i betragtning:
 
 - **Full Backup Strategi**: Udfør regelmæssige full backups, f.eks. ugentligt, og kombiner dette med differential eller transaction log backups for at sikre hyppig databeskyttelse.
@@ -74,8 +86,9 @@ Når du udarbejder en backup-strategi, bør du tage følgende overvejelser i bet
 
 En veludviklet backup- og gendannelsesstrategi kombinerer disse teknikker for at sikre optimal databeskyttelse med minimal nedetid i tilfælde af fejl.
 
-### Indbyggede muligheder for backup i SQL Server
 ---
+
+### Indbyggede muligheder for backup i SQL Server
 SQL Server tilbyder flere indbyggede værktøjer og funktioner til at oprette backups af dine databaser uden at skulle anvende tredjepartssoftware. 
 Disse værktøjer giver fleksibilitet i både planlægning og udførelse af backup-opgaver:
 
@@ -126,12 +139,15 @@ WITH INIT;
         
     - **Sådan bruges det**: 
 	    Opsætning sker gennem Azure-portalen, hvor du kan definere backup-politikker og vælge, hvor ofte backups skal foretages.
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Databaseadminstration]]
 - [[Høj Tilgængelighed og Disaster Recovery]]
 
-## Resources
 ---
+
+## Resources
 - [Databaseadministation og sikkerhed Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_22/scormcontent/index.html#/lessons/BzkYKXmpmbQ5KI5SIjczZLsQ8RF0hWM9)
 - 

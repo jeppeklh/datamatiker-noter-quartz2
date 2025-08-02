@@ -1,13 +1,13 @@
 tags: #Programmering #SQL #SQLBasics
 
-## Definition 
----
-The syntax of SQL defines the rules for constructing valid SQL statements. 
+> [!tldr] Definition
+> The syntax of SQL defines the rules for constructing valid SQL statements. 
 
 SQL statements are used to perform various operations such as querying data, updating data, and managing [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database]] objects.
 
-## Common SQL Statements
 ---
+
+## Common SQL Statements
 - [[SELECT]]
 - [[INSERT]]
 - [[UPDATE]]
@@ -19,13 +19,16 @@ SQL statements are used to perform various operations such as querying data, upd
 - [[DDL Overview|Data Definition Language (DDL]]
 - [[DML Overview|Data Manipulation Language (DML)]]
 - [[DCL Overview|Data Control Language (DCL)]]
-## Related Topics
+
 ---
+
+## Related Topics
 - [[SQL Data Types]]
 - [[Constraints]]
 - [[SQL Standards]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

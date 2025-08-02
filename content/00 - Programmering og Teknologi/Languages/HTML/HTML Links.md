@@ -4,7 +4,6 @@
 ---
 
 ## Tags og deres funktioner
----
 - **`<a>`**
     - **Funktion:** Opretter et klikbart link til en URL, fil, e-mail eller sidefragment (f.eks. "#kontakt").
     - **Attributter:**
@@ -15,8 +14,9 @@
         - `title`: Tooltip-tekst ved hover (tilgængelighed).
     - **Bemærk:** Indholdet af `<a>`-tagget er den synlige linktekst (anchor text).
 
-## Eksempler
 ---
+
+## Eksempler
 ```HTML
 <!-- Internt link -->  
 <a href="/om-os.html">Læs mere om os</a>  

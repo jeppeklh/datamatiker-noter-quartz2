@@ -1,8 +1,7 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-**En** **relation** **er en todimensionel [[Table|tabel]] bestå­ende  
+> [!tldr] Definition
+> **En** **relation** **er en todimensionel [[Table|tabel]] bestå­ende  
 af rækker og kolonner, som overholder et bestemt sæt af karakteristika**
 
 De karakteristika, som en tabel skal opfylde for at betegnes en relation, er angivet i [[Table|tabellen]] forneden:
@@ -17,8 +16,10 @@ De karakteristika, som en tabel skal opfylde for at betegnes en relation, er ang
 | 6     | Rækkefølgen af kolonner har ingen betydning                                                                   |
 | 7     | Rækkefølgen af rækker har ingen betydning                                                                     |
 | 8     | To rækker må ikke have identiske sæt af værdier i dets celler                                                 |
-### Karakteristika 1: Hvad dækker præcist en entitet? 
+
 ---
+
+### Karakteristika 1: Hvad dækker præcist en entitet? 
 Da der kan være mange rækker i en tabel, da beskriver hver række således forskellige instanser af én bestemt [[Entity|entitet]]. En [[Entity|entitet]] er dermed ikke et objekt, men en beskrivelse af fællestræk for et antal instanser (svarende til en klasse).
 
  Der kan dog opstå et problem, hvis en [[Table|tabel]] af en eller grund derimod beskriver flere entiteter på en gang. Hvis man forestiller sig en [[Table|tabel]] med følgende tre kolonner:
@@ -30,8 +31,10 @@ Da der kan være mange rækker i en tabel, da beskriver hver række således for
 [[Table|Tabellen]] dækker over tre entiteter, nemlig Semester, Fag og Deltager, og opfylder dermed ikke  karakteristika 1. 
 
 En sådan [[Table|tabel]] vil ikke være en [[Relationer|relation]] og skal typisk opdeles, så hver ny [[Table|tabel]] kun beskriver en [[Entity|entitet]] hver.
-### Karakteristika 2: Hvad er en attribut/egenskab for en entitet? 
+
 ---
+
+### Karakteristika 2: Hvad er en attribut/egenskab for en entitet? 
 En kolonne i en [[Table|tabel]] beskriver en attribut for en [[Entity|entitet]]. 
 Dette svarer tilsvarende i den objekt-orienterede tilgang til, at en attribut i en konceptuel klasse i en [[Repo/01 - Systemudvikling og virksomhed/Artefakter/Domænemodel|Domænemodel]] beskriver en enkelt egenskab for klassen. 
 
@@ -46,8 +49,10 @@ For en [[Table|tabel]], der beskriver en person, vil dette kunne illustreres med
 |2|Charles Darwin|213|
 
 hvor de to kolonner Name og Age netop beskriver to forskellige egenskaber ved en person.
-### Karakteristika 3: Én værdi i en celle 
+
 ---
+
+### Karakteristika 3: Én værdi i en celle 
 Denne regel angiver, at der kun må være én værdi i hver celle. Dette er ikke tilfældet i [[Table|tabellen]] forneden:
 
 |   |   |   |
@@ -69,8 +74,10 @@ som så ikke kan betegnes en relation.
 
 
 Nu er [[Table|tabellen]] en [[Relationer|relation]] set ud fra dette karakteristika, hvor hver celle nu kun har én værdi.
-### Karakteristika 4: Alle værdier i celler under en bestemt kolonne skal vare af samme type 
+
 ---
+
+### Karakteristika 4: Alle værdier i celler under en bestemt kolonne skal vare af samme type 
 Værdierne i en kolonne skal være af samme type/slags. F.eks. tabellen:
 
 |     |                |         |
@@ -81,8 +88,10 @@ Værdierne i en kolonne skal være af samme type/slags. F.eks. tabellen:
 | 3   | 63             | Married |
 | 4   | IT konsulent   | 42      |
 Række 3 kolonne 3 har en string i stedet for en int.
-### Karakteristika 5: Hver kolonne skal have et unikt navn 
+
 ---
+
+### Karakteristika 5: Hver kolonne skal have et unikt navn 
 Navnet på en kolonne skal være unikt, så nedenstående går ikke:
 
 |   |   |   |   |
@@ -98,12 +107,16 @@ Her er løsningen at ændre det tredje kolonnenavn til f.eks. ’Profession’:
 | Age | Profession  |
 | 35  | Developer   |
 | 213 | HR konulent |
-### Karakteristika 6 og 7: Rækkefølgen pa kolonner og rækker 
+
 ---
+
+### Karakteristika 6 og 7: Rækkefølgen pa kolonner og rækker 
 Disse to regler angiver ganske simpelt, at rækkefølgen af rækker i tabellen overhovedet ingen betydning må have. 
 Det samme gælder for kolonner. Dvs. man må i en [[Relationer|relation]] ikke forvente en bestemt rækkefølge.
-### Karakteristika 8: To rækker ma ikke have identiske sæt af værdier i dets celler
+
 ---
+
+### Karakteristika 8: To rækker ma ikke have identiske sæt af værdier i dets celler
 
 |   |   |
 |---|---|

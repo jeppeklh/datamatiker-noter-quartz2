@@ -1,12 +1,13 @@
 tags: #Programmering #SQL #SQLBasics #Constraint
 
-## Definition 
----
-The `DEFAULT` constraint sets a default value for a column if no value is specified when a row is inserted. 
+> [!tldr] Definition
+> The `DEFAULT` constraint sets a default value for a column if no value is specified when a row is inserted. 
 
 This ensures that a column always has a value, even if none is provided explicitly..
-## Syntax
+
 ---
+
+## Syntax
 ```sql
 CREATE TABLE table_name (
     column1 datatype DEFAULT default_value,
@@ -14,8 +15,10 @@ CREATE TABLE table_name (
     ...
 );
 ```
-### Example
+
 ---
+
+### Example
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -26,9 +29,9 @@ CREATE TABLE employees (
 );
 ```
 
+---
 
 ## Related Topics
----
 - [[Constraints]]
 - [[NOT NULL]]
 - [[UNIQUE]]
@@ -36,7 +39,8 @@ CREATE TABLE employees (
 - [[FOREIGN KEY]]
 - [[CHECK]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

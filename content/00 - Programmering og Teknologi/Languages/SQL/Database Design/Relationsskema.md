@@ -1,17 +1,20 @@
 tags: #Programmering #SQL
 
-## Definition 
----
-Et relationsskema (en: relation schema) beskriver en [[Relationer|relation]] og dets kolonner via et bestemt tekstformat:
+> [!tldr] Definition
+> Et relationsskema (en: relation schema) beskriver en [[Relationer|relation]] og dets kolonner via et bestemt tekstformat:
 
 **Relationsnavn (Kolonne-1, Kolonne-2, …, Kolonne-n)**
 
 Selvom et relationsskema reelt set kun er en simpel tekstuel måde at angive en konceptuel klasse i [[Repo/01 - Systemudvikling og virksomhed/Artefakter/Domænemodel|domæne­modellen]] som en [[Relationer|relation]], så er den også et mere praktisk format til at beskrive den trinvise transformation og justering, relationsskemaer gennemgår, når også nøgler introduceres til at repræsentere sammenhænge mellem klasser (asso­ciationer mm.).
+
+---
+
 ## Example
----
 PRODUCT (Name, Type, Color, Price)
-## Navngivningskonvention for relationsskemaer
+
 ---
+
+## Navngivningskonvention for relationsskemaer
 - **Relationsnavnet angives**:
     - singulært (i ental) (dvs. ’SEMESTER’) og aldrig pluralt (i flertal) (dvs. aldrig ’SEMESTERS’)
     - altid med store bogstaver (UPPERCASE) og undgå mellemrum
@@ -22,26 +25,26 @@ PRODUCT (Name, Type, Color, Price)
     - undgå mellemrum
     - angives kun på engelsk
 
+---
 
 ## Primærnøglen
----
 I et **relationsskema** er [[PRIMARY KEY|primærnøglen]] fremhævet ved at  
 understrege kolonnen (eller de kolonner), der indgår i den.  
 [[PRIMARY KEY|Primærnøglens]] kolonne(r) placeres traditionelt først i kolonnelisten.
 
 LESSON (<u>LessonId</u>, Date, Subject
 
-## Fremmednøglen
 ---
+
+## Fremmednøglen
 I et relationsskema er hver [[FOREIGN KEY|fremmednøgle]] fremhævet ved at  
 kursivere skrifttypen for kolonnen (eller kolonnerne), der udgør fremmednøglen.  
 Fremmednøgler placeres traditionelt sidst i kolonnelisten.
 
+---
 
 ## Multiplicitetstyper
----
 ### 1:M
----
 Hvis multipliciteten er en-til-mange (1:M) mellem to klasser i domænemodellen, da skal primærnøglen fra ’1’-tabellen kopieres til ’M’-tabellen som fremmednøgle.
 
 I tilstedeværelse-eksemplet tages med fokus på 1:M-associationen mellem klasserne Semester og Deltager udgangspunkt i de to tilsvarende relationsskemaer SEMESTER og PARTICIPANT:
@@ -56,8 +59,9 @@ PARTICIPANT (<u>Email</u>, FirstName, LastName, Image, <span class="red">*Semes
 
 Hermed er 1:M-associationen repræsenteret korrekt i relationsskemaet.
 
-### M:M
 ---  
+
+### M:M
 I tilstedeværelse-eksemplet tages med fokus på M:M-relationen mellem klasserne Deltager og Lektion udgangspunkt i de to tilsvarende [[Relationsskema|relationsskemaer]] PARTICIPANT og LESSON:
 
 PARTICIPANT (<u>Email</u>, FirstName, LastName, Image, <span class="red">*SemesterId*</span>)  
@@ -77,8 +81,10 @@ Bemærk, at der skal faktisk oprettes en ny [[Relationer|relation]], som ikke di
 
 
 Hermed er M:M-associationen korrekt repræsenteret i et relationsskema for link-relationen.
-### 1:1
+
 ---
+
+### 1:1
 Hvis multipliciteten er en-til-en (1:1) mellem to klasser i domænemodellen, kan du frit vælge, hvilken tabel skal indeholde primærnøglen for den anden.
 
 Tag følgende eksempel med de to [[Relationsskema|relationsskemaer]].
@@ -101,13 +107,16 @@ PASSPORT (<u>PassportNumber</u>, IssueDate, ValidToDate)
 
 Normalt vil man faktisk ikke opretholde en 1:1-forbindelse mellem to [[Relationer]], men nærmere sammen­flette kolonnerne i de to relationer ind i én samlet [[Relationer|relation]]. Der kan dog være grunde til at holde de to [[Relationer]] adskilt, f.eks. sikkerhedsmæssige grunde, men det er ikke ofte, det sker.
 
-## Afbildning af generalisering/specialisering (nedarvning) til relationsskemaer
 ---
+
+## Afbildning af generalisering/specialisering (nedarvning) til relationsskemaer
 Hvis [[Repo/01 - Systemudvikling og virksomhed/Artefakter/Domænemodel|domænemodellen]] indeholder [[Nedarvning]] i form af generalisering/specialisering i domænemodellen, så kan afbildningen til relationsskemaer håndteres på tre forskellige alternative måder.
 
 ![[Domænemodel Eksempel (Database design).png]]
-### 1. En Tabel for hver klasse
+
 ---
+
+### 1. En Tabel for hver klasse
 Tilgangen, der reflekterer domænemodellen bedst, er at oprette ét relationsskema for hver konceptuel klasse, der indgår i nedarvningsforholdet. Fra domænemodellen i figuren, fås da:
 
 PARTICIPANT (<u>Email</u>, FirstName, LastName, Image, _SemesterId_)  
@@ -143,8 +152,10 @@ På denne måde er det sikret, at man kan kombinere information fra alle involve
 Bemærk specielt, at en kolonne både kan fungere  
 som primærnøgle og fremmednøgle på samme tid.  
 I dette tilfælde placeres kolonnen først i kolonnelisten.
-### 2. Et Relationsskema for hver underklasse fra domænemodellen
+
 ---
+
+### 2. Et Relationsskema for hver underklasse fra domænemodellen
 Udgangspunktet i domænemodellen er som før: man har en nedarvningsforbindelse mellem en superklasse og flere underklasser. Det andet alternativ er nu, at man i stedet for at skabe relationsskemaer for alle involverede klasser kun skaber et relationsskema for hver underklasse i domænemodellen. Disse relations­skemaer får så yderligere information (kolonner) tilføjet fra superklassen.
 
 Fra eksemplet med tilstedeværelse, vil dette resultere i de to relationsskemaer:
@@ -155,8 +166,10 @@ STUDENT_PARTICIPANT (<u>Email</u>, Badge, FirstName, LastName, Image, _Semester
 Bemærk at relationsnavnet er en kombination for at tydeliggøre hvor sammenfletningen kommer fra.
 
 Dette alternativ vælges oftest, hvis superklassen har ganske få attributter og ikke indgår i mange andre sammenhænge.
-### 3. Én Tabel
+
 ---
+
+### 3. Én Tabel
 Man kan også modsat kombinere al information fra [[Nedarvning#Derived class|underklasserne]] ind i [[Nedarvning#Base class|superklassen]] i [[Repo/01 - Systemudvikling og virksomhed/Artefakter/Domænemodel|domænemodellen]] ved at udtrykke dette i ét eneste relationsskema.
 
 Fra eksemplet med tilstedeværelse, vil dette resultere i relationsskemaet:
@@ -172,13 +185,16 @@ Nu kan man nemlig ikke ved hvad hver entitet er, er den Teacher eller Student, d
 PARTICIPANT_TEACHER_STUDENT (<u>Email</u>, FirstName, LastName, Image, Badge, Type, <span class="red">*SubjectId*</span>, <span class="red">*SemesterId*</span>)
 
 Dette alternativ vælges oftest, hvis underklasserne har få attributter og ikke indgår i mange sammen­hænge, og vil have konsekvensen, at mange rækker ville indeholde en null-værdi (dvs. ingen værdi) for SubjectId-kolonnen og Badge-kolonnen afhængig af, hvilken type rækken repræsenterer. Med andre ord en række, der repræsenterer en deltager af typen ’underviser’, vil have null-værdier for Badge-kolonnen, da de kun er relevante for en studerende.
-## Related Topics
+
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - [Database design læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_6/scormcontent/index.html#/lessons/R-uiHxV6wOoSodZUwqhx474w15v28DWY)
 
 

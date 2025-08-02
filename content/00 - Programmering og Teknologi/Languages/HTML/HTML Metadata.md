@@ -4,7 +4,6 @@
 ---
 
 ## `<head>`-elementet
----
 Containeren for alle metadata-tags, der beskriver dokumentet. Typiske elementer inkluderer:
   - `<meta>`
   - `<title>`
@@ -14,15 +13,15 @@ Containeren for alle metadata-tags, der beskriver dokumentet. Typiske elementer 
 ---
 
 ## `<title>` Tag
----
 Angiver sidens titel, som vises i browsertabben og i søgeresultater.
 
 ```html
 <title>Min Webside</title>
 ```
 
-## `<meta>` Tags
 ---
+
+## `<meta>` Tags
 ### Karakterkodning
 Specificerer den tegnsætning, der anvendes i dokumentet, så f.eks. æ, ø og å vises korrekt.
 ```HTML
@@ -58,15 +57,17 @@ Sikrer, at Internet Explorer bruger den nyeste rendering engine.
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 
-## `<link>` Tag
 ---
+
+## `<link>` Tag
 Forbinder dokumentet med eksterne ressourcer som f.eks. [[CSS]]-filer, favicons eller skrifttyper.
 ```HTML
 <link rel="stylesheet" href="styles.css">
 ```
 
-## Eksempel på et komplet `<head>`-afsnit
 ---
+
+## Eksempel på et komplet `<head>`-afsnit
 ```HTML
 <head>
     <meta charset="UTF-8">
