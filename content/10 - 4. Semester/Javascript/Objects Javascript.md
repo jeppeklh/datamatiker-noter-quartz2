@@ -1,5 +1,5 @@
 > [!note] note
-Der findes flere måder at definere objekter på i JavaScript. En meget almindelig metode er at bruge **object literals**, hvor man angiver properties inden for tuborgklammer
+> Der findes flere måder at definere objekter på i JavaScript. En meget almindelig metode er at bruge **object literals**, hvor man angiver properties inden for tuborgklammer
 
 ```js
 const object1 = {
@@ -25,8 +25,9 @@ const object3 = {
 ```
 Værdierne i et objekt kan være af enhver datatype, f.eks. int, sting, arrays, objekter osv.
 
-### Adgang til properties
 ---
+
+### Adgang til properties
 Properties i et objekt tilgås enten med **dot notation** eller med **bracket notation**:
 ```js
 console.log(object1.name)         // Udskriver: Arto Hellas
@@ -34,8 +35,9 @@ const fieldName = 'age'
 console.log(object1[fieldName])   // Udskriver: 35
 ```
 
-### Tilføjelse af egenskaber
 ---
+
+### Tilføjelse af egenskaber
 Du kan tilføje nye properties til et objekt løbende, med enten punkt- eller bracket-notation:
 ```js
 object1.address = 'Helsinki'

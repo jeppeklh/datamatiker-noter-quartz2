@@ -1,8 +1,9 @@
 > [!tldr] Definition
-`useState` er en React Hook, som bruges til at oprette og håndtere komponentens lokale state.
+> `useState` er en React Hook, som bruges til at oprette og håndtere komponentens lokale state.
+
+---
 
 ## Syntax
----
 ```js
 const [state, setState] = useState(initialValue);
 ```
@@ -11,8 +12,9 @@ const [state, setState] = useState(initialValue);
 - `setState`: funktion til at opdatere værdien.
 - `initialValue`: startværdien af state.
 
-## Eksempel 1: Counter
 ---
+
+## Eksempel 1: Counter
 ```js
 import { useState } from "react";
 
@@ -28,8 +30,9 @@ function Counter() {
 }
 ```
 
-## Eksempel 2: Input felt
 ---
+
+## Eksempel 2: Input felt
 ```js
 function NameInput() {
   const [name, setName] = useState("");
@@ -47,12 +50,14 @@ function NameInput() {
 }
 ```
 
-## Husk
 ---
+
+## Husk
 - `useState` kan kun bruges i funktionelle komponenter.
 
 - Du kan have flere `useState` i én komponent.
 
-## Resourcer
 ---
+
+## Resourcer
 - [State Documentation](https://react.dev/learn/state-a-components-memory)

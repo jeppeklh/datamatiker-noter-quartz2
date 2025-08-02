@@ -1,14 +1,14 @@
 
 # Opgave: Docker Image  med .NET
----
 ## Introduktion
 I denne opgave skal I arbejde med at oprette, optimere og forstå Docker images med .NET. I vil lære om image "lagdeling", hvordan vi kan optimere og hvordan man skaber effektive, sikre containere.
 
 ## Tidsramme
 Fra kl. 09:45 til 12:00
 
-## Del 1: Byg et simpelt .NET Web API
 ---
+
+## Del 1: Byg et simpelt .NET Web API
 ### Opgave
 Opret et simpelt REST API med .NET, og byg et Docker image til det.
 
@@ -226,6 +226,8 @@ docker history product-api:v1
    - Hvad er fordelene og ulemperne ved den nuværende image størrelse?
    - Hvilke dele af imaget kan potentielt reduceres?
 
+---
+
 ## Del 3: Optimér Docker Image (45 minutter)
 
 ### Opgave
@@ -287,6 +289,8 @@ docker run -p 8081:80 product-api:v2
 
 5. Test at det virker: http://localhost:8081/swagger/index.html
 
+---
+
 ## Del 4: Multi-stage Builds og Lagindsigt
 
 ### Diskussion i grupper
@@ -295,20 +299,23 @@ Diskutér følgende spørgsmål i jeres grupper:
 1. Hvordan fungerer multi-stage builds i Docker?
 2. Hvordan kan man yderligere reducere image-størrelsen?
 
-## Ressourcer
 ---
+
+## Ressourcer
 - [.NET og Docker Best Practices](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/net-core-net-framework-containers/official-net-docker-images)
 - [Optimering af Docker Images](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [Docker Multi-stage Builds](https://docs.docker.com/build/building/multi-stage/)
+
+---
 
 # Opgave 2: Docker Compose med .NET
 
 ## Introduktion
 I denne opgave skal I arbejde med Docker Compose til at opsætte og køre en multi-container applikation bestående af et .NET Web API og en SQL Server database.
 
+---
 
 ## Del 1: Opret en .NET applikation med database
----
 ### Opgave
 Opret et .NET Web API, der gemmer data i en SQL Server database, og konfigurer det hele med Docker Compose.
 
@@ -609,8 +616,9 @@ docker-compose up --build
 
 11. Test API'et ved at gå til http://localhost:8080/swagger/index.html i browseren
 
-## Del 2: Eksperimentér med Docker Compose funktioner 
 ---
+
+## Del 2: Eksperimentér med Docker Compose funktioner 
 Vælg mindst to af følgende opgaver:
 
 ### A. Tilføj en web frontend
@@ -633,6 +641,8 @@ Vælg mindst to af følgende opgaver:
 1. Tilføj en simpel health-check endpoint til API'et
 2. Konfigurer health checks i docker-compose.yml
 
+---
+
 ## Afslutning og Forberedelse
 
 Snak i grupper om jeres løsning:
@@ -641,8 +651,9 @@ Snak i grupper om jeres løsning:
 2. Forklar hvordan Docker Compose hjælper med at organisere de forskellige containere
 3. Beskriv hvilke yderligere funktioner I implementerede
 
-## Ressourcer
 ---
+
+## Ressourcer
 - [Docker Compose Dokumentation](https://docs.docker.com/compose/)
 - [Entity Framework Core med SQL Server](https://learn.microsoft.com/en-us/ef/core/providers/sql-server/)
 - [SQL Server i Docker](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker)

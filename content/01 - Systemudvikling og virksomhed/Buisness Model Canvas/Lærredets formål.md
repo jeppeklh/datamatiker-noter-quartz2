@@ -5,8 +5,9 @@ Kan gøres med 2 forskellige perspektiver:
 
 Ofte laver vi begge dele
 
-## Nutidslærredet
 ---
+
+## Nutidslærredet
 Kan vise hvis der er inkonsistens mellem forskellige dele af forretningsmodellen
 
 Passer forretningsmodellen med organisationes …?
@@ -17,8 +18,9 @@ Passer forretningsmodellen med organisationes …?
 - Mission
 - Strategi
 
-## Fremtidslærredet
 ---
+
+## Fremtidslærredet
 Hvordan skal forretningsmodellen se ud fremadrettet?
 
 Kan finde udviklingspotentiale og gaps.

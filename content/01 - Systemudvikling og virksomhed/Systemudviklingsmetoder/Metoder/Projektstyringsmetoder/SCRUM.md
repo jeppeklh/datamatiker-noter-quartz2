@@ -1,12 +1,12 @@
 
 >[!tldr] Definition
-**Scrum** er en [[Agile]]-metode, der strukturerer udvikling i korte iterationer ("sprints") med fokus på selvorganiserende teams og kontinuerlig forbedring. 
-[[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=524&selection=32,0,32,5|p.488]]
+> **Scrum** er en [[Agile]]-metode, der strukturerer udvikling i korte iterationer ("sprints") med fokus på selvorganiserende teams og kontinuerlig forbedring. 
+>
+> [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=524&selection=32,0,32,5|p.488]]
 
 ---
 
 ## Scrum-roller
----
 
 | **Rolle**         | **Ansvar**                                                                 |
 |--------------------|----------------------------------------------------------------------------|
@@ -15,8 +15,10 @@
 | **Teammedlemmer**  | - Selvorganiserende udviklere<br>- Arbejder tværfagligt på alle opgaver i sprintet |
 
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=525&selection=14,0,14,11|p.489]]
-## Scrum-sprints
+
 ---
+
+## Scrum-sprints
 - **Varighed**: Typisk 2-4 uger (30 dage i klassisk Scrum).  
 - **Output**: *Potentially Shippable Increment (PSI)* – testet, funktionel software klar til release.  
 - **Faser**:  
@@ -26,8 +28,9 @@
   4. **Retrospective**: Evaluering af proces/forbedringer.
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=526&selection=13,0,13,13|p.490]]
 
-## Nøglemøder
 ---
+
+## Nøglemøder
 1. **Sprint Planning**  
 	- *Hvornår*: Før hvert sprint.  
 	- *Formål*: Vælg og opdel opgaver fra product backlog til sprint backlog.  
@@ -47,9 +50,9 @@
    - *Hvornår*: Efter review.  
    - *Formål*: Refleksion over "hvad gik godt/dårligt?" og procesoptimering.
 
+---
 
 ## Estimeringsteknikker
----
 ### Planning Poker
 - **Hvordan**:  
 	- Teamet bruger kort med Fibonacci-tal (1, 2, 3, 5, 8, 13...) til at estimere opgavers kompleksitet.  
@@ -64,14 +67,17 @@
 ![[Repo/05 - Images/Systemudvikling og virksomheden/BurndownChart.png]]
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=528&selection=48,0,48,8|p.492]]
 
-## Velocity
 ---
+
+## Velocity
 - **Definition**: Mængden af *story points* et team gennemfører pr. sprint.  
 - **Brug**: Forudsig fremtidig produktivitet (fx: Hvis velocity = 20, kan 100 SP forventes afsluttet på 5 sprints).  
 - **Variationer**: Påvirkes af teams størrelse, erfaring og sprint-længde.
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=530&selection=8,0,8,8|p.494]]
-## Fordele vs. Udfordringer
+
 ---
+
+## Fordele vs. Udfordringer
 
 | **Fordele**                          | **Udfordringer**                          |
 |---------------------------------------|--------------------------------------------|
@@ -79,15 +85,16 @@
 | Fleksibel til ændrede prioriteringer  | Product Owner skal være tilgængelig        |
 | Transparent proces via boards/charts  | Svært at estimere story points præcist     |
 
+---
 
 ## Scrum i Praksis
----
 - **Kombineres ofte** med tekniske metoder som [[Extreme Programming|XP]] (test-drevet udvikling, pair programming).  
 - **Succesfaktorer**:  
 	- Engageret Product Owner  
 	- Selvorganiserende team med tværfaglige kompetencer  
 	- Konsekvent brug af Scrum-ritualer (møder, charts)
 
-## Resourcer
 ---
+
+## Resourcer
 - [SCRUM LinkedIn Kursus]()

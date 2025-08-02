@@ -1,39 +1,45 @@
 tags: #Programmering #Tools #Git
 ## Git init
----
 Laver et tomt git repo eller reinsancier et eksisterende
 
-## Git pull
 ---
+
+## Git pull
 Henter fra og integrerer det med en lokal branch
 
-## Git add
 ---
+
+## Git add
 Tilføjer filer til index
 
-## Git commit
 ---
+
+## Git commit
 Laver en ny commit der tager indholdet I index (filer) og den givne log besked  beskriver ændringerne
 
-## Git push
 ---
+
+## Git push
 Skubber ændringerne ud til github repoet på den givne branch
 
-## Git status
 ---
+
+## Git status
 Viser tree statussen (Kan se hvilker filer der added til index og hvilke filer der venter på at blive pushet ud.
 
-## Git clone
 ---
+
+## Git clone
 Kloner et repo ind I en ny mappe.
 
-## Git checkout
 ---
+
+## Git checkout
 Skifter branch 
 
+---
 
 ## Git Konventioner
----
 En Github organization per projekt.  
 Kan have flere repositories. Hver medlem kan have deres eget testrepo eller lege med deres eget
 Fælles repo er KUN til fælles.

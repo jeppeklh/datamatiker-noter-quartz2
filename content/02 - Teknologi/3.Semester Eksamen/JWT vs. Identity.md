@@ -6,8 +6,9 @@
 - Det eksterne API ser kun: "Det er Gotorz's server der ringer (via API-nøgle)".
 - Det ved **intet** om den enkelte bruger – og behøver ikke at vide det.
   
-### Hvorfor dette er sikkert?
 ---
+
+### Hvorfor dette er sikkert?
 
 |Lag|Hvem autentificeres?|Hvordan?|
 |---|---|---|
@@ -34,8 +35,9 @@ flowchart LR
 
 Der er ingen gevinst. Vi får ikke mere sikkerhed eller funktionalitet.
 
-### Hvornår vi ville mangle JWT?
 ---
+
+### Hvornår vi ville mangle JWT?
 Hvis det eksterne API krævede:
 
 > _"Hver enkelt bruger skal autentificeres direkte over for os med deres egne credentials"
@@ -48,8 +50,9 @@ Sende et **JWT (for brugeren)** til API'et
 Dette er IKKE vores situation i flightAPI'en. 
 API’en accepterer vores API-nøgle fra serveren.
 
-### Konklusion
 ---
+
+### Konklusion
 **Brugerautorisation**
 Håndteres af .NET Identity via `[Authorize]`
  

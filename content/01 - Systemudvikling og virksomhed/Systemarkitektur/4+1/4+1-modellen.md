@@ -3,19 +3,21 @@ aliases:
   - 4+1
 ---
 > [!tldr] Definition
-4+1 Arkitekturmodellen er en metode til at beskrive og visualisere softwarearkitektur ved hjælp af fem perspektiver – fire hovedvisninger plus et ekstra scenarieperspektiv. 
+> 4+1 Arkitekturmodellen er en metode til at beskrive og visualisere softwarearkitektur ved hjælp af fem perspektiver – fire hovedvisninger plus et ekstra scenarieperspektiv. 
 >
-Modellen fokuserer på at opdele arkitekturen i forskellige aspekter for at imødekomme de forskellige interessenters behov.
-[[4+1view-architecture.pdf#page=1&selection=44,0,44,22|4+1 p.1]]
+> Modellen fokuserer på at opdele arkitekturen i forskellige aspekter for at imødekomme de forskellige interessenters behov.
+> [[4+1view-architecture.pdf#page=1&selection=44,0,44,22|4+1 p.1]]
+
+---
 
 ## Formål og Anvendelse
----
 - **Adresserer alle interessenters behov:** Modellen sikrer, at både slutbrugere, udviklere, systemingeniører og projektledere får indsigt i arkitekturen ud fra deres unikke perspektiv.
 - **Forbedrer kommunikation og dokumentation:** Ved at opdele arkitekturen i separate visninger bliver det nemmere at diskutere, udvikle og vedligeholde komplekse systemer.
 - **Understøtter både funktionelle og ikke-funktionelle krav:** Den dækker alt fra systemets funktionalitet til ydeevne, tilgængelighed og skalérbarhed.
 
-## Struktur
 ---
+
+## Struktur
 Modellen er opdelt i følgende visninger:
 - [[Logisk Visning]] – Beskriver systemets objektorienterede struktur og funktionelle krav.
 - [[Procesvisning]] – Fokuserer på samtidighed, kommunikationsmønstre og systemets dynamiske adfærd.
@@ -25,41 +27,48 @@ Modellen er opdelt i følgende visninger:
 
 Ved at kombinere disse visninger giver 4+1 modellen en struktureret fremstilling af softwarearkitekturen, der både dækker overordnede designbeslutninger og de praktiske detaljer i implementeringen.
 
-## Iterativ arkitekturudvikling
 ---
+
+## Iterativ arkitekturudvikling
 [[4+1view-architecture.pdf#page=13&selection=10,0,10,17|4+1 p.13]]
 - Arkitekturen udvikles og forfines løbende gennem prototyping, testning og evaluering af scenarier. 
 - Scenarierne hjælper med at identificere og validere de arkitektoniske elementer i alle visninger. 
 
-## Dokumentation 
 ---
+
+## Dokumentation 
 [[4+1view-architecture.pdf#page=14&selection=20,0,20,28|4+1 p.14]]
 - En Software Architecture Document struktureres ofte efter de 4+1 visninger. 
 - Dokumentationen indeholder blandt andet beskrivelse af mål, begrænsninger, og de specifikke elementer i hver visning. 
 
-## Sammenhæng og tilpasning 
 ---
+
+## Sammenhæng og tilpasning 
 [[4+1view-architecture.pdf#page=10&selection=16,0,16,32|4+1 p.10]]
 - Visningerne er forbundne – beslutninger i én visning påvirker de andre. 
 - Modellen kan tilpasses: Ved små systemer kan visse visninger (f.eks. fysisk eller proces) udelades, hvis de ikke er relevante.
 
+---
 
 ## Fleksibilitet og Iteration
----
 Ved at anskue systemet fra flere perspektiver bliver det tydeligt, at der er behov for en metode, der både tillader en stærk arkitektonisk planlægning og samtidig muliggør iterative justeringer.
 
 - **Agile metoder** kan drage fordel af 4+1 ved at iterativt udvikle og validere hvert perspektiv (f.eks. ved løbende at revidere use-cases og komponentintegration).
 - **Traditionelle (vandfalds-)metoder** lægger større vægt på en fuldstændig upfront arkitektur, hvor alle 4+1 perspektiver detaljeres før udviklingen går i gang.
-## Kommunikation og Samarbejde
+
 ---
+
+## Kommunikation og Samarbejde
 En multi-perspektiv tilgang (som 4+1) fremmer en fælles forståelse blandt udviklere, arkitekter og interessenter. Dette understøtter metoder, hvor løbende kommunikation er central – uanset om det er via regelmæssige reviews i agile sprint eller gennem formaliserede design-gennemgange i mere traditionelle metoder.
 
-## Risiko- og Ændringshåndtering
 ---
+
+## Risiko- og Ændringshåndtering
 Ved at have flere “vinkler” på systemet kan fejl eller misforståelser opfanges tidligere i processen. Dette er afgørende for valg af metode, da en metode med indbygget feedback (som agile) ofte er bedre egnet til at håndtere de uundgåelige ændringer, der sker i komplekse systemer.
 
-## Eksempler
 ---
+
+## Eksempler
 > [!example] Eksempel
 >Forestil dig et telefonsystem (f.eks. et PABX-system) som et konkret eksempel: 
 >- **Overordnet:** Systemet skal kunne håndtere ind- og udgående opkald, dirigere forbindelser, og sikre, at alle telefoner kommunikerer effektivt. 

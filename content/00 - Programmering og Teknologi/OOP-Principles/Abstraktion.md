@@ -3,23 +3,25 @@ aliases:
   - Abstraction
   - abstraction
 ---
-## Definition
+> [!tldr] Definition
+> Data abstraction is the process of hiding certain details and showing only essential information to the user.  
+> Abstraction can be achieved with either [[#Abstract Class|abstract classes]] or interfaces.
+
 ---
-Data abstraction is the process of hiding certain details and showing only essential information to the user.  
-Abstraction can be achieved with either [[#Abstract Class|abstract classes]] or interfaces.
+
 ## Abstract Class
----
 Classes that cannot be instantiated directly and may contain [[#Abstract Method|abstract methods]], serving as blueprints for other classes. (must be overwritten in the [[Nedarvning#Derived class|derived class]])
 
+---
 
 ## Abstract Method
----
 Can only be used in an [[#Abstract Class|abstract class]], and it does not have a body. The body is provided by the [[Nedarvning#Derived class|derived class]] ([[Nedarvning|inherited]] from).
 A [[Nedarvning#Derived class|subclass]] must [[Nedarvning#Overriding|override]] all abstract methods of an [[#Abstract Class|abstract class]].
 An abstract method is implicit a [[Nedarvning#Virtual|virtual]] method
 
-## Example
 ---
+
+## Example
 
 ```csharp
 abstract class Animal
@@ -64,12 +66,15 @@ class Program
 ```
 Se https://www.w3schools.com/cs/cs_abstract.php
 
-## Interface
 ---
+
+## Interface
 An `interface` is a completely [[#Abstract Class|abstract class]], which can only contain [[#Abstract Method|abstract methods]] and [[000 Bergrebsliste#Properties|properties]] (with empty bodies).
 A [[000 Bergrebsliste#Class|class]] that implements the inferface MUST implement the [[Methods Overview|methods]] of the interface as well
-#### Example
+
 ---
+
+#### Example
 ```csharp
 // Interface
 interface IAnimal 

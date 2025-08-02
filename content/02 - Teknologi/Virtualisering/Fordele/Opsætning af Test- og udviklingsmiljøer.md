@@ -1,8 +1,9 @@
 > [!tldr] Definition
-Virtualisering muliggør oprettelsen af fleksible testmiljøer, som kan anvendes både permanent og midlertidigt. Ved at virtualisere testmiljøer kan organisationer hurtigt rulle ændringer ud, udføre belastningstests og let gendanne en tidligere, stabil tilstand ved fejl.
+> Virtualisering muliggør oprettelsen af fleksible testmiljøer, som kan anvendes både permanent og midlertidigt. Ved at virtualisere testmiljøer kan organisationer hurtigt rulle ændringer ud, udføre belastningstests og let gendanne en tidligere, stabil tilstand ved fejl.
+
+---
 
 ## Permanent Testmiljø
----
 - **Formål:**  
   Anvendes f.eks. af et eCommerce-websted til at teste ændringer, før de rulles ud i produktionen.
 - **Fordele:**
@@ -16,8 +17,9 @@ Virtualisering muliggør oprettelsen af fleksible testmiljøer, som kan anvendes
 - **Sikkerhed:**  
   Vær opmærksom på at undgå kopiering af følsomme data under kloning, så testmiljøet ikke utilsigtet indeholder data, der bør beskyttes.
 
-## Midlertidigt Testmiljø
 ---
+
+## Midlertidigt Testmiljø
 - **Scenarie:**  
   F.eks. evaluering af en ny regnskabsløsning over en periode på 90 dage.
 - **Fordele:**
@@ -28,6 +30,7 @@ Virtualisering muliggør oprettelsen af fleksible testmiljøer, som kan anvendes
   - **Cloud-baserede løsninger:**  
     Hvis der ikke er et eksisterende virtualiseret miljø, kan man leje en server fra en public cloud-udbyder (f.eks. Amazon AWS, Microsoft Azure eller via spot instances med timepriser) til den ønskede testperiode.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Virtualisering LinkedIn Kursus (Test- og UdviklingsMiljø)](https://www.linkedin.com/learning/learning-virtualization-13945890/setting-up-test-and-development-environments?resume=false&u=57075649)

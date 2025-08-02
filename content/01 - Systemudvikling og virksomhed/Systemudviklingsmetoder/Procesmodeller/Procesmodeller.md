@@ -1,10 +1,11 @@
 
 
 >[!tldr] Definition  
-En procesmodel er en skabelon, der hjælper med at planlægge og styre, hvornår og hvordan aktiviteter i et softwareudviklingsprojekt udføres. Den angiver rækkefølgen af faser (såsom kravspecifikation, design, implementering, test og vedligeholdelse) og fungerer som en vejledning til at strukturere processen.
+> En procesmodel er en skabelon, der hjælper med at planlægge og styre, hvornår og hvordan aktiviteter i et softwareudviklingsprojekt udføres. Den angiver rækkefølgen af faser (såsom kravspecifikation, design, implementering, test og vedligeholdelse) og fungerer som en vejledning til at strukturere processen.
+
+---
 
 ## Lineære Procesmodeller
----
 [[00 - Lineære Modeller|Lineære Modeller]] følger en fast, sekventiel rækkefølge, hvor hver fase afsluttes fuldstændigt, før den næste påbegyndes. Der er ingen mulighed for at gå tilbage til en tidligere fase.
 
 > [!example] Eksempler
@@ -22,8 +23,9 @@ En procesmodel er en skabelon, der hjælper med at planlægge og styre, hvornår
 - Manglende fleksibilitet – ændringer eller fejl, der opdages sent, kan være dyre at rette.
 - Risiko for, at fejl og misforståelser først identificeres i de senere faser, hvilket kan påvirke hele projektet.
 
-## Cykliske Procesmodeller
 ---
+
+## Cykliske Procesmodeller
 [[00 - Cykliske Modeller|Cykliske Modeller]] (ofte kaldet iterative eller inkrementelle modeller) bygger på gentagne cyklusser, hvor man udvikler, evaluerer og forbedrer systemet løbende. Denne tilgang understøtter kontinuerlig feedback og tilpasning, så systemet kan justeres i takt med ændringer i krav og forretningsmiljø.
 > [!example] Eksempel
 >
@@ -41,8 +43,9 @@ En procesmodel er en skabelon, der hjælper med at planlægge og styre, hvornår
 - Risiko for "scope creep", hvis ændringer ikke håndteres ordentligt.
 - Det kan være vanskeligt at forudsige den endelige tidslinje og omkostninger.
 
-## Systemets Vækst – Features og Fidelity
 ---
+
+## Systemets Vækst – Features og Fidelity
 Når du vælger en cyklisk procesmodel, skal du også tage stilling til, hvordan systemet vokser over tid. Væksten måles typisk ud fra to parametre:
 
 ### Fidelity (Troskab)
@@ -60,8 +63,9 @@ Når du vælger en cyklisk procesmodel, skal du også tage stilling til, hvordan
 - **Iterativ:** Gentagne cyklusser, hvor hver iteration bygger videre på den forrige. Væksten kan foregå spredt på både features og fidelity, med prioritering baseret på den værdi, det giver for brugeren.
 - **Inkrementel:** Udviklingen foregår i adskilte, fuldt færdige inkrementer. Hvert inkrement leveres med høj fidelity og integreres løbende med de øvrige dele af systemet, hvilket muliggør refaktorering og optimering undervejs.
 
-## Sammenfatning
 ---
+
+## Sammenfatning
 Valget af procesmodel – lineær eller cyklisk – afhænger af projektets krav, kompleksitet og behov for fleksibilitet. Lineære modeller tilbyder en struktureret og forudsigelig tilgang, mens cykliske modeller understøtter løbende tilpasning og systemudvikling gennem iterationer, hvor systemets vækst vurderes i forhold til både funktioner og fidelity.
 
 
@@ -87,14 +91,16 @@ Valget af procesmodel – lineær eller cyklisk – afhænger af projektets krav
 >
 >Typisk følger forlystelsesparker den incrementelle approach, hvor nye attraktioner tilføjes over tid.
 
-## Procesmodel vs. Systemudviklingsmetode
 ---
+
+## Procesmodel vs. Systemudviklingsmetode
 En procesmodel er en abstrakt beskrivelse af, hvordan de forskellige faser i udviklingsarbejdet hænger sammen – for eksempel om du følger en sekventiel (predictive) eller en iterativ tilgang. Den fokuserer på rækkefølgen af aktiviteter som kravindsamling, design, implementering, test og vedligeholdelse.
 
 En systemudviklingsmetode dækker derimod hele tilgangen til at udvikle et system. Det inkluderer ikke blot procesmodellen, men også de konkrete teknikker, værktøjer, roller og arbejdsmetoder, der anvendes for at opnå et færdigt produkt. Med andre ord er procesmodellen en delmængde af den samlede systemudviklingsmetode, som også indeholder de praktiske redskaber og retningslinjer, der hjælper med at styre og gennemføre projektet.
 
-## Resourser
 ---
+
+## Resourser
 - [Procesmodeller Læringsobjekt](https://rise.articulate.com/share/-uAiD1CvlEXdENbkMn17_PJLTwFakBcP#/)
 
 

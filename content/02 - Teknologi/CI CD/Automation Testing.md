@@ -4,7 +4,8 @@ aliases:
   - Automation Test
 ---
 > [!tldr] Definition
-Automation testing er brugen af specialiserede værktøjer eller scripts til automatisk at køre prædefinerede tests på en softwareapplikation.    
+> Automation testing er brugen af specialiserede værktøjer eller scripts til automatisk at køre prædefinerede tests på en softwareapplikation.   
+
 - **Formål:**  
     - Eliminere manuel indgriben ved gentagende testopgaver (fx regressionstests)  
     - Forbedre testeffektivitet og dække et bredere testområde
@@ -14,11 +15,9 @@ Automation testing er brugen af specialiserede værktøjer eller scripts til aut
     - Forøget nøjagtighed og konsistens i testresultaterne  
 	 - Frigørelse af ressourcer til mere komplekse testaktiviteter
         
-
-
+---
 
 ## Fordele ved Automation Testing
----
 - **Omkostningsbesparelser:**  
     Reducerer langsigtede omkostninger ved at minimere manuel indsats og forkorte udviklingscyklusser.
     
@@ -43,11 +42,9 @@ Automation testing er brugen af specialiserede værktøjer eller scripts til aut
 - **Højere ROI:**  
     Hurtigere releases og bedre kvalitet, med færre manuelle testomkostninger, medfører en højere samlet investeringsafkast.
     
-
 ---
 
 ## Automation Testing vs. Manuel Test
----
 
 |**Aspekt**|**Manuel Test**|**Automation Testing**|
 |---|---|---|
@@ -59,10 +56,9 @@ Automation testing er brugen af specialiserede værktøjer eller scripts til aut
 |**Område for specialisering**|Udføres typisk for eksplorativ, ad-hoc og usability tests|Ideel til regression, performance og gentagne testkørsler|
 |**Færdigheder**|Kræver evnen til at imitere brugeradfærd|Kræver programmering og scripting-evner for testcase-automatisering|
 
-
+---
 
 ## Hvilke Tests Skal Automatiseres?
----
 Følgende tests egner sig særligt godt til automatisering:
 
 - **Repetitive og Monotone Tests:**  
@@ -83,10 +79,9 @@ Følgende tests egner sig særligt godt til automatisering:
 - **Tidskrævende og Kedelige Tests:**  
     Fx performance- og belastningstests, som ved manuel udførelse kan være ekstremt arbejdskrævende.
     
-
+---
 
 ## Typer af Automation Testing
----
 Her er en oversigt over de mest almindelige testtyper, der kan automatiseres:
 
 - **Regression Testing:**  
@@ -116,11 +111,9 @@ Her er en oversigt over de mest almindelige testtyper, der kan automatiseres:
 - **UI Testing:**  
     Sikrer, at brugergrænsefladens elementer (knapper, felter og layouts) fungerer korrekt og giver en glidende brugeroplevelse.
     
-
-
+---
 
 ## Opsummering
----
 Automation testing er en hjørnesten i moderne softwareudvikling, der:
 
 - **Reducerer omkostninger og testtid** ved at automatisere gentagne og tidskrævende testopgaver.
@@ -134,6 +127,7 @@ Automation testing er en hjørnesten i moderne softwareudvikling, der:
 
 Noterne giver et overblik over, hvad automation testing indebærer, de konkrete fordele sammenlignet med manuel test, og hvilke testtyper samt testscenarier der bør prioriteres for at opnå optimal testeffektivitet.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Automation Testing Aritcle](https://www.browserstack.com/guide/automation-testing-tutorial)

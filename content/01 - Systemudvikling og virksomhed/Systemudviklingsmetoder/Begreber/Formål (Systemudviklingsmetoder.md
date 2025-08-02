@@ -10,9 +10,10 @@ aliases:
 > - At danne et overblik over en proces. 
 > - At identificere sammenhænge mellem systemelementer.
 
-## Resourser
 ---
-- asd
+
+## Resourser
+- 
 
 
 

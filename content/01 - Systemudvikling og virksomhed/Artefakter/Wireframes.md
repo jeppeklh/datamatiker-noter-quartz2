@@ -1,12 +1,12 @@
 tags: #Systemudvikling #Artifact
-## Definition
----
-En wireframe er en grundlæggende, skematisk, og ofte forenklet visualisering af en hjemmeside, mobilapp eller anden form for digitalt produkt. Det er typisk enkle tegninger med et minimum af informationer, et overblik over, hvordan siderne skal vises i forhold til hinanden uden at vise et specifikt design.
+> [!tldr] Definition
+> En wireframe er en grundlæggende, skematisk, og ofte forenklet visualisering af en hjemmeside, mobilapp eller anden form for digitalt produkt. Det er typisk enkle tegninger med et minimum af informationer, et overblik over, hvordan siderne skal vises i forhold til hinanden uden at vise et specifikt design.
 
 Formålet med en wireframe er at repræsentere layoutet, strukturen og placeringen af de vigtigste elementer på en digital skærm uden at fokusere på design, farver, billeder eller andre grafiske detaljer.
 
-## Typer af wireframes
 ---
+
+## Typer af wireframes
 #### Low-fidelity
 - Indeholder typisk kun de mest elementære elementer og strukturer (bokse, streger og simple forme)
 - Ingen eller få detaljer som farver, billeder eller tekstformatering.
@@ -21,8 +21,9 @@ Formålet med en wireframe er at repræsentere layoutet, strukturen og placering
 - Giver en næsten endelig visuel repræsentation af det endelige produkt og kan endda inkludere interaktive elementer som knapper og links.
 - Bruges normalt i de senere stadier af designprocessen og fungerer som næsten færdige skitser, som udviklere kan bygge det endelige produkt ud fra.
 
-## Kvalitetskriterier
 ---
+
+## Kvalitetskriterier
 #### Klarhed
 Vurdér, hvor klart wireframes kommunikerer de grundlæggende layout- og strukturkoncepter. Er det nemt for alle interessenter at forstå, hvad der foregår i wireframesne?
 #### Funktionalitet

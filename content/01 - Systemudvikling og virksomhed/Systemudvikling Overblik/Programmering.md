@@ -1,10 +1,10 @@
 tags: #Systemudvikling #DevelopmentPhase
 ## Fokus
----
 Fremstil god kode.
 
-## Kvalitetssikring
 ---
+
+## Kvalitetssikring
 - Laver du det rigtige system?
 - Laver du systemet rigtigt? 
 

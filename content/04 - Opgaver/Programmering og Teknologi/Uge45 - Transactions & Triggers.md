@@ -1,8 +1,10 @@
   
 Dette opgavesæt giver dig mulighed for at oprette og arbejde med transaktioner med stored procedures samt skabe triggers i en webshop-database. Formålet er at styrke dine færdigheder i SQL Server ved at anvende både transaktioner og triggers til automatisering af opgaver, sikring af dataintegritet og implementering af forretningslogik.
 
-## Øvelse 1: Terminologi
+
 ---
+
+## Øvelse 1: Terminologi
 **_Forventning_:** At forstå grundlæggende begreber inden for transaktioner og triggers.
 
 Brug "Ordet rundt" til at reflektere over begreberne:
@@ -43,14 +45,16 @@ Udføres efter den udløsende handling er fuldført.
 **INSTEAD OF Triggers**
 Udføres i stedet for den specificerede handling og muliggør tilpasset logik.
 
-## Øvelse 2: Transaktioner i praksis
 ---
+
+## Øvelse 2: Transaktioner i praksis
 **_Forventning_**: Få praktisk erfaring med brug af transaktioner og stored procedures til at sikre dataintegritet i en webshop-database.
 
 Du skal oprette tre stored procedures til at håndtere følgende processer: oprettelse af en ny ordre (shopping cart), indsættelse af produkter i ordrelinjerne, og opdatering af lagerbeholdningen. Derefter skal du bruge disse stored procedures i én samlet transaktion, som sikrer, at alle ændringer kun gemmes, hvis alle operationer er gennemført uden fejl.
 
-#### Øvelse 2.1: Opret en stored procedure til oprettelse af en ordre (SHOPPINGCART)
 ---
+
+#### Øvelse 2.1: Opret en stored procedure til oprettelse af en ordre (SHOPPINGCART)
 
 Opret en stored procedure kaldet uspCreateOrder, der:
 - Indsætter en ny post i SHOPPINGCART-tabellen.
@@ -71,8 +75,9 @@ BEGIN
 	SET @ORDERID = SCOPE_IDENTITY();
 END;
 ```
-#### Øvelse 2.2: Opret en stored procedure til indsættelse af ordrelinjer (ORDERITEM)
 ---
+
+#### Øvelse 2.2: Opret en stored procedure til indsættelse af ordrelinjer (ORDERITEM)
 Opret en stored procedure kaldet uspCreateOrderItem, der:
 - Tilføjer produkter til ORDERITEM-tabellen med referencen til OrderID fra øvelse 2.1.
 ```SQL
@@ -94,8 +99,9 @@ DECLARE @ORDERID INT
 EXEC uspCreateOrder 4, '2031-12-01', 1, 1, 1, @ORDERID OUTPUT  
 EXEC uspCreateOrderItem @ORDERID, 1, 666, 123, 1
 ```
-#### Øvelse 2.3: Opret en stored procedure til opdatering af lagerbeholdningen (PRODUCT)
 ---
+
+#### Øvelse 2.3: Opret en stored procedure til opdatering af lagerbeholdningen (PRODUCT)
 Opret en stored procedure kaldet uspUpdateStockQuantity, der:
 - Opdatere lagerbeholdningen for et produkt med en given mængde.
 - Tjekker, at der stadig er nok produkter på lager; hvis lageret går i minus, skal opdateringen annulleres.
@@ -125,8 +131,9 @@ BEGIN
 END;
 ```
 
-#### Øvelse 2.4: Brug stored procedures i en transaktion
 ---
+
+#### Øvelse 2.4: Brug stored procedures i en transaktion
 Opret en transaktion i SQL Server, der kalder de tre stored procedures fra trin 2.1 til 2.3:
 - Start transaktionen med BEGIN [[TRANSACTION]].
 - Kald uspCreateOrder, uspCreateOrderItem, og uspUpdateStockQuantity i rækkefølge.
@@ -159,8 +166,9 @@ BEGIN
 END;
 ```
 
-#### Øvelse 2.5: Refleksion over Transaktioner
 ---
+
+#### Øvelse 2.5: Refleksion over Transaktioner
 Skriv dine refleksioner over følgende spørgsmål:
 ##### Hvorfor er det vigtigt at bruge både BEGIN TRANSACTION, COMMIT, og ROLLBACK i ovenstående transaktion?
 Brug af BEGIN [[TRANSACTION]], [[COMMIT]] og [[ROLLBACK]] er kritisk for atomaritet og konsistens, hvilket sikrer, at alle ændringer enten sker samlet eller slet ikke.
@@ -170,8 +178,9 @@ Brug af BEGIN [[TRANSACTION]], [[COMMIT]] og [[ROLLBACK]] er kritisk for atomari
 ##### Hvilke fordele giver brugen af output-parametre i stored procedures, når du arbejder med transaktioner?
 Output-parametre i stored procedures giver øjeblikkelig feedback, nyttig i beslutningstagning under transaktioner.
 
-## Øvelse 3: Triggers til dataintegritet og forretningsregler
 ---
+
+## Øvelse 3: Triggers til dataintegritet og forretningsregler
 
 **_Forventning_**: Bruge triggers til at sikre dataintegritet og håndhæve forretningsregler.
 
@@ -196,12 +205,15 @@ BEGIN
 END;
 ```
 
-## Øvelse 4: Oprettelse af triggers til automatiske handlinger
 ---
+
+## Øvelse 4: Oprettelse af triggers til automatiske handlinger
 **_Forventning_**: Lære at oprette triggers, der udfører automatiske handlinger baseret på dataændringer.
 
-#### Øvelse 4.1:
 ---
+
+#### Øvelse 4.1:
+
 Opret en trigger på ORDERITEM-tabellen, der udløses AFTER INSERT. Triggeren skal opdatere PRODUCT-tabellen og reducere lagerbeholdningen, men kun hvis produktet er valgt til kurven (SelectedToCart = 1).
 ```SQL
 CREATE TRIGGER trg_UpdateProductStockAfterInsert
@@ -218,8 +230,9 @@ END;
 
 Test triggeren ved at køre en INSERT statement på ORDERITEM-tabellen og SELECT statement på PRODUCT-tabellen.
 
-#### Øvelse 4.2:
 ---
+
+#### Øvelse 4.2:
 Opret en trigger på SHOPPINGCART-tabellen, der udløses AFTER INSERT. Triggeren skal reducere kundens point i CUSTOMER-tabellen baseret på den brugte points, hvis nogle er brugt.
 ```SQL
 CREATE TRIGGER trg_UpdateCustomerPointsAfterInsert
@@ -236,8 +249,9 @@ END;
 
 Test triggeren ved at køre en INSERT statement på SHOPPINGCART-tabellen og SELECT statement på CUSTOMER-tabellen.
 
-#### Øvelse 4.3:
 ---
+
+#### Øvelse 4.3:
 Opret en trigger på Payment-tabellen, der udløses AFTER INSERT. Triggeren skal opdatere OrderStatus i SHOPPINGCART-tabellen til ’Paid’.
 ```SQL
 CREATE TRIGGER trg_UpdateOrderStatusToPaidOnPaymentInsert
@@ -258,8 +272,9 @@ END;
 
 Test triggeren ved at køre en INSERT statement på Payment-tabellen og SELECT statement på SHOPPINGCART-tabellen.
 
-#### Øvelse 4.4:
 ---
+
+#### Øvelse 4.4:
 Opret en trigger på SHIPMENT-tabellen, der udløses AFTER INSERT. Triggeren skal opdatere OrderStatus i SHOPPINGCART-tabellen til Shipped.
 ```SQL
 CREATE TRIGGER trg_UpdateOrderStatusToShippedOnShipmentInsert
@@ -280,8 +295,9 @@ END;
 
 Test triggeren ved at køre en INSERT statement på SHIPMENT-tabellen og SELECT statement på SHOPPINGCART-tabellen.
 
-#### Øvelse 4.5:
 ---
+
+#### Øvelse 4.5:
 Opret en trigger på SHOPPINGCART-tabellen, der udløses AFTER UPDATE, når status ændres til "Paid". Triggeren skal opdatere kundens point i CUSTOMER-tabellen baseret på den samlede værdi af de valgte produkter i kurven.
 ```SQL
 CREATE TRIGGER trg_UpdateCustomerPointsOnOrderPaid
@@ -307,9 +323,9 @@ END;
 Test triggeren ved at køre en UPDATE statement på SHOPPINGCART-tabellen og SELECT statement på CUSTOMER-tabellen.
 
 
+---
 
 ## Øvelse 5: Triggers til Logning
----
 **_Forventning_**: Skab logningstriggers for at holde styr på ændringer i kritiske tabeller.
 
 Opret en trigger kaldet trg_LogShoppingCartChanges på SHOPPINGCART-tabellen, der udføres AFTER INSERT eller AFTER UPDATE. Triggeren skal logge alle ændringer i en separat logtabel, SHOPPINGCART_LOG. Logtabellen skal indeholde følgende felter:
@@ -339,6 +355,9 @@ BEGIN
     FROM inserted;
 END;
 ```
+
+---
+
 # Øvelse 6: Vidensdeling kl. 14:30
 
 **_Forventning_**: Til slut kan du diskutere følgende spørgsmål med dine kolleger for at sikre forståelsen af, hvad I har arbejdet med:

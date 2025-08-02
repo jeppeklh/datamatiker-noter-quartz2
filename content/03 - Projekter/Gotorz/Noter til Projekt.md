@@ -1,15 +1,16 @@
 Flight and hotel merged together in one package
 
+---
 
 ## Problems
----
 - Price changes day to day. It need to be checked everyday
 - Availability of flight and hotel. Also needs to be checked often. Package needs to be deleted if one is not availabale
 - Wasting time
 - Exapanding
 
-## New project idea
 ---
+
+## New project idea
 - Flights API 
 - Hotels API
 
@@ -23,8 +24,9 @@ Skyscanner
 
 24 hours from booking to recieving tickets
 
-## Spørgsmål
 ---
+
+## Spørgsmål
 
 Procesmodel - Cyklisk Inkrementel
 
@@ -79,7 +81,8 @@ Skal teknikker beskrives med aktivitet, input of formål i projekstyringmetoden?
 Vi har ikke APIController fordi vi kalder direkte til en ekstern API. Vi laver ikke vores egne Endpoints. Få styr på Actionmedthods. 
 Og forskellen mellem APIControllers og MVC controllers.
 
-## Kommentarer til kode
 ---
+
+## Kommentarer til kode
 RegisterCustomer og RegisterEmployee - Kig på Debouncing og cancellatiotokens osv. (Specifikt DebounceUsernameCheck).
 

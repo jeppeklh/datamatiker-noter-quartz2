@@ -1,6 +1,5 @@
 	
 ## Iteration 1
----
 Baseret på [[Usecase#Use Case Tilføjelse af film|Usecase: Tilføjelse af film]]
 
 ```plantuml
@@ -12,9 +11,9 @@ System -> Medarbejder: "Film oprettet"
 
 @enduml
 ```
+---
 
 ## Iteration 2
----
 ### Baseret på [[Usecase#Use Case 1 Tilføj Film|Usecase: Tilføjelse af film (opdateret)]]
 ```plantuml 
 @startuml  

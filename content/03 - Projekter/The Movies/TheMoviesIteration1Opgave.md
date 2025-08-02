@@ -1,13 +1,12 @@
 ## Genopfrisk
----
 Denne opgave er tænkt som en rolig opstart primært med praktisk repetition af udvalgte emner fra 1. semester. Du genopfrisker de emner, du selv vurderer, du skal styrkes i, dog sørg for som minimum at sættes dig ind i The Movies-casen.
 
 Formålet med dagens opgave er at få startet godt ud med casen The Movies. I skal arbejde med den over de næste tre uger, og I skal arbejde i sprints og få berørt de fokusområder, der er beskrevet i casen i hvert sprint.
 
+---
+
 ## Øvelse 1 - The Movies
----
 #### Planlægning
----
 Første opgave er at få lavet en realistisk plan.
 
 ##### Krav til planlægningsfasen:
@@ -37,8 +36,9 @@ Lav de nødvendige artefakter inden for LLD.
 
 · Design en WPF-brugergrænseflade med ét hovedvindue samt en dialogboks til indtastning af data; igen hold det simpelt via XAML. Der må gerne bruges databinding mellem View-laget og ViewModel-laget.
 
-#### Programmering
 ---
+
+#### Programmering
 Lav implementeringen ud fra HLD og LLD.
 
 ##### Udleveret CSV-fil med data
@@ -50,8 +50,9 @@ Der ligger et eksempel på konkrete data med både et regneark Uge33-TheMovies.x
 
 · **VIGTIGT**: I den iterative proces, sørg for, at hver i din gruppe for mulighed for at lave en C#-klasse uanset hvilken type, det er; så husk at uddelegere opgaven.
 
-#### Test
 ---
+
+#### Test
 Udfør de planlagte tests.
 
 ##### Krav til testfasen:

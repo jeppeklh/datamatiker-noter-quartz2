@@ -4,20 +4,20 @@ aliases:
   - property
 ---
 tags: #C-sharp #Programmering
-## Overview
----
-Properties muliggør det at tilgå en [[Access modifiers#private|private]] værdi uden at komprimere sikkerheden i sine data
-Se [[Indkapsling|Indkapsling]]
+> [!tldr] Definition
+> Properties muliggør det at tilgå en [[Access modifiers#private|private]] værdi uden at komprimere sikkerheden i sine data
+> Se [[Indkapsling|Indkapsling]]
 
 They are a combination of [[Methods Overview|methods]] that are used as if they were [[Access modifiers#public|public]] [[Fields]].
 
-
+---
 
 ## Declaration
----
 Properties are declared within a [[Classes|class]], typically with a [[Access modifiers#private|private]] [[Fields|field]] to store the value.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 public class Person
 {
@@ -30,12 +30,14 @@ public class Person
 }
 ```
 
+---
 
 ## Auto-Implemented Properties
----
 C# allows you to define properties without a [[Access modifiers#private|private]] [[Fields|field]], using auto-implemented properties.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 public class Person 
 { 
@@ -44,12 +46,14 @@ public class Person
 }
 ```
 
+---
 
 ## Read-Only and Write-Only
----
 Properties can be made read-only or write-only by omitting the set or get accessor, respectively.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 public class Person
 {
@@ -68,12 +72,14 @@ public class Person
 }
 ```
 
+---
 
 ## Property Modifiers
----
 Properties can have [[Access modifiers|access modifiers]], and the access level of the get and set accessors can be different.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 public class Person 
 { 
@@ -81,8 +87,10 @@ public class Person
 	public int Age { private get; set; }
  }
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Fields|CSharp Fields]]
 - [[Variables and Assignment|CSharp Variables]]
 - [[Classes|CSharp Classes]]

@@ -122,6 +122,7 @@ For at undgå dette skal du:
 
 Denne proaktive tilgang giver dig bedre overblik og overskud til at træffe de nødvendige, hensigtsmæssige beslutninger gennem hele projektets livscyklus.
 
-## Resourser
 ---
+
+## Resourser
 - [Fokusområde Læringsobjekt](https://rise.articulate.com/share/C9x7c641Qf8pDgT76Nqqy6ykP99dRgRJ#/lessons/Oa0hKLcF01A-HRBn0cl3HeQQrhk_tXH1)

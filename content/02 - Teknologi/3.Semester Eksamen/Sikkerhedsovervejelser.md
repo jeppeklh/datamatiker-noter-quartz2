@@ -1,5 +1,4 @@
 ###  Direkte API-kald vs. API-gateway
----
 ##### Hvilke sikkerhedsrisici ser du ved ikke at have en intern gateway?
 Uden en gateway er applikationen direkte afhængig af, at de eksterne API'er er stabile og sikre. Det betyder:
 
@@ -22,9 +21,9 @@ Vi brugte ASP.NET Identity, som er tæt bundet til cookie-baseret login. JWT kr�
 - Fornyelse af tokens (refresh tokens).
 - Opbevaring på klienten (localStorage/cookies med ekstra sikkerhed).
 
+---
 
 ### Cookie-baseret login og ASP.NET Identity
----
 ##### Hvordan beskytter cookies mod session hijacking?
 Cookies kan beskyttes med:
 
@@ -41,18 +40,18 @@ ASP.NET Identity styrer dette automatisk. Sessionen udløber efter en periode (f
 ##### Har I overvejet CSRF – og hvordan håndterer I det?
 Ja. ASP.NET Identity har indbygget AntiForgeryToken til formularer, og `SameSite` cookies hjælper også. Vi sikrer, at alle POST-requests validerer tokens.
 
+---
 
 ### Adgangskontrol og rolleopdeling
----
 ##### Hvordan sikrer du, at roller ikke kan eskaleres af en angriber?
 Kun admins har adgang til UI og controller-metoder der tildeler roller. Vi bruger `[Authorize(Roles = "Admin")]` på disse endpoints.
 
  ##### Hvordan valideres rollerne server-side? 
 Roller valideres i ASP.NET Identity via Claims i cookie’en, som kontrolleres i controlleren ved hjælp af `[Authorize]` attributten.
 
+---
 
 ### EF Core og SQL Injection
----
 ##### Hvordan kan man omgå EF Core og skrive farlig SQL?
 Hvis man bruger `context.Database.ExecuteSqlRaw()` uden parameterisering, kan man få SQL injection. Derfor undgår vi raw SQL og bruger LINQ.
 
@@ -62,34 +61,33 @@ Hvis man dynamisk sammensætter hele SQL-sætninger med brugerinput, kan det sta
 ---
 
 ### Audit-log og brute-force detection
----
 ##### Hvordan gemmes logdata?  
 Planen er at logge til en database eller fil via fx Serilog. Logs kan analyseres manuelt eller integreres med et overvågningsværktøj som ELK stack.
 
 ##### Hvordan opdager I brute-force?
 Ved at analysere mange mislykkede loginforsøg fra samme IP eller konto i kort tid. Det kunne fx føre til midlertidig IP-blokering.
 
+---
 
 ### Backup og recovery
----
 ##### Hvor ofte tager I backup – og af hvad?
 Vi tager backup af databasen og brugerkonto-data med faste intervaller (fx dagligt). Kildekoden er versionsstyret i Git.
 
 ##### Hvordan tester I, at backup virker? 
 Vi gendanner backup i et testmiljø og verificerer, at data og brugerkonti kan tilgås og fungerer korrekt.
 
+---
 
 ### MFA og fremtidig udvidelse
----
 ##### Hvordan vil MFA implementeres i praksis?  
 Via ASP.NET Identity + f.eks. SMS-kode eller app-baseret (Microsoft Authenticator). Brugeren tilføjer en 2. faktor i deres profil.
 
 ##### I hvilke situationer bliver MFA nødvendigt?
 Når platformen udvides til håndtering af følsomme data, eller hvis virksomheden får krav via GDPR, NIS2 eller opererer i sektorer med høj compliance (f.eks. finans, sundhed).
 
+---
 
 ## Mere om API
----
 ### **Fordele og ulemper ved direkte API-kald fra Blazor Server**
 
 **Fordele:**
@@ -111,7 +109,6 @@ Når platformen udvides til håndtering af følsomme data, eller hvis virksomhed
     
 - **Sværere at centralisere logging, rate limiting, og validering.**
     
-
 ---
 
 ### **Mulige risici ved direkte API-kald uden mellemlag**
@@ -147,6 +144,7 @@ Når platformen udvides til håndtering af følsomme data, eller hvis virksomhed
 
 
 ---
+
 ### **Hvornår bør man bruge en intern API-gateway/producer-consumer arkitektur?**
 
 **Anvendelsesområder:**

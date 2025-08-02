@@ -1,16 +1,18 @@
 
 For at en organisation kan blive rentabel og dermed levedygtig, skal der genereres indtægtsstrømme. 
 
-## Typer af indtægtssrømme
 ---
+
+## Typer af indtægtssrømme
 #### Engangsindtægt
 Der betales en gang for værditilbuddet og handlen er derefter afsluttet
 
 #### Gentagne Indtægter
 Handlen og dermed relationen er et længere forløb, hvor der betales flere gange.
 
-## De mest almindelige indtægtsstrømme
 ---
+
+## De mest almindelige indtægtsstrømme
 #### Salg af værdi
 Den mest almindelige form for indtægtsstrøm er modtage betaling for at overdrage ejerskab af et fysisk produkt. 
 

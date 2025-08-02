@@ -1,6 +1,5 @@
 tags: #Systemudvikling #DevelopmentPhase
 ## Test af systemet
----
 Kan testes på mange niveauer:
 
 - Virker den enkelte lille del af koden? Virker det korrekt?
@@ -17,8 +16,9 @@ Lav test der tager udgangspunkt I hvert af de 4 hovedområder:
 - [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Low Level Design]]
 - [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Programmering]]
 
-## Kvalitet at test
 ---
+
+## Kvalitet at test
 - Test er vigtigt
 - En test har kun to mulig udfald: ok eller fejl. 
 - En test skal altid have sporbarhed til systemdokumentationen

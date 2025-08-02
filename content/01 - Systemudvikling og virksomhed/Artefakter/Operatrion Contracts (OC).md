@@ -1,9 +1,8 @@
 tags: #Systemudvikling #Artifact
-## Definition
----
-[[applying-uml-and-patterns-3rd.pdf#page=286&selection=0,11,0,31|Larman kapitel 11]]
-
-En operationskontrakt (OC) er et artefakt i [[Unified Process]] (UP), der anvendes til at beskrive systemoperationer i detaljer. 
+> [!tldr] Definition
+> En operationskontrakt (OC) er et artefakt i [[Unified Process]] (UP), der anvendes til at beskrive systemoperationer i detaljer. 
+>
+> [[applying-uml-and-patterns-3rd.pdf#page=286&selection=0,11,0,31|Larman kapitel 11]]
 
 Selvom [[Use Case|use cases]] generelt er tilstrækkelige til at beskrive systemets opførsel, kan operationskontrakter være værdifulde til at specificere komplekse og subtile operationer mere præcist. 
 
@@ -13,8 +12,10 @@ Operationskontrakter fokuserer på de tilstandsændringer, der sker i [[Repo/01 
 Operationskontrakter udarbejdes typisk under elaboration-fasen i UP, når man arbejder med at detaljere use cases og analysere systemoperationer. 
 ([[applying-uml-and-patterns-3rd.pdf#page=305&selection=26,1,33,90|Larman p.305]])
 De er dog ikke et krav, men et værktøj, man kan vælge at bruge, når det giver mening for at forbedre forståelsen af systemet.
-### Opbygning
+
 ---
+
+### Opbygning
 En operationskontrakt består typisk af følgende sektioner:
 ([[applying-uml-and-patterns-3rd.pdf#page=290&selection=0,6,0,54|Larman p.290]])
 **Operation**: 
@@ -29,17 +30,18 @@ Væsentlige antagelser om systemets tilstand eller objekterne i [[Repo/01 - Syst
 **Efterbetingelser**: 
 Beskriver ændringerne i objekterne i domænemodellen efter operationen er udført. Dette er den vigtigste del af kontrakten.
 
-## Relation til SSD
 ---
+
+## Relation til SSD
 Operationskontrakter defineres for systemoperationer, som er de operationer, systemet tilbyder i sin offentlige grænseflade. 
 
 Systemoperationer identificeres typisk ved at bruge [[System Sequence Diagram (SSD)]], som viser interaktionen mellem eksterne aktører og systemet. 
 
 SSD'er er nyttige til at visualisere de systemhændelser, som aktørerne genererer, og til at forstå rækkefølgen af disse hændelser.
 
+---
 
 ## Hvordan de laves
----
 [[applying-uml-and-patterns-3rd.pdf#page=298&selection=0,1,14,30|Larman p.298]]
 Identify system operations from the SSDs.
 
@@ -61,9 +63,9 @@ Identify system operations from the SSDs.
 	
 	(worse) Create a SalesLineItem.
 
+---
 
 ## Hvorfor OC
----
 Fordele ved at Bruge Operationskontrakter
 
 **Præcision**: 
@@ -82,8 +84,10 @@ Man bør fokusere på de operationer, der er komplekse, subtile eller ikke fuldt
 
 Hvis udviklerne nemt kan forstå, hvad der skal ske uden operationskontrakter, bør man undlade at skrive dem.
 ([[applying-uml-and-patterns-3rd.pdf#page=297&selection=19,0,19,95|Larman p.297]])
-## Kvalitetskriterier
+
 ---
+
+## Kvalitetskriterier
 #### Er
 - Sikre sig at attributterne i operationen er i overensstemmelse med attributterne i domænemodellen
 - Sikre sig at operationen er tilstede i [[System Sequence Diagram (SSD)|SSD'en]]
@@ -93,8 +97,9 @@ Hvis udviklerne nemt kan forstå, hvad der skal ske uden operationskontrakter, b
 - Sikre sig operations navnet er i overenstemmelse med C# kode konventioner
 - Sikre sig at operations navnet er på engelsk
 
-## Eksempler på typer af posconditions
 ---
+
+## Eksempler på typer af posconditions
 > ([[applying-uml-and-patterns-3rd.pdf#page=292&selection=0,0,0,32&color=yellow|p.292]])
 > 11.4. Definition: Postconditions
 
@@ -109,8 +114,9 @@ Hvis udviklerne nemt kan forstå, hvad der skal ske uden operationskontrakter, b
 
 Tænk i forhorld til domænemodellen. association formed (associations er strergerne i domænemodellen)
 
-## Forbindelser til andre Artefakter
 ---
+
+## Forbindelser til andre Artefakter
 Operationskontrakter er relateret til andre artefakter i UP, f.eks.:
 
 **SSDs**: 

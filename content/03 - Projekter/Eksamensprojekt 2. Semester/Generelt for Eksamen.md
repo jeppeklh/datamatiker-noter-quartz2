@@ -17,8 +17,10 @@ Vis artefakter vi har lavet og arbejdet med.
 Beskriv alle fokusområder,  processer, reflektioner og taker.
 
 Tænk tilbage den snak vi har haft med undervisere i undervisningen. Det er den samme diskussion vi kan forvente til eksamen.
-### Eksamen
+
 ---
+
+### Eksamen
 #### Præsentation gruppevis
 - Introduktion - Hvad går projektet ud på?
 - Demonstration - Gennemgang af program

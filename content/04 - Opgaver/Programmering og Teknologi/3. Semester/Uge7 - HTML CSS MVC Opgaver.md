@@ -1,7 +1,6 @@
 # HTML / CSS
----
+
 ## Øvelse 1
----
 >[!info] Del teamet op i to mindre grupper, og brug **Ordet rundt** til at reflektere over begreberne:
 
 - Forklar ordene ”**client**” og ”**server**” for hinanden.
@@ -30,35 +29,37 @@ Sørg for, at alle får mulighed for at tale
 >- **Webapplikation**: Interaktiv hjemmeside (fx Facebook, Gmail).
 >- **Native App**: Installeret app på en enhed (iOS/Android), kører direkte på operativsystemet.
 
-## Øvelse 2
 ---
+
+## Øvelse 2
 **ca. 15 min**
 
 >[!info]  Ud fra hvad du har lært i videoerne, burde du kunne løse disse opgaver, hvis ikke er det ganske tilladt at google noget hjælp:
 
 [https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1) (løs alle opgaverne).
 
-## Øvelse 3
 ---
+
+## Øvelse 3
 **ca. 40 min**
 
 >[!question]  Løs disse fire opgaver
 
 [https://teaching.codenation.com](https://teaching.codenation.com/)
 
+---
 
 ## Øvelse 4
----
 **ca. 40 min**
 
 >[!question]  Løs disse to opgaver
 
 [https://gocoding.org/html-practice-exercises/](https://gocoding.org/html-practice-exercises/)
 
+---
+
 # MVC
----
 ## Øvelse 5
----
 **ca. 15 min**
 
 >[!question]  Skriv tre ting ned fra forberedelsen, som I synes var svært.
@@ -67,8 +68,9 @@ Brug CL-strukturen: ”Team-ordspind” til at hjælpe hinanden til en bedre for
 
 Bagefter tager vi et par stykker op i plenum.  
  
-## Øvelse 6
 ---
+
+## Øvelse 6
 **ca. 20 min**
 
 >[!question]  Brug Ordet rundt til at reflektere over begreberne:
@@ -94,9 +96,9 @@ Hvad er MVC?
 >- **Sortering**: Rækkefølge af data (f.eks. alfabetisk).
 >- **Entity Framework**: ORM (Object-Relational Mapping), der gør det nemmere at arbejde med databaser i C#.
 
+---
 
 ## Øvelse 7
----
 **ca. 60 min**
 
 Lav tutorialen [Get started with ASP.NET Core MVC](https://learn.microsoft.com/en-gb/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-9.0&tabs=visual-studio) som gruppe. Ræk hånden op, når/hvis hele gruppen er gået i stå.
@@ -114,8 +116,9 @@ Trinene er:
 - Add validation
 - Examine Details and Delete
 
-## Øvelse 8
 ---
+
+## Øvelse 8
 **ca. 10 min**
 
 >[!question]  Forklar følgende stump kode på skrift ord for ord:

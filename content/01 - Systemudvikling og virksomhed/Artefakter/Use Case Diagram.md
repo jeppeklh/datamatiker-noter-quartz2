@@ -1,19 +1,6 @@
 tags: #Systemudvikling #Artifact
-## Definition 
----
-[[applying-uml-and-patterns-3rd.pdf#page=158&selection=0,20,0,37|Larman kapitel 6.17]]
-## Syntax
----
-
-### Example
----
-
-
-
-## Header2
----
-
-
+> [!tldr] Definition
+> [[applying-uml-and-patterns-3rd.pdf#page=158&selection=0,20,0,37|Larman kapitel 6.17]]
 
 ## Related Topics
 ---

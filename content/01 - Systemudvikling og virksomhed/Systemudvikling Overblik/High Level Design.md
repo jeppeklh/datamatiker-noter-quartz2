@@ -1,18 +1,19 @@
 tags: #Systemudvikling #DevelopmentPhase
-## Definition
----
-Det overordenede design og modellering
+> [!tldr] Definition
+> Det overordenede design og modellering
 
 Fremstilling af "artefakter", det viser hvordan brugeren interagerer med systemet og hvilken information der benyttes
 
-## Start
 ---
+
+## Start
 - Start med at lave konkrete eksempler på hvordan systemes skal bruges og hvilker informationer der skal findes.
 - Lav derefter mere generiske diagrammer og modeller.
 - Fokus skal være på brugerns oplevelse af systemet (Det er dem der giver feedback).
 
-## Kvalitetssikring
 ---
+
+## Kvalitetssikring
 - Laver du det rigtige system?
 - Laver du systemet rigtigt? 
 

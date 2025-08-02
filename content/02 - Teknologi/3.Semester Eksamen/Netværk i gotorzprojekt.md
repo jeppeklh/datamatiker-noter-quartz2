@@ -1,10 +1,10 @@
 ## Eksempel 
----
 Du åbner en webside i browseren
 Du skriver: `http://example.com`
 
-### Det sker "bag kulissen" – lag for lag
 ---
+
+### Det sker "bag kulissen" – lag for lag
 **Lag 7 – Applikation**
 Din browser laver en HTTP GET-anmodning.
 Det ser fx sådan ud:
@@ -29,9 +29,9 @@ Den sendes via dit lokale netværk til routeren.
 **Lag 1 – Fysisk**
 Data sendes som elektriske signaler over kabel eller som radiobølger via Wi-Fi.    
 
+---
 
 ## Eksempel: API-kald
----
 ### Lag 7 – Applikationslaget
 ---
 **Formål** 
@@ -48,9 +48,9 @@ En Blazor-klient kalder et REST API:
 
 - Blazor deserialiserer JSON til DTO og mapper til modelklasse    
 
+---
 
 ### Lag 6 – Præsentationslaget
----
 **Formål** 
 Sikrer korrekt datapræsentation og sikkerhed.
 
@@ -61,9 +61,9 @@ Sikrer korrekt datapræsentation og sikkerhed.
 
 - JSON-formatering håndteres (serialisering/deserialisering)    
 
+---
 
 ### Lag 5 – Sessionslaget
----
 **Formål**
 Opretter, vedligeholder og afslutter sessioner.
 
@@ -74,9 +74,9 @@ Opretter, vedligeholder og afslutter sessioner.
 
 - Sessionen fastholdes på tværs af flere HTTP-kald
 
+---
 
 ### Lag 4 – Transportlaget
----
 **Formål**
 Pålidelig transport af data mellem enheder.
 
@@ -87,9 +87,9 @@ Pålidelig transport af data mellem enheder.
 
 - Forbindelse oprettes (TCP handshake: SYN, SYN-ACK, ACK)  
 
+---
 
 ### Lag 3 – Netværkslaget
----
 **Formål** 
 Leverer pakker til den korrekte IP-adresse.
 
@@ -100,9 +100,9 @@ Leverer pakker til den korrekte IP-adresse.
 
 - Routere på vejen analyserer IP-headeren og videresender pakken    
 
+---
 
 ### Lag 2 – Datalinklaget
----
 **Formål** 
 Sender data mellem to direkte forbundne enheder (f.eks. din PC til router).
 
@@ -113,8 +113,9 @@ Sender data mellem to direkte forbundne enheder (f.eks. din PC til router).
 
 - Ethernet, Wi-Fi eller andet protokolniveau bruges til transmission i lokalt netværk
 
-### Lag 1 – Fysiske lag
 ---
+
+### Lag 1 – Fysiske lag
 **Formål** 
 Overfører bits fysisk over et medie.
 
@@ -123,9 +124,9 @@ Overfører bits fysisk over et medie.
 
 - 1-taller og 0’er sendes som analoge eller digitale signaler
 
+---
 
 ## Eksempel: SignalR-chat 
----
 
 ### Lag 7 – Applikationslaget
 ---
@@ -139,9 +140,9 @@ Overfører bits fysisk over et medie.
 
 **Protokol:** SignalR over WebSocket (eller fallback til HTTP/Long Polling)
 
+---
 
 ### Lag 6 – Præsentationslaget
----
 **Hvad sker her:**
 - Beskeden (f.eks. JSON med brugernavn og besked) serialiseres.
 
@@ -155,9 +156,9 @@ Overfører bits fysisk over et medie.
 ["SendMessage", ["Mads", "Hej"]]
 ```
 
+---
 
 ### Lag 5 – Sessionslaget
----
 **Hvad sker her:**
 - WebSocket-forbindelsen oprettes én gang og holdes åben.
     
@@ -168,9 +169,9 @@ Overfører bits fysisk over et medie.
 
 **Her undgås klassiske cookies eller tokens i hvert kald**, da forbindelsen allerede er etableret.
 
+---
 
 ### Lag 4 – Transportlaget
----
 **Hvad sker her:**
 - WebSocket-meldinger sendes som **rammer (frames)** over **TCP**.
 
@@ -179,34 +180,33 @@ Overfører bits fysisk over et medie.
     - At rækkefølgen er korrekt
     - Fejlhåndtering ved tabte pakker
 
+---
 
 ### Lag 3 – Netværkslaget
----
 **Hvad sker her:**
 - TCP-segmenterne pakkes ind i IP-pakker.
 
 - IP-adresser bruges til at sende data til den rigtige server og retur til klienten.
 
-
+---
 
 ### Lag 2 – Datalinklaget
----
 **Hvad sker her:**
 - IP-pakker pakkes ind i Ethernet-frames (eller Wi-Fi), som sendes mellem fx din computer og routeren.
 
 - MAC-adresser bruges til at levere data lokalt.
 
+---
 
 ### Lag 1 – Fysiske lag
----
 **Hvad sker her:**
 - 1-taller og 0’er bliver til elektriske signaler (kabel) eller radiobølger (Wi-Fi).
 
 - Data flyttes fysisk gennem netværket.
 
+---
 
 ### Vigtig forskel ift. HTTP:
----
 Ved HTTP/REST lukkes forbindelsen **efter hvert kald**.  
 Ved WebSocket (SignalR) holdes forbindelsen **åben**, og både klient og server kan **sende data når som helst**.
 

@@ -1,6 +1,5 @@
 
 ## Øvelse 1 - Terminologi
----
 Del teamet op i to mindre grupper, og brug Ordet rundt til at reflektere over følgende:
 
 Formålet med en ”CPU” og ”RAM”
@@ -27,8 +26,9 @@ Forskellen mellem ”privileged mode” og ”user mode”
 
 Tidsramme: ca. 20 minutter
 
-## Øvelse 2 - Procesmodellen
 ---
+
+## Øvelse 2 - Procesmodellen
 Beskriv følgende sammen med din makker:
 
 Process state
@@ -53,16 +53,19 @@ Hvad kræves af OS for, at tilstandsændringen ”4 – Got what it needed” ka
 Hvad kræves af et multi-process OS for, at tilstandsændringen ”2 – Gets CPU time” kan udføres, når der er flere processer i tilstand ”Ready”?
 - OS’et skal have en scheduler, der kan tildele CPU-tid til processer, der er "Ready".
 
-#### Advarsel
 ---
+
+#### Advarsel
 Advarsel: Via ”Jobliste” kan du ændre betingelser for kørende processer, herunder standse dem. Hvis du manipulerer med operativsystemets processer, kan du ændre betingelser for andre processer, som afhænger af dem, hermed kan dit system blive ustabilt og uforudsigeligt. Det er ekstremt sjældent, at sådanne konsekvenser ikke kan neutraliseres med en genstart af systemet, men vi giver ingen garantier. Det anbefales derfor, at du ikke manipulerer med processer, medmindre du har et komplet overblik over konsekvenserne.
 
-## Øvelse 3 - Inspektion af Jobliste (Task Manager)
 ---
+
+## Øvelse 3 - Inspektion af Jobliste (Task Manager)
 I ”gamle dage” betød tastekombinationen ”Ctrl+Alt+Delete”, at PC’en genstartede (reboot’ede), men i dag giver tastekombinationen (i Windows 11 etc.) bl.a. adgang til ”Jobliste”, hvilket du skal se nærmere på i denne øvelse.
 
-#### Øvelse 3.1 - Udforsk og overvej
 ---
+
+#### Øvelse 3.1 - Udforsk og overvej
 Gå sammen med din sidemakker, og udfør følgende:
 
 Åbn ”Jobliste” på din PC, og udforsk de enkelte faneblade overfladisk (det er helt ufarligt så længe du ikke piller… )
@@ -70,8 +73,9 @@ Udforsk fanebladet ”Processer” nøjere.
 Bemærk, at flere processer har en foranstillet pil (”>”) som gør, at du kan få yderligere informationer om bagvedliggende processer. Bemærk, også at du får flere muligheder, hvis du højreklikker på et procesnavn.
 Prøv om du kan gætte, hvad forskellen mellem ”Apps”, ”Baggrundsprocesser” og ”Windows-processer” er.
 
-## Øvelse 4 - C# processer
 ---
+
+## Øvelse 4 - C# processer
 Benyt parprogrammering i de følgende øvelser.
 
 Iagttag nedenstående program:
@@ -125,15 +129,17 @@ class Program
 }
 ```
 
-#### Øvelse 4.1 - Hvad kommer der til at ske?
 ---
+
+#### Øvelse 4.1 - Hvad kommer der til at ske?
 Udfør følgende:
 
 Læs først koden igennem og se, om du kan forudsige, hvad den gør.
 Vend dine tanker med din sidemakker.
 
-#### Øvelse 4.2 - Flere processer
 ---
+
+#### Øvelse 4.2 - Flere processer
 Udfør følgende:
 
 Opret en konsolapplikation med projektnavnet “Process01” (VIGTIGT!)
@@ -143,8 +149,9 @@ Var din forudsigelse fra tidligere korrekt?
 Åbn ”Jobliste”, og undersøg de kørende Apps
 Bemærk, hvad der sker, når dine processer standser
 
-#### Øvelse 4.3 - Virtuel hukommelsese
 ---
+
+#### Øvelse 4.3 - Virtuel hukommelsese
 Du har måske tænkt tanken: ’Hvad så, hvis jeg løber tør for RAM? Fryser maskinen så?’
 
 I ovenstående tilfælde vil din maskine benytte sig af den virtuelle hukommelse, altså i det tilfælde, at du har benyttet dig af alt den RAM, du har i din maskine (for eksempelvis: 8GB eller 16GB RAM). Men ”Hvad er virtuel hukommelse?”. Virtuel hukommelse er i virkeligheden blot en sidefil, der oprettes på en af dine eksisterende partitioner (en opdeling af diskens lager) i maskinen, hvilket også betyder, at hastigheden af denne sidefil er begrænset af hastigheden på din disk. I gamle dage, hvor man havde harddiske (HDD), var denne sidefil meget langsom. Dette er dog ikke et problem, man som sådan bemærker i moderne maskiner, hvor man har Solid State Diske (SSD).
@@ -158,12 +165,14 @@ Udfør følgende:
 Bemærk, hvad der sker med den ledige plads, hvis du vælger at starte programmet med mange processer, og bemærk, hvad der sker med den ledige plads, når dine processer standser
 **Note:** Hvis du ikke kan se nogen ændring under ”Denne pc”, så benyt dig af F5
 
-## Frivillig - Process Control Block (PCB)
 ---
+
+## Frivillig - Process Control Block (PCB)
 I denne opgave skal du oprette en C#-applikation, hvor du skal implementere en process control block – denne øvelse arbejder vi videre på i næste opgave (Ex52), hvor vi vil implementere en prioritetskø (priority queue).
 
-## Frivillig - Oprettelse af PCB
 ---
+
+## Frivillig - Oprettelse af PCB
 Udfør følgende:
 
 Opret en ny konsolapplikation med navnet ”Scheduling”

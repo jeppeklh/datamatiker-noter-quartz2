@@ -17,18 +17,14 @@
 
 ---
 
-
-
-
-
 ## Guidelines og best practices
----
 - Følg UML-standarder (navngivning, notation, multipliciteter, start/slut-punkter)  
 - Sæt egne kvalitetstjek baseret på artefaktets formål (skal elementerne fungere som tiltænkt?)  
 - Anvend faglige frameworks, designprincipper (SOLID, DRY, KISS) og kodestandarder
 
-## Eksempler på verificerings-tjek
 ---
+
+## Eksempler på verificerings-tjek
 
 | Artefakt                       | Typiske spørgsmål                                                                                                                    |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -45,8 +41,9 @@
 | **Metode**                     | • Letlæselig signatur og formål?<br>• Ingen unødvendig kompleksitet eller gentagelse?                                                |
 | **Metodekald**                 | • Overfører korrekte parametre?<br>• Returnerede værdier håndteres korrekt?<br>• Beskyttet mod sikkerhedstrusler (fx SQL-injektion)? |
 
-## Eksempel på verificeringsproces
 ---
+
+## Eksempel på verificeringsproces
 **Artefakt**: Use Case “Opret profil”  
  1. **Titel & Aktør**: “OpretProfil” matchende BPM-pool “Bruger”.  
  2. **Formål**: Beskrevet i UC: “Systemet opretter ny brugerprofil.”  
@@ -56,8 +53,9 @@
  6. **Design Class Diagram**: Klasse `UserService` indeholder `createUser(...)`.  
  7. **Implementering**: Metode matcher signatur, dokumentation og testkrav.  
 
-## Verificering alene er ikke nok!
 ---
+
+## Verificering alene er ikke nok!
 - **Verificering** sikrer intern korrekthed, men garanterer **ikke** kundeværdi.  
 - Uden [[Validering]] kan du få et **perfekt teknisk** system, der **ingen værdi** giver brugerne.  
 
@@ -65,7 +63,7 @@
 – **[[Validering]]** + **Verificering** = komplet kvalitets­sikring  
 – Begge processer supplerer hinanden og er nødvendige for at levere et solidt og brugbart system.  
 
+---
 
 ## Resourcer
----
 - [Validering og Verificering Læringsobjekt (Verificering)](https://rise.articulate.com/share/yGM2iQz7nvEApmTC2NUBqtcmqts_AovC#/lessons/OAxl36ZekuO3WayPuW99nB-mGaIzh16r)

@@ -2,24 +2,26 @@
 Lav systemer der giver værdi for brugerene.
 Hvad skal system kunne for at give brugerene værdi?
 
+---
+
 ## Før systemudviklingsprocessen
----
 ### Forstå virksomeden
----
 - Hvordan fungerer virksomheden?
 - Hvilke udfordringer har de?
 - Hvordan kan du understøtte eller udvikle forretningsprocesserne?
 
-## Selve processen består af
 ---
+
+## Selve processen består af
 - [[Objektorienteret analyse]]
 - [[Objektorienteret design]]
 - Objektorienteret programmering
 
 De har hver deres egne kvalitetskriterier.
 
-## Fokusområder
 ---
+
+## Fokusområder
 Opdeling af processen
 
 - [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Projektstyring]]

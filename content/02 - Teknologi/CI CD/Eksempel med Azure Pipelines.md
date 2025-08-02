@@ -1,5 +1,4 @@
 ### Workflow Overblik
----
 1. **PR Pipeline:**
     - **Trigger:** En pull request (PR) i Azure Repos Git.
     - **Checks:**  
@@ -27,9 +26,9 @@
     - **Rollback:**  
         - Hvis tests fejler, udløses en rollback, og udvikleren underrettes for at foretage rettelser.
         
+---
 
 ### Overvågning og Sikkerhed
----
 - **Monitoring:**  
     - Azure Monitor, Application Insights og Log Analytics anvendes til at indsamle data om systemets sundhed, performance og anvendelse.
     
@@ -39,6 +38,7 @@
 - **Agentvalg:**  
     - Overvej om du vil bruge Microsoft-hosted eller self-hosted agents afhængigt af sikkerheds- og performancekrav.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Azure Pipeline Microsoft Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture?view=azure-devops)

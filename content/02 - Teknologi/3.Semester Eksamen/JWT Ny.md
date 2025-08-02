@@ -1,7 +1,5 @@
 ## Introduktion til JSON Web Tokens (JWT)
-
 ### Hvad er JWT?
----
 JSON Web Token (JWT) er en åben standard for en kompakt, URL-sikker token, der gør det muligt at overføre information sikkert som JSON mellem forskellige parter. 
 
 En JWT er digitalt signeret (fx med en hemmelig nøgle ved eller med en privat nøgle), så modtageren kan verificere tokenets integritet og oprindelse. 
@@ -10,8 +8,9 @@ Med andre ord kan en JWT fungere som et **digitalt adgangskort**, der indeholder
 
 **Bemærk:** En JWT er som standard _kun_ Base64URL-kodet, ikke krypteret. Det betyder at indholdet i tokenets payload kan læses af enhver, der dekoder det, om end det ikke kan ændres uden at bryde signaturen. Man bør derfor undgå at placere meget følsomme oplysninger i en JWT, medmindre tokenet også krypteres. Formålet med signaturen er at sikre, at dataene ikke er blevet manipuleret, og at de stammer fra en legitim udsteder.
 
-### Hvordan fungerer JWT? (Struktur og flow)
 ---
+
+### Hvordan fungerer JWT? (Struktur og flow)
 Struktur af en JWT token (JSON Web Token) består af tre dele: **Header**, **Payload** og **Signature**. 
 
 **Header**
@@ -36,8 +35,9 @@ hvor hver del (xxxxx = header, yyyyy = payload, zzzzz = signature) er Base64URL-
 **Eksempel**
 For at illustrere indholdet: header kunne fx indeholde `{"alg": "HS256", "typ": "JWT"}`, payload kunne indeholde `{"sub": "12345", "name": "Alice", "exp": 1672531199}`, og signature er en hash-værdi beregnet ud fra header+payload og den hemmelige nøgle.
 
-### JWT autentifikations-flow
 ---
+
+### JWT autentifikations-flow
 I praksis bruges JWT ofte til **stateless** autentifikation mellem klient og server. Et typisk flow er som følger:
 
 **Login og token-udstedelse** 
@@ -63,10 +63,9 @@ Dette gør JWT-baseret autentifikation skalerbar og velegnet til distribuerede s
 
 ![[JWT SD.png]]
 
-
+---
 
 ### Hvorfor anvendes JWT? (Fordele)
----
 JWT’s popularitet skyldes en række fordele sammenlignet med traditionelle session-baserede mekanismer:
 
 **Tilstandsløs autentifikation**
@@ -87,8 +86,9 @@ En JWT kan indeholde et udløbstidspunkt (`exp` claim). Tokenet bliver ugyldigt 
 
 Disse fordele gør JWT til et populært valg for moderne autentifikationsløsninger, især i distribuerede websystemer. JWT giver en sikker, hurtig og stateless måde at håndtere bruger-login på, uden at skulle gemme sessioner server-side.
 
-### Typiske anvendelsesscenarier for JWT
 ---
+
+### Typiske anvendelsesscenarier for JWT
 JWT anvendes i dag bredt i en række sammenhænge, hvor sikker identitets- og dataudveksling er påkrævet:
 
 **Autentifikation og autorisation i web-API’er** 
@@ -105,20 +105,20 @@ I mange OAuth2-baserede systemer (som f.eks. autorisationsservere eller Identity
 
 Generelt bruges JWT, når man har brug for en **stateless, pålidelig** måde at overføre identitets- eller sessionsdata mellem en udsteder og en forbruger af informationen. Hvis applikationen kræver at kunne validere en brugers identitet hurtigt og på tværs af flere komponenter uden central lagring, er JWT et oplagt valg.
 
-### JWT i API-sikkerhed (særligt fokus)
 ---
+
+### JWT i API-sikkerhed (særligt fokus)
 I forbindelse med web-API’er udgør JWT et kernestykke i moderne sikkerhedsarkitektur. Når et API endpoint kræver JWT-baseret godkendelse, betyder det typisk: klienten skal sende et gyldigt JWT access token med hver anmodning, og API’et vil kun honorere anmodningen, hvis tokenet validerer korrekt. Hvis token mangler eller er ugyldigt, returnerer serveren en `401 Unauthorized` (eller `403 Forbidden` afhængigt af situationen), i stedet for at omdirigere brugeren til login. Dette passer godt til rene data-API’er uden brugergrænseflade. Klienten (f.eks. en single-page app eller mobilapp) har ansvaret for at autentificere brugeren via login og modtage et token – og forny tokenet når det udløber – mens API’et udelukkende har ansvar for at **autorisere** adgangen på baggrund af det medsendte token. Denne adskillelse af ansvar øger sikkerheden og forenkler arkitekturen: API’et skal ikke vide noget om login-metoder eller brugere andet end det, der står i tokenet.
 
 Et praktisk eksempel: Forestil dig et API med endpoint `/orders`. Klienten skal hente ordrer for en bruger, så den kalder `/orders` med `Authorization: Bearer <token>`. API’et tjekker tokenet – er signaturen gyldig? Er tokenet udstedt af vores system (issuer tjek)? Er det tiltænkt vores API (audience tjek)? Er det ikke udløbet (expiry tjek)? – og derefter eventuelt hvilke rettigheder brugeren har (fx er “role” claim = admin for at se alle ordrer?). Hvis alt er i orden, returnerer API’et data; hvis ikke, afviser det. Denne mekanisme gør det nemt at skalere API’et horisontalt og integrere med forskellige klienter, da hver request bærer sin egen autentifikationsinfo. Samtidig undgår man at sende brugerfølsomme oplysninger gentagne gange; kun tokenet sendes frem og tilbage.
 
 For at opsummere: JWT i API’er muliggør en **stateless sikkerhedskontrol** ved hver forespørgsel. Det er grunden til, at JWT er blevet standard i RESTful API beskyttelse og ofte bruges i kombination med OAuth 2.0 (hvor OAuth leverer tokens, typisk JWT, som klienten så sender til API’et).
 
+---
 
 ## Praktisk i C-sharp
----
 
 ### Generering af JWT i C# (eksempel)
----
 Lad os se på, hvordan man teknisk arbejder med JWT i et .NET miljø. Til at generere og validere JWT’er i C# anvendes typisk pakken **System.IdentityModel.Tokens.Jwt**, mens integration i et ASP.NET Core API sker via **Microsoft.AspNetCore.Authentication.JwtBearer** middleware.
 
 For at **generere** et JWT i C# kan man gøre følgende:
@@ -184,8 +184,9 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...<payload>...<signature>
 
 som kan udleveres til klienten ved login.
 
-### Validering af JWT i C# (eksempel)
 ---
+
+### Validering af JWT i C# (eksempel)
 Når en klient sender en JWT med i en anmodning, skal serveren validere tokenet. I .NET bruges `JwtSecurityTokenHandler` sammen med et sæt **TokenValidationParameters** til at gøre dette. Typisk vil man lade rammeværket (JwtBearer middleware) håndtere valideringen automatisk (mere om det nedenfor), men det kan demonstreres manuelt sådan her:
 
 ```csharp
@@ -237,8 +238,9 @@ Ovenfor opstilles valideringsparametre: vi kræver korrekt issuer og audience, v
 
 I praksis vil man sjældent selv kalde `ValidateToken` direkte i et API-endpoint; i stedet konfigurerer man JWT-validering som en del af ASP.NET Cores middleware pipeline, således at alle indkommende requests automatisk bliver kontrolleret for et gyldigt token, **før** de rammer din egen forretningslogik. Det er det vi kigger på nu.
 
-### JWT i ASP.NET Core Web API (integration)
 ---
+
+### JWT i ASP.NET Core Web API (integration)
 ASP.NET Core gør det relativt enkelt at integrere JWT-baseret autentifikation i et Web API-projekt. Man benytter den indbyggede **JwtBearer**-godkendelseshandler, som leveres af pakken `Microsoft.AspNetCore.Authentication.JwtBearer`. Denne middleware tager sig af at:
 
 - Læse `Authorization`-headeren for indkommende HTTP-requests.
@@ -304,6 +306,7 @@ Det typiske forløb i et ASP.NET Core JWT-beskyttet API er dermed:
 
 Med denne opsætning håndteres de fleste detaljer af rammeværket. `Microsoft.AspNetCore.Authentication.JwtBearer` biblioteket integrerer tæt med ASP.NET Core’s autentifikations- og autorisationssystem, hvilket betyder at man kan fokusere på forretningslogikken, vel vidende at alle kald bliver filtreret for gyldig JWT først.
 
-### Afrunding
 ---
+
+### Afrunding
 JWT er et kraftfuldt værktøj i moderne webudvikling, især for API-sikkerhed. Det kombinerer et enkelt koncept – JSON-baserede _claims_ – med robust kryptografi, hvilket resulterer i et letvægts, selvbærende token, der kan rejse sikkert mellem klient og server. Ved at forstå både de konceptuelle aspekter (hvad et JWT indeholder, og hvorfor det er nyttigt) og de tekniske implementeringsdetaljer (hvordan man genererer, validerer og anvender det i f.eks. ASP.NET Core), er man godt rustet til at bygge sikre og skalerbare autentifikationsløsninger. JWT’er bruges i alt fra SPA/Mobile login flows til microservice-arkitekturer og OAuth2/OIDC – og med den pædagogiske forklaring og kodeeksemplerne her skulle det være klart, hvordan JWT fungerer, og hvordan du kan implementere det i dine egne projekter.

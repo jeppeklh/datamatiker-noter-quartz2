@@ -1,5 +1,4 @@
 ## Iteration 1
----
 Baseret på [[Usecase#Use Case Tilføjelse af film|Usecase: Tilføjelse af film]]
 DCD: [[DCD#Iteration 1|TheMovies DCD]]
 
@@ -22,8 +21,9 @@ end
 @enduml
 ```
 
-## Iteration 2
 ---
+
+## Iteration 2
 Baseret på [[Usecase#Use Case 2 Tilføje ny forestilling|Usecase: Tilføj ny forestilling]]
 
 ```plantuml

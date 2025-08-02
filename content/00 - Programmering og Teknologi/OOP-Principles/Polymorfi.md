@@ -4,14 +4,14 @@ aliases:
   - polymorphism
   - polymorfi
 ---
-## Definition
----
-Occurs when we have many classes that are related to each other by [[Nedarvning|inheritance]].
+> [!tldr] Definition
+> Occurs when we have many classes that are related to each other by [[Nedarvning|inheritance]].
 
 [[Nedarvning|Inheritance]] lets us inherit fields and [[Methods Overview|methods]] from another class. Polymorphism uses those [[Methods Overview|methods]] to perform different tasks. This allows us to perform a single action in different ways.
 
-## Example
 ---
+
+## Example
 ```csharp
 class Animal // Base class (parent) 
 {

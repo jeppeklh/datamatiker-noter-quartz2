@@ -1,8 +1,6 @@
 
 ## **Mulige spørgsmål fra censor/vejleder**
----
 #### Forretningsmodeller 
----
 ##### **Hvorfor kun BPMN og ikke BMC/business case?** 
 
 - BPMN var tilstrækkeligt for vores projekt, da det fokuserede på at optimere en eksisterende proces frem for at skabe en ny forretningsmodel. 

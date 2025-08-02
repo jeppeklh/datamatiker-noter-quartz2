@@ -1,8 +1,9 @@
 > [!tldr] Definition
-Public [[Cloud Computing|cloud]]-tjenester tilbyder en række fordele, der gør det attraktivt for organisationer at køre virtuelle maskiner uden at investere i dyr hardware. Omkostningerne spredes over tid, hvilket gør det let at starte i det små, men med muligheden for at skalere næsten ubegrænset.
+> Public [[Cloud Computing|cloud]]-tjenester tilbyder en række fordele, der gør det attraktivt for organisationer at køre virtuelle maskiner uden at investere i dyr hardware. Omkostningerne spredes over tid, hvilket gør det let at starte i det små, men med muligheden for at skalere næsten ubegrænset.
+
+---
 
 ## Fordele ved Public Cloud
----
 - **Omkostningseffektiv opstart:**  
   Oprettelse af et par virtuelle maskiner koster ofte kun en månedlig afgift, hvilket eliminerer den store engangsinvestering, der kræves ved køb af hardware.
   
@@ -18,8 +19,9 @@ Public [[Cloud Computing|cloud]]-tjenester tilbyder en række fordele, der gør 
 - **Fleksible SLA’er:**  
   Service Level Agreements (SLA) specificerer sikkerhedsforanstaltninger og kompensationsordninger ved brud. Disse SLA’er kan ofte forhandles, så de opfylder specifikke krav, dog til en eventuel merudgift.
 
-## Overvejelser ved Public Cloud
 ---
+
+## Overvejelser ved Public Cloud
 - **Løbende omkostninger:**  
   Selvom opstartsomkostningerne er lave, kan den løbende betaling over tid blive dyrere end en engangsinvestering i egen hardware.
   
@@ -29,6 +31,7 @@ Public [[Cloud Computing|cloud]]-tjenester tilbyder en række fordele, der gør 
 - **SLA Forhandling:**  
   Det er vigtigt at læse og forstå SLA’en nøje, da den dikterer sikkerhedsforanstaltninger og eventuel kompensation ved databrud. For virksomheder med højere sikkerhedsbehov kan forhandling af SLA’en være en nødvendig, men potentielt dyr foranstaltning.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Virtualisering LinkedIn Kursus (Public cloud)](https://www.linkedin.com/learning/learning-virtualization-13945890/utilizing-a-public-cloud?resume=false&u=57075649)

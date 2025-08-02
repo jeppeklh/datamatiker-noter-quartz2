@@ -2,8 +2,10 @@
 |---|---|---|
 |`for...in`|**Nøgler** (keys)|Objekter eller arrays, når du vil have indeks/navne|
 |`for...of`|**Værdier** (values)|Arrays, strings, Maps, Sets (iterables)|
-## `for...in` – itererer over **nøgler** (keys)
+
 ---
+
+## `for...in` – itererer over **nøgler** (keys)
 
 
 ```js
@@ -18,8 +20,9 @@ for (const key in obj) {
 
 **NB:** Bruges ofte til objekter. Den kan også bruges på arrays, men det er sjældent ønsket, fordi rækkefølgen ikke er garanteret.
 
-## `for...of` – itererer over **værdier** (iterables)
 ---
+
+## `for...of` – itererer over **værdier** (iterables)
 ```js
 const arr = [10, 20, 30];
 

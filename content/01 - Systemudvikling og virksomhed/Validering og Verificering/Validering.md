@@ -1,17 +1,19 @@
 
 > [!tldr] Definition
-Validering handler om at sikre, at systemet **giver den ønskede værdi** til kunden/brugeren.  
-- Intet krav “glemmes”  
-- Ingen uønsket ekstra-funktionalitet  
-- Ingen “tangentfejl” (forkert funktionalitet)
+> Validering handler om at sikre, at systemet **giver den ønskede værdi** til kunden/brugeren.  
+> - Intet krav “glemmes”  
+> - Ingen uønsket ekstra-funktionalitet  
+> - Ingen “tangentfejl” (forkert funktionalitet)
+
+---
 
 ### Sporbarhed og den røde tråd
----
 - **Sporbarhed**: Hvert artefakt i udviklingsprocessen skal kunne kobles tilbage til et kundekrav.  
 - **Rød tråd**: Fra kravindsamling → design → implementering → test → færdigt produkt.
 
-### Eksempler på valideringsaktiviteter
 ---
+
+### Eksempler på valideringsaktiviteter
 For hvert artefakt stiller du spørgsmål som fx:
 
 1. **Business Model Canvas (BMC)**  
@@ -55,9 +57,9 @@ For hvert artefakt stiller du spørgsmål som fx:
     - Findes klasserne/metoderne som beskrevet i DCD/SD?  
     - Stemmer parametre og signaturer overens med designet?
 
+---
 
 ### Eksempel på “rød tråd” gennem artefakter
----
 **Krav**: Brugeren skal kunne oprette en profil med navn og e-mail.  
  1. **UC** “Opret profil” → aktør “Bruger” → flow: indtast navn, indtast e-mail.  
  2. **Domænemodel** → `User`-klasse med attributter `name`, `email`.  
@@ -67,16 +69,16 @@ For hvert artefakt stiller du spørgsmål som fx:
 6.  **Implementering** → klasse og metode med nøjagtigt samme signatur og logik.  
 7.  **Test** → automatiseret test, der sender en profil-oprettelsesanmodning og tjekker, at databasen indeholder de indtastede værdier.
 
-
+---
 
 ### Validering alene er ikke nok!
----
 - Et fuldt kvalitetsbillede kræver også **verificering**:
   - Stabilitet, sikkerhed, ydeevne, skalérbarhed  
   - Interne kvalitetskriterier, arkitekturmæssig korrekthed
 
 **Næste skridt**: [[Verificering]] – tests, reviews og automatisering for at sikre korrekthed “på dybden”.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Validering og Verificering Læringobjekt (Validering)](https://rise.articulate.com/share/yGM2iQz7nvEApmTC2NUBqtcmqts_AovC#/lessons/39EkJsOd3V9ZGPyJgm5ThCaCcaF-RtJu)

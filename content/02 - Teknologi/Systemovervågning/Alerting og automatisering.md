@@ -5,14 +5,15 @@ aliases:
 ---
 
 > [!tldr] Definition
-Alerting og automatisering handler om at reagere straks og effektivt, når overvågningssystemet opdager afvigelser eller fejl. 
+> Alerting og automatisering handler om at reagere straks og effektivt, når overvågningssystemet opdager afvigelser eller fejl. 
 >
-God alerting sikrer, at de rette personer og systemer informeres, mens automatisering kan forsøge at rette problemer uden manuel indgriben.
+> God alerting sikrer, at de rette personer og systemer informeres, mens automatisering kan forsøge at rette problemer uden manuel indgriben.
 
 Når overvågningsdata (metrics, logs mv.) indikerer et problem, skal der reageres hurtigt – helst automatisk. Alerting sender besked til de ansvarlige, og automatisering (auto-repair) forsøger at afhjælpe problemet uden manuel indgriben.  
 
-## Centrale begreber
 ---
+
+## Centrale begreber
 
 | Begreb           | Forklaring                                                                                |
 | ---------------- | ----------------------------------------------------------------------------------------- |
@@ -22,16 +23,17 @@ Når overvågningsdata (metrics, logs mv.) indikerer et problem, skal der reager
 | **Silencing**    | Midlertidig undertrykkelse af alerts, fx under planlagt nedetid eller vedligehold         |
 | **Auto-repair**  | Automatiserede handlinger (scripts, playbooks) der forsøger at rette problemet automatisk |
 
+---
 
 ## Hvorfor alerting og automatisering?
----
 - **Reduceret MTTR** (Mean Time To Repair): Hurtigere opdagelse og respons  
 - **Proaktiv drift**: Problemer løses, før brugere opdager dem  
 - **Skalerbarhed**: Automatisering frigiver driftsressourcer til mere komplekse opgaver  
 - **Konsistens**: Ensartede trin ved fejl, færre menneskelige fejl  
 
-## Arkitektur og workflow
 ---
+
+## Arkitektur og workflow
 1. **Datakilde**  
    - Prometheus, InfluxDB, application logs, netværkssniffers  
 2. **Evaluering**  
@@ -47,10 +49,9 @@ Når overvågningsdata (metrics, logs mv.) indikerer et problem, skal der reager
 7. **Auto-repair**  
    - Scripts, Kubernetes probes, CI/CD pipelines der udfører “self-healing”  
 
-
+---
 
 ## Eksempel: Grafana Alert Rule
----
 ```yaml
 apiVersion: 1
 groups:
@@ -85,8 +86,9 @@ groups:
 - **annotations**: Menneske-læsbar besked
 - **labels**: Bruges til routing i Alertmanager
 
-## Notification-eksempel: Slack
 ---
+
+## Notification-eksempel: Slack
 I Alertmanager-konfiguration (`alertmanager.yml`):
 ```yml
 receivers:
@@ -104,10 +106,10 @@ route:
   group_by: ['severity']
 ```
 
-## Automatisering (Auto-repair)
 ---
-### Brug af scripts
 
+## Automatisering (Auto-repair)
+### Brug af scripts
 Eksempel: Genstart Docker-container ved crash:
 ```bash
 #!/usr/bin/env bash
@@ -119,7 +121,9 @@ if [ "$STATUS" != "running" ]; then
 fi
 ```
 Køres som Cron-job eller af en alert webhook
-## Resourcer
+
 ---
+
+## Resourcer
 - [Systemovervågning Læringobjekt (Alerting og automatisering)](https://rise.articulate.com/share/D1gjA2qJXZ-26St6GmaYkyLrrCe2_UAs#/lessons/DJd9-txjje_Y34bL2bspI9_VEdp3T6bM)
 

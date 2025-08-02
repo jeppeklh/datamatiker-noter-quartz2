@@ -2,8 +2,9 @@ SQL INJEKTION Dette opgavesæt giver dig praktisk erfaring med at sikre en datab
 
 Du har som en del af forberedelsen til i dag læst omkring SQL injektioner. Hvis du som programmør ikke har taget højde for denne problematik i dine løsninger, så er du sårbar overfor, at en ondsindet aktør kan udføre tilfældige kommandoer imod din database. Du vil i disse deløvelser blive holdt i hånden til at udføre et aktuelt SQL-angreb. Det skal siges, at det ikke er tilladt at benytte denne viden til at angribe andre hjemmesider på internettet end den side, som I vil blive præsenteret for i denne øvelse (du vil blive retsforfulgt jvf. Straffeloven §263). Du vil du se på, hvordan du som programmør i en .NET verden, kan undgå denne problematik.
 
-## Øvelse 1: Terminologi
 ---
+
+## Øvelse 1: Terminologi
 Forventning: At opnå en grundlæggende forståelse af SQL-injektion, dets funktion og de risici, det medfører for applikationer og databaser.
 
 Brug "Ordet rundt" til at reflektere over begreberne:
@@ -34,9 +35,9 @@ SELECT * FROM users WHERE username = '' OR '1'='1' -- ' AND password = '$passwor
 	[[SQL Injection#Use Prepared Statements (Parameterized Queries)|Parametriserede forespørgsler]] og [[SQL Injection#Input Validation|inputvalidering]] er essentielle. 
 	Sådanne brud kan alvorligt skade en virksomheds omdømme og føre til mistet kundetillid.
 
+---
 
 ## Øvelse 2: Typer af SQL-Injektion
----
 Forventning: Forstå forskellige typer af SQL-injektion og hvordan hver type kan udnyttes.
 
 #### Øvelse 2.1: Forskellige SQL-injektionstyper
@@ -58,8 +59,9 @@ Forventning: Forstå forskellige typer af SQL-injektion og hvordan hver type kan
 | Tidsbaseret SQL-injektion | Udnytter forsinkelser i databasen som respons for at finde sårbarheder            |
 | Fejlbaseret SQL-injektion | Får databasen til at give fejlbeskeder med detaljer om dens struktur              |
 
-#### Øvelse 2.2: Eksempler på Angreb
 ---
+
+#### Øvelse 2.2: Eksempler på Angreb
 Givet forespørgslen:
 
 ```SQL
@@ -100,12 +102,14 @@ Du og din gruppe skal i denne øvelse se nærmere på, hvordan et konkret SQL in
 
 Fremgangsmåde: · Gå ind på https://www.hacksplaining.com/exercises/sql-injection
 
-#### Øvelse 2.4: Hvordan undgår vi SQL-injektion
 ---
+
+#### Øvelse 2.4: Hvordan undgår vi SQL-injektion
 Efter ovenstående øvelse er udført, bliver du ført videre til en side med gode råd om, hvordan man kan undgå SQL injektioner i forskellige programmeringssprog. Forhold dig kursorisk (læs: skim) til rådene på siden, men se om du kan finde noget på listen, som du har kendskab til. Vend det, som du har fundet frem til med dit team. 
 
-## Øvelse 3: Detektion af SQL-Injektion
 ---
+
+## Øvelse 3: Detektion af SQL-Injektion
 
 Forventning: Lære at identificere SQL-injektionssårbarheder i en webshop-database og at få praktisk erfaring med at opdage SQL-injektionsforsøg i en database gennem realtidsprofilering.
 
@@ -113,8 +117,9 @@ Scenarie:
 
 Din webshop-database har mistanke om SQL-injektioner mod kundeoplysninger og ordredata. Som databaseadministrator skal du opsætte overvågning og logning, analysere forespørgsler, og identificere mulige angreb.
 
-#### Øvelse 3.1: Identifikation gennem Kodegennemgang
 ---
+
+#### Øvelse 3.1: Identifikation gennem Kodegennemgang
 **Gennemgå følgende kode og identificer, om der er en SQL-injektionssårbarhed. Hvis ja, forklar, hvordan den kan misbruges.**
 
 ```csharp
@@ -162,16 +167,20 @@ SELECT * FROM PRODUCT WHERE ProductID = 1 AND (SELECT COUNT(*) FROM CUSTOMER) = 
 	
 	- Forklar, hvorfor du mener, at denne forespørgsel er mistænkelig, og hvad den forsøger at opnå.
 
-## Øvelse 4: Forebyggelse af SQL-Injektion
+
 ---
+
+## Øvelse 4: Forebyggelse af SQL-Injektion
 Forventning: At forstå og anvende teknikker til at beskytte en webshop-database mod SQL-injektion.
 
-#### Øvelse 4.1: Anvendelse af Parameteriserede Forespørgsler
 ---
+
+#### Øvelse 4.1: Anvendelse af Parameteriserede Forespørgsler
 Rediger den sårbare forespørgsel fra Øvelse 3.1, så den anvender parameteriserede forespørgsler. Forklar, hvorfor dette hjælper med at forhindre SQL-injektion.
 
-#### Øvelse 4.2: Refaktorisering af Repository Pattern
 ---
+
+#### Øvelse 4.2: Refaktorisering af Repository Pattern
 **Gennemgå følgende kode i en repository klasse, som indeholder en metode til at hente ordreoplysninger baseret på en kunde-ID:** 
 
 ```csharp
@@ -238,25 +247,30 @@ Gennemgå hele repository-klassen og identificér andre metoder, der potentielt 
 
 Refaktorér alle fundne metoder til at bruge parameteriserede forespørgsler.
 
-#### Øvelse 4.3: Værktøjer til SQL-Injektionsdetektion
 ---
+
+#### Øvelse 4.3: Værktøjer til SQL-Injektionsdetektion
 **Undersøg værktøjer som SQLMap og OWASP ZAP og diskuter i gruppen, hvordan disse kan hjælpe udviklere med at detektere og afhjælpe SQL-injektionssårbarheder.**
 
 **SQLMap** og **OWASP ZAP** kan automatisere detektering og afhjælpning af SQL-injektionssårbarheder.
 
-## Øvelse 5: Kryptering og Sikker Datahåndtering
 ---
+
+## Øvelse 5: Kryptering og Sikker Datahåndtering
 Forventning: At forstå, hvordan kryptering kan beskytte følsomme data i webshop-databasen, selv hvis SQL-injektion skulle lykkes.
 
-#### Øvelse 5.1: Kryptering af Følsomme Data
 ---
+
+#### Øvelse 5.1: Kryptering af Følsomme Data
 **Forklar forskellen mellem kryptering af data “i hvile” og “under transmission.” Hvorfor er begge typer relevante i en webshop, der håndterer personlige data?**
 
 Kryptering i hvile beskytter data lagret på serveren. 
 Kryptering under transmission beskytter data under overførsel. 
 Begge typer er vigtige for at beskytte mod SQL-injektion.
-#### Øvelse 5.2: Praktisk Kryptering
+
 ---
+
+#### Øvelse 5.2: Praktisk Kryptering
 Opret en kolonne til lagring af krypterede kreditkortoplysninger og anvend en simpel krypteringsnøgle.
 
 Lav 2 Kolonner (CreditCard skal indeholde den krypterede data):
@@ -293,8 +307,9 @@ Dokumentér processen og beskriv, hvordan denne praksis reducerer risici i tilf�
 
 Tidsramme: 30 minutter
 
-## Øvelse 6: Vidensdeling kl. 14:30
 ---
+
+## Øvelse 6: Vidensdeling kl. 14:30
 Forventning: At evaluere, hvad du har lært om SQL-injektion, herunder de forskellige typer angreb, metoder til detektion og forebyggelse af SQL-injektion samt sikring af databaser mod disse sårbarheder.
 
 · Diskutér, hvordan de forskellige typer SQL-injektion kan bruges til at udnytte sårbare SQL-forespørgsler.

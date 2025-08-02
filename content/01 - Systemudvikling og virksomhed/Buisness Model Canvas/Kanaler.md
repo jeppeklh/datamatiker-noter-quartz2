@@ -7,18 +7,21 @@ Tre forskellige typer:
 
 Alle kanaler kan være enten egne kanaler eller partner kanaler
 
-## Egene kanaler
 ---
+
+## Egene kanaler
 Organisationen ejer og styrer selv kanalen
 Skal også selv finansiere den
 
-## Partner kanaler
 ---
+
+## Partner kanaler
 Organisationen benytter sig af andres kanaler
 Typisk billigere og nemmere, men opgiver en del af kontrollen
 
-## Distributionskanaler
 ---
+
+## Distributionskanaler
 Der findes mange forskellige typer af distributionskanaler. De mest almindelige:
 
 ### Egne sælgere
@@ -83,8 +86,9 @@ Hvordan understøtter distributionskanalen den faktiske levering til kunden af o
 ### Efter salg
 Hvordan understøtter distributionskanalen at vi yder support til kunden efter salget?
 
-## Kommunikationskanaler
 ---
+
+## Kommunikationskanaler
 Deles typisk op efter 2 forskellige kriterier:
 ### Kommunikationsformen
 - mundtlig

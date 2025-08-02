@@ -18,7 +18,6 @@ DTO’er (Data Transfer Objects) adskiller den eksterne API-struktur fra applika
     
 - Det reducerer afhængighed på 3. parts datastrukturer, hvilket giver bedre vedligeholdelse og testbarhed.
     
-
 ---
 
 ### **Asynkronitet og Performance**

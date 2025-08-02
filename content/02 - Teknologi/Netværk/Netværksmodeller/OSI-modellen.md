@@ -7,8 +7,8 @@ aliases:
 > OSI-modellen opdeler netværkskommunikation i **syv lag** for at standardisere, hvordan data sendes og modtages.
 
 ---
+
 ## De syv lag
----
 1. **Fysisk (Physical)**: Hardware som kabler og signaler.
 2. **Datalink (Data Link)**: Pålidelig dataoverførsel (f.eks. MAC-adresser).
 3. **Netværk (Network)**: Routing af data (f.eks. IP-adresser).
@@ -34,20 +34,24 @@ aliases:
 >7. **Fysisk lag (Kabelforbindelse, Wi-Fi, fiberoptik)**  
     >	- Data bevæger sig som elektriske signaler eller radiobølger over netværket.
 >
-Når e-mailen når frem til modtagerens mailserver, bliver den **hentet via POP3 eller IMAP**, og processen kører i omvendt rækkefølge.
+> Når e-mailen når frem til modtagerens mailserver, bliver den **hentet via POP3 eller IMAP**, og processen kører i omvendt rækkefølge.
+
+---
 
 ## Fordele ved OSI-modellen
----
 - Skaber et fælles sprog for netværk.
 - Gør fejlfinding enklere.
 
 ![[OSIModel.png]]
 
+---
+
 ## Relation til TCP/IP-modellen
----
 ![[OSIvsTCPIP.png]]
-## Resourser
+
 ---
+
+## Resourser
 [Netværksmodeller Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_29/scormcontent/index.html#/lessons/BSmTZbYth9KXah_URHzMGletI5zXtfWe)
 
 ![[OSIBeskrivende.png]]

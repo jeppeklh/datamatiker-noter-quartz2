@@ -12,8 +12,10 @@ Dette betyder, at inkrementet skal være fuldt funktionsdygtigt og opfylde den D
 
  Sprints giver struktur og rytmik til arbejdet i Scrum og muliggør en gradvis og inkrementel tilgang til produktudvikling, hvilket reducerer risikoen og skaber mulighed for hyppig tilpasning og læring.
  ![[Scrum.png]]
-## Related Topics
+
 ---
+
+## Related Topics
 - [[SCRUM Overview]]
 - [[SCRUM artefakter]]
 - [[SCRUM ceremonier]]

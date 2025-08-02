@@ -1,12 +1,13 @@
 tags: #Systemudvikling #RequirementsAndQuality 
 ## FURPS+-principperne
----
 - Functionality (Funktionalitet): Handler om de funktioner, som produktet skal have.
 - Usability (Brugervenlighed): Omhandler hvor let produktet er at bruge.
 - Reliability (Pålidelighed): Handler om produktets stabilitet og pålidelighed.
 - Performance (Ydelse): Omhandler produktets hastighed, effektivitet og ressourceforbrug.
 - Supportability (Understøttelse): Handler om produktets vedligeholdelse, tilpasning og supportmuligheder.
 - + står for supplerende kvalitetsattributter, som f.eks. sikkerhed, skalerbarhed eller internationalisering.
+
+---
 
 ## Andre Frameworks
 #### Validering og verificering

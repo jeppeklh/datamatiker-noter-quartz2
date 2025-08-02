@@ -1,40 +1,44 @@
 ## Svagheder og mangler ift. pensum i projektet
----
 #### Ingen brug af nedarvning og abstraktion i koden
----
 Vær klar til at forklare, hvordan arv kunne være implementeret i en fremtidig version. 
 F.eks. ved at skabe en fælles klasse for alle typer anmodninger.
 
-#### Ingen brug af threads/processer
+
 ---
+
+#### Ingen brug af threads/processer
+
 Forklar, at algoritmens eksekveringstid er hurtig nok uden threads, men overvej hvordan det kunne implementeres for parallelle opgaver i fremtidige versioner.
 
-#### Manglende TCL og triggers i SQL
 ---
+
+#### Manglende TCL og triggers i SQL
 Vi valgte transaktioner i applikationslaget frem for triggers for at bevare kontrol og undgå kompleks fejlfinding.
 
 Vær klar til at forklare, hvorfor dette valg giver fleksibilitet, og hvordan triggers kunne skabe uforudsigelig adfærd.
 
+---
 
 #### Ingen kryptering eller sikkerhedsforanstaltninger
----
 Der er ingen nævnt sikkerhed for følsomme medarbejderdata.
 Overvej simple tilføjelser som hashing eller kryptering for passwords i fremtiden.
 
-#### Ingen omfattende testning
 ---
+
+#### Ingen omfattende testning
 Begrænset testdækning med kun få unit tests.
 Forklar de udfordringer, vi mødte med databaseintegration, og overvej at nævne mock-databaser som en fremtidig løsning.
 
-#### Kun én forretningsmodel
 ---
+
+#### Kun én forretningsmodel
 BPMN er brugt, men BMC, business case og interessentanalyse er udeladt.
 Begrund fravalget med, at projektet ikke skulle sælges som en forretningsidé, og at vi arbejdede med klare krav fra starten.
 
+---
+
 ## Mulige spørgsmål fra censor/vejleder
----
 #### Om fravalgte teknologier og metoder
----
 ###### Hvorfor har I ikke brugt arv og polymorfi i koden?
 Vi fokuserede på at bygge en løsning, der opfyldte Alfa Lavals krav, og i den nuværende implementering blev der ikke identificeret et akut behov for arv. Men i en fremtidig iteration ville det være oplagt at benytte arv i brugerhåndteringen, hvor vi kunne have en `Employee` som baseklasse og to nedarvede klasser: `RegularEmployee` og `Manager`.
 
@@ -50,8 +54,10 @@ Hvis systemet skulle håndtere mange samtidige brugere eller mere komplekse bere
 ###### Hvad ville fordelen være ved at bruge triggers frem for transaktioner i applikationen?
 Triggers i SQL kan automatisk udføre logik, når bestemte hændelser opstår, som f.eks. ændringer i tabeller. Dette kan være nyttigt til at sikre datakonsistens.  
 Vi valgte dog at implementere transaktionsstyring i applikationen, da det giver bedre kontrol over, hvordan og hvornår logik udføres. Transaktionerne kan debugges og justeres direkte i koden, hvilket gør det lettere at forstå og vedligeholde. Triggers kan til gengæld føre til uforudsigelige kædereaktioner, hvilket vi ønskede at undgå.
-#### Om sikkerhed og datahåndtering
+
 ---
+
+#### Om sikkerhed og datahåndtering
 ###### Hvordan sikrer I, at medarbejderdata behandles sikkert?
 I projektet har vi ikke implementeret kryptering eller andre sikkerhedsforanstaltninger udover adgangskontrol, hvilket vi nævner som en begrænsning. 
 
@@ -69,8 +75,9 @@ For at overholde GDPR skulle vi:
 2. Implementere funktionalitet til at slette eller anonymisere data efter medarbejdernes ønske.
 3. Sørge for samtykke til indsamling og brug af data.
 
-#### Om forretningsmodeller
 ---
+
+#### Om forretningsmodeller
 ###### Hvorfor valgte I kun at inkludere BPMN og ikke en BMC eller business case?
 Vi valgte BPMN, da det gav os et klart billede af de nuværende og foreslåede processer for ferieplanlægning. Vores fokus var at optimere en allerede eksisterende proces, frem for at sælge idéen eller udvikle en bredere forretningsstrategi.  
 BMC og business case blev vurderet mindre relevante, da vi ikke skulle overbevise virksomheden om projektets værdi. Vi modtog i stedet en klar opgave fra virksomheden.
@@ -82,8 +89,9 @@ Vores projekt reducerer ferieplanlægning fra flere ugers arbejde til et system,
 - **Retfærdighed:** Automatisering eliminerer risiko for fejl og forskelsbehandling.
 - **Brugervenlighed:** En intuitiv brugergrænseflade gør det nemt for ledelsen at anvende.
 
-#### Om projektets begrænsninger og fremtidige udvikling
 ---
+
+#### Om projektets begrænsninger og fremtidige udvikling
 ###### Hvad ville I ændre eller tilføje til systemet, hvis I havde mere tid?
 - Implementere sikkerhedsmekanismer som kryptering og rollebaseret adgang.
 - Udvikle funktioner til rapportering og statistikker, der kan hjælpe ledelsen med at evaluere ferieplanlægningen over tid.
@@ -97,8 +105,9 @@ For at sikre skalerbarhed kunne vi:
     - Bedre håndtering af fejl og brugervenlige fejlmeddelelser.
 - **Brugeroplevelse:** Forbedre UI, så det bliver mere intuitivt for både medarbejdere og ledere. Dette kunne inkludere værktøjer til bedre visualisering af ferieplaner eller forenklet navigation.
 
-#### Om testning og kvalitetssikring
 ---
+
+#### Om testning og kvalitetssikring
 ###### Hvorfor var testdækningen begrænset?
 I starten forsøgte vi at strukturere tests, der indsatte data i databasen, testede det, og derefter slettede det igen for at bevare databasens oprindelige tilstand. Disse tests blev dog fjernet, da vi var usikre på, om dette var best practice, og det viste sig at være komplekst og tidskrævende. Som resultat har vi ikke tests på databaseniveau, hvilket vi i bakspejlet burde have prioriteret for at sikre en højere kvalitet og stabilitet i vores løsning.
 

@@ -73,9 +73,8 @@ Algoritmen forsøger at allokere medarbejdernes ferieønsker så retfærdigt som
     - Tegn det flere gange og brug det til at forklare algoritmens logik.
 
 
+---
 
----
----
 ### **Hovedmetoder i klassen**
 
 Algoritmen har et klart flow, der drives af følgende metoder:

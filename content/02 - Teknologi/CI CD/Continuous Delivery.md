@@ -3,14 +3,14 @@ aliases:
   - CD
 ---
 > [!tldr] Definition
-Evnen til hurtigt og sikkert at frigive softwareændringer til produktion. Målet er, at systemet altid er deployable – både under normale forhold og under pres.
+> Evnen til hurtigt og sikkert at frigive softwareændringer til produktion. Målet er, at systemet altid er deployable – både under normale forhold og under pres.
 
 **Skelnen til Continuous Deployment:**  
 Continuous Deployment er en videreudvikling, hvor hver kodeændring automatisk deployes til produktion, mens CD lægger vægt på at have en deploybar kodebase samt en kontrolleret frigivelse.
     
+---
 
 ### Nøgleprincipper og Vigtige Elementer
----
 - **Automatiseret Deployment:**  
     – Deployment-processen er fuldstændig automatiseret, så udrulning kan ske uden manuel indgriben.  
     – Eksempel: Et CD-pipeline, der downloader artefakter fra CI-pipelinen og deployer til staging og produktion.
@@ -25,9 +25,9 @@ Continuous Deployment er en videreudvikling, hvor hver kodeændring automatisk d
 - **Tekniske Praksisser:**  
     – Inkluderer testautomatisering, version kontrol, og løbende overvågning, som samlet reducerer risikoen ved udrulninger.
     
+---
 
 ### Fordele ved CD
----
 - **Lavere Risici:**  
     – Softwaren er altid i en deploybar tilstand, og releases sker på en lav-risiko måde.
     
@@ -37,6 +37,7 @@ Continuous Deployment er en videreudvikling, hvor hver kodeændring automatisk d
 - **Forbedret Kvalitet og Produktivitet:**  
     – Med automatiserede tests, deployment og overvågning opnår man mere stabile systemer og reducerer behovet for rework.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Continuous Delivery](https://dora.dev/capabilities/continuous-delivery/)

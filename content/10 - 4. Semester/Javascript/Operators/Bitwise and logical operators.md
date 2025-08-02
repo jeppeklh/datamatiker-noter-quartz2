@@ -1,5 +1,4 @@
 ## Bitwise Operators (bitvise operatorer)
----
 Bitvise operatorer arbejder på 32-bit heltal på **bit-niveau**:
 
 |Operator|Navn|Eksempel|
@@ -12,14 +11,16 @@ Bitvise operatorer arbejder på 32-bit heltal på **bit-niveau**:
 |`>>`|Højreskift|`5 >> 1` → `2`|
 |`>>>`|Zero-fill højreskift|`-5 >>> 1` → `2147483645`|
 
+
 ### Eksempel
 ```js
 5 & 3      // 0101 & 0011 = 0001 → 1
 5 | 3      // 0101 | 0011 = 0111 → 7
 ```
 
-## Logical Operators (logiske operatorer)
 ---
+
+## Logical Operators (logiske operatorer)
 Logiske operatorer arbejder med **"truthy" og "falsy"** værdier, ikke kun booleans:
 
 |Operator|Navn|Beskrivelse|
@@ -37,8 +38,9 @@ Logiske operatorer arbejder med **"truthy" og "falsy"** værdier, ikke kun boole
 !0                  // true
 ```
 
-### Short-Circuit Logic
 ---
+
+### Short-Circuit Logic
 Logiske operatorer evaluerer **kun** anden operand hvis nødvendigt:
 
 ```js

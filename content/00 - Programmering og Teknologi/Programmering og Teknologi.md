@@ -1,30 +1,30 @@
 tags: #Programmering #Teknologi #Homepage
 
----
-
 ## Tools
----
 - [[Git]]
 
+---
 
 ## Languages
----
 #### Programming
----
 - [[Bash]]
 - [[C-sharp|C#]]
 
-#### Database
 ---
+
+#### Database
 - [[SQL]]
 
-#### Markup
 ---
+
+#### Markup
 - [[XAML]]
 - [[HTML Overview|HTML]]
 - [[Markdown]]
-## Concepts and Priciples
+
 ---
+
+## Concepts and Priciples
 - [[Computational Thinking]]
 - [[Low Coupling, High Cohesion]]
 - [[Algorithms Overview|Algorithms]]
@@ -36,11 +36,13 @@ tags: #Programmering #Teknologi #Homepage
 - [[Functional Programming]]
 - [[Design Patterns Overview|Design Patterns]]
 
-## Artifacts
 ---
+
+## Artifacts
 - [[Design Class Diagram]]
 - [[Package Diagram]]
 - [[Sequence Diagram]]
 
-## Recources
 ---
+
+## Recources

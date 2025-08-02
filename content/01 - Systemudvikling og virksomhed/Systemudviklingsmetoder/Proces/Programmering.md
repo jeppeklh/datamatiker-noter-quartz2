@@ -1,7 +1,7 @@
 >[!tldr] Definition
-Formålet med programmering i systemudviklingsprocessen er at omsætte det designede produkt til fungerende kode. 
+> Formålet med programmering i systemudviklingsprocessen er at omsætte det designede produkt til fungerende kode. 
 >
-Det handler om at fremstille god kode – ikke om at designe den – og sikre, at implementeringen lever op til de krav og principper, der er fastlagt i de foregående faser (herunder [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Low Level Design|Low Level Design]]).
+> Det handler om at fremstille god kode – ikke om at designe den – og sikre, at implementeringen lever op til de krav og principper, der er fastlagt i de foregående faser (herunder [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Low Level Design|Low Level Design]]).
 
 ---
 
@@ -33,6 +33,7 @@ Når du kvalitetssikrer din kode, skal du fokusere på to centrale aspekter:
 
 Ved at fastholde disse principper sikrer du, at den kode, du skriver, ikke blot fungerer, men også understøtter systemets samlede kvalitet og brugervenlighed.
 
-## Resourser
 ---
+
+## Resourser
 - [Fokusområde Læringsobjekt (Programmering)](https://rise.articulate.com/share/C9x7c641Qf8pDgT76Nqqy6ykP99dRgRJ#/lessons/e5dM93ROlHtUk7niploiY7KgolMltCHs)

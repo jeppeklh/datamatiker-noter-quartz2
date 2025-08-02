@@ -6,6 +6,8 @@ At kunne beskrive et projekts perspektiv. Dette skal danne grundlag for at vælg
 
 Hvordan ser vi det færdige produkt, så vi kan vælge at tilrette en systemudivklingsmeode, så den understøtter udviklingen bedst muligt
 
+---
+
 ### Formål
 Det første vi kigger på er formålet med systemet. Formålet har betydning for hvordan systemet skal bygges.
 Der er forskellige krav til systemerne og prioriteringer af de krav.
@@ -22,6 +24,8 @@ Eksempler på formål med et system:
 - Kommunikation
 - Vidensudvikling
 
+---
+
 ### Tilgang
 Det næste vi kigger på er hvad vores tilgang til projektet er ud fra det formål systemet her. 
 Måske er det helt klassisk/traditionelt, så vi kan finde en systemudviklingsmetode, der med få tilretninger i forhold til projektet situation vil være hensigtsmæssigt.
@@ -31,8 +35,9 @@ Vi skal altså mixe og matche forskellige systemudviklingsmetoder så de passer 
 
 Endeligt er det også den mulighed at vi bevæger os ud på ukendt territorium, hvor vi selv skal sammensætte en ny systemudviklingsmetode. Da det normaltvis vil være typer af systemer som ikke findes, kan det være svært at give eksempler, men man kunne forestille sig nye typer af underholdning eller ny anvendelse af IoT. 
 
-### Afsæt
 ---
+
+### Afsæt
 Det sidste vi kigger på er vores afsæt. Her menes der de informationer vi har, eller kan få når vi starter udviklingsprocessen. Vi skal gerne kunne fastholde og vidreudvikle på baggrund af denne information. Den har derfor betydning for hvilke teknikker og værktøjer det vil være hensigtsmæssgt at starte ud fra.
 
 Det er altså hvad vi har at tage udganspunkt i. Her er nogle eksmepler:
@@ -47,7 +52,7 @@ Sagt med andre ord: Brillerne vi kigger igennem skal passe til det vi bygger og 
 
 Næste trin er så at bruge perspektivet til at vælge og tilrette en systemudviklingsmetode.
 
+---
 
 ## Resourcer
----
 - [Systemudbiklingsmetoder Læringsobjekt (Perspektiv)](https://rise.articulate.com/share/z4__3UlH11sC6jv4kXC8bwVZOfpz2X5H#/lessons/EGkLrA53r-4P9Mpr1XsS_ZakuATSdFD3)

@@ -1,5 +1,4 @@
 ###  Sikkerhed
----
 **Hvordan håndterer I autentifikation og autorisation?**  
 Vi bruger **Blazor Identity** til at håndtere autentifikation. Der er tre roller i systemet: _Customer_, _Employee_ og _Admin_.  
 Vi bruger **policy-baseret autorisation**, så kun brugere med bestemte roller kan tilgå visse sider og funktioner. F.eks. er admin-sider kun tilgængelige for brugere med rollen "Admin".
@@ -24,9 +23,9 @@ Derefter ville vi:
 
 Vi kunne følge en struktur som i en rigtig **incident response-plan**: identifikation → afhjælpning → kommunikation → forebyggelse.
 
+---
 
 ### Docker
----
 **Hvad er Docker, og hvorfor valgte I det?**  
 Docker er en platform til at køre applikationer i isolerede containere. Det gør det nemt at sikre, at applikationen kører ens på alle maskiner – både lokalt og i produktion.  
 Vi brugte Docker til at køre en **SQL Server-container** i udviklingen, fordi det var hurtigere og nemmere end at installere SQL Server manuelt.
@@ -56,8 +55,9 @@ Det var en **prioritering**. SQL Server var tung at installere lokalt, så det g
 **Ulemper:** App og database er ikke fuldt isoleret sammen – det kan give problemer, hvis man vil køre hele stacken lokalt eller i staging.  
 **Der er en grund til at containerisere begge dele**: Det giver konsistens og gør det nemmere at automatisere alt i CI/CD – f.eks. spin-up af testmiljøer.
 
-###  CI/CD
 ---
+
+###  CI/CD
 **Hvordan har I implementeret CI/CD i jeres projekt?**  
 Vi har sat en **CI/CD-pipeline** op, som bygger og tester projektet automatisk ved **push eller merge til main**. Derefter bliver der **automatisk deployet til Azure**.
 
@@ -91,8 +91,9 @@ Vi har ikke integreret automatiske sikkerhedsscanninger, men vi har tænkt sikke
 
 I fremtiden kunne vi tilføje **dependency scanning** og **secret scanning** (f.eks. med GitHub Actions eller SonarCloud), så vi fanger sårbarheder automatisk i CI-processen.
 
-### Generelle spørgsmål med refleksion
 ---
+
+### Generelle spørgsmål med refleksion
 **Hvis I skulle gøre det igen – hvad ville I gøre anderledes?**  
 Vi ville nok sørge for at containerisere hele applikationen fra starten – f.eks. med Docker Compose til både frontend, backend og database.  
 Vi ville også gerne have implementeret mere central logning og bedre overvågning – f.eks. med et tool som **Serilog**, **Grafana** eller **Application Insights** i Azure.

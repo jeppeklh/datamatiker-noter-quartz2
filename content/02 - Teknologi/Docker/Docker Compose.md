@@ -1,8 +1,9 @@
 > [!tldr] Definition
-Gør det muligt at definere og køre multi-container applikationer ved hjælp af en enkelt YAML-fil. Det er ideelt til komplekse setups, hvor flere services (f.eks. webserver, database, cache) skal samarbejde.
+> Gør det muligt at definere og køre multi-container applikationer ved hjælp af en enkelt YAML-fil. Det er ideelt til komplekse setups, hvor flere services (f.eks. webserver, database, cache) skal samarbejde.
+
+---
 
 ## Nøglefunktioner
----
 - **Enkelt konfigurerbare miljøer**  
   Hele miljøet defineres i en `compose.yaml`-fil med services, netværk, volumes og porte.  
    Én fil = nem opsætning og dokumentation.  
@@ -22,13 +23,15 @@ Gør det muligt at definere og køre multi-container applikationer ved hjælp af
   Ingen grund til manuelle netværk/volumes/flags.  
   Skalering er nemt med `--scale`.
 
-## Compose vs. Dockerfile
 ---
+
+## Compose vs. Dockerfile
 - **Dockerfile**: Instruktioner til at *bygge* et image.  
 - **Compose-fil**: Beskriver *hvordan* containere kører og interagerer.
 
-## Eksempel på brug
 ---
+
+## Eksempel på brug
 1. **Klon en sample app**  
 
 ```bash
@@ -52,12 +55,13 @@ docker compose down
 ```
 Tilføj `--volumes` for også at fjerne persistente data.
 
+---
 
 ## GUI-support
----
 Docker Desktop gør det muligt at styre Compose stacks visuelt.  
 Se, start/stop, og slet containere og netværk med få klik.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Docker Compose Dokumentation](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-docker-compose/)

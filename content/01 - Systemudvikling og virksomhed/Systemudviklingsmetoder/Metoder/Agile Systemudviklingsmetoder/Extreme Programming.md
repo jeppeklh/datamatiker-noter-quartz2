@@ -4,13 +4,13 @@ aliases:
 ---
 
 >[!tldr] Definition
-**Extreme Programming (XP)** er en [[Agile]]-metode, der tager almindelige udviklingspraksisser til det ekstreme for at øge kvalitet og hastighed. XP fokuserer på hyppig feedback, kontinuerlig forbedring og tæt samarbejde mellem udviklere og kunder.
-[[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=514&selection=35,0,35,2|p.478]]
+> **Extreme Programming (XP)** er en [[Agile]]-metode, der tager almindelige udviklingspraksisser til det ekstreme for at øge kvalitet og hastighed. XP fokuserer på hyppig feedback, kontinuerlig forbedring og tæt samarbejde mellem udviklere og kunder.
+>
+> [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=514&selection=35,0,35,2|p.478]]
 
 ---
 
 ## XP Roller
----
 - **Kunde**: Definerer krav, tester løsninger og giver løbende feedback.  
 - **Tracker**: Måler teamets fremskridt og identificerer risici.  
 - **Udvikler**: Designer arkitektur og skriver kode (ofte i par).  
@@ -19,8 +19,9 @@ aliases:
 - **Administrator**: Opsætter og vedligeholder tekniske værktøjer.
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=515&selection=0,2,50,8|p.479]]
 
-## Kerneværdier
 ---
+
+## Kerneværdier
 1. **Kommunikation**: Tæt dialog mellem team og kunde.  
 2. **Enkelhed**: Minimalt design, der løser dagens problem (*YAGNI*: "You Ain’t Gonna Need It").  
 3. **Feedback**: Kontinuerlig testning og kundeinput.  
@@ -28,8 +29,9 @@ aliases:
 5. **Respekt**: Teamet arbejder sammen med gensidig tillid.
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=516&selection=51,0,51,9|p.480]]
 
-## Nøglepraksisser
 ---
+
+## Nøglepraksisser
 ### 1. Pair Programming
 - To udviklere arbejder sammen på én computer:  
 	- **Driver**: Skriver kode og forklarer tanker.  
@@ -71,8 +73,9 @@ aliases:
 
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=517&selection=22,0,22,12|p.481]]
 
-## Fordele vs. Udfordringer
 ---
+
+## Fordele vs. Udfordringer
 
 | **Fordele**                          | **Udfordringer**                          |
 |---------------------------------------|--------------------------------------------|
@@ -81,9 +84,9 @@ aliases:
 | Fleksibel til ændrede krav             | Parprogrammering kan føles ubehageligt    |
 | Mindre tekniske gæld                  | Kortere deadlines kan føles pressede      |
 
+---
 
 ## XP vs. Traditonelle Metoder
----
 - **Mere feedback**: Kode testes og leveres løbende.  
 - **Mindre dokumentation**: Fokus på funktionel kode fremfor detaljerede specs.  
 - **Større teamansvar**: Kollektiv ejerskab kræver kommunikation og tillid.

@@ -1,5 +1,4 @@
 ## Opgave 2
----
 Opret en MVC-applikation, der viser vejrudsigten ved at hente data fra valgte ovenstående API via httpClient.
 
 **Hint: I får brug for at deserialisere data til C#-objekter. Deserialisering er, når data fra en fil eller streng omdannes tilbage til et brugbart objekt i et program. Det kan gøres således:**

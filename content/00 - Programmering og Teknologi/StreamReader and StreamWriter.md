@@ -21,6 +21,8 @@ public static void SaveDataFile<T>(List<T> entities, string fileName) where T : 
 }
 ```
 
+---
+
 ## StreamWriter
 Used to write text to a file
 

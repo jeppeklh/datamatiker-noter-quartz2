@@ -1,11 +1,11 @@
 ## Motivationskilder
----
 Når man vælger, hvilken kunderelation man ønsker til et givet [[Kundesegmenter|kundesegment]], kan det være drevet af forskellige motivationsfaktorer
 
 Hvad er det man ønsker at opnå med det relation man forsøger at skabe?
 
-## Kundehverving
 ---
+
+## Kundehverving
 Skab en relation til potentielle kunder så de ønsker at købe [[Værditilbud|værditilbuddet]]
 #### Gratisprodukt
 Tilbud af prøve eller en prøveperiode på produktet
@@ -19,8 +19,10 @@ Et produkt tilbydes billigt men giver et løbende forbrug af et andet produkt. E
 Kunden tilbydes en gratis eller en meget billig testversion af produktet, I håb om at de senere vil købe produktet
 #### Referencer
 Relation til eksisterende kunder benyttes til at de abefaler produktet til andre potentielle kunder
-## Betjening
+
 ---
+
+## Betjening
 Hvordan servicerer vi kunden?
 #### Personlig betjening
 Kuden betjenes personligt og hver enkelt handel er er en dialog med kunden
@@ -37,8 +39,10 @@ Her handler relationen mest om at skabe kontakter mellem kunder og brugere, så 
 #### Medskabelse
 Produktet eller servicen skabes I samarbejde med kunden.
 Kunden har indflydelse på processen og produktet
-## Kunde-fastholdelse
+
 ---
+
+## Kunde-fastholdelse
 Det er dyrt at tiltrække nye kunder - fastholde dem man har
 #### Kundeservice
 Tilbyd attraktive services som en gratis del af produktet
@@ -58,8 +62,10 @@ Tilpasning af produkter og services til den enelte kundes behov og ønsker
 #### Loyalitetsprogram
 Kunden fastholdes ved at få belønninger
 Eks. Få hver tiende gratis
-## Mersalg/opsalg
+
 ---
+
+## Mersalg/opsalg
 Forsøg på at sælge flere varer eller en vare I højere prisklasse til eksisterende kunder
 #### Krydssalg
 Udfra kendskab til kundesegmentet tilbydes andre produkter, som  ikke har noget at gøre med det oprindelige produkt

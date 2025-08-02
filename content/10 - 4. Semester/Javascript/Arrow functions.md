@@ -2,9 +2,9 @@
 > Arrow functions er kompakte funktioner i JavaScript uden egen binding til `this`, `arguments` eller `super`.  
 > Velegnet til korte funktioner, men **bør ikke** bruges som metoder eller konstruktører.
 
-## Key Characteristics
-
 ---
+
+## Key Characteristics
 - En arrow function er en alternativ syntaks til en **funktionel expression**.
     
 - Den har **ingen egen binding til `this`, `arguments` eller `super`**.
@@ -13,9 +13,9 @@
     
 - Understøtter ikke `yield` og kan ikke være generatorfunktioner.
     
+---
 
 ### Example: basic arrow function
----
 ```js
 const materials = ["Hydrogen", "Helium", "Lithium", "Beryllium"];
 
@@ -38,8 +38,9 @@ param => expression
 async (param) => { statements }
 ```
 
-## Omformning fra traditionel funktion
 ---
+
+## Omformning fra traditionel funktion
 ```js
 // Traditionel
 (function(a) {
@@ -50,8 +51,9 @@ async (param) => { statements }
 a => a + 100;
 ```
 
-## Funktionens krop
 ---
+
+## Funktionens krop
 ```js
 const square = x => x * x; // implicit return
 
@@ -60,8 +62,9 @@ const sum = (x, y) => {
 };
 ```
 
-## Typiske anvendelser
 ---
+
+## Typiske anvendelser
 #### Array-metoder:
 ```js
 const arr = [1, 2, 3];
@@ -79,8 +82,9 @@ promise
   });
 ```
 
-## Parentheser og return
+
 ---
+## Parentheser og return
 Parentheser **er påkrævet**, hvis der er **ingen, flere eller komplekse parametre**.
 
 Hvis funktionen kun returnerer én værdi, kan `{}` og `return` udelades:
@@ -95,16 +99,18 @@ const sum = (a, b) => {
 };
 ```
 
-## Returnering af objekter
 ---
+
+## Returnering af objekter
 Ved returnering af objekter skal objektet pakkes i `()`:
 
 ```js
 const getObj = () => ({ key: "value" });
 ```
 
-## this og metoder
 ---
+
+## this og metoder
 Arrow functions **bevarer `this` fra det omkringliggende scope**, hvilket gør dem nyttige i fx `setTimeout`:
 
 ```js
@@ -131,19 +137,21 @@ const obj = {
 };
 ```
 
-## Begrænsninger
 ---
+
+## Begrænsninger
 Kan **ikke bruges med `new`**:
 
 ```js
 const Foo = () => {};
-new Foo(); // ❌ TypeError
+new Foo(); // TypeError
 ```
 
 Kan **ikke bruge `yield`**, så de fungerer ikke som generatorer.
 
 `call`, `bind`, og `apply` **ændrer ikke `this`** i en arrow function.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)

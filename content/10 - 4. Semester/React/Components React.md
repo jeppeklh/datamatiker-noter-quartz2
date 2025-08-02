@@ -1,16 +1,19 @@
 > [!tldr] Definition
-Genanvendelige dele af UI bygget med JavaScript og JSX.  
-De gør det muligt at indkapsle markup, style og logik ind i selvstændige elementer.
-## Key Characteristics
+> Genanvendelige dele af UI bygget med JavaScript og JSX.  
+> De gør det muligt at indkapsle markup, style og logik ind i selvstændige elementer.
+
 ---
+
+## Key Characteristics
 - En React component er bare en **JavaScript function**.
     
 - Funktionen **skal starte med stort bogstav**.
     
 - Components returnerer **JSX** – syntaks der ligner HTML i JavaScript
 
-### Example: basic component
 ---
+
+### Example: basic component
 ```jsx
 export default function Profile() {
   return (
@@ -22,9 +25,9 @@ export default function Profile() {
 }
 ```
 
+---
 
 ## Using Components
----
 Du kan **neste** components inden i hinanden, ligesom HTML-elementer.
 
 ```jsx
@@ -50,8 +53,9 @@ export default function Gallery() {
 
 ```
 
-## Best Practices
 ---
+
+## Best Practices
 - Definér altid components på **top level**, ikke inde i andre components.
     
 - Brug **JSX** korrekt:
@@ -60,8 +64,9 @@ export default function Gallery() {
 
 - Component-navne skal starte med **store bogstaver**, så React kan skelne dem fra HTML-tags.
 
-## Composition
 ---
+
+## Composition
 React opfordrer til at bygge UIs ved at bruge components**:
 ```jsx
 <PageLayout>
@@ -77,7 +82,8 @@ React opfordrer til at bygge UIs ved at bruge components**:
 </PageLayout>
 ```
 
-## Resourcer
 ---
+
+## Resourcer
 - [FSO](https://fullstackopen.com/en/part1/introduction_to_react)
 - [Components documentation](https://react.dev/learn/your-first-component)

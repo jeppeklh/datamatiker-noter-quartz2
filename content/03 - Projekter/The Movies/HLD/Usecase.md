@@ -1,6 +1,5 @@
 
 ## Iteration 1
----
 ### Use Case: Tilføjelse af film
 
 Medarbejder åbner applikationen.
@@ -9,9 +8,9 @@ Medarbejderen skriver detaljerne ind.
 Systemet gemmer detaljerne i en CSV.fil
 Systemet bekræfter tilgøjelse af film.
 
+---
 
 ## Iteration 2
----
 
 ### Use Case 1: Tilføj  Film 
 

@@ -1,6 +1,5 @@
 
 ## Hvad der skal siges til hvert slide: 
----
 ### **Slide 1: Titel**
 - Jeg vil snakke om hvordan vi har implementeret vores eget fejlhåndteringssystem i applikation. 
 

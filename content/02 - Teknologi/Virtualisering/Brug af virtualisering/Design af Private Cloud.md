@@ -1,8 +1,9 @@
 > [!tldr] Definition
-En privat [[Cloud Computing|cloud]] er en cloud-løsning, hvor organisationen virtualiserer størstedelen af sin infrastruktur – ofte 90-100% af serverne – til at køre forretningskritiske applikationer. Når man designer en privat cloud, er der flere nøgleområder, der skal tages i betragtning:
+> En privat [[Cloud Computing|cloud]] er en cloud-løsning, hvor organisationen virtualiserer størstedelen af sin infrastruktur – ofte 90-100% af serverne – til at køre forretningskritiske applikationer. Når man designer en privat cloud, er der flere nøgleområder, der skal tages i betragtning:
+
+---
 
 ## Centrale Overvejelser
----
 ### Storage
 - **Kompatibilitet:**  
   Forskellige hypervisorer understøtter forskellige filsystemer. Det er vigtigt at sikre, at lagringsløsningen er kompatibel med den valgte hypervisor.
@@ -27,8 +28,9 @@ En privat [[Cloud Computing|cloud]] er en cloud-løsning, hvor organisationen vi
 - **Fleksibilitet:**  
   En privat cloud skal kunne tilpasses ændringer i arbejdsbyrden og teknologiske fremskridt uden store omkostninger.
 
-## Leverandørløsninger og Værktøjer
 ---
+
+## Leverandørløsninger og Værktøjer
 ### Microsoft
 - **Hyper-V:**  
   Microsofts hypervisor, der muliggør servervirtualisering.
@@ -45,6 +47,7 @@ En privat [[Cloud Computing|cloud]] er en cloud-løsning, hvor organisationen vi
 - **vCloud Director (del af vCloud Suite):**  
   Værktøjer til hurtig provisioning og administration af en privat cloud.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Virtualisering LinkedIn Kursrs (Design af private cloud)](https://www.linkedin.com/learning/learning-virtualization-13945890/designing-a-private-cloud?resume=false&u=57075649#)

@@ -1,12 +1,12 @@
 
 >[!tldr] Definition
-**Lean Software Development** (Lean) er en [[Agile]]-tilgang, der fokuserer på at minimere spild og maksimere værdi for kunden. Metoden er inspireret af lean manufacturing (Toyota) og handler om at bygge kun det nødvendige – intet mere, intet mindre.
-[[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=530&selection=35,0,35,4|p.494]]
+> **Lean Software Development** (Lean) er en [[Agile]]-tilgang, der fokuserer på at minimere spild og maksimere værdi for kunden. Metoden er inspireret af lean manufacturing (Toyota) og handler om at bygge kun det nødvendige – intet mere, intet mindre.
+>
+> [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=530&selection=35,0,35,4|p.494]]
 
 ---
 
 ## Kerneprincipper
----
 ### 1. Eliminer Spild
 - **Spild** er alt, der ikke direkte tilføjer værdi for kunden. 
 Eksempler:  
@@ -40,8 +40,10 @@ Eksempler:
 - Undgå silo-tænkning – alle er ansvarlige for hele systemet.
 
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=530&selection=59,0,59,15|p.494]]
-## Lean vs. Traditonelle Metoder
+
 ---
+
+## Lean vs. Traditonelle Metoder
 
 | **Lean Fokus**                | **Traditionelt Fokus**          |
 |-------------------------------|----------------------------------|
@@ -49,16 +51,16 @@ Eksempler:
 | Fleksible krav                | Fastlåste krav fra start        |
 | Kort feedback-loop            | Lange udviklingscyklusser       |
 
+---
 
 ## Praktiske Teknikker
----
 - **Value Stream Mapping**: Analyser processer for at identificere spild.  
 - [[Kanban]]: Visualiser arbejdsflow og begræns "work in progress" (WIP).  
 - **MVP (Minimum Viable Product)**: Lever kun kernesfunktioner først.
 
+---
 
 ## Fordele & Udfordringer
----
 
 | **Fordele**                          | **Udfordringer**                          |
 |---------------------------------------|--------------------------------------------|
@@ -66,8 +68,9 @@ Eksempler:
 | Hurtigere markedsadgang               | Svært at definere "nødvendigt" præcist     |
 | Bedre kundetilpasning                 | Kan føles ustruktureret for nye teams      |
 
-## Kombination med Andre Metoder
 ---
+
+## Kombination med Andre Metoder
 Lean kan kombineres med andre [[Agile]]-metoder:  
 - [[SCRUM]]: Lean-principper til spildreduktion + Scrum's sprint-struktur.  
 - [[Extreme Programming|XP]]: Lean fokus på enkelhed + XP's tekniske praksisser (fx TDD).  

@@ -1,7 +1,9 @@
 
 [Case](https://rise.articulate.com/share/deUoxB0sZktbmJr-1ZIsYg2jV3ECVMv1#/lessons/YOJWPHodkLzEvoJOHGqzm2Pxd8StXF1p)
-# Iteration 1
+
 ---
+
+# Iteration 1
 [[TheMoviesIteration1Opgave|Opgavebeskrivelse]]
 
 - [[Usecase#Use Case Tilføjelse af film|Usecase]]
@@ -15,9 +17,9 @@
 - [[DCD#Iteration 1|DCD]]
 - [Kode](https://github.com/TheMoviesTilNoter/TheMoviesIteration1/tree/main/TheMovies)
 
+---
 
 ## Iteration 2
----
 - [[Usecase#Iteration 2|Usecases]]
 - [[SSD#Iteration 2|SSD]]
 - [[OC#Iteration 2|OC]]

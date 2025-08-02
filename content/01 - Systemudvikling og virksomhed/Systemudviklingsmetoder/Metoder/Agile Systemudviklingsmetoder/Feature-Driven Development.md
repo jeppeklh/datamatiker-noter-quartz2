@@ -4,20 +4,21 @@ aliases:
   - Feature Driven Development
 ---
 >[!tldr] Definition
-**Feature-Driven Development (FDD)** er en iterativ og inkrementel udviklingsmetode designet til store team. FDD fokuserer på at bygge applikationen gennem en liste af konkrete funktioner ("features"), der implementeres trin for trin. 
-[[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=536&selection=75,0,76,19|p.500]]
+> **Feature-Driven Development (FDD)** er en iterativ og inkrementel udviklingsmetode designet til store team. FDD fokuserer på at bygge applikationen gennem en liste af konkrete funktioner ("features"), der implementeres trin for trin. 
+>
+> [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=536&selection=75,0,76,19|p.500]]
 
 ---
 
 ## Nøgleegenskaber
----
 - **Feature-fokuseret**: Funktioner er små, klart definerede handlinger (fx "Beregn kundes saldo").
 - **Storskala venlig**: Egnet til store team og komplekse projekter.
 - **Struktureret proces**: 5 faser og 6 milepæle for at sikre orden.
 - **Korte iterationer**: Hver funktion implementeres på max 2 uger.
 
-## Roller i FDD
 ---
+
+## Roller i FDD
 
 | **Rolle**               | **Ansvar**                                                                 |
 |--------------------------|----------------------------------------------------------------------------|
@@ -30,9 +31,9 @@ aliases:
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=537&selection=13,0,13,9|p.501]]
 *Andre roller inkluderer Build Engineer, Deployer og Technical Writer.*
 
+---
 
 ## Faser i FDD
----
 1. **Develop a Model**  
    - Opret et overblik over systemet via en objektmodel i samarbejde med domæneeksperter.
 
@@ -50,8 +51,10 @@ aliases:
    - Kode, test og integrer funktionen. Chief Programmer gennemfører kodeinspektion.
 
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=538&selection=44,0,44,10|p.502]]
-## Milepæle i Iterationer
+
 ---
+
+## Milepæle i Iterationer
 Hver iteration (max 2 uger) har 6 milepæle med **procentfordeling**:
 
 | **Milepæl**               | **Beskrivelse**                          | **Færdiggørelse** |
@@ -66,8 +69,9 @@ Hver iteration (max 2 uger) har 6 milepæle med **procentfordeling**:
 *Designfasen udgør 40% – understreger dens betydning for store projekter.*
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=540&selection=69,0,69,24|p.504]]
 
-## Fordele vs. Udfordringer
 ---
+
+## Fordele vs. Udfordringer
 
 | **Fordele**                          | **Udfordringer**                                |
 | ------------------------------------ | ----------------------------------------------- |

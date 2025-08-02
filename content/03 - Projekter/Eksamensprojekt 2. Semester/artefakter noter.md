@@ -1,7 +1,5 @@
 
 ## SSD
----
-
 Dette SSD repræsenterer detaljer fra Use Case 2, som specificerer ledernes handlinger.
 
 Diagrammet fokuserer på interaktionen mellem lederen og systemet for håndtering af ferieønsker. Systemets funktionalitet bliver skitseret, uden at gå i detaljer om, hvordan data internt behandles.
@@ -24,10 +22,9 @@ Diagrammet fungerer desuden som grundlag for at udarbejde operationskontrakter, 
 
 Skal usecasen også beskrive indhentning af data??
 
-
+---
 
 ## SD
----
 Sekvensdiagrammet giver en visuel repærsentationaf, hvordan data relateret til feireønsker håndteres i systemet. SD'er beskriver hvordan brugeren interagerer med applikation, fra åbning af systemet til indhentning og visning af ferieønsker. 
 
 Diagrammet viser en linær sekvens af handlinger, hvor systemet håndterer forskillige trin i forbindelse med indhentning af ferieønsker. Brugeren åbner først applikationen, hvilket aktiverer systemets forskellige lag, der initierer og henter data fra systemets database. 
@@ -38,8 +35,9 @@ Dette hjælper os som udviklere med at forstå systemets arbejdsproces og de for
 
 Har brugt brugeren her i stedet for leder (Aktør hedder også User i SD her men Leder i andre artefakter)
 
-## Databasemodel
 ---
+
+## Databasemodel
 Databasemodellen hjælper os med struktureret at organisere data og har dannet grundlaget for implementeringen af vores RDBMS - vores SQL database. 
 Den er desuden blevet normaliseret efter de 3 første normalformer, for at sikre dataintegriget og nøjagtighed. 
 

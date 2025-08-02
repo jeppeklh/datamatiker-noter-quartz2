@@ -1,8 +1,9 @@
 > [!tldr] Definition
-**Destructuring** er en praktisk måde at udtrække værdier fra arrays eller properties fra objekter til separate variabler.
+> **Destructuring** er en praktisk måde at udtrække værdier fra arrays eller properties fra objekter til separate variabler.
+
+---
 
 ## Array Destructuring
----
 ```js
 const numbers = [1, 2, 3];
 const [a, b] = numbers;
@@ -32,8 +33,9 @@ const { a, ...others } = { a: 1, b: 2, c: 3 };
 console.log(others); // { b: 2, c: 3 }
 ```
 
-## Object Destructuring
 ---
+
+## Object Destructuring
 ```js
 const user = { name: "Alice", age: 25 };
 const { name, age } = user;
@@ -53,8 +55,9 @@ const { role = "guest" } = user;
 console.log(role); // guest
 ```
 
-## Nested Destructuring
 ---
+
+## Nested Destructuring
 ```js
 const person = {
   name: "Bob",
@@ -64,8 +67,9 @@ const { address: { city } } = person;
 console.log(city); // NY
 ```
 
-## Function Parameters
 ---
+
+## Function Parameters
 ```js
 function greet({ name }) {
   console.log(`Hello, ${name}`);
@@ -73,8 +77,7 @@ function greet({ name }) {
 greet({ name: "Charlie" }); // Hello, Charlie
 ```
 
-
+---
 
 ## Resourcer
----
 - [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)

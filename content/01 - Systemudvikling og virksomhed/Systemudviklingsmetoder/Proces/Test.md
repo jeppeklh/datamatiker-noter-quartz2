@@ -1,7 +1,7 @@
 >[!tldr] Definition
-Sikring af det fremstillede produkt lever op til de krav og det design, vi har beskrevet. 
+> Sikring af det fremstillede produkt lever op til de krav og det design, vi har beskrevet. 
 >
-Målet med test er ikke nødvendigvis at skabe et fejlfrit system, men at være bevidste om potentielle fejl og vide, hvordan de skal håndteres.
+> Målet med test er ikke nødvendigvis at skabe et fejlfrit system, men at være bevidste om potentielle fejl og vide, hvordan de skal håndteres.
 
 ---
 
@@ -57,6 +57,7 @@ For at sikre, at testene er effektive og dækker de nødvendige aspekter, skal d
 
 Ved at kombinere test på flere niveauer med en veldefineret testplan og løbende kvalitetssikring, kan du tidligt opdage fejl og dermed forhindre, at de spreder sig i systemet.
 
-## Resourser
 ---
+
+## Resourser
 - [Fokusområde Læringsobjekt (Test)](https://rise.articulate.com/share/C9x7c641Qf8pDgT76Nqqy6ykP99dRgRJ#/lessons/Gd6kIHcvWgcNX90QA0dyKB33N83Jexgj)

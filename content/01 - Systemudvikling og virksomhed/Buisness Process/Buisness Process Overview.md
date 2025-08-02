@@ -1,7 +1,6 @@
 tags: #Systemudvikling #Processes
-## Definition
----
-Enkeltstående opgaver der tilsammen retter sig mod et samlet formål
+> [!tldr] Definition
+> Enkeltstående opgaver der tilsammen retter sig mod et samlet formål
 
 - En forretningsproces kan være sammensat af mindre forretningsprocesser, som så kaldes for subprocesser.
 - En forretningsproces kan igangsætte atomare opgaver eller subprocesser, men også initiere andre processer.
@@ -15,18 +14,21 @@ Transformerer inputs til relevant output.
 Inputs er de ressourcer man skal bruge: materiel, information, kapital osv.
 Outputs er varer og/eller services
 
-## Core process
 ---
+
+## Core process
 Hvad der producerer værdi for kunden
 Køb, fremstilling, salg
 
-## Support process
 ---
+
+## Support process
 Understøtter core processerne
 Accounting, human resources, IT
 
-## Management process
 ---
+
+## Management process
 Governs the core- and support processes
 
 ![[Buisness Process Diagram.png]]

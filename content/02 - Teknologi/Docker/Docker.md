@@ -1,15 +1,17 @@
 > [!tldr] Definition
-**Docker** er en platform til at bygge, distribuere og køre applikationer i letvægts‑containere. Formålet er at sikre, at din applikation altid kører i præcist det miljø, den har brug for, uanset hvor den deployes.
+> **Docker** er en platform til at bygge, distribuere og køre applikationer i letvægts‑containere. Formålet er at sikre, at din applikation altid kører i præcist det miljø, den har brug for, uanset hvor den deployes.
+
+---
 
 ## Oversigt over emner
----
 - [[Containers]]  
 - [[Docker Images|Images]]  
 - [[Registry]]  
 - [[Docker Compose]]
 
-## Hvorfor bruge Docker?
 ---
+
+## Hvorfor bruge Docker?
 - **Platformuafhængighed**: Applikationer kan flyttes frit mellem udvikling, test og produktion – på tværs af operativsystemer og cloud-platforme.
     
 - **Isolering**: Hver container kører isoleret, hvilket reducerer konflikter mellem projekter og afhængigheder.
@@ -18,8 +20,9 @@
     
 - **Modularitet**: Systemer kan bygges op af små services (microservices) der hver især kører i sin egen container.
 
-## Typiske anvendelser
 ---
+
+## Typiske anvendelser
 - Lokal udvikling af applikationer med afhængigheder (databaser, backends osv.)
     
 - Automatiserede testmiljøer i CI/CD pipelines
@@ -28,7 +31,8 @@
     
 - Opsætning af midlertidige miljøer til debugging eller eksperimenter
 
-## Resourcer
 ---
+
+## Resourcer
 - [Docker Dokumentation](https://docs.docker.com/get-started/docker-overview/)
 - 

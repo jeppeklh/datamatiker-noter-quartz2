@@ -1,5 +1,4 @@
 ## Iteration 1
----
 Baseret på [[Usecase#Use Case Tilføjelse af film|Usecase: Tilføjelse af film]]
 
 |                                                                                               |
@@ -9,8 +8,9 @@ Baseret på [[Usecase#Use Case Tilføjelse af film|Usecase: Tilføjelse af film]
 | Preconditions:                                                                                |
 | Postconditions: Et filmobjekt med titel, varighed og genre blev oprettet (instance creation). |
 
-## Iteration 2
 ---
+
+## Iteration 2
 ### Baseret på [[Usecase#Use Case 1 Tilføj Film|Usecase: Tilføjelse af film(opdateret)]]
 |                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------- |

@@ -1,6 +1,5 @@
   
 ## Opgave 1 -Opstarts opgaver
----
 1. Find tre eksempler på distribuerede systemer i din hverdag og beskriv deres funktion.
 
 - **Cloud Storage Services (f.eks. Google Drive, Dropbox, iCloud)** 
@@ -34,8 +33,10 @@
 - **Ulemper:**
     - Komplekst fejlhåndterings- og kontrolflow, da svar ikke kommer med det samme
     - Eventuel kompleksitet i at sikre, at alle meddelelser bliver behandlet korrekt og i den rigtige rækkefølge (eventual consistency)
-## Opgave 2 
+
 ---
+
+## Opgave 2 
 Design af et Distribueret System. 
 I skal designe et simpelt distribueret system, der håndterer en webapplikation med følgende krav:
 - Skal kunne håndtere brugere, der tilgår systemet via en webbrowser
@@ -49,8 +50,9 @@ I skal designe et simpelt distribueret system, der håndterer en webapplikation 
 - En tegning/model af systemet (”Håndtegnet”eller Digital)
 - En kort beskrivelse af, hvordan systemet håndterer forespørgsler og svar
 
-## Udvidet del
 ---
+
+## Udvidet del
 Udvid jeres system med følgende funktioner:
 - Implementér fejltolerance, så systemet fortsætter med at fungere selv hvis en server går ned
 - Beskriv hvordan I ville skalere systemet ved stigende brugerbelastning (horisontal vs. vertikal skalering)

@@ -1,12 +1,12 @@
 
 >[!tldr] Definition
-**Crystal** er en familie af [[Agile|agile]] metoder designet til at tilpasse sig projektets størrelse og kompleksitet. Hver metode i Crystal-familien er navngivet efter en farve, der angiver teamstørrelse, og kombineres med en "kritikalitetsniveau" (risikoen ved fejl). Crystal fokuserer på fleksibilitet, kommunikation og minimal proces-overhead.
-[[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=531&selection=71,0,71,6|p.495]]
+> **Crystal** er en familie af [[Agile|agile]] metoder designet til at tilpasse sig projektets størrelse og kompleksitet. Hver metode i Crystal-familien er navngivet efter en farve, der angiver teamstørrelse, og kombineres med en "kritikalitetsniveau" (risikoen ved fejl). Crystal fokuserer på fleksibilitet, kommunikation og minimal proces-overhead.
+> 
+> [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=531&selection=71,0,71,6|p.495]]
 
 ---
 
 ## Kerneprincipper
----
 Alle Crystal-metoder deler disse 7 kerneegenskaber:
 1. **Hyppige iterationer**: Korte udviklingscyklusser med løbende leverancer.
 2. **Konstant feedback**: Regelmæssige møder med team og kunder for justeringer.
@@ -19,9 +19,9 @@ Alle Crystal-metoder deler disse 7 kerneegenskaber:
 6. **Adgang til ekspertbrugere**: Eksperter skal være tilgængelige for spørgsmål.
 7. **Teststøtte**: Automatiserede tests og versionskontrol.
 
+---
 
 ## Crystal Matrix: Farver & Kritikalitet
----
 
 | Teamstørrelse       | Komfort (C) | Økonomi (D/E) | Liv (L)       |
 |----------------------|-------------|---------------|---------------|
@@ -33,9 +33,9 @@ Alle Crystal-metoder deler disse 7 kerneegenskaber:
 >[!example] Eksempel
 Et projekt med 35 personer og livskritikalitet kaldes "L40 (Orange)".
 
+---
 
 ## Crystal-metoder
----
 
 ### Crystal Clear (1-6 personer)
 - **Roller**:
@@ -69,15 +69,16 @@ Et projekt med 35 personer og livskritikalitet kaldes "L40 (Orange)".
 	- Kodegennemgange og risikostyring.
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=535&selection=60,0,60,14|p.499]]
 
-## Hvorfor vælge Crystal?
 ---
+
+## Hvorfor vælge Crystal?
 - **Fleksibilitet**: Tilpasses til projektets størrelse og risiko.
 - **Kommunikation før dokumentation**: Mindre bureaukrati i små teams.
 - **Skalerbarhed**: Klare retningslinjer for store projekter.
 
+---
 
 ## Begrænsninger
----
 - **Store projekter**: Kræver stram struktur (kan føles byrdefuldt).
 - **Uklare krav**: Uformel tilgang risikerer scope creep i komplekse projekter.
 - **Manglende standard**: Mindre udbredt end [[SCRUM]]/[[Extreme Programming|XP]], færre værktøjer.

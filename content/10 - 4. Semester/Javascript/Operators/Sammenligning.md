@@ -1,8 +1,9 @@
 > [!tldr] Definition
-I JavaScript bruges `==` og `!=` til **sammenligning med typekonvertering**, mens `===` og `!==` sammenligner **uden** typekonvertering (streng sammenligning).
+> I JavaScript bruges `==` og `!=` til **sammenligning med typekonvertering**, mens `===` og `!==` sammenligner **uden** typekonvertering (streng sammenligning).
+
+---
 
 ## Kort forklaret
----
 
 |Operator|Betydning|Typekonvertering?|
 |---|---|---|
@@ -11,8 +12,9 @@ I JavaScript bruges `==` og `!=` til **sammenligning med typekonvertering**, men
 |`!=`|Løs ulighed|Ja|
 |`!==`|Streng ulighed|Nej|
 
-## Eksempler
 ---
+
+## Eksempler
 ```js
 // == vs ===
 '5' == 5       // true  → fordi '5' konverteres til tal
@@ -29,6 +31,7 @@ null !== undefined // true  → fordi typerne er forskellige
 '' === false  // false
 ```
 
-## Anbefaling
 ---
+
+## Anbefaling
 Brug altid `===` og `!==` for at undgå utilsigtede fejl med typekonvertering.

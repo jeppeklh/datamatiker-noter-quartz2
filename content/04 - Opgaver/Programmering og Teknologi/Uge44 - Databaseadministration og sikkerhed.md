@@ -1,50 +1,57 @@
 Database administration og sikkerhed I dag kommer du til at arbejde med brugeradministration i webshop-databasen. Øvelserne vil fokusere på at oprette og administrere brugere, logins og roller, samt håndtere rettigheder for at sikre, at adgangen til databasen er korrekt kontrolleret og sikret. Du vil også lære at implementere backup-strategier og kryptering af data for at beskytte følsomme oplysninger som kunde- og ordredata. Til sidst bliver der inkluderet en praktisk øvelse i at anvende TDE (Transparent Data Encryption) for at sikre, at dine data er krypterede i databasen.
 
-## Øvelse 1: Terminologi
 ---
+
+## Øvelse 1: Terminologi
 Forventning: At få en klar forståelse af de grundlæggende begreber inden for brugeradministration og datasikkerhed samt GDPR-overholdelse.
 
 Brug "Ordet rundt" til at reflektere over begreberne:
 
-##### 1. Hvordan kan brugere og roller hjælpe med at beskytte data i en database? Overvej her principperne for least privilege (mindste privilegium) for at sikre, at hver bruger kun har adgang til de data og funktioner, der er nødvendige for deres rolle
 ---
+
+##### 1. Hvordan kan brugere og roller hjælpe med at beskytte data i en database? Overvej her principperne for least privilege (mindste privilegium) for at sikre, at hver bruger kun har adgang til de data og funktioner, der er nødvendige for deres rolle
 Brug af _roller_ og _brugere_ er essentiel for at begrænse adgang via _least privilege_ princippet, hvilket betyder, at hver bruger kun får adgang til de data og funktioner, de absolut behøver.
 Dette mindsker risikoen for uautoriseret adgang og reducerer potentielle sikkerhedstrusler.
 
-##### 2. Hvad er en passende rollefordeling i en webshop-database (fx admin, lagerpersonale, kundeservice)?
 ---
+
+##### 2. Hvad er en passende rollefordeling i en webshop-database (fx admin, lagerpersonale, kundeservice)?
 - **Admin**: fuld adgang til systemet og dataadministration.
 - **Kundeservice**: læseadgang til kunde- og ordredata, begrænset redigeringsret.
 - **Lagerpersonale**: læseadgang til produkt- og lagerdata, begrænset opdateringsret på lagerbeholdning.
 
-##### 3. Hvorfor er backup af databasen vigtig for en webshop? Hvad kan der ske, hvis en webshop mister data fra kunder eller ordrer?
 ---
+
+##### 3. Hvorfor er backup af databasen vigtig for en webshop? Hvad kan der ske, hvis en webshop mister data fra kunder eller ordrer?
 Backup er vitalt for at undgå permanent datatab. 
 En webshop uden backup risikerer tab af kunde- og ordredata, hvilket kan skade både kundetillid og virksomhedens drift.
-##### 4. Diskutér logning og audit trails som en del af GDPR-overholdelse: Hvordan kan disse hjælpe med at sikre og overvåge adgang til følsomme data i databasen
+
 ---
+
+##### 4. Diskutér logning og audit trails som en del af GDPR-overholdelse: Hvordan kan disse hjælpe med at sikre og overvåge adgang til følsomme data i databasen
 Audit trails hjælper med at overvåge og dokumentere adgang til følsomme data, hvilket er et krav i GDPR-overholdelse. 
 Logning gør det muligt at spore, hvem der har adgang til hvilke data og hvornår.
 
+---
 
 ## Øvelse 2: Oprettelse af login, brugere og roller
----
 Forventning: At oprette brugere og roller til webshoppersonale og tildele rettigheder, der sikrer, at adgang til data er kontrolleret og beskyttet.
 
 Udfør følgende på Microsoft SQL Server Management Studio:
 
+---
+
 ##### Trin 1: Opret brugere og roller
----
 ###### Opret roller for forskellige funktioner i webshoppen:
----
 Vi opretter roller til forskellige medarbejdere i webshoppen, såsom kundeservice og lagerpersonale, baseret på tidligere oprettede views og stored procedures fra sidste uge.
 ```SQL
 CREATE ROLE KundeserviceRole;
 CREATE ROLE LagerRole;
 ```
 
-###### Opret brugere og tilknyt dem til roller
 ---
+
+###### Opret brugere og tilknyt dem til roller
 Opret logins og tilknyt brugere til rollerne. Disse brugere vil få tildelt adgang til de relevante views og stored procedures.
 ```SQL
 -- Opret login
@@ -59,12 +66,15 @@ ALTER ROLE KundeserviceRole ADD MEMBER KundeserviceUser;
 ALTER ROLE LagerRole ADD MEMBER LagerUser;
 
 ```
-##### Trin 2: Tildel rettigheder til Views og Stored Procedures
+
 ---
+
+##### Trin 2: Tildel rettigheder til Views og Stored Procedures
 Vi vil nu tildele adgang til de allerede oprettede views og stored procedures, som du tidligere har arbejdet med, i stedet for at skrive nye.
 
-###### Tildel rettigheder til KundeserviceRole
 ---
+
+###### Tildel rettigheder til KundeserviceRole
 Kundeservice kan have adgang til views og stored procedures, der involverer kunde- og ordredata.
 
 Giv SELECT-rettigheder til relevante views, som du allerede har oprettet til kundeservice, f.eks. vwOrderCustomer
@@ -77,8 +87,9 @@ GRANT SELECT ON vwOrderCustomer TO KundeserviceRole;
 GRANT EXECUTE ON uspUpdateCustomerPoints TO KundeserviceRole;
 ```
 
-###### Tildel rettigheder til LagerRole
 ---
+
+###### Tildel rettigheder til LagerRole
 Lagerpersonalet skal have adgang til produkt- og lagerdata, men kun via de relevante views og stored procedures, som du allerede har oprettet.
 
  Giv SELECT-rettigheder til eksisterende views, der viser produkt- og lagerinformation (vwLowStockProducts).
@@ -91,8 +102,9 @@ Giv EXECUTE-rettigheder til stored procedures, der tillader opdatering af lagerm
 GRANT EXECUTE ON uspUpdateStock TO LagerRole;
 ```
 
-#### Trin 3: Test adgang og rettigheder
 ---
+
+#### Trin 3: Test adgang og rettigheder
 Test nu rollerne ved at logge ind som forskellige brugere og afprøve deres rettigheder. Vær særlig opmærksom på at sikre least privilege i praksis ved at begrænse adgangen til kun de nødvendige data og funktioner.Test som KundeserviceUser
 
  Log ind som KundeserviceUser og kør en SELECT på det eksisterende view, som viser kunde- og ordreoplysninger: 
@@ -111,9 +123,9 @@ Prøv at opdatere en produktslagermængde ved hjælp af den stored procedure du 
 Prøv at få adgang til kunde- og ordredata, og bemærk, at adgangen nægtes, og diskuter betydningen af least privilege.
 
 
+---
 
 ## Øvelse 3: Backup og gendannelse af databasen
----
 Forventning: At forstå og udføre backup og gendannelse af databasen samt diskutere en effektiv backup-strategi for en webshop.
 
 Udfør følgende på Microsoft SQL Server Management Studio:
@@ -140,8 +152,9 @@ RESTORE DATABASE WebshopDB FROM DISK = 'C:\backups\WebshopDB_diff.bak' WITH RECO
 
 ##### 4. Diskutér, hvordan en god backup-strategi kunne se ud for en webshop, og hvor ofte man bør tage fulde, differentielle og log-backups.
 
-## Øvelse 4: Implementering af Transparent Data Encryption (TDE)
 ---
+
+## Øvelse 4: Implementering af Transparent Data Encryption (TDE)
 Forventning: At sikre følsomme oplysninger i webshop-databasen ved at anvende TDE.
 
 ##### 1. Hvad er Transparent Data Encryption (TDE)? 
@@ -172,8 +185,9 @@ FROM sys.databases
 WHERE name = 'WebshopDB';
 ```
 
-## Øvelse 5: Vidensdeling kl. 14:30
 ---
+
+## Øvelse 5: Vidensdeling kl. 14:30
 Forventning: At evaluere, hvad du har lært om brugeradministration, backup-strategier og kryptering af data.
 
 · Hvordan sikrer roller i webshop-databasen, at ingen medarbejdere får for mange rettigheder? Diskutér princippet om least privilege.

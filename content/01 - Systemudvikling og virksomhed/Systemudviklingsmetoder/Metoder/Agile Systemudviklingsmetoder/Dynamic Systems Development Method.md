@@ -4,13 +4,13 @@ aliases:
 ---
 
 >[!tldr] Definition
-**DSDM** (Dynamic Systems Development Method) er en [[Agile]]-ramme. Metoden kombinerer forretningsdisciplin med fleksibel udvikling og er særlig egnet til komplekse projekter med høje krav til leverancehastighed. DSDM lægger vægt på **samarbejde**, **hyppig levering** og **forretningsmæssig værdi**.
-[[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=544&selection=17,0,17,34|p.508]]
+> **DSDM** (Dynamic Systems Development Method) er en [[Agile]]-ramme. Metoden kombinerer forretningsdisciplin med fleksibel udvikling og er særlig egnet til komplekse projekter med høje krav til leverancehastighed. DSDM lægger vægt på **samarbejde**, **hyppig levering** og **forretningsmæssig værdi**.
+>
+> [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=544&selection=17,0,17,34|p.508]]
 
 ---
 
 ## Faser i DSDM
----
 ### 1. Pre-project
 - **Formål**: Forberedelse af projektet.  
 - **Aktiviteter**:  
@@ -47,8 +47,9 @@ aliases:
 6. **Samarbejde**: Tæt dialog mellem udviklere, brugere og ledelse.  
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=546&selection=8,0,8,15|p.510]]
 
-## Roller
 ---
+
+## Roller
 ### Primære Roller
 | **Rolle**             | **Ansvar**                                                                 |
 |------------------------|----------------------------------------------------------------------------|
@@ -64,8 +65,10 @@ aliases:
 - **Workshop Facilitator**: Ledelse af workshops til kravindsamling.  
 
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=547&selection=6,0,6,10|p.511]]
-## Fordele vs. Udfordringer
+
 ---
+
+## Fordele vs. Udfordringer
 
 | **Fordele**                          | **Udfordringer**                          |
 |---------------------------------------|--------------------------------------------|
@@ -74,9 +77,9 @@ aliases:
 | Fleksibilitet gennem prototyper       | Mange roller kan skabe uklarhed            |
 | Egnet til regulerede brancher         | Dokumentationsbyrde i tidlige faser       |
 
+---
 
 ## Hvorfor vælge DSDM?
----
 - **Komplekse projekter**: Kombinerer agility med forretningsstyring.  
 - **Hurtig værdilevering**: Fokus på kernefunktioner først (80/20).  
 - **Transparent proces**: Tydelige faser og ansvarsroller.  

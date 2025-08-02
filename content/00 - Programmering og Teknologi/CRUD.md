@@ -1,4 +1,7 @@
-The acronym CRUD is made up of four words. Those four words are taken from the first letters of the SQL commands. And is often used for datahandling.
+> [!tldr] Definition
+> The acronym CRUD is made up of four words. Those four words are taken from the first letters of the SQL commands. And is often used for datahandling.
+
+---
 
 ## Create
 This means to generate a new request or to add something.
@@ -11,6 +14,9 @@ public void AddToRepository(Room room)
     Persistence.SaveDataFile(rooms, fileName);
 }
 ```
+
+---
+
 ## Read
 This means to display all records.
 #### Example with txt file
@@ -21,6 +27,7 @@ public List<Room> GetAll()
 	}
 ```
 
+---
 
 ## Update
 This means to change the existing records.
@@ -38,6 +45,9 @@ public void UpdateRepository(Room room)
     Persistence.SaveDataFile(rooms, fileName);
 }
 ```
+
+---
+
 ## Delete
 This means to delete existing records.
 #### Example with txt file

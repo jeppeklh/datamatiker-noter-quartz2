@@ -3,10 +3,11 @@ aliases:
   - Cross-Site Request Forgery
 ---
 > [!tldr] Definition
-En form for angreb, hvor en ondsindet aktør forsøger at få en bruger til ufrivilligt at udføre en handling på et websted, hvor brugeren allerede er autentificeret – f.eks. overføre penge, ændre e-mailadresse eller ændre adgangskode.
+> En form for angreb, hvor en ondsindet aktør forsøger at få en bruger til ufrivilligt at udføre en handling på et websted, hvor brugeren allerede er autentificeret – f.eks. overføre penge, ændre e-mailadresse eller ændre adgangskode.
+
+---
 
 ### Hvordan fungerer CSRF?
----
 1. Brugeren logger ind på et websted (fx `bank.dk`) og får en session-cookie, der bekræfter, at brugeren er autentificeret.
     
 2. Brugeren besøger derefter en ondsindet side (fx `hacker.dk`), mens sessionen stadig er aktiv.
@@ -15,9 +16,9 @@ En form for angreb, hvor en ondsindet aktør forsøger at få en bruger til ufri
     
 4. Hvis `bank.dk` ikke beskytter sig mod CSRF, tror den, at brugeren selv sendte forespørgslen, og handlingen bliver udført.
     
+---
 
 ### Hvordan beskytter man mod CSRF?
----
 **Cookie-baseret authentication alene beskytter _ikke_ imod CSRF.** Faktisk er cookies ofte grunden til, at CSRF-angreb kan fungere, fordi de automatisk bliver sendt med hver HTTP-request – uanset oprindelsen.
 
 ### Metoder til at beskytte sig:

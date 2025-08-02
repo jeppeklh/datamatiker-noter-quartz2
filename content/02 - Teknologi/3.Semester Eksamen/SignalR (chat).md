@@ -44,12 +44,11 @@ deactivate Client
 ```
 
 
-
+---
 
 ## SignalR og netværk
----
 ### Sådan passer SignalR ind i OSI-modellen:
----
+
 **Applikationslaget (OSI lag 7)**  
 Her lever SignalR som en del af selve applikationen. 
 Det er dette lag, hvor protokoller som HTTP og WebSocket også hører til. 
@@ -70,8 +69,9 @@ Det har SignalR ikke direkte indflydelse på, men det er nødvendigt for forbind
 **Datalink og fysisk lag (lag 2 og 1)**  
 Disse lag handler om netværkskort, switche, kabler osv., og ligger langt under det, SignalR arbejder med.
 
-### Eksempel:
 ---
+
+### Eksempel:
 Forestil dig en webapp, hvor en bruger får besked i realtid, når en ny besked ankommer i en chat. SignalR holder en åben forbindelse (fx via WebSocket) mellem browser og server. 
 
 Når en ny besked sendes, går den:
@@ -84,8 +84,9 @@ Når en ny besked sendes, går den:
     
 4. Og fysisk over netværket (Datalink og fysisk lag).
 
-### Eksempel af firewall-blokering af websocket
 ---
+
+### Eksempel af firewall-blokering af websocket
 
 Hvis WebSocket er blokeret:
 
@@ -94,9 +95,9 @@ Hvis WebSocket er blokeret:
 - Den prøver næste metode, fx Long Polling, hvor klienten hele tiden spørger serveren “har du noget nyt?”.
     
 - Det virker stadig, men du får lidt mere latency og mere netværkstrafik.
-  
-  
+    
 ---
+
 **Hvorfor bruger SignalR TCP og ikke UDP?**  
 Fordi SignalR kræver pålidelig kommunikation – chat og realtidsdata må ikke gå tabt.
 
@@ -109,11 +110,10 @@ Hvis HTTPS bruges, kan han ikke læse indholdet – men uden kryptering kan han 
 **Hvordan påvirker fallback-mekanismer i SignalR brugeroplevelsen?**  
 Mere latency og netværksbrug ved Long Polling. WebSocket er bedst, men kræver kompatibilitet.
 
+---
 
 ## SignalR vs internt på server med events
----
 ### Fordele ved SignalR mellem klient og server
----
 #### Separation of Concerns
 **WASM-klienten** håndterer **UI-rendering og brugerinteraktion** lokalt (hurtigt, uden server-tur for hver handling).
 

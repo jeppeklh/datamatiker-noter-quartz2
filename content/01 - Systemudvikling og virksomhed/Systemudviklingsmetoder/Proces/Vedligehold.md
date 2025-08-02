@@ -1,7 +1,7 @@
 >[!tldr] Definition
-Sikring af systemet fortsætter med at levere værdi, efter det er blevet udrullet. 
+> Sikring af systemet fortsætter med at levere værdi, efter det er blevet udrullet. 
 >
-Vedligehold er unikt, fordi det ofte kræver, at du igennemgår mange af de andre fokusområder – såsom [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Kravindsamling|krav]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/High Level Design|High Level Design]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Low Level Design|Low Level Design]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Programmering|kodning]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Test|test]] og [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Udrulning|udrulning]] – for at opnå en vellykket vedligeholdelsesfase. Samtidig adskiller vedligehold sig fra udviklingsprojektet, da det ikke var en del af det oprindelige scope.
+> Vedligehold er unikt, fordi det ofte kræver, at du igennemgår mange af de andre fokusområder – såsom [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Kravindsamling|krav]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/High Level Design|High Level Design]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Low Level Design|Low Level Design]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Programmering|kodning]], [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Test|test]] og [[Repo/01 - Systemudvikling og virksomhed/Systemudviklingsmetoder/Proces/Udrulning|udrulning]] – for at opnå en vellykket vedligeholdelsesfase. Samtidig adskiller vedligehold sig fra udviklingsprojektet, da det ikke var en del af det oprindelige scope.
 
 ---
 
@@ -31,6 +31,7 @@ En udfordring ved cykliske procesmodeller er, at det kan være svært at skelne 
 
 Dette sikrer, at der ikke opstår uendelige udviklingscyklusser, hvor vedligeholdelse gradvist overtager udviklingsprojektet.
 
-## Resourser
 ---
+
+## Resourser
 - [Fokusområde Læringsobjekt (Vedligehold)](https://rise.articulate.com/share/C9x7c641Qf8pDgT76Nqqy6ykP99dRgRJ#/lessons/)

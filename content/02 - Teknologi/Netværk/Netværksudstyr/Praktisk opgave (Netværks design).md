@@ -1,5 +1,4 @@
 ## Scenarie
----
 En virksomhed med 25 ansatte ønsker et netværk, der:
 
 - Giver adgang til internettet.
@@ -7,8 +6,8 @@ En virksomhed med 25 ansatte ønsker et netværk, der:
 - Tilbyder trådløs adgang til bærbare computere.
 - Er sikkert og skalerbart til 50 ansatte.
 ---
+
 ### Netværksdesign
----
 1. **Nødvendigt udstyr**:
     
     - [[Router]]: For at forbinde virksomhedens netværk til internettet.

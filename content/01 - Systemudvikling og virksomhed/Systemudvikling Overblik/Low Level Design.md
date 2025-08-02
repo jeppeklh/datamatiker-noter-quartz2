@@ -1,15 +1,15 @@
 tags: #Systemudvikling #DevelopmentPhase
-## Definition
----
-Design af kode og strukturen inde I systemet
+> [!tldr] Definition
+> Design af kode og strukturen inde I systemet
 
 - Se hvordan interaktionen bevæger sig mellem klasser og metoder.
 - Hvordan koden er delt op
 
 Artefakterne der fremstilles her  er beregnet til at programmørerne kan lave koden ud fra dem.
 
-## Kvalitetssikring
 ---
+
+## Kvalitetssikring
 - Laver du det rigtige system?
 - Laver du systemet rigtigt? 
 

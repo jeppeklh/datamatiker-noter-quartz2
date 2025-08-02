@@ -1,5 +1,5 @@
 > [!tldr] Definition
-Systemvedligeholdelse kan opdeles i fire hovedtyper. Denne opdeling hjælper med at skabe overblik og sikrer, at vedligeholdelsesarbejdet bliver håndteret effektivt.
+> Systemvedligeholdelse kan opdeles i fire hovedtyper. Denne opdeling hjælper med at skabe overblik og sikrer, at vedligeholdelsesarbejdet bliver håndteret effektivt.
 
 **Fordele ved opdeling:**
 
@@ -17,7 +17,9 @@ Systemvedligeholdelse kan opdeles i fire hovedtyper. Denne opdeling hjælper med
 
 fordeling
 [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=440&selection=56,0,78,10|p.404]]
-## Resourcer
+
 ---
+
+## Resourcer
 - [Systemvedligeholdelse Læringsobjekt](https://rise.articulate.com/share/xjLwUv4_K504yh2xs2xsZ1YuxynRKfE8#/lessons/ERY93CJLSAVnMXfCl5D7EQWD4sC-pkR9)
 - [[Rod Stephens - Beginning Software Engineering (2022, Wiley) - libgen.li.pdf#page=438&selection=8,0,8,4|Rod Stephens kapitel 16]]

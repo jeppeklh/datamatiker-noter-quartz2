@@ -1,5 +1,5 @@
 > [!tldr] Definition
-Formålet med kravindsamling er at sikre, at alle krav til systemet bliver afdækket, indsamlet, dokumenteret og prioriteret. 
+> Formålet med kravindsamling er at sikre, at alle krav til systemet bliver afdækket, indsamlet, dokumenteret og prioriteret. 
 >
 >Det handler om at se systemet fra så mange perspektiver som muligt, så både de umiddelbare og fremtidige behov opfanges – uanset om de er funktionelle, brugercentrerede eller lovmæssige.
 
@@ -83,10 +83,9 @@ Det er ikke nok blot at vælge de rigtige metoder – de skal også anvendes kor
 - **Kombination af metoder:**  
   Ofte er det en fordel at kombinere flere metoder (fx interviews, observationer og prototyping) for at opnå en mere nuanceret og omfattende kravspecifikation.
 
----
-
 Ved at benytte en bred vifte af teknikker og løbende kvalitetssikre din indsats sikrer du, at kravindsamlingen bliver så fyldestgørende og brugbar som muligt – og at systemet til sidst understøtter både de umiddelbare og fremtidige behov.
 
-## Resourser
 ---
+
+## Resourser
 - [Fokusområder Læringsobjekt (Kravindsamling)](https://rise.articulate.com/share/C9x7c641Qf8pDgT76Nqqy6ykP99dRgRJ#/lessons/8690M-GPL1NRmCh1xfnStnJr47NE-Cga)

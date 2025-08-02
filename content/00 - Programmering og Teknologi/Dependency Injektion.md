@@ -4,11 +4,11 @@ aliases:
 ---
 
 > [!tldr] Definition
-Et designmønster, der hjælper med at holde koden modulær, testbar og nem at udvide. Det gør det ved at overføre ansvaret for oprettelse og håndtering af afhængigheder fra klasser til en ekstern container, hvilket reducerer koblingen mellem komponenterne.
+> Et designmønster, der hjælper med at holde koden modulær, testbar og nem at udvide. Det gør det ved at overføre ansvaret for oprettelse og håndtering af afhængigheder fra klasser til en ekstern container, hvilket reducerer koblingen mellem komponenterne.
 
+---
 
 ## Hvad er Dependency Injection?
----
 - **Definition:** DI er en metode, hvor en klasse modtager sine nødvendige afhængigheder (såsom databaser, logger, services osv.) udefra i stedet for at instantiere dem internt.
 - **Analogi:** Tænk på en bil, der ikke selv fremstiller sine dæk, men modtager dem færdige fra en fabrik.
 - **Fordele:**
@@ -17,9 +17,9 @@ Et designmønster, der hjælper med at holde koden modulær, testbar og nem at u
   - Øger fleksibilitet og vedligeholdelighed af koden.
 
 
-## Dependency Injection i MVC
 ---
 
+## Dependency Injection i MVC
 I [[MVC]] anvendes DI til at levere de nødvendige services til controllere og andre komponenter.
 
 #### Eksempel på DI i ASP.NET Core MVC
@@ -76,8 +76,9 @@ public class HomeController : Controller
   - **Registrering:** `services.AddScoped<IGreetingService, GreetingService>()` registrerer servicen med en scoped livscyklus, så der oprettes en ny instans per anmodning.
   - **Injection:** HomeController modtager `IGreetingService` via konstruktøren, hvilket muliggør udskiftning med andre implementeringer (f.eks. ved test).
 
-## Dependency Injection i Blazor
 ---
+
+## Dependency Injection i Blazor
 [[Blazor Overview|Blazor]] understøtter også DI, hvilket gør det muligt at dele services mellem klient- og serverkomponenter.
 
 ### DI i Blazor Server/WebAssembly
@@ -145,14 +146,16 @@ public class Startup
   - **@inject:** Bruges til at indsætte `IGreetingService` i komponenten.
   - **OnInitialized:** Komponentens initialiseringsmetode, hvor servicen kaldes for at hente en hilsen, der vises til brugeren.
 
-## Opsummering
 ---
+
+## Opsummering
 - **Dependency Injection** gør det muligt at holde koden løs koblet ved at overføre ansvaret for at oprette afhængigheder til en ekstern container.
 - **I MVC:** DI hjælper med at levere nødvendige services til controllere, hvilket øger testbarhed og vedligeholdelse.
 - **I Blazor:** DI muliggør deling af services mellem klient- og serverkomponenter, hvilket fremmer kodegenbrug og konsistens.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Dependency Injektion Læringsobjekt (MVC)](https://scorm.itslearning.com/data/3289/C20150/ims_import_43/scormcontent/index.html#/lessons/08SZ6y2wtJzg6oNAUyevtSZGxDS4ORkq)
 - [Dependency Injektion Læringsobjekt (Blazor)](https://scorm.itslearning.com/data/3289/C20150/ims_import_43/scormcontent/index.html#/lessons/yGlvEqvIFILy47jfHVEMbhUgYC-b0L8z)
 - [Dependency Injektion LinkedIn Kursus](https://www.linkedin.com/learning/asp-dot-net-core-in-dot-net-6-dependency-injection/dependency-injection-overview?resume=false&u=57075649)

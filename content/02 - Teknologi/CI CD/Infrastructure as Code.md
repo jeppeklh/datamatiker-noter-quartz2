@@ -3,7 +3,7 @@ aliases:
   - IaC
 ---
 > [!tldr] Definition
-Evnen til at provisionere og supportere din computerinfrastruktur via kode. I stedet for at skulle konfigurere hver server, netværk eller lagringsenhed manuelt, beskrives miljøet med kode.
+> Evnen til at provisionere og supportere din computerinfrastruktur via kode. I stedet for at skulle konfigurere hver server, netværk eller lagringsenhed manuelt, beskrives miljøet med kode.
     
 - **Baggrund:**  
     Hver applikationsinfrastruktur omfatter mange elementer såsom operativsystemer, databaseforbindelser og lagring. Manuelle konfigurationsprocesser er tidskrævende og fejlbehæftede – specielt ved skalering.
@@ -11,11 +11,9 @@ Evnen til at provisionere og supportere din computerinfrastruktur via kode. I st
 - **Formål:**  
     Med IaC kan du definere den ønskede tilstand for miljøet, og en automatiseret proces sørger for at realisere denne tilstand. Dette giver udviklerne mulighed for at fokusere på at bygge og forbedre applikationer i stedet for at bruge tid på miljøopsætning.
     
-
-
+---
 
 ## Fordele ved IaC
----
 - **Automatisering af Infrastruktur:**
     - Opsætning af komplekse miljøer automatiseres, hvilket reducerer både manuelle processer og risikoen for fejl.
     - Eksempel: Kopiering af hele et regionalt kontormiljø med et enkelt kodeuddrag, hvilket sikrer konsistens på tværs af lokationer.
@@ -32,11 +30,9 @@ Evnen til at provisionere og supportere din computerinfrastruktur via kode. I st
     - IaC-filer kan gemmes i et versionsstyringssystem (som Git), hvilket muliggør transparens og samarbejde ved kodeændringer.
     - Udviklere kan branche og iterere på miljøkonfigurationer ligesom applikationskode.
 
-
-
+---
 
 ## Sådan virker IaC
----
 - **Kodebaseret Infrastrukturstyring:**
     - Ligesom applikationskode beskriver IaC et system og dets arkitektur – fra servere og netværk til lagring og operativsystemer.
     - Konfigurationsfiler fungerer som kildekode, som man kan udvikle og vedligeholde i et IDE (Integrated Development Environment) med indbygget fejlcheck.
@@ -49,10 +45,9 @@ Evnen til at provisionere og supportere din computerinfrastruktur via kode. I st
     - IaC kan integreres direkte i CI/CD-pipelines, så ændringer i infrastrukturen deployeres sammen med applikationsopdateringer.
     - Dette sikrer, at miljøerne hele tiden er konsistente og deploybare.
 
-
+---
 
 ## Tilgange til IaC
----
 ### Declarative Approach
 
 - **Beskrivelse:**
@@ -65,9 +60,9 @@ Evnen til at provisionere og supportere din computerinfrastruktur via kode. I st
 - **Eksempel:**
     - En Terraform-konfiguration, hvor du definerer de nøjagtige ressourcer (fx en VM, database og netværk) og deres ønskede tilstand.
 
+---
 
 ### Imperative Approach
----
 - **Beskrivelse:**
     - Du beskriver _hvordan_ miljøet skal bygges op, dvs. alle de trin og kommandoer, der skal køres for at opnå den ønskede tilstand.
     - Relevant i komplekse scenarier, hvor rækkefølgen af operationer er kritisk.
@@ -78,11 +73,9 @@ Evnen til at provisionere og supportere din computerinfrastruktur via kode. I st
 - **Eksempel:**
     - Et script (fx i Bash eller PowerShell) der sekventielt opsætter en server, installerer nødvendige pakker og konfigurerer netværksindstillinger.
 
-
 ---
 
 ## IaC og DevOps
----
 - **Integration i DevOps:**
     - IaC er en central komponent i DevOps, hvor man søger at automatisere hele livscyklussen for applikationsudrulninger.
     - DevOps-teams integrerer IaC i deres CI/CD-pipelines for at sikre at miljøændringer sker samtidig med kodeændringer.
@@ -95,11 +88,9 @@ Evnen til at provisionere og supportere din computerinfrastruktur via kode. I st
 - **Eksempel:**
     - Når en udvikler foretager et commit med ændringer i både applikationskode og IaC-skabeloner, udløses en CI-pipeline, som samtidig bygger applikationen og provisionerer et opdateret miljø – dette skaber hurtig feedback og reducerer risikoen for at deployment-skabeloner afviger fra applikationskoden.
 
-
-
+---
 
 ## Opsummering
----
 Infrastructure as Code (IaC) muliggør:
 
 - **Automatiseret og fejlfri infrastrukturstyring**
@@ -114,6 +105,7 @@ Infrastructure as Code (IaC) muliggør:
 
 Ved at anvende både deklarative og imperative tilgange kan virksomheder tilpasse IaC til deres specifikke behov og komplekse infrastrukturscenarier. Denne praksis reducerer ikke kun administrative byrder, men skaber desuden et mere robust og skalerbart it-miljø, som understøtter hurtige forretningsmæssige ændringer og innovation.
 
-## Resourcer
 ---
+
+## Resourcer
 - [aws IaC](https://aws.amazon.com/what-is/iac/)

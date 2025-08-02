@@ -1,12 +1,12 @@
 
 > [!tldr] Definition
-Logfiler fungerer som systemets hukommelse – de registrerer, hvad der sker, hvornår og hvorfor. 
+> Logfiler fungerer som systemets hukommelse – de registrerer, hvad der sker, hvornår og hvorfor. 
 >
-At kunne indsamle, centralisere og analysere logs er essentielt for fejlsøgning, performance-tuning og sikkerhedsovervågning.
+> At kunne indsamle, centralisere og analysere logs er essentielt for fejlsøgning, performance-tuning og sikkerhedsovervågning.
 
+---
 
 ## Centrale begreber
----
 
 | Begreb           | Forklaring                                                                                   |
 |------------------|----------------------------------------------------------------------------------------------|
@@ -28,10 +28,9 @@ At kunne indsamle, centralisere og analysere logs er essentielt for fejlsøgning
 }
 ```
 
-
+---
 
 ## Centraliseret loghåndtering
----
 I stedet for at sprede logfiler på hver enkelt server anvendes en logpipeline:
 
 1. **Shipment** (Filebeat, Fluentd, Logstash…)
@@ -47,9 +46,9 @@ Fordele:
 - Hurtig query-performance via indekser
 - Mulighed for at lave dashboards og alerts på logdata
 
+---
 
 ## 6. Best Practices
----
 - **Strukturerede logs**: Brug JSON eller GELF frem for fri tekst
 - **Kontekst**: Inkluder trace- og correlation IDs for at følge en anmodning tværs gennem mikrotjenester
 
@@ -67,8 +66,8 @@ Fordele:
     - Beskyt logtransport (TLS)
     - Maskér følsomme data (PII, tokens) inden shipping
 
+---
 
 ## Resourcer
----
 - [Systemovervågning Læringsobjekt (Log og loganalyse)](https://rise.articulate.com/share/D1gjA2qJXZ-26St6GmaYkyLrrCe2_UAs#/lessons/aAxCE41hyUWLjlfqy-rInZXSir2zk6h-)
 - [Logging Practical guide](https://assets-global.website-files.com/626ad01a9cdb24688668c02e/6308d44b5388c8411a78833b_LogDNA-eBook-Troubleshoot-in-Production_compressed.pdf)

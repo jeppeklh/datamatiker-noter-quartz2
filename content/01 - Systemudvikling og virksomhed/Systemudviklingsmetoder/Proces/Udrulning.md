@@ -3,7 +3,7 @@
 >[!tldr] Definition
 >Sikring af det producerede system bliver leveret til brugerne på en hensigtsmæssig måde. 
 >
-Dette gøres ved hjælp af en **cutover-strategi**, som definerer, hvordan og hvornår overgangen fra et tidligere system (eller en tidligere version) til det nye system skal finde sted.
+> Dette gøres ved hjælp af en **cutover-strategi**, som definerer, hvordan og hvornår overgangen fra et tidligere system (eller en tidligere version) til det nye system skal finde sted.
 
 ---
 
@@ -59,6 +59,7 @@ Nedenfor er nogle eksempler på cutover-strategier:
 
 Ved at vælge den rette cutover-strategi kan udrulningen af systemet tilpasses både organisationens behov og de specifikke udfordringer, som projektet og procesmodellen medfører.
 
-## Resourser
 ---
+
+## Resourser
 - [Fokusområde Læringsobjekt (Udulning)](https://rise.articulate.com/share/C9x7c641Qf8pDgT76Nqqy6ykP99dRgRJ#/lessons/R7q7YGmLJqco1SRCbLqWkUfEUPbnxC8u)

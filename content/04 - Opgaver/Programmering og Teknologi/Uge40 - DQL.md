@@ -2,8 +2,9 @@
 
 Du har allerede arbejdet grundigt med database-design i Fase A, hvor du udviklede en UML-database model og normaliserede dine data. I Fase B omsatte du dette design til en fungerende database ved at oprette tabeller gennem SQL's Data Definition Language (DDL) og manipulere data med Data Manipulation Language (DML). Nu er tiden kommet til at forespørge databasen ved hjælp af Data Query Language (DQL). I dette opgavesæt vil du gennemgå, hvordan du kan hente og analysere data fra din database via SELECT-sætningen, filtrere resultater med WHERE, kombinere data fra flere tabeller med JOINs, og anvende aggregeringsfunktioner til at bearbejde og fortolke dine data. Dette vil give dig den nødvendige viden og færdigheder til effektivt at udtrække relevant information fra Webshop databasen.
 
-# Øvelse 1: Terminologi
 ---
+
+# Øvelse 1: Terminologi
 **_Forventning_:** At sikre, at du har en klar forståelse af de grundlæggende begreber inden for DQL, som er nødvendige for at arbejde med at udtrække relevant information fra databasen.
 
 Brug **Ordet rundt** til at reflektere over begreberne:
@@ -60,8 +61,9 @@ Sørg for at alle får mulighed for at tale.
 
 _Tidsramme: 30 minutter_
 
-# Øvelse 2: Simple SELECT Statements
 ---
+
+# Øvelse 2: Simple SELECT Statements
 **_Forventning_**: At få praktisk erfaring med at hente data fra databaser ved hjælp af simple [[SELECT]]-sætning.
 
 Udfør følgende på Microsoft SQL Server Management Studio:
@@ -243,8 +245,9 @@ FROM CUSTOMER;
 
 _Tidsramme: 30 minutter_
 
-# Øvelse 4: Aggregeringsfunktioner
 ---
+
+# Øvelse 4: Aggregeringsfunktioner
 **_Forventning_**: At få en praktisk forståelse af aggregeringsfunktioner i SQL og deres anvendelse.
 
 Udfør følgende på Microsoft SQL Server Management Studio:
@@ -315,8 +318,9 @@ HAVING COUNT(SHOPPINGCART.CustomerID) > 2
   
 _Tidsramme: 45 minutter_
 
-# Øvelse 5: JOINS
 ---
+
+# Øvelse 5: JOINS
 **_Forventning_**: At få en praktisk erfaring med at bruge forskellige typer af JOIN-sætninger i SQL for at kombinere data fra flere tabeller.
 
 Udfør følgende på Microsoft SQL Server Management Studio:
@@ -441,8 +445,9 @@ JOIN PRODUCT ON ORDERITEM.ProductID = PRODUCT.ProductID;
 
 _Tidsramme: 60 minutter_
 
-# Øvelse 6: Vidensdeling kl. 14:30
 ---
+
+# Øvelse 6: Vidensdeling kl. 14:30
 I dag har vi arbejdet med at opbygge en dybere forståelse af SQL's Data Query Language (DQL), med særlig fokus på SELECT-sætningen, aggregeringsfunktioner og forskellige JOIN-typer. Vi har udforsket, hvordan DQL kan anvendes til at hente og analysere data fra en relationel database på en effektiv måde. Gennem praktiske øvelser har vi lært at filtrere, sortere og kombinere data fra flere tabeller.  
   
 Ved at anvende SQL-sætninger, har vi også set, hvordan komplekse forespørgsler kan konstrueres for at løse forretningsspørgsmål som visning af kundeoplysninger, salgshistorik og produktoversigter.

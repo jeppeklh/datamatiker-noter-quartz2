@@ -11,7 +11,6 @@ aliases:
 > - Tegne diagrammer eller skitser 
 > - Udforme lister eller skemaer
 
----
 
 
 

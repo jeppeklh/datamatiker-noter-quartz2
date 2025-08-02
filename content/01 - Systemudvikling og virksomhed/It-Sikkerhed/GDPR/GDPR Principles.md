@@ -1,6 +1,5 @@
 
 ## Principper
----
 ### 1. **Proactivity**
 
 - **Definition**: Implement data protection measures early, anticipating risks before they arise.
@@ -71,8 +70,9 @@
 - **Definition**: Keep personal data only as long as necessary for its purpose.
 - **Example**: The cinema automatically deletes customer data after one year if no further bookings are made, ensuring data is not stored longer than needed.
 
-## Krav og guidelines
 ---
+
+## Krav og guidelines
 ### 1. **Kravindsamling**
 
 - **Proaktivitet**:

@@ -5,38 +5,37 @@ aliases:
   - nedarvning
   - inherits
 ---
-## Overview
----
-OOP principle where a class ([[#Derived class|subclass]]) inherits properties and behaviors from another class 
-([[#Base class|superclass]]), promoting code reuse.
 
+> [!tldr] Definition
+>OOP principle where a class ([[#Derived class|subclass]]) inherits properties and behaviors from another class ([[#Base class|superclass]]), promoting code reuse.
+
+---
 
 ## Base class
----
 Class from which other [[000 Bergrebsliste#Class|classes]] inherit [[000 Bergrebsliste#Properties|properties]], [[000 Bergrebsliste#Field-variables|fields]], [[Methods Overview|methods]], and members.
 Other names: `superclass`
 
+---
 
 ## Derived class
----
 Class that inherits [[000 Bergrebsliste#Properties|properties]] and [[Methods Overview|methods]] from a [[#Base class|base class]], extending its functionality.
 Other names: `subclass`
 
+---
 
 ## Sealed class
----
 [[000 Bergrebsliste#Class|Class]] that cannot be inherited, preventing further extension of its implementation.
 
+---
 
 ## Overriding
----
 Implementering af ny version af en metode nedarvet fra en [[#Base class|baseklasse]]
 
 A [[#Derived class|derived class]] must override all [[Abstraktion#Abstract Method|abstract methods]] of an [[Abstraktion#Abstract Class|abstract class]].
 
+---
 
 ## Virtual
----
 A virtual [[Methods Overview|method]] in a [[#Base class|base class]] can be redefined in [[#Derived class|derived classes]] using [[#Overriding|override]].
 Enabling [[Polymorfi|polymorphic behavior]].
 
@@ -48,8 +47,9 @@ public virtual string ToString();
 
 An [[Abstraktion#Abstract Method|abstract method]] is implicit a virtual method
 
-## Example
 ---
+
+## Example
 ```csharp
 class Vehicle // base class (parent)
 {
@@ -83,14 +83,16 @@ class Program
 ```
 Se https://www.w3schools.com/cs/cs_inheritance.php
 
-## Inheritence in Constructors
 ---
+
+## Inheritence in Constructors
 Inheritance in [[Constructors]] is a feature in C# that allows a [[#Derived class|derived class]] to inherit the [[Constructors|constructor]] of its [[#Base class|base class]]. 
 This means that the [[#Derived class|derived class]] can use the [[Constructors|constructor]] of the base class to [[Variables and Assignment#Initialization|initialize]] its own [[Fields|fields]] and [[Properties|properties]]. 
 This feature saves a lot of code duplication and makes it easier to create [[#Derived class|derived classes]] that are closely related to their [[#Base class|base classes]].
 
-### Example
 ---
+
+### Example
 ```csharp
 using System;
 

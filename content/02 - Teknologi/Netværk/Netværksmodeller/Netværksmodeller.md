@@ -5,9 +5,7 @@
 
 ---
 
-
 ## Hvorfor bruges netværksmodeller?
----
 - **Fejlfinding**: Identificer problemer i specifikke lag.
 - **Netværksdesign**: Strukturér netværk effektivt.
 - **Læring**: Forstå kompleksiteten i netværk systematisk.
@@ -20,6 +18,8 @@
 | Antal lag    | 7                         | 4                             |
 | Fokus        | Teoretisk standardisering | Praktisk anvendelse           |
 | Brug         | Akademisk og uddannelse   | Faktisk netværkskommunikation |
-## Resourser
+
 ---
+
+## Resourser
 - [Netværksmodeller Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_29/scormcontent/index.html#/lessons/BSmTZbYth9KXah_URHzMGletI5zXtfWe)
