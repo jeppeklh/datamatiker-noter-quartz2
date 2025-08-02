@@ -1,13 +1,12 @@
 tags: #C-sharp #Programmering #AdvancedTopics #MultiThreadingAndConcurrency
 
-## Definition 
----
-A process is an instance of a program that is executed independently and managed by the operating system. 
+> [!tldr] Definition
+> A process is an instance of a program that is executed independently and managed by the operating system. 
+> It contains the program code and its current activity.
 
-It contains the program code and its current activity.
+---
 
 ## Key Concepts
----
 ##### Isolation
 Each process runs in its own memory space and does not share memory directly with other processes, providing isolation and stability.
 
@@ -16,8 +15,10 @@ Processes are allocated resources like memory, file handles, and CPU time by the
 
 ##### Process Control Block (PCB)
 The PCB is a data structure used by the operating system to store all information about a process, including its state, program counter, and memory allocation.
-## Creating and Managing Processes
+
 ---
+
+## Creating and Managing Processes
 ##### Creating a Process
 Use the `System.Diagnostics.Process` class to create and manage processes.
 
@@ -38,8 +39,9 @@ Processes can be in various states: new, ready, running, waiting, terminated.
 ##### Inter-process Communication (IPC)
 Mechanisms like pipes, shared memory, and message queues allow processes to communicate and synchronize with each other.
 
-## Example
 ---
+
+## Example
 ```csharp
 using System;
 using System.Diagnostics;
@@ -64,12 +66,13 @@ class ProcessExample
 }
 ```
 
-## Related Topics
 ---
 
+## Related Topics
+- 
 
+---
 
 ## Resources
----
 -  [Microsoft Documentation on Processes](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=net-8.0)
 - [Processer Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_27/scormcontent/index.html#/lessons/kbsy3lmCrvuPoGJegE4u_HBUsodKm-F4)

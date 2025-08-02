@@ -1,7 +1,5 @@
 
 ## Context klasse for databasen
----
-
 Vi laver en context klasse som bruges til at kommunikere med Entity Framework. Den beskriver hvordan databasen hænger sammen og relationerne mellem tabellerne/entities.
 Vi kalder den i dette eksempel ``ShopContext``. Fordi den repræsenterer vores webshop.
 ```csharp
@@ -38,11 +36,11 @@ Vi skal nu fortælle applikationen at vi bruger denne Contextklasse. Det gør vi
 ```
 Den foræller at vi bruger ShopContext og specificerer at vi bruger vores InMemoryDatabase som vi har lavet via Entity Framework.
 
-## Retriving Data
 ---
 
+## Retriving Data
+
 ### Returner en liste af items (GetAll)
----
 Nu kan vi så bruge vores context klasse i vores Controller klasse:
 ```csharp
 	[Route("api/[controller]")]
@@ -80,8 +78,9 @@ public ActionResult<IEnumerable<Product>> GetAllProducts()
 }
 ```
 
-### Returning af et enkelt item
 ---
+
+### Returning af et enkelt item
 Vi definerer først [[API#Routing|routen]] til det specifikke item.
 ```csharp
 // Vi definerer routen til det specifikke item [HttpGet][Route("api/products/{id}")]
@@ -99,8 +98,9 @@ public ActionResult<Product> GetProduct(int id)
 Nu kan vi det api input i Swagger når vi kører applikationen:
 ![[SwaggerAPIEndpointVisual.png]]
 
-### Error handling
 ---
+
+### Error handling
 Hvis vi prøver at returnere et item med et id der ikke findes i database, får vi en Undocumentet fejl kode 204. 
 ![[SwaggerUndocumentedStatusCodeExample.png]]
 Denne kode betyder 'No Content'. Hvilket giver mening i vores eksempel. Vi kan dog håndtere dette i vores kode.
@@ -119,8 +119,9 @@ public ActionResult<Product> GetProduct(int id)
 
 Her returnerer vores GetProduct metode NotFound(), hvis produktet ikke findes. Dette giver en 404 statuskode.
 
-### Gøre API Asynkron
 ---
+
+### Gøre API Asynkron
 Vi gør vores HTTP kald asynkron ved at ændre metode signaturen til at være `async` og returtypen om til `Task<ActionResult>`. Vi skal også bruge `await`- keywordet når vi kalder asynkront. Dette kan give performancefordele ved større 'loads'.
 ```csharp
 [HttpGet]
@@ -142,11 +143,11 @@ public async Task<ActionResult> GetProduct(int id)
 }
 ```
 
-## Writing Data
 ---
 
+## Writing Data
+
 ### Model binding
----
 Vores GetProduct [[Action method]] forventede en parameter. I det tilfælde kom den parameter fra routen. Men argumenter kan også komme fra andre steder f.ek.s ander dele af HTTP-requesten
 Der er 3 vigtige steder de kommer fra
 `[FromBody]`
@@ -157,8 +158,10 @@ Dataen kommer fra en route template. Vi brugte ikke FromRoute i ovenstående eks
 
 `[FromQuery]`
 Dataen kommer fra URLen en query string. 
-### Tilføjelse af item med POST
+
 ---
+
+### Tilføjelse af item med POST
 Når vi laver ny data, bruger vi  [[REST API#**HTTP-metoder**|HTTP-metoden]] `POST`. 
 
 Returtypen er her `Product`- vores selvlavede klasse. ASP.NET CORE's web API laver selv et `Product`-objekt ud fra de værdier som bliver sent som en del af HTTP-requesten. 
@@ -181,8 +184,9 @@ public async Task<ActionResult> PostProduct(Product product)
 }
 ```
 
-### Model validation
 ---
+
+### Model validation
 Vi kan tilføje `[Required]` til bestemte model properties. Dete betyder at disse properties SKAL angives for at kunne tilføje et item.  Her tilføjer vi `[Required]` til Product's CategoryID
 ```csharp
 [Required]
@@ -222,8 +226,9 @@ public async Task<ActionResult> PostProduct(Product product)
 }
 ```
 
-### Updating an item with PUT
 ---
+
+### Updating an item with PUT
 Vores Put metode tager 2 argumenter. 
 - Id - hvilket item vi sjal opdatere
 - `[FromBody]` Product product - det faktiske produkt, altså det opdaterede data. Vi forventer at det kommer fra kroppen af en HTTP-request, deraf FromBody.
@@ -268,8 +273,9 @@ public async Task<ActionResult> PutProduct(int id, Product product)
 }
 ```
 
-### Sletning af item med DELETE
 ---
+
+### Sletning af item med DELETE
 Vi bruger DELETE HTTP-metoden. Vi angiver id'et i routen og bruger id som en parameter. Vi tjekker om der findes et item med dette id - hvis ikke returneres statuskoden notfound.  Så fjerner vi itemmet fra databasen og gemmer.
 
 Ved de fleste APIs returnerer man det item man lige har slettet.
@@ -288,8 +294,9 @@ public async Task<ActionResult<Product>> DeleteProduct(int id)
 }
 ```
 
-## Sletning af flere produkter
 ---
+
+## Sletning af flere produkter
 Vi bruger HttpPost her fordi vi vil slette flere men ikke alle???
 Vi bruger også en specifik route  til dette. Ikke HttpDelete men routen Delete.
 Vi kan så iterere over alle vores ID'er i vores array og slette dem én for én. Men hvad sker der hvis en af de ID'er ikke findes? Så vil vi typisk heller ikke have de andre slettet. Altså vi vil have returneret en `NotFound` kode, hvis det sker.
@@ -320,6 +327,7 @@ public async Task<ActionResult> DeleteMultiple([FromQuery] int[] ids)
 }
 ```
 
-## Resourcer
 ---
+
+## Resourcer
 - [API Consumer/Producer Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_37/scormcontent/index.html#/lessons/dXernJESphMLlxbBN2T7mqqRqAiJgm31)

@@ -9,8 +9,10 @@ Dette kaldes ofte for et Design Class Diagram (DCD), og det er en del af Design 
 ([[applying-uml-and-patterns-3rd.pdf#page=382&selection=2,90,13,7|Larman p.382]])
 
 Statisk ([[applying-uml-and-patterns-3rd.pdf#page=341&selection=0,0,20,25|Larman p.341]])
-## Anvendelse
+
 ---
+
+## Anvendelse
 Class diagrammer har en bred vifte af anvendelser i objektorienteret analyse og design:
 
 **Visualisering af domænemodellen:** 
@@ -24,8 +26,10 @@ Class diagrammer fungerer som en visuel dokumentation af systemstrukturen, der k
 
 **Kommunikation**: 
 De kan bruges som et redskab til at kommunikere designidéer og løsninger mellem udviklere og interessenter.
-## Retningslinjer
+
 ---
+
+## Retningslinjer
 ##### Inkludér associationer og attributter
 Identificér associationer mellem klasser og specificér vigtige attributter. Klasser og deres associationer skal afspejle de konceptuelle klasser fra domænemodellen.
 ##### Tænk som en korttegner
@@ -37,62 +41,84 @@ Brug arv med omtanke. Arv kan skabe problemer med fleksibilitet og vedligeholdel
 ##### Modellér attributter som typer, ikke klasser
 Gør det kun til en klasse, hvis det er et koncept med adfærd og identitet i domænet.
 
-## Kvalitetskriterier
 ---
+
+## Kvalitetskriterier
 ##### Korrekthed
 Klassediagrammet skal præcist afspejle de associationer, attributter og arveforhold, der er relevante for systemet.
 ##### Konsistens
 Diagrammet skal stemme overens med domænemodellen og andre UML-diagrammer som sekvensdiagrammer.
 ##### Vedligeholdelse
 Diagrammet skal være enkelt nok til at blive vedligeholdt, når krav ændrer sig.
+
+---
+
 ## Relationships
----
 #### Association
----
 Broad term that describes any logical connection or relationship between classes.
 ![[Association.png]]
+
+---
+
 #### Directed Association
----
 Directional relationship 
-The airplane contains passengers
+The airplane contains passengers.
+
 ![[Direted Association.png]]
-#### Reflexive Association
+
 ---
+
+#### Reflexive Association
 Occrus when a class has multiple functions or responsibilities.
 For example a staff member working in an airport may be a pilot, engineer, maintenence crew.
-If the maintenence crew member is managed by the engineer. There could be managed relationship between 2 instances of the same class
+If the maintenence crew member is managed by the engineer. There could be managed relationship between 2 instances of the same class.
+
 ![[Reflexive Association.png]]
+
+---
+
 #### Multiplicity
----
 Shows the number of elements in relation to the classes
-An airplane may contain zero to many passengers
+An airplane may contain zero to many passengers.
+
 ![[Multiplicity.png]]
-#### Aggregation
+
 ---
+
+#### Aggregation
 Refers to when a particular class is being built by a collection of instances of another class.
 The contained classes are not strongly dependant on the lifecycle of the container
 A library is made up of one or more books
-But a book will remain so even when the library is dissolved
+But a book will remain so even when the library is dissolved.
+
 ![[Aggregation.png]]
 
-#### Composition
 ---
+
+#### Composition
 Same as [[#Aggregation|Aggregation]] but with dependence of the contained class to the lyifecycle of the container class.
-The contained class will be destroyed if the container class is destroyed
+The contained class will be destroyed if the container class is destroyed.
+
 ![[Composition.png]]
 
-#### Inheritance
 ---
+
+#### Inheritance
 Se [[Nedarvning|inheritance]]
-Arrow from the [[Nedarvning#Derived class|child class]] to the [[Nedarvning#Base class|parent class]]
+Arrow from the [[Nedarvning#Derived class|child class]] to the [[Nedarvning#Base class|parent class]].
+
 ![[Inheritance UML.png]]
 
+---
+
 #### Realization/Interface
----
 Se [[000 Bergrebsliste#Interface|Interface]]
-The Printer Setup interface is being implemented by the Printer class
+The Printer Setup interface is being implemented by the Printer class.
+
 ![[Interface UML.png]]
-## Example
+
 ---
+
+## Example
 ![[TheMovies-DCD1.png]]
 Bemærk at eksempel er både et DCD og et [[Package Diagram]] i ét.

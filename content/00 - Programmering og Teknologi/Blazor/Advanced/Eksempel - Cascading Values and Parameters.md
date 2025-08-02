@@ -10,7 +10,6 @@ Normale komponentparametre er begrænset til at dele data mellem en forælder og
 ---
 
 ## 1. Opret en Model til Indkøbskurv
----
 Først opretter vi en model, der skal holde styr på antallet af varer samt en delegate, som opdaterer antallet, når der tilføjes eller fjernes varer.
 
 **ShoppingCartCountModel.cs**
@@ -27,8 +26,9 @@ public class ShoppingCartCountModel
 _Hvorfor?_  
 Denne model centraliserer antallet af varer og gør det nemt at udløse en opdatering, når ændringer sker i andre komponenter.
 
-## 2. Opsæt Cascading Value i MainLayout
 ---
+
+## 2. Opsæt Cascading Value i MainLayout
 MainLayout er et ideelt sted at placere den cascading value, da den typisk indeholder både header-komponenten (der viser indkøbskurv-ikonet) og brødteksten, hvor ændringer i kurven kan ske.
 
 **MainLayout.razor**
@@ -59,8 +59,9 @@ _Hvorfor?_
 Ved at placere `<CascadingValue>` omkring både header og body gør vi modellen tilgængelig for 
 alle underkomponenter, uden at skulle passere den manuelt gennem parametre.
 
-## 3. Modtag Cascading Value i Header-Komponenten
 ---
+
+## 3. Modtag Cascading Value i Header-Komponenten
 I header-komponenten skal vi modtage den cascading value, så vi kan vise det aktuelle antal varer.
 
 **Header.razor**
@@ -98,8 +99,9 @@ I header-komponenten skal vi modtage den cascading value, så vi kan vise det ak
 _Hvorfor?_  
 Her modtager header-komponenten den delte model og registrerer en delegate, som sørger for, at antallet opdateres, når der sker ændringer i indkøbskurven. Ved at kalde `StateHasChanged` opdateres kun headeren, hvilket undgår unødvendige genindlæsninger af hele applikationen.
 
-## 4. Udløs Opdatering fra Andre Komponenter
 ---
+
+## 4. Udløs Opdatering fra Andre Komponenter
 Når du ændrer indkøbskurvens indhold i andre komponenter (f.eks. på produktsiden eller i produktlisten), skal du sørge for at udløse delegate-opkaldet for at opdatere antallet.
 
 **Eksempel i ProductDetails.razor**
@@ -125,8 +127,9 @@ Når du ændrer indkøbskurvens indhold i andre komponenter (f.eks. på produkts
 _Hvorfor?_  
 Efter en handling (tilføjelse/fjernelse af varer) kaldes `OnCountChange`-delegate for at sikre, at alle komponenter, der lytter til modellen, opdateres med den nye værdi.
 
-## Konklusion
 ---
+
+## Konklusion
 Denne tutorial viste, hvordan du:
 
 - **Opretter en central model** til at gemme og opdatere indkøbskurvens antal.

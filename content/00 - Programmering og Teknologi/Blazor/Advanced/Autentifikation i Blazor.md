@@ -1,5 +1,5 @@
 > [!tldr] Definition
-Autentifikation beskytter applikationen ved at sikre, at kun autoriserede brugere har adgang til bestemte funktioner og data. Det er essentielt for at opretholde sikkerheden og integriteten af applikationen og dens data. 
+> Autentifikation beskytter applikationen ved at sikre, at kun autoriserede brugere har adgang til bestemte funktioner og data. Det er essentielt for at opretholde sikkerheden og integriteten af applikationen og dens data. 
 
 Blazor understøtter forskellige autentifikationsmetoder, herunder:
 - **Individuelle konti** (Identity med Entity Framework)
@@ -8,18 +8,17 @@ Blazor understøtter forskellige autentifikationsmetoder, herunder:
 - **JWT (JSON Web Tokens)**
 - **API-baseret autentifikation** via IdentityServer eller andre OAuth-udbydere
 
+---
 
 ## Opsætning af autentifikation i Blazor
----
 ### 1. Opret et Blazor-projekt med autentifikation
----
 Når du opretter et nyt Blazor-projekt, kan du vælge at inkludere autentifikation. I **Visual Studio** kan du:
 - Vælge **"Individual Accounts"** under autentifikationsindstillingerne for at bruge **ASP.NET Core Identity**.
 - Alternativt vælge **"Microsoft Identity Platform"** for Azure AD-integration.
 
+---
 
 ### 2. Konfiguration af autentifikation i Program.cs
----
 I nyere Blazor-projekter (Blazor Server) kan autentifikation konfigureres direkte i **Program.cs**:
 
 ```csharp
@@ -60,9 +59,9 @@ app.MapFallbackToPage("/_Host");
 app.Run();
 ```
 
+---
 
 ### 3. Beskyt komponenter med `AuthorizeView`
----
 Blazor har en indbygget komponent, **`AuthorizeView`**, som gør det nemt at vise indhold baseret på brugerens autentifikationsstatus.
 ```razor
 <AuthorizeView>
@@ -78,12 +77,13 @@ Blazor har en indbygget komponent, **`AuthorizeView`**, som gør det nemt at vis
 - **Hvis brugeren er logget ind**, vises velkomstbeskeden.
 - **Hvis brugeren ikke er logget ind**, opfordres de til at logge ind.
 
-### 4. Beskyt sider og komponenter med `[Authorize]`
 ---
+
+### 4. Beskyt sider og komponenter med `[Authorize]`
 Du kan også beskytte hele **sider** eller **komponenter** ved hjælp af `[Authorize]`-attributten.
 
 #### **Eksempel**: Beskyttelse af en Razor-komponent
-```raozr
+```razor
 @page "/protected"
 @attribute [Authorize]
 
@@ -92,8 +92,9 @@ Du kan også beskytte hele **sider** eller **komponenter** ved hjælp af `[Autho
 ```
 Hvis en uautoriseret bruger forsøger at tilgå denne side, vil de blive omdirigeret til login-siden.
 
-### 5. Rollebaseret adgangskontrol
 ---
+
+### 5. Rollebaseret adgangskontrol
 Hvis du vil begrænse adgang baseret på **roller**, kan du udvide `[Authorize]`-attributten:
 ```razor
 @attribute [Authorize(Roles = "Admin")]
@@ -110,8 +111,9 @@ Tilsvarende kan du bruge **AuthorizeView** til at vise indhold baseret på bruge
 </AuthorizeView>
 ```
 
-## 6. Tilpasning af login og logout
 ---
+
+## 6. Tilpasning af login og logout
 ### Login-knap
 
 Brugere kan logge ind ved at navigere til **`/Identity/Account/Login`** i en Blazor Server-app med ASP.NET Identity.
@@ -128,8 +130,10 @@ Du kan tilføje en login-knap i din navigation:
     </NotAuthorized>
 </AuthorizeView>
 ```
-## 7. API-baseret autentifikation med JWT
+
 ---
+
+## 7. API-baseret autentifikation med JWT
 Hvis din Blazor-app kommunikerer med et **eksternt API**, kan JWT bruges til autentifikation.
 
 I **Program.cs**, konfigurer JWT-godkendelse:
@@ -143,8 +147,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 ```
 Derefter kan du beskytte dine API-kald ved at sende en **Authorization**-header med tokenet.
 
-## Konklusion
 ---
+
+## Konklusion
 Blazor har stærk understøttelse af autentifikation via ASP.NET Core Identity, Azure AD, JWT og eksterne login-udbydere. Du kan nemt beskytte komponenter og sider med **AuthorizeView** og `[Authorize]`-attributten, samt implementere rollebaseret adgangskontrol.
 
 **Hovedpunkter:**
@@ -155,7 +160,8 @@ Blazor har stærk understøttelse af autentifikation via ASP.NET Core Identity, 
 - Understøtter både **individuelle konti**, **OAuth/JWT**, og **Azure AD**.
 - Brug `Identity/Account/Login` og `Identity/Account/Logout` til login/logud i Blazor Server.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Blazor WebAssembly Læringsobjekt (Autentifikation)](https://scorm.itslearning.com/data/3289/C20150/ims_import_38/scormcontent/index.html#/lessons/BteImlY66O1cDAtgfjL-ZesFTMHQvpiu)
 - [Blazor WebAssembly LinkedIn Kursus (Authentication)](https://www.linkedin.com/learning/blazor-webassembly-foundational-skills/authentication-with-individual-accounts?resume=false&u=57075649)

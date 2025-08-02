@@ -4,15 +4,17 @@ aliases:
   - Blazor Routing
 ---
 > [!tldr] Definition
-Blazor understøtter en struktureret måde at opbygge webapplikationer på, hvor navigation, sider og [[Blazor Layout|layouts]] spiller en central rolle. Her gennemgår vi, hvordan routing og pages defineres.
+> Blazor understøtter en struktureret måde at opbygge webapplikationer på, hvor navigation, sider og [[Blazor Layout|layouts]] spiller en central rolle. Her gennemgår vi, hvordan routing og pages defineres.
+
+---
 
 ## Routing i Blazor
----
 > [!tldr] Definition
 Routing i Blazor bruges til at navigere mellem forskellige komponenter baseret på URL'en. En router-komponent håndterer navigationen og bestemmer, hvilken komponent der skal vises for en given URL.
 
-### Definition af en Route
 ---
+
+### Definition af en Route
 For at definere en route i en Blazor-komponent, benytter du `@page`-direktivet efterfulgt af den ønskede URL-sti. Eksempel:
 
 ```razor
@@ -33,6 +35,7 @@ For at definere en route i en Blazor-komponent, benytter du `@page`-direktivet e
 
 ```
 I dette eksempel sikrer `@page "/counter"`, at komponenten vises, når brugeren navigerer til `/counter`.
+
 ### Routeparameter
 Vi kan også angive routeparametre. Dette kan vi gøre ved at have en property i vores komponentfil og angive den som parameter oppe  routen således.
 ```razor
@@ -69,10 +72,13 @@ Dette gøres altså ved et `:`. Nu kan vi også lave vores ``InitialCount``-prop
 	[Parameter]
 	public int InitialCount { get; set; }
 ```
-## Pages i Blazor
+
 ---
+
+## Pages i Blazor
 > [!tldr] Definition
-Pages i Blazor er komponenter, der er tilknyttet en bestemt route. De fungerer som sider i en traditionel webapplikation og indeholder både UI og logik.
+> Pages i Blazor er komponenter, der er tilknyttet en bestemt route. De fungerer som sider i en traditionel webapplikation og indeholder både UI og logik.
+
 ### Eksempel på en Page-Komponent
 ```razor
 @page "/hello"
@@ -82,8 +88,9 @@ Pages i Blazor er komponenter, der er tilknyttet en bestemt route. De fungerer s
 ```
 Når brugeren navigerer til `/hello`, vises denne komponent som en side.
 
-## Navigation mellem Pages
 ---
+
+## Navigation mellem Pages
 Blazor tilbyder flere metoder til navigation mellem pages:
 ### Brug af `<NavLink>`-Komponenten
 ```razor
@@ -91,8 +98,9 @@ Blazor tilbyder flere metoder til navigation mellem pages:
 ```
 Dette skaber et hyperlink, som navigerer til `/counter` ved klik.
 
-### Programmatisk Navigation
 ---
+
+### Programmatisk Navigation
 Ved at injicere `NavigationManager`-tjenesten kan du navigere programmatisk:
 ```razor
 @inject NavigationManager Navigation
@@ -108,7 +116,8 @@ Ved at injicere `NavigationManager`-tjenesten kan du navigere programmatisk:
 ```
 Her navigerer knappen brugeren til `/counter` via C#-kode.
 
-## Resourcer
 ---
+
+## Resourcer
 - [Blazor Læringsobjekt (Sider, Routing, og Layout)](https://scorm.itslearning.com/data/3289/C20150/ims_import_36/scormcontent/index.html#/lessons/4pQ8P73TM5_n2DvVQakAKJ0aK-vN8yPt)
 - [Blazor LinkedIn (Pages, Routing, and Layout)](https://www.linkedin.com/learning/front-end-web-development-with-dot-net/pages-routing-and-layouts-in-blazor?resume=false&u=57075649)

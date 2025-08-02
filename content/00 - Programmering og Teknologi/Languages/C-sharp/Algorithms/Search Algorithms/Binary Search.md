@@ -1,9 +1,11 @@
 tags: #C-sharp #Programmering #Algorithms #SearchAlgorithms
 ## Overview
----
+
 Binary Search is a search algorithm that finds the position of a target value within a sorted array. Binary Search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated, and the search continues on the remaining half until it is successful or the remaining half is empty.
-#### Pesudo code
+
 ---
+
+#### Pesudo code
 ```csharp
 function binarySearch(array, target)
 	left = 0
@@ -23,8 +25,10 @@ function binarySearch(array, target)
 	return -1
 end function
 ```
-#### C-sharp
+
 ---
+
+#### C-sharp
 ```csharp
 public static int binary(int[] arr, int x)
   {
@@ -46,21 +50,25 @@ public static int binary(int[] arr, int x)
   }
 ```
 
-## Time Complexity
 ---
+
+## Time Complexity
 - Best Case: O(1)
 - Average Case: O(log n)
 - Worst Case: O(log n)
 
-## Space Complexity
 ---
+
+## Space Complexity
 - O(1)
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Algorithms Overview]]
 
-## Resources
 ---
+
+## Resources
 - [Binary Search](https://www.geeksforgeeks.org/binary-search/?ref=lbp)
 - [Linear Search vs Binary Search](https://www.geeksforgeeks.org/linear-search-vs-binary-search/?ref=lbp)

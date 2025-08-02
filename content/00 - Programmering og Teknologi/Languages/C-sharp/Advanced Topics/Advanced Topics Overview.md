@@ -4,8 +4,9 @@ The advanced topics in C# cover more complex and sophisticated features of the l
 
 These topics build upon the foundational knowledge of C# and introduce concepts that are crucial for tackling real-world programming challenges.
 
-## Subtopics 
 ---
+
+## Subtopics 
 - [[Generics]] 
 - [[Error Handling]] 
 - [[Multithreading and Concurrency]] 

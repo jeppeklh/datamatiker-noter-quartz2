@@ -1,24 +1,28 @@
 tags: #C-sharp #Programmering #AdvancedTopics #Events
 
-## Definition 
----
-Events in C# provide a way for a [[Classes|class]] to notify other [[Classes|classes]] or [[Objects|objects]] when something of interest occurs. 
-They are based on [[Delegates|delegates]].
+> [!tldr] Definition
+> Events in C# provide a way for a [[Classes|class]] to notify other [[Classes|classes]] or [[Objects|objects]] when something of interest occurs. 
+> They are based on [[Delegates|delegates]].
 
 They provide a powerful way to implement the [[Observer Pattern|observer pattern]], allowing for decoupled communication between [[Objects|objects]].
-#### Basics of Events
+
 ---
+
+#### Basics of Events
 - **Publisher**: The [[Classes|class]] that sends (or raises) the event.
 - **Subscriber**: The [[Classes|class]] that receives (or handles) the event.
 - **Event Handler**: A [[Delegates|delegate]] that defines the signature of the [[Methods Overview|method]] that will handle the event.
 
-#### Defining an Event
 ---
+
+#### Defining an Event
 1. **Declare a Delegate**: Define a [[Delegates|delegate]] that specifies the signature of the event handler [[Methods Overview|method]]
 2. **Declare an Event**: Use the `event` keyword to declare an event based on the [[Delegates|delegate]].
 3. **Raise an Event**: Write a [[Methods Overview|method]] to raise the event, typically using the [[#Invoke Method|Invoke]] [[Methods Overview|method]].
-## Syntax
+
 ---
+
+## Syntax
 ```csharp
 // Step 1: Declare a delegate
 public delegate void EventHandler(object sender, EventArgs e);
@@ -36,8 +40,9 @@ public class Publisher
 }
 ```
 
-## Invoke Method
 ---
+
+## Invoke Method
 The `Invoke` method is used to call (or raise) the event. The line 
 ```csharp
 SomethingHappened?.Invoke(this, e);
@@ -54,8 +59,9 @@ In this context:
 - `this` refers to the current instance of the class raising the event.
 - `e` is the event data, typically an instance of `EventArgs` or a [[Nedarvning#Derived class|derived class]].
 
-## Subscribing to an Event
 ---
+
+## Subscribing to an Event
 To handle an event, a subscriber must:
 1. Define a [[Methods Overview|method]] that matches the [[Delegates|delegate]] signature.
 2. Attach the [[Methods Overview|method]] to the event using the `+=` operator.
@@ -106,8 +112,9 @@ public class Program
 }
 ```
 
-## Key Concepts
 ---
+
+## Key Concepts
 - **EventHandler Delegate**: A predefined delegate used for most events in the .NET framework. It has the following signature:
 ```csharp
 public delegate void EventHandler(object sender, EventArgs e);
@@ -133,12 +140,14 @@ protected virtual void OnCustomEvent(CustomEventArgs e)
 }
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Events and Delegates Overview]]
 - [[Delegates]]
 
-## Resources
 ---
+
+## Resources
 - [Events Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_13/scormcontent/index.html#/lessons/7BFnyWppRlPaZ0-674hmKMxRGjxecE7O)
 - 

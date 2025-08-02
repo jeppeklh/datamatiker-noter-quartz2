@@ -1,5 +1,6 @@
 
-Realtidskommunikation gør det muligt for klienter (f.eks. webbrowsere) at modtage opdateringer med det samme, uden at brugeren manuelt skal anmode om data. Nøglepunkterne er:
+> [!tldr] Definition
+> Realtidskommunikation gør det muligt for klienter (f.eks. webbrowsere) at modtage opdateringer med det samme, uden at brugeren manuelt skal anmode om data. Nøglepunkterne er:
 
 - **Automatisk opdatering:** Så snart data ændres på serveren, modtager klienten opdateringen med det samme.
 - **Tovejskommunikation:** Både klienten og serveren kan sende beskeder, uden at klienten behøver at spørge.
@@ -9,9 +10,9 @@ Realtidskommunikation gør det muligt for klienter (f.eks. webbrowsere) at modta
 >- **Email-klienter:** Gmail modtager nye emails automatisk, uden at brugeren skal opdatere siden.
 >- **Børsapplikationer:** Aktiekurser opdateres løbende, så brugeren altid ser de seneste tal.
 
+---
 
 ## Dataoverførselsmetoder: Pull vs. Push
----
 I webudvikling skelner vi mellem to primære metoder til dataoverførsel:
 
 ### Pull-teknologi
@@ -24,10 +25,9 @@ I webudvikling skelner vi mellem to primære metoder til dataoverførsel:
 - **Sammenligning:** Det svarer til at modtage en sms – beskeden kommer ind, så snart den er klar.
 - **Anvendelse:** Chatapplikationer, livestreaming, sociale mediers notifikationer og online spil, hvor øjeblikkelig information er afgørende.
 
-
+---
 
 ## Introduktion til SignalR
-----
 [[SignalR]] er en central teknologi for at implementere realtidsfunktionalitet i .NET Core-applikationer, inklusive Blazor. Her er nogle vigtige punkter:
 
 - **Formål:** Gør det muligt for serveren at "pushe" data til klienten, så snart dataene er tilgængelige.
@@ -42,18 +42,18 @@ I webudvikling skelner vi mellem to primære metoder til dataoverførsel:
 >- **IoT:** Alarmer fra IoT-enheder (fx bevægelses- eller temperatursensorer) sendes med det samme til brugerne.
 >- **Aktiekurser:** Markedsdata opdateres løbende til de tilsluttede klienter.
 
-
+---
 
 ## Realtidskommunikation i Blazor
----
 Når du udvikler med Blazor, kan du implementere realtidsfunktionalitet ved at integrere SignalR. Dette åbner op for følgende muligheder:
 
 - **Live dataopdateringer:** Brugere får øjeblikkelige opdateringer, fx i dashboards eller interaktive brugergrænseflader.
 - **Interaktive brugeroplevelser:** Applikationen kan reagere direkte på ændringer i data, hvilket giver en mere dynamisk og engagerende oplevelse.
 - **Integration med andre systemer:** Realtidsdata kan også kombineres med IoT-enheder, sociale medieplatforme eller andre back-end systemer.
 
-### Eksempel i Blazor med SignalR
 ---
+
+### Eksempel i Blazor med SignalR
 ```csharp
 // Startup.cs eller Program.cs
 public void ConfigureServices(IServiceCollection services)
@@ -88,8 +88,9 @@ public class MyHub : Hub
 
 ![[SignalR.png]]
 
-## Resourcer
 ---
+
+## Resourcer
 - [Blazor - SignalR Læringobjet](https://scorm.itslearning.com/data/3289/C20150/ims_import_42/scormcontent/index.html#/lessons/255OK9oFlX5WtX7XlJ8iBWklihRRCOwG)
 - [SignalR Youtube Video](https://www.youtube.com/watch?v=LEImpa77irI&ab_channel=tutorialsEU-C%23)
 - [SignalR LinkedIn Kursus](https://www.linkedin.com/learning/learning-signalr-with-asp-dot-net-core/what-is-signalr?u=57075649)

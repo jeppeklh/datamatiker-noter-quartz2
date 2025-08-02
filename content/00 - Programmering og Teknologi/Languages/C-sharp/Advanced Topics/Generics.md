@@ -1,16 +1,15 @@
 tags: #C-sharp #Programmering #AdvancedTopics #Generics
 
-## Definition 
----
-Generics allow you to define [[Classes|classes]], [[Abstraktion#Interface|interfaces]], and [[Methods Overview|methods]] with a placeholder for the [[Datatypes|type of data]] they store and manipulate. 
+> [!tldr] Definition
+> Generics allow you to define [[Classes|classes]], [[Abstraktion#Interface|interfaces]], and [[Methods Overview|methods]] with a placeholder for the [[Datatypes|type of data]] they store and manipulate. 
 
 This promotes code reusability, type safety, and performance by allowing you to create flexible and strongly-typed [[Data Structues Overview|data structures]] and [[Algorithms Overview|algorithms]].
 
 A generic class is declared with a type parameter in angle brackets `<T>`.
 
+---
 
 ## Key Concepts
----
 ##### Type Parameters
  Placeholder for the actual [[Datatypes|data type]]. For example, `T` in `List<T>`. 
 
@@ -20,12 +19,10 @@ A generic class is declared with a type parameter in angle brackets `<T>`.
 ##### [[#Constraints|Constraints]]
 Conditions that restrict the [[Datatypes|types]] that can be used as arguments for type [[Parameters|parameters]].
 
-
+---
 
 ## Syntax
----
 ### Generic Classes
----
 A generic [[Classes|class]] is declared with a type parameter in angle brackets `<T>`.
 ```csharp
 public class GenericClass<T> 
@@ -44,8 +41,9 @@ public class GenericClass<T>
 }
 ```
 
-### Generic Methods
 ---
+
+### Generic Methods
 A generic [[Methods Overview|method]] is declared with a type parameter in angle brackets `<T>` before the [[Return Values|return type]].
 ```csharp
 public class GenericMethodClass
@@ -57,8 +55,9 @@ public class GenericMethodClass
 }
 ```
 
-### Constraints
 ---
+
+### Constraints
 Constraints restrict the [[Datatypes|types]] that can be used as type arguments.
 ```csharp
 public class GenericClass<T> where T : IComparable<T>
@@ -72,8 +71,9 @@ public class GenericClass<T> where T : IComparable<T>
 
 Here the type argument has to be of a [[Datatypes|type]] that implements the IComparable [[Abstraktion#Interface|interface]] ([[int]], [[bool]], [[string]] etc.)
 
-## Example of using a Generic Class
 ---
+
+## Example of using a Generic Class
 ```csharp
 class Program
 {
@@ -88,12 +88,14 @@ class Program
 }
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Advanced Topics Overview]]
 - [[Error Handling]]
 - [[Multithreading and Concurrency]]
 
-## Resources
 ---
+
+## Resources
 - [Official Documentation on Generics](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)

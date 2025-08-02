@@ -1,5 +1,8 @@
 
-A class should only have 1 responsibility or job
+> [!tldr] Definition
+> A class should only have 1 responsibility or job
+
+---
 
 ## Example
 #### Before SRP

@@ -22,11 +22,13 @@ public class ChatHub : Hub
     }
 }
 ```
-## Praktisk Eksempel – Implementering af en Chatklient
+
 ---
+
+## Praktisk Eksempel – Implementering af en Chatklient
 ### Server-side Opsætning
 
-1. **Registrering i Startup:**
+**Registrering i Startup:**
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
@@ -89,8 +91,9 @@ await Clients.Group("GruppeA").SendAsync("ModtagBesked", "Hej GruppeA!");
 	Du kan overskrive `OnConnectedAsync()` og `OnDisconnectedAsync()` for at tilpasse logik ved tilslutning og frakobling af klienter.
 	Det kune være en Velkommen besked til alle klienter der lige er connected.
 
-## Resourcer
 ---
+
+## Resourcer
 - [SignalR Læringsobjekt (The hub)](https://scorm.itslearning.com/data/3289/C20150/ims_import_42/scormcontent/index.html#/lessons/bz461eD2LAc3_YeCh5pJNLHN5hI_ZyoV)
 - [Basic Chat with SignalR LinkedIn Kursus eksempel](https://www.linkedin.com/learning/learning-signalr-with-asp-dot-net-core/add-a-signalr-hub?autoSkip=true&resume=false&u=57075649)
 - 

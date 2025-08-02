@@ -8,13 +8,14 @@ aliases:
 ---
 tags: #C-sharp #Programmering 
 
-## Overview
+> [!tldr] Definition
+> Field variables are [[Variables and Assignment|variables]] [[Variables and Assignment#Declaration|declared]] at the [[Classes|class]] level in C#.
+> 
+> They represent the state or data of an [[Objects|object]] and can be accessed throughout the [[Classes|class]].
+
 ---
-Field variables are [[Variables and Assignment|variables]] [[Variables and Assignment#Declaration|declared]] at the [[Classes|class]] level in C#. 
-They represent the state or data of an [[Objects|object]] and can be accessed throughout the [[Classes|class]].
 
 ## Declaration 
----
 Fields are [[Variables and Assignment#Declaration|declared]] within a [[Classes|class]] but outside of any [[Methods Overview|method]].
 
 ```csharp
@@ -26,8 +27,9 @@ public class Person
 
 ```
 
-## Initialization
 ---
+
+## Initialization
 Fields can be [[Variables and Assignment#Initialization|initialized]] when they are [[Variables and Assignment#Declaration|declared]] or within a [[Constructors|constructor]].
 
 ```csharp
@@ -44,8 +46,9 @@ public class Person
 
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Properties|CSharp Properties]]
 - [[Variables and Assignment]]
 - [[Classes]]

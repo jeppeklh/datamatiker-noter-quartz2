@@ -1,9 +1,10 @@
 
 > [!note] Info
-SignalR tilbyder flere metoder til at identificere og håndtere brugere, hvilket gør det muligt at sende beskeder præcist til de rette modtagere og spore brugere på tværs af forbindelser.
+> SignalR tilbyder flere metoder til at identificere og håndtere brugere, hvilket gør det muligt at sende beskeder præcist til de rette modtagere og spore brugere på tværs af forbindelser.
+
+---
 
 ## Identifikation af Brugere
----
 ### Connection ID
 - **Unik Identifikator:**  
   Hver bruger får et unikt Connection ID, når de opretter forbindelse.
@@ -18,10 +19,9 @@ SignalR tilbyder flere metoder til at identificere og håndtere brugere, hvilket
 - **Brugernavn:**  
   Brug `Context.User.Identity.Name` for at hente det autentificerede brugernavn.
   
-
+---
 
 ## Grupper og Persistente Forbindelser
----
 ### Grupper
 - **Organisering:**  
   Brugere kan tilføjes til grupper for nemmere håndtering, hvilket muliggør samtidig beskedudsendelse til flere brugere.
@@ -34,9 +34,9 @@ await Groups.AddToGroupAsync(Context.ConnectionId, "AdminGroup");
 - **Genoptagelse af Sessioner:**  
     SignalR tilbyder mekanismer til at gemme brugerinformation, så sessioner kan genoptages, når forbindelsen genetableres.
 
+---
 
 ## Eksempel: Brugerhåndtering i en ChatHub
----
 ```csharp
 public class ChatHub : Hub
 {
@@ -59,7 +59,8 @@ public class ChatHub : Hub
 }
 ```
 
-## Resourcer
 ---
+
+## Resourcer
 - [SignalR Læringsobjekt (Brugere)](https://scorm.itslearning.com/data/3289/C20150/ims_import_42/scormcontent/index.html#/lessons/AaHIbxOZIEeb61ZxGWNmOpdNgZQTuseN)
 - [SignalR LinkedIn Kursus (Users)](https://www.linkedin.com/learning/learning-signalr-with-asp-dot-net-core/users-and-authentication?resume=false&u=57075649)

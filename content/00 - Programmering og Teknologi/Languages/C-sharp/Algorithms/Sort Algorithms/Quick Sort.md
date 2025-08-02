@@ -1,14 +1,15 @@
 tags: #C-sharp #Programmering #Algorithms #SortAlgorithms 
 
 ## Overview
----
 Quick Sort is an efficient sorting algorithm. 
 
 It uses a divide-and-conquer strategy to divide a list into two sublists: the low elements and the high elements. 
 
 Quick Sort can then [[Recursion|recursively]] sort the sublists.
-## Pseudo code
+
 ---
+
+## Pseudo code
 ```csharp
 function quickSort(array, low, high)
 if low < high then
@@ -38,8 +39,10 @@ swap(array[i+1], array[high])
 // Return the partition index
 return i + 1 end function
 ```
-## C-sharp
+
 ---
+
+## C-sharp
 ```csharp
 static void swap(int[] arr, int i, int j)  
 {
@@ -95,24 +98,28 @@ static void quickSort(int[] arr, int low, int high)  
 }
 ```
 
-## Time Complexity
 ---
+
+## Time Complexity
 - Best Case: O(n log n)
 - Average Case: O(n log n)
 - Worst Case: O(n²)
 
-## Space Complexity
 ---
+
+## Space Complexity
 - O(log n)
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Algorithms Overview]]
 - [[Bubble Sort]]
 - [[Selection Sort]]
 - [[Recursion]]
 
-## Resources
 ---
+
+## Resources
 - [Sorting Algorithms](https://www.geeksforgeeks.org/sorting-algorithms/?ref=lbp)
 - [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)

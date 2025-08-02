@@ -1,8 +1,9 @@
 > [!tldr] Definition
-Blazor gør det nemt at arbejde med data ved at bruge C#-modeller og tjenester til at håndtere dataoperationer. Ved at benytte [[Dependency Injection]] (DI) kan du nemt "injektere" dine datatjenester i komponenter og implementere [[CRUD]]-funktionalitet.
+> Blazor gør det nemt at arbejde med data ved at bruge C#-modeller og tjenester til at håndtere dataoperationer. Ved at benytte [[Dependency Injection]] (DI) kan du nemt "injektere" dine datatjenester i komponenter og implementere [[CRUD]]-funktionalitet.
+
+---
 
 ## 1. Definere Modellen
----
 Først opretter du en simpel model, fx en `Product`-model:
 
 ```csharp
@@ -14,8 +15,9 @@ public class Product
 }
 ```
 
-## 2. Oprette en Data Service
 ---
+
+## 2. Oprette en Data Service
 Lav en service, der håndterer CRUD-operationer for `Product`-modellen. Her bruges en liste som en simpel datakilde:
 ```csharp
 public class ProductService
@@ -59,16 +61,18 @@ public class ProductService
 }
 ```
 
-## 3. Registrere Tjenesten i DI-Containeren
 ---
+
+## 3. Registrere Tjenesten i DI-Containeren
 I `Program.cs` registreres `ProductService` i [[Dependency Injection|dependency injection]]-containeren, så den kan injiceres i dine komponenter:
 ```csharp
 builder.Services.AddSingleton<ProductService>();
 ```
 [[Dependency Injection]] fremmer løs kobling, forbedrer testbarhed og gør det nemt at udskifte implementeringer.
 
-## 4. Oprette en Blazor-Komponent til CRUD-Operationer
 ---
+
+## 4. Oprette en Blazor-Komponent til CRUD-Operationer
 Her er et eksempel på en Blazor-komponent, der bruger `ProductService` til at udføre CRUD-operationer for produkter:
 ```razor
 @page "/products"
@@ -155,7 +159,9 @@ I dette eksempel:
 - Brugeren kan redigere eller slette et produkt via tilhørende knapper.
 - En formular under tabellen giver mulighed for at tilføje eller opdatere et produkt.
 - Når formularen indsendes, bliver dataene valideret og gemt via `ProductService`.
-## Resourcer
+
 ---
+
+## Resourcer
 - [Blazor Læringsobjekt (Blazor og Data)](https://scorm.itslearning.com/data/3289/C20150/ims_import_36/scormcontent/index.html#/lessons/q-VuQeN77K9yFSCw5xxedPJTgjETZpTK)
 - [Blazor LinkedIn Kursus (Data in Blazor)](https://www.linkedin.com/learning/front-end-web-development-with-dot-net/work-with-data-in-blazor?autoSkip=true&resume=false&u=57075649)

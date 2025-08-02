@@ -1,9 +1,10 @@
 tags: #C-sharp #Programmering #Algorithms #SortAlgorithms 
 ## Overview
----
 Bubble Sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted, comparing each pair of adjacent items and swapping them if they are in the wrong order. The pass through the list is repeated until no swaps are needed.
-## Psudokode
+
 ---
+
+## Psudokode
 ```csharp
 function bubbleSort(array)
 	n = length of array
@@ -28,8 +29,9 @@ Når I = 2 (Hele arrayet på nær det sidste element (Er allerede på rette plad
 Når I = 3 (Hele arrayet på nær de 2 sidste elemetner)
 Osv.
 
-## C-sharp
 ---
+
+## C-sharp
 ```csharp
 static void bubbleSort(int[] arr, int n)
     {
@@ -57,23 +59,27 @@ static void bubbleSort(int[] arr, int n)
  Swapped
 For ikke at behøve at løbe arrayet igennem hvis swapped == false (Hele arrayet er sorted)
 
-## Time Complexity
 ---
+
+## Time Complexity
 - Best Case: O(n)
 - Average Case: O(n²)
 - Worst Case: O(n²)
 
-## Space Complexity
 ---
+
+## Space Complexity
 - O(1)
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Algorithms Overview]]
 - [[Quick Sort]]
 - [[Selection Sort]]
 
-## Resources
 ---
+
+## Resources
 - [Sorting Algorithms](https://www.geeksforgeeks.org/sorting-algorithms/?ref=lbp)
 - [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)

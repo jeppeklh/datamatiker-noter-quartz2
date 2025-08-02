@@ -1,16 +1,19 @@
 tags: #C-sharp #Overview
 
 ## Introduction
----
 C# (pronounced "C-sharp") is a modern, [[Object-Oriented Programming Overview|Object-Oriented Programming]] language developed by Microsoft as part of its .NET initiative. 
 It is widely used for building Windows applications, web services, enterprise software, and games (using Unity).
-## History
+
 ---
+
+## History
 - **Developed by:** Microsoft  
 - **First appeared:** 2000 
 - **Key Influences:** [[C]], [[C++]], [[Java]]
-## Key Features
+
 ---
+
+## Key Features
  ##### **Object-Oriented**
  Supports [[Indkapsling|encapsulation]], [[Nedarvning|inheritance]], and [[Polymorfi|polymorphism]]. 
  
@@ -25,8 +28,10 @@ It is widely used for building Windows applications, web services, enterprise so
   
  ##### **Integrated with .NET**
  Fully integrated with the .NET framework, enabling robust and secure applications.
-## Common Use Cases
+
 ---
+
+## Common Use Cases
 ##### Desktop Applications 
 Using Windows Forms or WPF.  
 ##### Web Applications 
@@ -37,8 +42,10 @@ Using Xamarin.
 Using Unity. 
 ##### Cloud-Based Services
 Using Azure.
-## Basic Syntax
+
 ---
+
+## Basic Syntax
 ```csharp 
 using System; 
 namespace HelloWorld 

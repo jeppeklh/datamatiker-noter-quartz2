@@ -1,11 +1,12 @@
 ### Hvad er REST?
----
 > [!tldr] Definition
-Et designkoncept og programmeringsparadigme bygget på HTTP. Det bruger eksisterende infrastruktur til at få adgang til resourcer via [[URI]]s og manipulere dem med HTTP metoder/operationer
-Se [[REST API]]
+>Et designkoncept og programmeringsparadigme bygget på HTTP. Det bruger eksisterende infrastruktur til at få adgang til resourcer via [[URI]]s og manipulere dem med HTTP metoder/operationer
+>
+>Se [[REST API]]
+
+---
 
 ## En Rest API HTTP request består af 
----
 **Header**
 Indeholder ting som API-key eller anden authentificerings
 
@@ -22,9 +23,9 @@ i en PUT request kunne man ændre en is-smag til chokolade
 {"flavor" : "chokolade"}
 ```
 
+---
 
 ## Grundlæggende principper i REST:
----
 #### **Ressourceorienteret:**  
 Ressourcer (fx produkter, brugere) repræsenteres som entydige URL'er. Navngivning skal primært baseres på navneord, ikke verber.
 
@@ -45,8 +46,9 @@ Hver forespørgsel fra klienten skal indeholde al nødvendig information, så se
 #### **Brug af standard statuskoder:**  
 API'et returnerer statuskoder (fx 200 OK, 404 Not Found, 201 Created) for at indikere resultatet af en operation.
 
-## Eksempel på RESTful URI-design
 ---
+
+## Eksempel på RESTful URI-design
 
 **Liste af produkter:**
 ```
@@ -74,9 +76,9 @@ DELETE https://api.hplussport.com/products/123
 ```
 Sletter produktet med ID 123.
 
+---
 
 ## Contraints
----
 RESTful APIs skal overholde 6 contraints
 - Uniform interface
 	En URI pr resource med et uniformt look.
@@ -88,11 +90,11 @@ RESTful APIs skal overholde 6 contraints
 - Code on demand (Optional)
 
 
+---
 
 ## Sammenfatning
----
 REST API-design handler om at skabe enkle, intuitive og konsistente grænseflader, hvor ressourcer er klart definerede og manipulation af disse sker via de velkendte HTTP-metoder.
+---
 
 ## Resourcer
----
 - [REST LinkedIn Learning](https://www.linkedin.com/learning/building-web-apis-with-asp-dot-net-core-in-dot-net/rest-basics?autoSkip=true&resume=false&u=57075649)

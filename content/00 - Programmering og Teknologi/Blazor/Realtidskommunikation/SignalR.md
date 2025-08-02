@@ -1,7 +1,7 @@
 > [!tldr] Definition
-Et bibliotek udviklet af Microsoft, der muliggør realtidskommunikation mellem klient og server. 
+> Et bibliotek udviklet af Microsoft, der muliggør realtidskommunikation mellem klient og server. 
 >
-Ved at oprette vedvarende forbindelser gør SignalR det muligt for serveren at sende data direkte til klienter uden, at de selv skal anmode om opdateringer. Dette opnås gennem [[The Hub|hubs]], som forenkler tovejskommunikationen ved at lade både klienter og servere kalde hinandens metoder direkte.
+> Ved at oprette vedvarende forbindelser gør SignalR det muligt for serveren at sende data direkte til klienter uden, at de selv skal anmode om opdateringer. Dette opnås gennem [[The Hub|hubs]], som forenkler tovejskommunikationen ved at lade både klienter og servere kalde hinandens metoder direkte.
 
 
 - **Persistent Forbindelse:**  
@@ -16,9 +16,9 @@ Ved at oprette vedvarende forbindelser gør SignalR det muligt for serveren at s
 - **Robusthed og Fallback:**  
   Ved forbindelsesafbrydelser aktiveres en indbygget fallback-strategi, som arbejder for at genetablere forbindelsen uden brugerindgriben.
 
+---
 
 ## Implementering af SignalR i Projekter
----
 Implementeringen af SignalR følger typisk disse trin:
 
 1. **Opret [[The Hub|Hub]]-klassen:**  
@@ -38,7 +38,9 @@ Implementeringen af SignalR følger typisk disse trin:
 
 6. **Kalder Servermetoder:**  
    Klienten kan nu kalde metoder på serveren, og omvendt.
-## Resourcer
+
 ---
+
+## Resourcer
 - [SignalR LinkedIn Kursus](https://www.linkedin.com/learning/learning-signalr-with-asp-dot-net-core/what-is-signalr?resume=false&u=57075649)
 - [SignalR Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_42/scormcontent/index.html#/lessons/w1ZMNioiXENhGBGIdJI7D47eQlxSLLt-)

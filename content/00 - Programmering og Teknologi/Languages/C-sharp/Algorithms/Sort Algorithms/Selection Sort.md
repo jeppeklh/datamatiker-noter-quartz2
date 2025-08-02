@@ -1,13 +1,14 @@
 tags: #C-sharp #Programmering #Algorithms #SortAlgorithms 
 ## Overview
----
 Selection Sort is an in-place comparison sorting algorithm. 
 
 It divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list, and a sublist of the remaining unsorted items. 
 
 The algorithm proceeds by finding the smallest (or largest) element from the unsorted sublist, swapping it with the leftmost unsorted element, and moving the sublist boundaries one element to the right.
-## Pseudokode
+
 ---
+
+## Pseudokode
 ```csharp
 
 function selectionSort(array)
@@ -25,8 +26,10 @@ end for
 return array
 end function
 ```
-## C-sharp
+
 ---
+
+## C-sharp
 ```csharp
 static void sort(int []arr)
     {
@@ -48,23 +51,27 @@ static void sort(int []arr)
     }
 ```
 
-## Time Complexity
 ---
+
+## Time Complexity
 - Best Case: O(n²)
 - Average Case: O(n²)
 - Worst Case: O(n²)
 
-## Space Complexity
 ---
+
+## Space Complexity
 - O(1)
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Algorithms Overview]]
 - [[Bubble Sort]]
 - [[Quick Sort]]
 
-## Resources
 ---
+
+## Resources
 - [Sorting Algorithms](https://www.geeksforgeeks.org/sorting-algorithms/?ref=lbp)
 - [Selection Sort](https://www.geeksforgeeks.org/selection-sort/)

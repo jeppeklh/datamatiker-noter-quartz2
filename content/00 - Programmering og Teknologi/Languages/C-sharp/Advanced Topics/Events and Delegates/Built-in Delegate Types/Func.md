@@ -1,20 +1,23 @@
 tags: #C-sharp #Programmering #AdvancedTopics #Delegates 
 
-## Definition 
----
-The `Func` [[Delegates|delegate]] represents a [[Methods Overview|method]] that can return a value and can take zero or more input parameters. 
-The last type [[Parameters|parameters]] in `Func` is always the return type.
+> [!tldr] Definition
+> The `Func` [[Delegates|delegate]] represents a [[Methods Overview|method]] that can return a value and can take zero or more input parameters. 
+> The last type [[Parameters|parameters]] in `Func` is always the return type.
 
 Is used for [[Methods Overview|methods]] that return a value, such as calculations, data transformations, or any operation that produces a result.
-## Syntax
+
 ---
+
+## Syntax
 ```csharp
 Func<int> getRandomNumber;
 Func<int, string> numberToString;
 Func<int, int, int> addNumbers;
 ```
-### Example
+
 ---
+
+### Example
 ```csharp
 // A Func delegate with no parameters that returns an int
 Func<int> getRandomNumber = () => new Random().Next();
@@ -32,15 +35,15 @@ int sum = addNumbers(5, 10);
 Console.WriteLine($"Sum: {sum}");
 ```
 
-
+---
 
 ## Related Topics
----
 - [[Delegates]]
 - [[Action]]
 - [[Predicate]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

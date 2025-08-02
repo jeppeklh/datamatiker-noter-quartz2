@@ -1,11 +1,11 @@
 tags: #C-sharp #Programmering #AdvancedTopics #FunctionalProgramming
 
-## Definition
+> [!tldr] Definition
+> Functional programming constructs in C# allow for a more declarative style of coding. These constructs emphasize immutability, higher-order functions, and the use of functions as first-class citizens.
+
 ---
-Functional programming constructs in C# allow for a more declarative style of coding. These constructs emphasize immutability, higher-order functions, and the use of functions as first-class citizens.
 
 ## Higher-Order Functions
----
 Functions that take other functions as parameters or return them as results.
 
 ```csharp
@@ -14,8 +14,9 @@ Func<int, int> increment = x => add(x, 1);
 Console.WriteLine(increment(5)); // Output: 6
 ```
 
-## Immutability
 ---
+
+## Immutability
 Favoring immutability means avoiding changing state and instead working with immutable data structures.
 
 ```csharp
@@ -42,8 +43,9 @@ Console.WriteLine($"Original: ({point.X}, {point.Y}), Moved: ({movedPoint.X}, {m
 // Output: Original: (1, 2), Moved: (4, 6)
 ```
 
-## Expression Trees
 ---
+
+## Expression Trees
 Expression trees represent code in a tree-like data structure, where each node is an expression.
 
 ```csharp
@@ -52,10 +54,13 @@ Func<int, bool> isEven = isEvenExpr.Compile();
 Console.WriteLine(isEven(4)); // Output: True
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Advanced Topics Overview]]
 - [[Lambda Expressions]]
-## Resources
+
 ---
+
+## Resources
 - [LINQ and Functional Programming in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)

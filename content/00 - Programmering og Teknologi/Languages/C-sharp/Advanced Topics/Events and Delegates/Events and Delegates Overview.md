@@ -1,7 +1,6 @@
 tags: #C-sharp #Programmering #AdvancedTopics #Events #Delegates
 
-## Definition 
----
+> [!tldr] Definition
 In C#, [[Delegates|delegates]] and [[Events|events]] are powerful features that enable developers to implement event-driven programming and callback mechanisms. 
 
 [[Delegates]] are like function pointers in [[C]] and [[C++]], but they are type-safe. 
@@ -10,17 +9,20 @@ In C#, [[Delegates|delegates]] and [[Events|events]] are powerful features that 
 
 [[Delegates]] and [[Events|events]] are commonly used in designing applications with rich user interfaces, where different parts of the application need to communicate with each other based on user actions or other triggers.
 
-## Subtopics
 ---
+
+## Subtopics
 - [[Delegates]]
 - [[Events]]
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

@@ -1,24 +1,27 @@
 tags: #C-sharp #Programmering #AdvancedTopics #Delegates
 
-## Definition 
----
-A delegate in C# is a type that represents references to [[Methods Overview|methods]] with a particular [[Parameters|parameter]] list and [[Return Values|return type]]. 
+> [!tldr] Definition
+> A delegate in C# is a type that represents references to [[Methods Overview|methods]] with a particular [[Parameters|parameter]] list and [[Return Values|return type]]. 
 
 Delegates are used to pass [[Methods Overview|methods]] as arguments to other [[Methods Overview|methods]] and define callback [[Methods Overview|methods]].
 
-#### Basics of Delegates
 ---
+
+#### Basics of Delegates
 - **Type-Safe**: Delegates ensure that the signature of the [[Methods Overview|method]] matches the signature specified by the delegate type.
 - **Multicast**: Delegates can reference multiple [[Methods Overview|methods]].
 - **Used for Callbacks**: Delegates are commonly used to implement callback [[Methods Overview|methods]].
-#### Declaring and Using Delegates
+
 ---
+
+#### Declaring and Using Delegates
 1. **Declare a Delegate**: Define the delegate type.
 2. **Instantiate a Delegate**: Create an instance of the delegate, referencing a method.
 3. **Invoke the Delegate**: Call the delegate, which in turn calls the referenced method(s).
 
-#### Delegate Signature
 ---
+
+#### Delegate Signature
 A delegate signature defines the [[Methods Overview|method]]'s [[Return Values|return]] [[Datatypes|type]] and [[Parameters|parameter]] [[Datatypes|types]] that the delegate can reference. 
 
 This ensures that any [[Methods Overview|method]] assigned to the delegate matches this signature. The delegate signature is declared when defining the delegate type.
@@ -27,8 +30,10 @@ This ensures that any [[Methods Overview|method]] assigned to the delegate match
 public delegate void MyDelegate(string message);
 ```
 In this example, `MyDelegate` is a delegate type that can reference any method that takes a single `string` parameter and returns `void`.
-## Syntax
+
 ---
+
+## Syntax
 
 ```csharp
 public class Program
@@ -62,8 +67,10 @@ public class Program
 	}
 }
 ```
-## Multicast Delegates
+
 ---
+
+## Multicast Delegates
 Delegates can reference more than one [[Methods Overview|method]]. 
 When invoked, they call all the [[Methods Overview|methods]] they reference, in order.
 
@@ -112,8 +119,9 @@ public class Program
 }
 ```
 
-## Generic Delegates
 ---
+
+## Generic Delegates
 En generisk delegate gør det muligt at arbejde med forskellige datatyper uden at skulle definere flere forskellige delegater.
 
 Vi erklærer en generisk delegate Operation```<T> ```, som kan tage to parametre af typen T og returnere en værdi af typen T. T er en generisk typeparameter, der kan erstattes med enhver datatype, når delegaten bruges.
@@ -156,9 +164,9 @@ public class Program
 }
 ```
 
+---
 
 ## Anonymous Methods
----
 Delegates can also reference anonymous [[Methods Overview|methods]], which are [[Methods Overview|methods]] without a name, defined inline.
 ```csharp
 public class Program
@@ -181,8 +189,9 @@ public class Program
 }
 ```
 
-## Lambda Expressions
 ---
+
+## Lambda Expressions
 [[Lambda Expressions]] provide a more concise syntax for creating delegates. They are particularly useful in [[LINQ]] queries.
 ```csharp
 public class Program
@@ -198,8 +207,9 @@ public class Program
 }
 ```
 
-## Built-in Delegates
 ---
+
+## Built-in Delegates
 The .NET framework provides built-in delegate types to simplify common delegate usage:
 - [[Action]]
 - [[Func]]
@@ -226,16 +236,20 @@ public class Program
     }
 }
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Events and Delegates Overview]]
 - [[Events]]
 
-## Opgaver
 ---
+
+## Opgaver
 - [[Uge34 - Delegates og Lambda Expressions (Svaret).pdf#page=1&selection=0,4,0,4|Uge 34 Opgaver]]
 
-## Resources
 ---
+
+## Resources
 - [Delegates læringobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_7/scormcontent/index.html#/lessons/jt-TPRwlQVWBIbcT8fVV7xD9gUMrrqPJ)
 - [Lambdaudtryk læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_8/scormcontent/index.html#/lessons/_a6KeY2tA66kQMUd7hX1Vs5kcZ6mZyKQ)

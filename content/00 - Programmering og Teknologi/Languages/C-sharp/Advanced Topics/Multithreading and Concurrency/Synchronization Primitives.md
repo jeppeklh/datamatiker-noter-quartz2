@@ -1,12 +1,13 @@
 tags: #C-sharp #Programmering #AdvancedTopics #MultiThreadingAndConcurrency #SynchronizationPrimitives
 
-## Definition 
----
-When working with multithreading, it's essential to ensure that multiple [[Threads|threads]] do not access shared resources simultaneously, leading to conflicts and inconsistencies. 
+> [!tldr] Definition
+> When working with multithreading, it's essential to ensure that multiple [[Threads|threads]] do not access shared resources simultaneously, leading to conflicts and inconsistencies. 
 
 Synchronization primitives help manage access to these shared resources. 
-## Lock
+
 ---
+
+## Lock
 A lock is a mechanism to ensure that only one [[Threads|thread]] can access a resource at a time.
 
 In C#, the `lock` statement is a shorthand for acquiring a monitor lock. It ensures that only one [[Threads|thread]] can enter the critical section at a time.
@@ -28,8 +29,9 @@ static void ThreadMethod()
 }
 ```
 
-## Mutex
 ---
+
+## Mutex
 A mutex (mutual exclusion) is similar to a [[#Lock|lock]] but can work across multiple processes.
 
 Allows multiple [[Threads|threads]] or [[Processes|processes]] to coordinate their activities and ensure exclusive access to shared resources.
@@ -61,8 +63,9 @@ class Program
 }
 ```
 
-## Semaphore
 ---
+
+## Semaphore
 A semaphore controls access to a resource by allowing a fixed number of [[Threads|threads]] to enter the critical section simultaneously.
 
 Allows a specified number of [[Threads|threads]] to access a resource concurrently.
@@ -94,8 +97,9 @@ class Program
 }
 ```
 
-## Other Synchronization Primitives
 ---
+
+## Other Synchronization Primitives
 ##### AutoResetEvent / ManualResetEvent
 Used for signaling between threads. An `AutoResetEvent` automatically resets after releasing a single thread, while a `ManualResetEvent` must be manually reset.
 
@@ -108,7 +112,8 @@ Provides a lock that allows concurrent read access or exclusive write access.
 - [[Threads]]
 - [[Processes]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

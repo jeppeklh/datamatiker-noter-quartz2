@@ -1,10 +1,12 @@
 tags: #C-sharp #Syntax 
 
 ---
-C# syntax is designed to be straightforward and readable, drawing heavily from C and C++ with influences from Java. This section provides an overview of the essential syntax elements.
+> [!note]
+> C# syntax is designed to be straightforward and readable, drawing heavily from C and C++ with influences from Java. This section provides an overview of the essential syntax elements.
+
+---
 
 ## Comments
----
 #### Singleline comment
 ```csharp
 // This is a single-line comment
@@ -16,8 +18,9 @@ C# syntax is designed to be straightforward and readable, drawing heavily from C
    multi-line comment */
 ```
 
-## Indentation
 ---
+
+## Indentation
 Proper indentation is essential for readability.
 ```csharp
 for (int i = 0; i < 10; i++)
@@ -26,16 +29,18 @@ for (int i = 0; i < 10; i++)
 }
 ```
 
-## Semicolons
 ---
+
+## Semicolons
 Every statement ends with a semicolon `;`.
 ```csharp
 int number = 10;
 Console.WriteLine(number);
 ```
 
-## Method Definition
 ---
+
+## Method Definition
 Basic [[Methods Overview|Method]] syntax:
 ```csharp
 void MyMethod()
@@ -44,8 +49,9 @@ void MyMethod()
 }
 ```
 
-## Class Definition
 ---
+
+## Class Definition
 Basic [[Classes|Class]] syntax:
 ```csharp
 public class MyClass
@@ -54,8 +60,9 @@ public class MyClass
 }
 ```
 
-## Access Modifiers
 ---
+
+## Access Modifiers
 Common [[Access modifiers|modifiers]]:
 [[Access modifiers#public|public]], [[Access modifiers#private|private]], [[Access modifiers#protected|protected]], [[Access modifiers#internal|internal]]
 ```csharp
@@ -70,9 +77,9 @@ public class MyClass
 }
 ```
 
+---
 
 ## Related Topics
----
 - [[Datatypes]]
 - [[Variables and Assignment]]
 - [[Control Flows|Control Flow]]

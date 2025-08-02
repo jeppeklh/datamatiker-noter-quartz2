@@ -1,5 +1,5 @@
 > [!info] Grupper
-En central funktion i [[SignalR]] er understøttelsen af **grupper**, som gør det muligt at organisere forbindelser og målrette beskeder til specifikke undersæt af klienter.
+> En central funktion i [[SignalR]] er understøttelsen af **grupper**, som gør det muligt at organisere forbindelser og målrette beskeder til specifikke undersæt af klienter.
 
 ---
 > [!tldr] Definition
@@ -27,7 +27,6 @@ await Clients.Group("gruppenavn").SendAsync("beskedNavn", data);
 ---
 
 ## Persistens af Grupper
----
 Som standard er gruppemedlemskaber i SignalR **ikke persistente**:
 - Når en klient mister forbindelsen eller genstarter, går gruppemedlemskaber tabt.
 - Ved servergenstart nulstilles alle gruppemedlemskaber.
@@ -73,9 +72,8 @@ Som standard er gruppemedlemskaber i SignalR **ikke persistente**:
  }
  ```
 
-
+---
 
 ## Resourcer
----
 - [SignalR LinkedIn Kursus (Groups)](https://www.linkedin.com/learning/learning-signalr-with-asp-dot-net-core/how-groups-work-in-signalr?resume=false&u=57075649)
 - [SignalR Læringsobjekt (Grupper)](https://scorm.itslearning.com/data/3289/C20150/ims_import_42/scormcontent/index.html#/lessons/ihTc4kwKaHn_XlGEoxI1i9piWYiO3i80)

@@ -1,4 +1,5 @@
-Stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+> [!tldr] Definition
+> Stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 
 You can specify a `char` value with:
 

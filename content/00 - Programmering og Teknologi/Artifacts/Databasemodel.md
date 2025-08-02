@@ -1,7 +1,6 @@
 tags: #C-sharp #Programmering
 
 ## Definition 
----
 En databasemodel er en datamodel, der viser [[Data|data]], som skal persisteres et sted.
 
 Databasemodellen indeholder UML-klasser som et [[Design Class Diagram|DCD]], men UML-klasserne repræsenterer nu hver for sig en [[Relationer|relation]]/[[Table|tabel]] i [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databasen]] og ikke en softwareklasse.
@@ -12,8 +11,9 @@ På samme måde som i DCD’et angives der også en [[Datatypes|datatype]] efter
 
 Databasemodellen skal være så tilstrækkelig udfyldt, at en anden udeforstående kan implementere modellen fyldestgørende i et [[R-DBMS|R-DBMS]].
 
-## Example
 ---
+
+## Example
 Vi tager først udgangspunkt i det simple relationsskema for SEMESTER:
 
 SEMESTER (<u>SemesterId</u>, Number)
@@ -21,6 +21,7 @@ SEMESTER (<u>SemesterId</u>, Number)
 ![[Databasemodel eksempel 1.png]]
 
 PARTICIPANT (<u>Email</u>, FirstName, LastName, ImagePath, <span class="red">*SemesterId*</span>)
+
 ![[Databasemodel eksempel 2.png]]
 
 Vi fortsætter for hele [[Databaseskema|databaseskemaet]]:
@@ -51,13 +52,14 @@ Hvis vi fortsætter med at tilføje associationer,multiplicitet og restriktioner
 
 
 
+---
 
 ## Related Topics
----
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

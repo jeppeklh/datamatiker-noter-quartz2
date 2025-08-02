@@ -1,20 +1,23 @@
 tags: #C-sharp #Programmering #AdvancedTopics #Delegates 
 
-## Definition 
----
-The `Predicate` [[Delegates|delegate]] represents a [[Methods Overview|method]] that defines a set of criteria and determines whether the specified object meets those criteria. 
-
-It always returns a [[bool|boolean]] value.
+> [!tldr] Definition
+> The `Predicate` [[Delegates|delegate]] represents a [[Methods Overview|method]] that defines a set of criteria and determines whether the specified object meets those criteria. 
+> 
+> It always returns a [[bool|boolean]] value.
 
 `Predicate` is used for [[Methods Overview|methods]] that perform checks or validations, such as filtering [[Lists|lists]], checking conditions, or validating inputs.
-## Syntaz
+
 ---
+
+## Syntax
 ```csharp
 Predicate<int> isEven;
 Predicate<string> isNullOrEmpty;
 ```
-### Example
+
 ---
+
+### Example
 ```csharp
 // A Predicate delegate to check if a number is even
 Predicate<int> isEven = (number) => number % 2 == 0;
@@ -27,13 +30,15 @@ bool isEmpty = isNullOrEmpty("");
 Console.WriteLine($"Is string empty? {isEmpty}");
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Delegates]]
 - [[Action]]
 - [[Func]]
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

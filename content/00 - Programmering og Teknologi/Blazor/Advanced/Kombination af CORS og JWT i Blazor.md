@@ -19,21 +19,22 @@ services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 1. **HTTPS**: Brug altid HTTPS til at kryptere kommunikationen mellem Blazor-app og API.
 2. **Tokenbeskyttelse**: Undgå at eksponere JWT-tokens i URLs eller logfiler.
 
+---
 
 ## Hyppige Fejl i Blazor
----
 - **For slap CORS-konfiguration**: AllowAnyOrigin() eller AllowAnyMethod() kan åbne for angreb.
 - **Usikker tokenlagring**: Gemmer tokens i usikret localStorage uden XSS-beskyttelse.
 - **Manglende token-validering**: Serveren validerer ikke tokenets signatur eller udløbstid.
 
-## Hvor gemmes JWT i Blazor
 ---
+
+## Hvor gemmes JWT i Blazor
 Hvor JWT tokens gemmes afhænger af Blazor-arkitekturen: localStorage i WebAssembly og cookies/server-side i Blazor Server.
 
 - **Blazor WebAssembly** (client-side):  
     JWTs gemmes typisk i **browserens localStorage** eller sessionStorage via JavaScript-interop:
 ```csharp
-    // Gem token
+ // Gem token
 await JSRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", jwtToken);
 
 // Hent token
@@ -47,8 +48,9 @@ var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authTok
     - **AuthenticationStateProvider**, der validerer tokenet ved hver anmodning.
 
 
-## Typisk Flow i Blazor
 ---
+
+## Typisk Flow i Blazor
 1. Brugeren logger ind, og serveren returnerer en JWT.
     
 2. Klienten gemmer tokenet i localStorage (WebAssembly) eller sender det som en cookie (Server).
