@@ -1,13 +1,16 @@
 tags: #C-sharp #Programmering #OOP #Methods #Constructors
 
-## Definition 
+> [!tldr] Definition
+> Constructors are special [[Methods Overview|methods]] in a [[Classes|class]] that are called when an [[Objects|object]] of the [[Classes|class]] is [[Instantiation|instantiated]]. They are used to [[Objects#Object Initialization|initialize]] [[Objects|objects]].
+
 ---
-Constructors are special [[Methods Overview|methods]] in a [[Classes|class]] that are called when an [[Objects|object]] of the [[Classes|class]] is [[Instantiation|instantiated]]. They are used to [[Objects#Object Initialization|initialize]] [[Objects|objects]].
+
 ## Syntax
----
 Constructors have the same name as the [[Classes|class]] and do not have a [[Return Values|return type]].
-### Example
+
 ---
+
+### Example
 ```csharp
 public class Person 
 { 
@@ -24,11 +27,10 @@ public class Person
 }
 ```
 
+---
 
 ## Types of Constructors
----
 ##### Default Constructor
----
 A constructor that takes no parameters.
 ```csharp
 public Person()
@@ -36,8 +38,10 @@ public Person()
     name = "Unknown";
 }
 ```
-##### Parameterized Constructor
+
 ---
+
+##### Parameterized Constructor
 A constructor that takes parameters.
 ```csharp
 public Person(string name)
@@ -45,8 +49,10 @@ public Person(string name)
     this.name = name;
 }
 ```
-##### Static Constructor
+
 ---
+
+##### Static Constructor
 A constructor used to initialize static fields of the class.
 ```csharp
 static Person()
@@ -55,18 +61,21 @@ static Person()
 }
 ```
 
-## ## Usage
 ---
+
+## Usage
 Constructors are essential for setting initial values and ensuring that an [[Objects|object]] starts its life in a consistent state
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Classes]]
 - [[Objects]]
 - [[Nedarvning|Inheritance]]
 - [[Polymorfi|Polymorphism]]
 - [[Indkapsling|Encapsulation]]
 
-## Resources
 ---
+
+## Resources
 - [Official Documentation on Constructors](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)

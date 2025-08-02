@@ -4,15 +4,18 @@ aliases:
 ---
 tags: #C-sharp #Programmering #Datastructure 
 
-## Overview
+> [!tldr] Definition
+> Dictionaries are collections of key-value pairs. 
+> They provide fast lookups by key and are used to associate keys with values.
+
 ---
-Dictionaries are collections of key-value pairs. 
-They provide fast lookups by key and are used to associate keys with values.
+
 ## Declaration and Initialization
----
 You can declare and initialize dictionaries in various ways.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 // Declaration and initialization
 Dictionary<int, string> students = new Dictionary<int, string>();
@@ -26,11 +29,14 @@ Dictionary<int, string> students = new Dictionary<int, string>
 };
 ```
 
+---
+
 ## Accessing Elements
----
 Elements in a dictionary are accessed and modified using their keys.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 Dictionary<int, string> students = new Dictionary<int, string>
 {
@@ -43,22 +49,29 @@ string studentName = students[1]; // Accessing the element with key 1
 students[2] = "Janet"; // Modifying the element with key 2
 ```
 
+---
+
 ## Adding Elements
----
 You can add elements to a dictionary using the `Add` [[Methods Overview|method]] or the indexer.
-### Examples
+
 ---
+
+### Examples
 ```csharp
 Dictionary<int, string> students = new Dictionary<int, string>();
 
 students.Add(1, "John");
 students[2] = "Jane"; // Using indexer
 ```
+
+---
+
 ## Removing Elements
----
 Elements can be removed from a dictionary using the `Remove` [[Methods Overview|method]].
-### Examples
+
 ---
+
+### Examples
 ```csharp
 Dictionary<int, string> students = new Dictionary<int, string>
 {
@@ -70,11 +83,14 @@ Dictionary<int, string> students = new Dictionary<int, string>
 students.Remove(2); // Removes the element with key 2
 ```
 
+---
+
 ## Iterating Through Dictionaries
----
 You can iterate through dictionaries using a [[Foreach loop]].
-### Examples
+
 ---
+
+### Examples
 ```csharp
 Dictionary<int, string> students = new Dictionary<int, string>
 {
@@ -88,13 +104,16 @@ foreach (KeyValuePair<int, string> student in students)
     Console.WriteLine($"ID: {student.Key}, Name: {student.Value}");
 }
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Arrays]]
 - [[Lists]]
 - [[Dictionaries]]
 
-## Resources
 ---
+
+## Resources
 - [Official Documentation on Dictionaries](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
 - [Official Documentation on Collections](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)

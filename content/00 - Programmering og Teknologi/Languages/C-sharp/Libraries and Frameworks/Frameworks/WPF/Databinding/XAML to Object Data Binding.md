@@ -1,12 +1,11 @@
 tags: #C-sharp #Programmering #WPF #DataBinding #XAMLtoObject
-## Definition
+> [!tldr] Definition
+> XAML to object data binding refers to the process of binding properties of a XAML element to [[Properties|properties]] of an [[Objects|object]], often a view model in the [[Repo/00 - Programmering og Teknologi/SoftwareArkitektur/MVVM|MVVM]] pattern.
+
 ---
-XAML to object data binding refers to the process of binding properties of a XAML element to [[Properties|properties]] of an [[Objects|object]], often a view model in the [[Repo/00 - Programmering og Teknologi/SoftwareArkitektur/MVVM|MVVM]] pattern.
 
 ## Example
----
 ### XAML
----
 ```xml
 <Grid>
 	<Label Content="{Binding Path=FullName}" HorizontalAlignment="Left" Margin="121,40,0,0"/>
@@ -15,8 +14,10 @@ XAML to object data binding refers to the process of binding properties of a XAM
 	<Button Content="Update" HorizontalAlignment="Left" Height="46" Widt="120"/>	
 </Grid>
 ```
-### Codebehind
+
 ---
+
+### Codebehind
 ```csharp
 public class MainViewModel : INotifyPropertyChanged
 {
@@ -50,8 +51,9 @@ protected void OnPropertyCanged(string name)
 }
 ```
 
-#### FullName
 ---
+
+#### FullName
 Hvis hvis man vil have fullname. Altså en tredje property der concatinerer firstname og lastname
 
 ```csharp
@@ -86,8 +88,9 @@ public class MainViewModel : INotifyPropertyChanged
 }
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[WPF Data Binding Overview]]
 - [[XAML to XAML Data Binding]]
 ## Resources

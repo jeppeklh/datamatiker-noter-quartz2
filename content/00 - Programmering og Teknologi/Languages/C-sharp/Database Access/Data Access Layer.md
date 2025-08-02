@@ -4,27 +4,31 @@ aliases:
 ---
 tags: #C-sharp #Programmering #DatabaseAccess 
 
-## Definition 
----
-The Data Access Layer (DAL) is a crucial part of the application architecture that handles the interaction between the application and the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]]. 
+> [!tldr] Definition
+> The Data Access Layer (DAL) is a crucial part of the application architecture that handles the interaction between the application and the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]]. 
 
 It provides a set of [[Methods Overview|methods]] to perform [[CRUD Operations]]  without exposing the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] details to the rest of the application.
+
+---
+
 ### Key Concepts
----
 #### Abstraction
----
 - The DAL abstracts the underlying [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] interactions, allowing the rest of the application to interact with the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] through a simplified API.
 - This abstraction makes the application more modular and easier to maintain.
 
-#### Reusability
 ---
+
+#### Reusability
 - The DAL encapsulates common [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] operations into reusable methods. This reduces code duplication and ensures consistency in how [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] operations are performed.
 
+---
+
 #### Maintainability
----
 - By isolating the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] access logic, any changes to the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] schema or queries can be managed in one place, making the application easier to maintain.
-## Components of DAL
+
 ---
+
+## Components of DAL
 **1. Connection Management:**
 
 - Manages the [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]] connections, ensuring they are opened and closed appropriately.
@@ -85,8 +89,10 @@ public class ProductRepository
 
 - Handles [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]]-related errors and exceptions.
 	- Ensures that errors are logged and managed appropriately without exposing them to the application user.
-## Best Practices
+
 ---
+
+## Best Practices
 **1. Use Parameterized Queries:**
 
 - Protects against [[SQL Injection]] attacks.
@@ -146,12 +152,15 @@ public void UpdateProduct(Product product)
     }
 }
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - [[Database Access Overview]]
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

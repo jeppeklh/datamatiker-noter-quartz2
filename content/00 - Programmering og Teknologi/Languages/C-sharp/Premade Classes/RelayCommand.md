@@ -1,6 +1,5 @@
-## Definition
----
-For making the usage of comands easier.
+> [!tldr] Definition
+> For making the usage of comands easier.
 
 ```csharp
 public class RelayCommand : ICommand
@@ -33,8 +32,9 @@ public class RelayCommand : ICommand
 }
 ```
 
-## How to use it
 ---
+
+## How to use it
 CanExecute alwas true.
 ```csharp
  public RelayCommand NameOfCommand => new RelayCommand(execute => MyMethodName(), canExecute => { return true; });

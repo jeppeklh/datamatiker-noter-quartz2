@@ -12,8 +12,9 @@ public class ViewModelBase : INotifyPropertyChanged
 }
 ```
 
-## Usage
 ---
+
+## Usage
 Used to simplfy ViewModels. 
 The ViewModel now Inherits the ViewModelBase.
 That way the viewmodel inherits INotifyPropertyChanged through the ViewModelBase.
@@ -57,6 +58,7 @@ And also we dont have to give a parameter to the OnPropertyChanged Method
     }
 ```
 
-## Resources
 ---
+
+## Resources
 [ViewModelBase Youtube Video](https://www.youtube.com/watch?v=Fs2gwb6Dqjk)

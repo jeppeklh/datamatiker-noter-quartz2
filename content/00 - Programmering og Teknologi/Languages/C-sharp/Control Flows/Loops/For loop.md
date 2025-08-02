@@ -1,4 +1,8 @@
-En praktisk løkke til at gennemløbe collections, f.eks. arrays
+> [!tldr] Definition
+>En praktisk løkke til at gennemløbe collections, f.eks. arrays
+
+---
+
 ## Example
 
 ```csharp

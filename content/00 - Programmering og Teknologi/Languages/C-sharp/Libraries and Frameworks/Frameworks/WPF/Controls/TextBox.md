@@ -1,27 +1,31 @@
 tags: #C-sharp #Programmering #WPF #WPFControl
 
-## Definition 
----
-A TextBox is a control that allows the user to input text.
+> [!tldr] Definition
+> A TextBox is a control that allows the user to input text.
 
 TextBox controls are essential for forms and data entry applications.
-## Properties
+
 ---
+
+## Properties
 - `Text`: Gets or sets the text content of the TextBox. 
 - `IsReadOnly`: Gets or sets a value indicating whether the text box is read-only. 
 - `MaxLength`: Gets or sets the maximum number of characters that can be manually entered into the text box.
-## Methods
+
 ---
+
+## Methods
 - `Clear()`: Clears all the text in the TextBox. 
 - `SelectAll()`: Selects all text in the TextBox.
 
+---
 
 ## Events
----
 - `TextChanged`: Occurs when the text is changed.
 
-## Example
 ---
+
+## Example
 ```xml
 `<TextBox Text="Hello, World!" Width="200" />`
 ```
@@ -32,12 +36,15 @@ private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
 	// Handle text changed event
 }
 ```
-## Related Topics
+
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

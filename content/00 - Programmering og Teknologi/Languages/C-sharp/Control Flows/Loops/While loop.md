@@ -1,4 +1,7 @@
-Tjekker om en betingelse passer, før den udfører kode
+> [!tldr] Definition
+> Tjekker om en betingelse passer, før den udfører kode
+
+--- 
 ## Example
 
 ```csharp

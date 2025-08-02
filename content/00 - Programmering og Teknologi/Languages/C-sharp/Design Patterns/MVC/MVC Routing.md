@@ -1,5 +1,5 @@
 > [!tldr] Definition
-Routing kortlægger URL'er til specifikke controllers og actions. Altså hvilken URL hører til hvilket Endpoint
+> Routing kortlægger URL'er til specifikke controllers og actions. Altså hvilken URL hører til hvilket Endpoint
 
 - Når en bruger indtaster en URL, bestemmer routing-mekanismen hvilken controller og action, der skal håndtere anmodningen.
 - Eksempel på en standardrute:
@@ -22,6 +22,7 @@ routes.MapRoute(
     - Adskillelse af bekymringer: URL-strukturen adskilles fra controller-logikken.
     - Parameterhåndtering: Gør det nemt at sende parametre til controllers.
 
-## Resourser
 ---
+
+## Resourser
 - [MVC Læringsobjekt (Routing)](https://scorm.itslearning.com/data/3289/C20150/ims_import_31/scormcontent/index.html#/lessons/XWb04QK9uDQN4TH0Aft8LTNLvo-s9y9B)

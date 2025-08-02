@@ -1,6 +1,6 @@
-Interface for CRUD operations.
-Used in Repository Pattern.
-
+> [!tldr] Definition
+> Interface for CRUD operations.
+> Used in Repository Pattern.
 
 
 ```csharp
@@ -23,8 +23,10 @@ void Remove(int id);
 
 LoadFromFile() and SaveToFile() methods would typically not be in the interface.
 It would however still be in the Repo Class(es).
-#### Implemented Example 
+
 ---
+
+#### Implemented Example 
 ```csharp
 public class MovieRepo : IRepo<Movie>
 {

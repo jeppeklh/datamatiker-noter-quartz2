@@ -1,7 +1,6 @@
 tags: #ProgrammingLanguage #C-sharp #OOP-Language
 
 ## Basics
----
 - [[C-Sharp Overview|C-Sharp Overview]]
 - [[Syntax]]
 - [[Datatypes]]
@@ -9,22 +8,25 @@ tags: #ProgrammingLanguage #C-sharp #OOP-Language
 	- [[Fields|Field-variables]]
 - [[Properties]]
 
-## Data Structures
 ---
+
+## Data Structures
  - [[Data Structues Overview]]
 	- [[Arrays]]
 	- [[Lists]]
 	- [[Sets]]
 	- [[Dictionaries|Dictionaries (Maps)]]
 
-## Control Flow
 ---
+
+## Control Flow
 - [[Control Flows|Control Flow Overview]]
 	- [[Branching Logic]]
 	- [[Loops]]
 
-## Methods
 ---
+
+## Methods
 - [[Methods Overview]]
 	- [[Defining Methods]]
 	- [[Parameters]]
@@ -32,8 +34,9 @@ tags: #ProgrammingLanguage #C-sharp #OOP-Language
 	- [[Overloading]]
 	- [[Recursion]]
 
-## Object-Oriented Programming (OOP)
 ---
+
+## Object-Oriented Programming (OOP)
 - [[Object-Oriented Programming Overview]]
 	- [[Classes]]
 	- [[Objects]]
@@ -46,9 +49,9 @@ tags: #ProgrammingLanguage #C-sharp #OOP-Language
 	- [[Abstraktion|Abstract Classes]]
 	- [[Abstraktion#Interface|Interfaces]]
 
+---
 
 ## Advanced Topics
----
 - [[Advanced Topics Overview]]
 	- [[Generics]]
 	- [[Error Handling]]
@@ -66,8 +69,9 @@ tags: #ProgrammingLanguage #C-sharp #OOP-Language
 		- [[Delegates]]	
 	-[[LINQ]] 
 
-## Libraries and Frameworks
 ---
+
+## Libraries and Frameworks
 - Standard Library Overview
 - Popular Frameworks
 - [[dotNET Overview|.NET]]
@@ -76,31 +80,36 @@ tags: #ProgrammingLanguage #C-sharp #OOP-Language
 	- [[WPF Data Binding Overview|Data Binding]]
 	- [[Command Binding]]
 	
-## File I/O
 ---
+
+## File I/O
 - [[File IO Overview]]
 	- [[Reading and Writing Files]]
 	- [[Working with Streams]]
 
-## Networking
 ---
+
+## Networking
 - Basics of Networking in the Language
 - HTTP Requests
 
-## Database Access
 ---
+
+## Database Access
 - [[Database Access Overview]]
 	- [[Connecting to Databases]]
 	- [[CRUD Operations]]
 	- [[Data Access Layer]]
 
-## Memory Management
 ---
+
+## Memory Management
 - Garbage Collection
 - Manual Memory Management (if applicable)
 
-## Best Practices
 ---
+
+## Best Practices
 - Code Style and Conventions
 - [[Design Patterns Overview|Design]] 
 	- [[Observer Pattern]] 
@@ -110,13 +119,16 @@ tags: #ProgrammingLanguage #C-sharp #OOP-Language
 	- [[Three-Tier Architecture]]
 - Performance Optimization
 
-## Premade Classes
 ---
+
+## Premade Classes
 - [[RelayCommand]]
 - [[ViewModelBase]]
 - [[IRepo]]
-## Resources
+
 ---
+
+## Resources
 - Official Documentation
 - Tutorials and Guides
 - Books and Courses

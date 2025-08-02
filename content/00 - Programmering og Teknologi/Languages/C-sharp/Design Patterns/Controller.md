@@ -1,15 +1,14 @@
 tags: #C-sharp #Programmering #DesignPattern #Controller
 
-## Definition 
----
-A [[Design Patterns Overview|design pattern]] that focuses on managing the flow of the application.
+> [!tldr] Definition
+> A [[Design Patterns Overview|design pattern]] that focuses on managing the flow of the application.
 
 Responsible for interpreting user input and invoking appropriate actions
 Intermediary between the UI and the logic.
 
+---
 
 ## Example
----
 ```csharp
 // Model class
 public class Model
@@ -76,12 +75,14 @@ class Program
 }
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Design Patterns Overview]]
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

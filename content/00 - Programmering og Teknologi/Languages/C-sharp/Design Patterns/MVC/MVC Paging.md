@@ -1,7 +1,9 @@
-Når man arbejder med store datasæt, kan paging og [[MVC Sorting|sorting]] være essentielle funktioner.
+> [!note]
+> Når man arbejder med store datasæt, kan paging og [[MVC Sorting|sorting]] være essentielle funktioner.
+
+---
 
 ## Paging (Paginering)
----
 **Formål**: Opdele data i mindre sider for bedre overskuelighed og performance.
 
 **Controller Eksempel**:
@@ -41,6 +43,7 @@ public ActionResult Index(int page = 1, int pageSize = 10)
 </div>
 ```
 
-## Resourser
 ---
+
+## Resourser
 - [MVC Læringsobjekt (Paging og Sorting)](https://scorm.itslearning.com/data/3289/C20150/ims_import_31/scormcontent/index.html#/lessons/K6U2oV-9AY4HHEVcvluwKsn_gwPwaZtL)

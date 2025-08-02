@@ -1,19 +1,22 @@
 tags: #C-sharp #Programmering #Methods #Overloading #Polymorphism
 
-## Definition 
----
-Overloading allows multiple [[Methods Overview|methods]] in the same scope to have the same name but different [[Parameters|parameters]]. 
+> [!tldr] Definition
+> Overloading allows multiple [[Methods Overview|methods]] in the same scope to have the same name but different [[Parameters|parameters]]. 
 
 It is a form of [[Polymorfi|polymorphism]], which enhances the flexibility and readability of code by allowing  [[Methods Overview|methods]]  and [[Constructors|constructors]] to perform similar actions based on their [[Parameters|parameters]].
-## Method Overloading
+
 ---
+
+## Method Overloading
 Method overloading allows a [[Classes|class]] to have more than one [[Methods Overview|method]] with the same name, as long as their [[Parameters|parameter]] lists are different.
 
 The overloaded [[Methods Overview|methods]] must have a different type or number of [[Parameters|parameters]]. 
 
 The [[Return Values|return type]] of the [[Methods Overview|methods]] can be the same or different, but it is not considered when distinguishing overloaded methods.
-### Example
+
 ---
+
+### Example
 ```csharp 
 public class Example 
 { 
@@ -37,12 +40,14 @@ public class Example
  }
 ```
 
-## Constructor Overloading
 ---
+
+## Constructor Overloading
 Constructor overloading allows a [[Classes|class]] to have more than one [[Constructors|constructor]] with different [[Parameters|parameters]]. This provides multiple ways to [[Objects#Object Initialization|initialize]] [[Objects|objects]] of the [[Classes|class]].
 
-### Example
 ---
+
+### Example
 ```csharp
 public class Person
 {
@@ -70,12 +75,14 @@ public class Person
 }
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Methods Overview]]
 - [[Polymorfi|Polymorphism]]
 - [[Constructors]]
 
-## Resources
 ---
+
+## Resources
 - [Official Documentation on Method Overloading](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)

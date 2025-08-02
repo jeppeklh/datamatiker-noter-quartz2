@@ -1,17 +1,20 @@
 tags: #C-sharp #Programmering #Networking 
 
-## Definition 
----
-The basics of networking in C# involve understanding how to use the [[.NET]] framework to perform network operations. 
+> [!tldr] Definition
+> The basics of networking in C# involve understanding how to use the [[.NET]] framework to perform network operations. 
 
 This includes sending and receiving data over networks, working with different protocols, and understanding key networking concepts such as sockets and endpoints.
-## Key Concepts
+
 ---
+
+## Key Concepts
 - **Sockets:** A socket is an endpoint for sending or receiving data across a computer network.
 - **TCP and UDP:** Two core protocols for network communication. TCP is connection-oriented, while UDP is connectionless.
 - **Endpoints:** An endpoint is a combination of an IP address and a port number that identifies a network service on a host.
-### Example: TCP Client
+
 ---
+
+### Example: TCP Client
 ```csharp
 using System;
 using System.Net.Sockets;
@@ -41,12 +44,13 @@ class TcpClientExample
 
 ```
 
+---
 
 ## Related Topics
----
 - [[Networking Overivew]]
 - [[HTTP Requests]]
 
-## Resources
 ---
+
+## Resources
 - [TcpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.tcpclient?view=net-8.0)

@@ -1,15 +1,17 @@
 tags: #C-sharp #Programmering #DatabaseAccess #Database #CRUD
-## Definition
----
+> [!tldr] Definition
 CRUD stands for [[#Create]], [[#Read]], [[#Update]], and [[#Delete]]. These are the four basic operations that can be performed on a [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|database]].
 
 The operations are fundamental for interacting with [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databases]].
-## Create
+
 ---
+
+## Create
 This means to generate a new request or to add something.
 
-### Example with txt 
 ---
+
+### Example with txt 
 ```csharp
 public void AddToRepository(Room room)
 {
@@ -18,14 +20,18 @@ public void AddToRepository(Room room)
 }
 ```
 
+---
+
 ### Example with SQL database
+
 ---
 
 ## Read
----
 This means to display all records.
-### Example with txt file
+
 ---
+
+### Example with txt file
 ```csharp
 public List<Room> GetAll()
     {
@@ -33,12 +39,14 @@ public List<Room> GetAll()
 	}
 ```
 
+---
 
 ## Update
----
 This means to change the existing records.
-### Example with txt file
+
 ---
+
+### Example with txt file
 ```csharp
 public void UpdateRepository(Room room)
 {
@@ -52,11 +60,15 @@ public void UpdateRepository(Room room)
     Persistence.SaveDataFile(rooms, fileName);
 }
 ```
+
+---
+
 ## Delete
----
 This means to delete existing records.
-### Example with txt file
+
 ---
+
+### Example with txt file
 ```csharp
 public void DeleteFromRepository(Room room)
 {
@@ -71,13 +83,15 @@ public void DeleteFromRepository(Room room)
 }
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Database Access Overview]]
 - [[Connecting to Databases]]
 
-## Resources
 ---
+
+## Resources
 ![[Pasted image 20240919092333.png]]
 
 ```csharp

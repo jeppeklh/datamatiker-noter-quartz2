@@ -1,4 +1,5 @@
-Når man arbejder med store datasæt, kan [[MVC Paging|paging]] og sorting være essentielle funktioner.
+> [!note]
+> Når man arbejder med store datasæt, kan [[MVC Paging|paging]] og sorting være essentielle funktioner.
 
 **Formål**: Arrangere data i en bestemt rækkefølge (f.eks. alfabetisk, numerisk).
 
@@ -21,6 +22,7 @@ public ActionResult Index(string sortOrder)
 }
 ```
 
-## Resourser
 ---
+
+## Resourser
 - [MVC Læringsobjekt (Paging og Sorting)](https://scorm.itslearning.com/data/3289/C20150/ims_import_31/scormcontent/index.html#/lessons/K6U2oV-9AY4HHEVcvluwKsn_gwPwaZtL)

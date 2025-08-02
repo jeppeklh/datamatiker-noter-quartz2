@@ -1,23 +1,28 @@
 tags: #C-sharp #Programmering #WPF #WPFControl
 
-## Definition 
+> [!tldr] Definition
+> A Label is used to display text.
+
 ---
-A Label is used to display text.
+
 ## Properties
----
 - `Content`: The text or element displayed in the label.
-## Example
+
 ---
+
+## Example
 ```xml
 <Label Content="Hello, World!" />
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - Link
 - 
 
-## Resources
 ---
+
+## Resources
 - Link
 - 

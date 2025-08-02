@@ -6,15 +6,17 @@ aliases:
 ---
 tags: #C-sharp #Programmering #OOP #Objects
 
-## Overview 
+> [!tldr] Definition
+> An object is an [[Instantiation|instance]] of a [[Classes|class]]. It is created from a [[Classes|class]] and represents a specific implementation of the [[Classes|class]]. Objects are the building blocks of an [[Object-Oriented Programming Overview|OOP]] application.
+
 ---
-An object is an [[Instantiation|instance]] of a [[Classes|class]]. It is created from a [[Classes|class]] and represents a specific implementation of the [[Classes|class]]. Objects are the building blocks of an [[Object-Oriented Programming Overview|OOP]] application.
 
 ## Creating Objects 
----
 Objects are created using the `new` keyword followed by the class name.
-### Example
+
 ---
+
+### Example
 ```csharp
 // Creating an instance of the Person class
 Person person1 = new Person();
@@ -22,12 +24,14 @@ person1.Name = "John";
 person1.Greet(); // Outputs: Hello, my name is John
 ```
 
-## Object Initialization
 ---
+
+## Object Initialization
 You can [[Variables and Assignment#Initialization|initialize]] objects using [[Constructors|constructors]], which are special [[Methods Overview|methods]] called when an [[Objects|object]] is [[Instantiation|instantiated]].
 
-### Example
 ---
+
+### Example
 ```csharp
 class Person
 {
@@ -59,14 +63,16 @@ Person person1 = new Person("John");
 person1.Greet(); // Outputs: Hello, my name is John
 ```
 
-## Related Topics
 ---
+
+## Related Topics
 - [[Classes]]
 - [[Constructors]]
 - [[Nedarvning|Inheritance]]
 - [[Polymorfi|Polymorphism]]
 - [[Indkapsling|Encapsulation]]
 
-## Resources
 ---
+
+## Resources
 - [Official Documentation on Objects](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/objects)

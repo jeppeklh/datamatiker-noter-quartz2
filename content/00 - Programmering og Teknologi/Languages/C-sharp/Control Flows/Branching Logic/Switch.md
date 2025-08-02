@@ -1,4 +1,5 @@
-Use the `switch` statement to select one of many code blocks to be executed.
+> [!note]
+> Use the `switch` statement to select one of many code blocks to be executed.
 
 ```csharp
 int day = 4;
@@ -29,10 +30,15 @@ switch (day)
 // Outputs "Thursday" (day 4)
 ```
 
+---
+
 ## Break
 When C# reaches a `break` keyword, it breaks out of the switch block.
 This will stop the execution of more code and case testing inside the block.
 When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+
+---
+
 ## Default
 The `default` keyword is optional and specifies some code to run if there is no case match:
 ```csharp

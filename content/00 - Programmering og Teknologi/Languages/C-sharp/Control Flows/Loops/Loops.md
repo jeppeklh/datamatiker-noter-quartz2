@@ -1,4 +1,5 @@
-A loop statement allows us to execute a statement or a group of statements multiple times
+> [!tldr] Definition
+>A loop statement allows us to execute a statement or a group of statements multiple times
 
 ---
 - [[For loop]]

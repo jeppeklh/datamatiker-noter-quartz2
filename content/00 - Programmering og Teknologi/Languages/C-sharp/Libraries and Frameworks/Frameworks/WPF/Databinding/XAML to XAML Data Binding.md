@@ -1,10 +1,10 @@
 tags: #C-sharp #Programmering #WPF #DataBinding #XAMLtoXAML 
-## Definition
+> [!tldr] Definition
+> XAML to XAML data binding refers to the process of binding properties of one XAML element to properties of another XAML element.
+
 ---
-XAML to XAML data binding refers to the process of binding properties of one XAML element to properties of another XAML element.
 
 ## Without Codebehind
----
 ```xml
 <StackPanel Margin="10">
     <TextBox Name="txtValue"/>
@@ -16,10 +16,10 @@ XAML to XAML data binding refers to the process of binding properties of one XAM
 ```
 In this example, the `TextBlock`'s `Text` property is bound to the `Text` property of the `TextBox` named `txtValue`.
 
+---
+
 ## With Codebehind
----
 ### XAML
----
 ```xml
 <StackPanel Margin="10">
 	<TextBox Name="txtValue"/>
@@ -30,8 +30,10 @@ In this example, the `TextBlock`'s `Text` property is bound to the `Text` proper
 </StackPanel>
 
 ```
-### Codebehind
+
 ---
+
+### Codebehind
 ```csharp
 public partial class CodeBehindBindingsSample : Window
 {
@@ -45,17 +47,22 @@ public partial class CodeBehindBindingsSample : Window
 	}
 }
 ```
-## Multibinding
+
 ---
+
+## Multibinding
 MultiBinding allows binding multiple [[WPF Data Binding Overview#Source|sources]] to a single [[WPF Data Binding Overview#Target|target]] [[Properties|property]].
 
 Rimlig kringlet (StringFormat's første curly brackets giver ingen mening men det er sådan notaionen er)
  ![[Multibinding example.png]]
 Video: [[Databind 2 - XAML to XAML.mp4#t=517|Multibinding]]
 
-## Related Topics
 ---
+
+## Related Topics
 - [[WPF Data Binding Overview]]
 - [[XAML to Object Data Binding]]
-## Resources
+
 ---
+
+## Resources
