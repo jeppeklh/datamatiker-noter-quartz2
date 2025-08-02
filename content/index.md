@@ -1,52 +1,30 @@
-## Programmering og Teknologi
----
- - [[Programmering og Teknologi|Programmering overview]]
+# Halvblodsdatamatikerens Dagbog
+Dette site er bygget på baggrund af mine egne noter, erfaringer og aha-øjeblikke som studerende på UCL Datamatikeruddannelsen Online (2024–2026). Målet er at give et navigerbart supplement — et sted hvor man hurtigt kan genfinde begreber, forståelser og sammenhænge.
 
-## Systemudvikling og Virksomheden
 ---
-- [[Systemudvikling og Virksomheden|Systemudvikling overview]]
 
-## Teknologi
----
-- [[00 - Teknologi Overview|Teknologi overview]]
 
-## Opgaver
----
-- [[Opgaver|Opgaver overview]]
+## Indhold
 
-## Projekter
----
+Naviger gennem hovedemnerne nedenfor:
+
+- [[Programmering og Teknologi|Programmering]]
+- [[Systemudvikling og Virksomheden|Systemudvikling]]
+- [[00 - Teknologi Overview|Teknologi]]
+- [[Opgaver|Opgaver]]
 - [[Projekter]]
-## Images
----
-- [[Images|Images oveview]]
+- [[Images|Images]]
+- [[Litteratur|Litteratur]]
+- [[Videoer|Videoer]]
 
-## Litteratur
----
-- [[Litteratur|Litteratur overview]]
-
-## Videoer
----
-- [[Videoer|Videoer overview]]
-
-
-
-## TO DO: 
 ---
 
-Keys overview (skal primary og foreign key flyttes fra constraints til keys?)
+>[!warning] Bemærk
+> Dette projekt er stadig under udvikling.  
+> Der kan forekomme fejl, ufuldstændige sektioner eller midlertidige formuleringer.
+>
+> Jeg opdaterer løbende i takt med studiets progression og egen forståelse — brug det gerne, men dobbeltcheck ved tvivl.
 
 
+[GitHub](https://github.com/jeppeklh) 
 
-- Opgavebeskrivelser og svar (embedded PDF)
-- Links til repos
-- SQL Joins - billeder der beskriver joins (se ekstern link i noterne)
-- Andre links i LINQ (Select osv.)
-- Entity framework
-- Stored Procedures
-- Triggers
-- Transactions
-
-Uge 41 Opgaver systemudvikling It-Strategi
-
-Region Syd artefakter plantuml i noterne
