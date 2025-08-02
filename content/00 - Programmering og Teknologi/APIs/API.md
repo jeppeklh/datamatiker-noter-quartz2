@@ -4,7 +4,7 @@ aliases:
 ---
 
 > [!tldr] Definition
-Et sæt regler og protokoller, der gør det muligt for forskellige softwarekomponenter at kommunikere med hinanden. API'er bruges til at udstille data og funktionalitet, så andre systemer eller klienter kan interagere med din applikation.
+> Et sæt regler og protokoller, der gør det muligt for forskellige softwarekomponenter at kommunikere med hinanden. API'er bruges til at udstille data og funktionalitet, så andre systemer eller klienter kan interagere med din applikation.
 
 Der findes flere typer af API'er. En af dem er [[REST API]]
 
@@ -23,8 +23,9 @@ public Get() {
 }
 ```
 
-## Routing
 ---
+
+## Routing
 mekanismen, der kortlægger indkommende HTTP-forespørgsler til de korrekte metoder ([[Action method]]s) i dine controllers. Ved at definere ruter kan du strukturere dine URL'er, så de afspejler de ressourcer, din applikation tilbyder.
 
 | Attribute                    | Description                                                                                                                                                       |
@@ -51,8 +52,10 @@ Eller endnu simplere:
 ```csharp
 [HttpGet("{id}")]
 ```
-## Serialisering
+
 ---
+
+## Serialisering
 Serialisering er processen, hvorved objekter konverteres til et format, der kan sendes over et netværk – typisk JSON i web-API'er. Det sikrer, at data, der udstilles af API'et, bliver korrekt formateret og kan fortolkes af klientapplikationer.
 
 #### Vigtige punkter ved serialisering:
@@ -61,9 +64,9 @@ Serialisering er processen, hvorved objekter konverteres til et format, der kan 
 - **Håndtering af cirkulære referencer:**  
     Ved komplekse objekter kan du bruge attributter som `JsonIgnore` for at undgå uendelige loops mellem sammenkoblede modelklasser.
 
+---
 
 ## Eksempel på en simpel controller
----
 ```csharp
 [ApiController]
 [Route("api/[controller]")]
@@ -80,9 +83,9 @@ public class ProductsController : ControllerBase
 	}
 }
 ```
+---
 
 ## API Testing og debugging
----
 ##### Postman
 Et værktøj til at teste API endpoints. Giver mulighed for at lave requests, tilføje headers, og se reponses struktureret.
 ##### Browser Dev Tools
@@ -90,9 +93,9 @@ Indbyggede værktøjer i browsers, hvor man kan se HTTP requrests og reposonses 
 ##### Fiddler
 Et proxy værktøj, der opfanger og analyserer HTTP trafik mellem browser og web-applikationen. Det giver insight og mulighed for at manipulerer requests.
 
+---    
 
 ## Producer / Consumer
----    
 I forbindelse med WebAPI'er refererer "Producer" og "Consumer" til to forskellige roller eller enheder, der interagerer med API'et:
 
 **Producer** 
@@ -104,8 +107,9 @@ Dette er den enhed, der bruger API'et til at hente data eller tjenester fra prod
 
 Kort sagt, producenten leverer dataene, og forbrugeren bruger dataene.
 
-## Resourser
 ---
+
+## Resourser
 - [API Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_35/scormcontent/index.html#/lessons/pXgGVCJuSbMjcThYav2SA69FMj2J0Lrh)
 - [API LinkedIn](https://www.linkedin.com/learning/building-web-apis-with-asp-dot-net-core-in-dot-net)
 - [[Praktisk eksempel REST API med ASP.NET Core og EF Core]]
