@@ -113,4 +113,4 @@ Kort sagt, producenten leverer dataene, og forbrugeren bruger dataene.
 - [API Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_35/scormcontent/index.html#/lessons/pXgGVCJuSbMjcThYav2SA69FMj2J0Lrh)
 - [API LinkedIn](https://www.linkedin.com/learning/building-web-apis-with-asp-dot-net-core-in-dot-net)
 - [[Praktisk eksempel REST API med ASP.NET Core og EF Core]]
-- - [API Consumer/Producer Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_37/scormcontent/index.html#/lessons/dXernJESphMLlxbBN2T7mqqRqAiJgm31)
+- [API Consumer/Producer Læringsobjekt](https://scorm.itslearning.com/data/3289/C20150/ims_import_37/scormcontent/index.html#/lessons/dXernJESphMLlxbBN2T7mqqRqAiJgm31)
