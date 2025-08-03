@@ -2,14 +2,14 @@ Tags: #Systemudvikling #Virksomheden #Homepage
 
 ## Overview
 - [[Systemudvikling Overview]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Projektstyring]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/KravIndsamling]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/High Level Design]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Low Level Design]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Programmering]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Test]]
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Udrulning]] 
-	- [[Repo/01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Vedligehold]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Projektstyring]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/KravIndsamling]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/High Level Design]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Low Level Design]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Programmering]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Test]]
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Udrulning]] 
+	- [[01 - Systemudvikling og virksomhed/Systemudvikling Overblik/Vedligehold]]
 
 ---
 
@@ -17,8 +17,8 @@ Tags: #Systemudvikling #Virksomheden #Homepage
 [[Artifacts Overview]]
 - [[Buisness Model Canvas Overview]]
 - [[Use Case]]
-- [[Repo/01 - Systemudvikling og virksomhed/Artefakter/Objektmodel|Objektmodel]]
-- [[Repo/01 - Systemudvikling og virksomhed/Artefakter/Domænemodel|Domænemodel]]
+- [[01 - Systemudvikling og virksomhed/Artefakter/Objektmodel|Objektmodel]]
+- [[01 - Systemudvikling og virksomhed/Artefakter/Domænemodel|Domænemodel]]
 - [[Operatrion Contracts (OC)]]
 - [[System Sequence Diagram (SSD)]]
 - [[Wireframes]]
