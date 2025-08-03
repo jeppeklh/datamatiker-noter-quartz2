@@ -1,7 +1,10 @@
 
-[[applying-uml-and-patterns-3rd.pdf#page=382&selection=0,18,0,38|Larman kapitel 16.2]]
 
-Et UML-diagram (Unified Modeling Language), der visuelt repræsenterer klasser, interfaces og deres indbyrdes forhold. 
+> [!tldr] Definition
+> Et UML-diagram (Unified Modeling Language), der visuelt repræsenterer klasser, interfaces og deres indbyrdes forhold. 
+>
+> [[applying-uml-and-patterns-3rd.pdf#page=382&selection=0,18,0,38|Larman kapitel 16.2]]
+
 Det bruges til statisk objektmodellering, hvilket betyder at det beskriver den strukturelle opbygning af et system, men ikke den dynamiske adfærd.
 
 Bruges til at modellere softwareklasser og deres relationer. 

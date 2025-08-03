@@ -1,7 +1,7 @@
 tags: #C-sharp #Programmering
 
-## Definition 
-En databasemodel er en datamodel, der viser [[Data|data]], som skal persisteres et sted.
+> [!tldr] Definition
+> En databasemodel er en datamodel, der viser [[Data|data]], som skal persisteres et sted.
 
 Databasemodellen indeholder UML-klasser som et [[Design Class Diagram|DCD]], men UML-klasserne repræsenterer nu hver for sig en [[Relationer|relation]]/[[Table|tabel]] i [[Repo/00 - Programmering og Teknologi/Languages/SQL/Basics/Database|databasen]] og ikke en softwareklasse.
 

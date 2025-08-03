@@ -94,6 +94,7 @@ RESTful APIs skal overholde 6 contraints
 
 ## Sammenfatning
 REST API-design handler om at skabe enkle, intuitive og konsistente grænseflader, hvor ressourcer er klart definerede og manipulation af disse sker via de velkendte HTTP-metoder.
+
 ---
 
 ## Resourcer
