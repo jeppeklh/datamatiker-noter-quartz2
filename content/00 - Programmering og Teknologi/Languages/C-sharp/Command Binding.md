@@ -3,7 +3,7 @@
 > [!tldr] Definition
 > Command binding in WPF is a mechanism that allows the binding of user interface [[WPF Controls Overview|controls]] to commands defined in the application logic. 
 
-It provides a way to implement the [[Repo/00 - Programmering og Teknologi/SoftwareArkitektur/MVVM|MVVM]] pattern, enabling separation of concerns between the UI and the application logic.
+It provides a way to implement the [[00 - Programmering og Teknologi/SoftwareArkitektur/MVVM|MVVM]] pattern, enabling separation of concerns between the UI and the application logic.
 
 ---
 
