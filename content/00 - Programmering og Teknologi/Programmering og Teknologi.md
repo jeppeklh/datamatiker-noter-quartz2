@@ -8,7 +8,7 @@ tags: #Programmering #Teknologi #Homepage
 ## Languages
 #### Programming
 - [[Bash]]
-- [[Languages/C-sharp/C-sharp]]
+- [[C-sharp]]
 
 ---
 
