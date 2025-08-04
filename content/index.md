@@ -27,7 +27,3 @@ Naviger gennem hovedemnerne nedenfor:
 > Der kan forekomme fejl, ufuldstændige sektioner eller midlertidige formuleringer.
 >
 > Jeg opdaterer løbende i takt med studiets progression og egen forståelse — brug det gerne, men dobbeltcheck ved tvivl.
-
-
-[GitHub](https://github.com/jeppeklh) 
-
