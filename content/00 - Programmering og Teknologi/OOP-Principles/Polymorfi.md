@@ -53,4 +53,9 @@ class Program
 ```
 We [[Nedarvning#Overriding|override]] the [[Methods Overview|method]] animalSound() in the [[Nedarvning#Derived class|derived classes]]. And now the [[Methods Overview|method]] will have a different output depending on the object type. 
 ![[Polymorfi output.png]]
-Se https://www.w3schools.com/cs/cs_polymorphism.php
+
+
+---
+
+## Resources
+- [Polymorphism](https://www.w3schools.com/cs/cs_polymorphism.php)

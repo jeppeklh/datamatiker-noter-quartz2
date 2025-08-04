@@ -75,7 +75,7 @@ Vi laver vorews controller. Hvor vi har skrevet vores API-key. Vi laver en HttpG
 ```csharp
 public class WeatherController : Controller
 {
-	private string apiKey = "414a97767435cbb52a942be59deffd2d";
+	private string apiKey = "REDACTED (en masse tal og bogstaver)";
 
 	[HttpGet]
 	public async Task<IActionResult> Weather(string city = "Copenhagen")

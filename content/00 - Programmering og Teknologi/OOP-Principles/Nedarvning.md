@@ -81,7 +81,6 @@ class Program
 	}
 }
 ```
-Se https://www.w3schools.com/cs/cs_inheritance.php
 
 ---
 
@@ -126,3 +125,8 @@ class Program
 	}
 }
 ```
+
+---
+
+## Resources
+- [Inheritance](https://www.w3schools.com/cs/cs_inheritance.php)

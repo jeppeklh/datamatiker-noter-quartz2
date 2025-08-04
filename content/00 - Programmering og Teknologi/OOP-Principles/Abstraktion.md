@@ -64,7 +64,6 @@ class Program
 	}
 }
 ```
-Se https://www.w3schools.com/cs/cs_abstract.php
 
 ---
 
@@ -101,3 +100,8 @@ class Program
   }
 }
 ```
+
+---
+
+## Resources
+- [Abstraction](https://www.w3schools.com/cs/cs_abstract.php)

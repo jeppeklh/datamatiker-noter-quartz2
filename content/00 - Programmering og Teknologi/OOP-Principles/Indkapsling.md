@@ -16,7 +16,6 @@ public String Name
         set { studentName = value; }
     }
 ````
-Se https://www.geeksforgeeks.org/c-sharp-encapsulation/
 
 ---
 
@@ -27,3 +26,8 @@ Encapsulated code is easy to test for unit testing.
 Så de ikke pludselig kan ændres fra andre [[#Class|klasser]] i koden
 #### Flexibility
 We can make the variables of the class as read-only or write-only depending on our requirement. If we wish to make the variables as read-only then we have to only use Get Accessor in the code. If we wish to make the variables as write-only then we have to only use Set Accessor.
+
+---
+
+## Resources
+- [Encapsulation](https://www.geeksforgeeks.org/c-sharp-encapsulation/)
