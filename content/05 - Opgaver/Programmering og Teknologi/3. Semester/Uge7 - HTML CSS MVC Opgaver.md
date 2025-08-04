@@ -9,22 +9,28 @@
 > - Hvad er en webside, webapplikation og ”native apps”? Forklar forskellen mellem dem.
 
 Sørg for, at alle får mulighed for at tale
->[!note] Svar
->#### Client vs. Server
->
+> [!question] Client vs. Server
+
+> [!note] Svar
 >- En **client** er den enhed, der anmoder om information (f.eks. en browser, der besøger en hjemmeside).
 >- En **server** er den enhed, der håndterer anmodningen og sender data tilbage (f.eks. en webserver, der leverer en [[HTML Overview|HTML]]-side).
->
->##### Hvordan kommunikerer de?
+
+> [!question] Hvordan kommunikerer de?
+
+> [!note] Svar
 >- Clienten sender en **HTTP-request** til serveren.
 >- Serveren behandler anmodningen og sender en **HTTP-response** tilbage med data (HTML, JSON, billeder osv.).
->
->##### Hvad er HTML, CSS og Bootstrap?
+
+> [!question] Hvad er HTML, CSS og Bootstrap?
+
+> [!note] Svar
 >- **HTML**: Strukturen af en webside (f.eks. tekst, billeder, links).
 >- **CSS**: Styling af websiden (farver, skrifttyper, layout).
 >- **Bootstrap**: Et framework, der gør det lettere at designe responsive og flotte sider.
->
->##### Webside vs. Webapplikation vs. Native app
+
+> [!question] Webside vs. Webapplikation vs. Native app
+
+> [!note] Svar
 >- **Webside**: Simpel [[HTML Overview|HTML]]/[[CSS]]/JavaScript, ofte informativ.
 >- **Webapplikation**: Interaktiv hjemmeside (fx Facebook, Gmail).
 >- **Native App**: Installeret app på en enhed (iOS/Android), kører direkte på operativsystemet.
@@ -73,7 +79,7 @@ Sørg for, at alle får mulighed for at tale
 ## Øvelse 6
 **ca. 20 min**
 
->[!question]  Brug Ordet rundt til at reflektere over begreberne:
+>[!info]  Brug Ordet rundt til at reflektere over begreberne:
 > 
 > MVC-arkitektur
 >
@@ -82,9 +88,9 @@ Sørg for, at alle får mulighed for at tale
 > - Sortering
 > - Entity Framework
 
+> [!question] Hvad er MVC?
+
 >[!note] Svar
-> Hvad er MVC?
->
 >- **Model-View-Controller** (MVC) er en arkitektur til at organisere kode.
 >- **Model**: Data og logik (f.eks. database).
 >- **View**: Det brugeren ser (HTML/CSS).
