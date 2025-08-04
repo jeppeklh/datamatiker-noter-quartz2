@@ -1,4 +1,5 @@
-Over[[applying-uml-and-patterns-3rd.pdf#page=348&selection=0,6,0,41|Larman kaptel 15]]
+
+[[applying-uml-and-patterns-3rd.pdf#page=348&selection=0,6,0,41|Larman kaptel 15]]
 
 Dynamisk
 
