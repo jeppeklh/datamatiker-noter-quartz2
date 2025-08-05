@@ -23,7 +23,6 @@ Naviger gennem hovedemnerne nedenfor:
 ---
 
 >[!warning] Bemærk
-> Dette projekt er stadig under udvikling.  
-> Der kan forekomme fejl, ufuldstændige sektioner eller midlertidige formuleringer.
+> Dette projekt er stadig under udvikling. Der kan forekomme fejl, ufuldstændige sektioner eller midlertidige formuleringer.
 >
 > Jeg opdaterer løbende i takt med studiets progression og egen forståelse — brug det gerne, men dobbeltcheck ved tvivl.
