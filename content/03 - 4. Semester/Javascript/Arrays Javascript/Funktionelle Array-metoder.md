@@ -90,3 +90,8 @@ const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((acc, n) => acc + n, 0);
 console.log(sum); // 10
 ```
+
+
+---
+## Resourcer
+- [Map Dokumentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
