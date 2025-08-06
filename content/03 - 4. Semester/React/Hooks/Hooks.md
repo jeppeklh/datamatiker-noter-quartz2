@@ -1,5 +1,5 @@
 > [!tldr] Definition
-> Et **Hook** er en funktion i React, der lader dig bruge funktionalitet som state og sideeffekter i funktionelle komponenter. Eksempler: [[useState Hook|useState]], `useEffect`, `useRef`, m.fl.
+> Et **Hook** er en funktion i React, der lader dig bruge funktionalitet som state og sideeffekter i funktionelle komponenter. Eksempler: [[useState Hook|useState]], [[Effect Hooks|useEffect]], `useRef`, m.fl.
 
 ```js
 import { useState } from "react";
