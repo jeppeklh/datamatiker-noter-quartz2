@@ -1,9 +1,18 @@
 > [!tldr] Definition
-> **Axios** er et populært promise-baseret bibliotek til HTTP-forespørgsler, der bruges som et alternativ til `fetch`. Det er nemmere at bruge og automatisk parser JSON-responser.
+> Axios er en **promise-baseret HTTP-klient** til [[00 - JavaScript|JavaScript]], som ofte bruges i [[00 - React|React]] til at hente eller sende data til en backend (f.eks. via et [[REST API]]).
 
 ---
 
-### Installation
+## Axios-metoder
+
+- [[Put (Axios)|Get]]
+- [[Post (Axios)|Post]]
+- [[Put (Axios)|Put]]
+- [[Patch (Axios)|Patch]]
+- [[Delete (Axios)|Delete]]
+
+---
+## Installation
 
 ```bash
 npm install axios
@@ -11,7 +20,7 @@ npm install axios
 
 ---
 
-### Import og brug
+## Import og brug
 
 ```js
 import axios from 'axios'
@@ -25,7 +34,7 @@ axios
 
 ---
 
-### Fordele
+## Fordele
 
 - Returnerer en [[Promise]]
 - Automatisk JSON-parsing
