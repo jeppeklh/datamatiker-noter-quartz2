@@ -1,7 +1,7 @@
 > [!tldr] Definition
 > **Node.js** er et JavaScript-runtime, der kører uden for browseren.  
 > Det gør det muligt at bruge JavaScript til server-side udvikling, scripts og automatisering.
-S
+
 - Bygger på **V8 JavaScript-motoren** (samme som i Google Chrome).
 - Bruges ofte til backend-udvikling.
 - Har indbygget understøttelse af moduler (CommonJS / ES Modules).
